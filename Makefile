@@ -7,10 +7,10 @@ collect:
 	mkdir -p data
 	wget -O $(DATASET_PATH) https://raw.githubusercontent.com/digital-land/brownfield-land-collection/main/dataset/brownfield-land.csv
 
-render:
+render: clean
 	digital-land --pipeline-name brownfield-land render --dataset-path $(DATASET_PATH)
 
-local:
+local: clean
 	digital-land --pipeline-name brownfield-land render --dataset-path $(DATASET_PATH) --local
 
 server:
