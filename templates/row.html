@@ -93,6 +93,10 @@
 {{ super() }}
 <script>
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
-    new DLMaps.Map($mapElement).init({})
+    const mapComponent = new DLMaps.Map($mapElement).init({
+        geojsonOptions: {
+            geojsonDataToLayer: DLMaps.brownfieldSites.geojsonToLayer
+        }
+    })
 </script>
 {% endblock %}
