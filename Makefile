@@ -13,6 +13,9 @@ render:
 local:
 	digital-land --pipeline-name brownfield-land render --dataset-path $(DATASET_PATH) --local
 
+server:
+	python -m http.server --directory docs
+
 build: clean collect render
 
 clean:
