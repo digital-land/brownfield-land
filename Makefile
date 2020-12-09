@@ -1,7 +1,6 @@
-DATASET_PATH := data/dataset.csv
+include makerules/makerules.mk
 
-init:
-	pip3 install -r requirements.txt
+DATASET_PATH := data/dataset.csv
 
 collect:
 	mkdir -p data
@@ -18,6 +17,6 @@ server:
 
 build: clean collect render
 
-clean:
+clean::
 	rm -r ./docs/
 	mkdir docs
