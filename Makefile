@@ -1,4 +1,5 @@
 include makerules/makerules.mk
+include makerules/render.mk
 
 DATASET_PATH := data/dataset.csv
 
@@ -6,14 +7,8 @@ collect:
 	mkdir -p data
 	wget -O $(DATASET_PATH) https://raw.githubusercontent.com/digital-land/brownfield-land-collection/main/dataset/brownfield-land.csv
 
-render: clean
-	digital-land --pipeline-name brownfield-land render --dataset-path $(DATASET_PATH)
-
 local: clean
 	digital-land --pipeline-name brownfield-land render --dataset-path $(DATASET_PATH) --local
-
-server:
-	python -m http.server --directory docs
 
 build: clean collect render
 
