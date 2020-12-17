@@ -1,7 +1,7 @@
 include makerules/makerules.mk
 include makerules/render.mk
 
-DATASET_PATH := data/dataset.csv
+DATASET_DIR := data
 DATASET := brownfield-land
 
 collect:
