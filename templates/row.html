@@ -2,6 +2,8 @@
 {%- from "digital-land-frontend/components/map/macro.html" import dlMap %}
 {%- from "digital-land-frontend/components/data-record/macro.html" import dlDataRecordPanel %}
 
+{% set row_name = row['site-address'] if row['site-address'] else row['slug'] %}
+
 {% block head %}
 {{ super() }}
 <!-- include css and js for LeafletJS -->
@@ -32,7 +34,7 @@
         "href": urlRoot
         },
         {
-        "text": row['slug']|truncate(12)
+        "text": row_name|truncate(30)
         }
     ]
     }) -}}
@@ -41,11 +43,11 @@
 {% block content %}
 
 <span class="govuk-caption-xl">{{ data_type }}</span>
-<h1 class="govuk-heading-xl">{{ row['site-address']|truncate(20) }}</h1>
+<h1 class="govuk-heading-xl">{{ row_name|truncate(33) }}</h1>
 
 {% set areaproperties %}
 {% for i in row.keys() %}
-{% if i not in ["slug", "resource", "geometry"] %}
+{% if i not in ["slug", "resource", "geometry", "has_geometry"] %}
 <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key">
     {{ i }}
