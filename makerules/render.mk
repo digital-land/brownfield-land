@@ -6,32 +6,18 @@ ifeq ($(DATASET),)
 DATASET=$(PIPELINE_NAME)
 endif
 
-ifeq ($(DATASET_DIR),)
-DATASET_DIR=dataset/
-endif
-
 ifeq ($(DATASET_PATH),)
-DATASET_PATH=$(DATASET_DIR)$(DATASET).csv
-endif
-
-ifeq ($(DOCS_DIR),)
-DOCS_DIR=./docs/
+DATASET_PATH=$(DATASET_DIR)/$(DATASET).csv
 endif
 
 TEMPLATE_FILES=$(wildcard templates/*)
 
-first-pass:: collect
-
 second-pass:: render
 
-render:: $(TEMPLATE_FILES) $(SPECIFICATION_FILES) $(DATASET_FILES) $(DATASET_PATH)
-	@-rm -rf $(DOCS_DIR)
-	@-mkdir -p $(DOCS_DIR)
-ifneq ($(RENDER_COMMAND),)
-	$(RENDER_COMMAND)
-else
+render: $(TEMPLATE_FILES) $(SPECIFICATION_FILES) $(DATASET_FILES)
+	@-rm -rf ./docs/
+	@-mkdir ./docs/
 	digital-land --pipeline-name $(DATASET) render --dataset-path $(DATASET_PATH)
-endif
 	@touch ./docs/.nojekyll
 
 # serve docs for testing
