@@ -3,9 +3,9 @@ DATASET=brownfield-land
 include makerules/makerules.mk
 include makerules/render.mk
 
-collect::
+$(DATASET_PATH):
 	mkdir -p $(DATASET_DIR)
-	curl 'https://raw.githubusercontent.com/digital-land/$(DATASET)-collection/main/dataset/$(DATASET).csv' > $(DATASET_PATH)
+	curl -qsL 'https://raw.githubusercontent.com/digital-land/$(DATASET)-collection/main/dataset/$(DATASET).csv' > $(DATASET_PATH)
 
 # TBD: remove this rule
 # -- templates should have relative links to ensure we are testing deployed pages locally
