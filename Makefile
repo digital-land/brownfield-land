@@ -1,18 +1,15 @@
+DATASET=brownfield-land
+
 include makerules/makerules.mk
 include makerules/render.mk
 
-DATASET_DIR := data
-DATASET := brownfield-land
+collect::
+	mkdir -p $(DATASET_DIR)
+	curl 'https://raw.githubusercontent.com/digital-land/$(DATASET)-collection/main/dataset/$(DATASET).csv' > $(DATASET_PATH)
 
-collect:
-	mkdir -p data
-	wget -O $(DATASET_PATH) https://raw.githubusercontent.com/digital-land/$(DATASET)-collection/main/dataset/$(DATASET).csv
-
-local: clean
+# TBD: remove this rule
+# -- templates should have relative links to ensure we are testing deployed pages locally
+local::
+	@rm -rf $(DOCS_DIR)
+	@mkdir $(DOCS_DIR)
 	digital-land --pipeline-name $(DATASET) render --dataset-path $(DATASET_PATH) --local
-
-build: clean collect render
-
-clean::
-	rm -rf ./docs/
-	mkdir docs
