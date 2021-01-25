@@ -9,10 +9,7 @@ collect:
 	wget -O $(DATASET_PATH) https://raw.githubusercontent.com/digital-land/$(DATASET)-collection/main/dataset/$(DATASET).csv
 
 local: clean
+	@-mkdir ./docs/
 	digital-land --pipeline-name $(DATASET) render --dataset-path $(DATASET_PATH) --local
 
 build: clean collect render
-
-clean::
-	rm -rf ./docs/
-	mkdir docs
