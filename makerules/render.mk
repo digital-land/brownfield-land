@@ -12,7 +12,7 @@ DATASET_PATH=$(DATASET_DIR)$(DATASET).csv
 endif
 
 ifeq ($(DATASET_URL),)
-DATASET_URL='https://raw.githubusercontent.com/digital-land/$(DATASET)-collection/main/dataset/$(DATASET).csv' 
+DATASET_URL='https://raw.githubusercontent.com/digital-land/$(DATASET)-collection/main/dataset/$(DATASET).csv'
 endif
 endif
 
