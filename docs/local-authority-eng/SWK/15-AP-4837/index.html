@@ -432,6 +432,7 @@
 
 
     
+
 <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
 	<script async src='https://www.google-analytics.com/analytics.js'></script>
 	<!-- end google analytics -->
@@ -457,5 +458,14 @@
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const mapComponent = new DLMaps.Map($mapElement).init({})
 </script>
+<script>
+    const $mapElement = document.querySelector('[data-module="boundary-map"]')
+    const mapComponent = new DLMaps.Map($mapElement).init({
+        geojsonOptions: {
+            geojsonDataToLayer: DLMaps.brownfieldSites.geojsonToLayer
+        }
+    })
+</script>
+
   </body>
 </html>
