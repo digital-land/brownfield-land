@@ -1,7 +1,6 @@
 {%- extends "digital-land-frontend/page-per-thing/record.html" %}
 
-{% block bodyEnd %}
-{{ super() }}
+{% block initMapBlock %}
 <script>
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const mapComponent = new DLMaps.Map($mapElement).init({
