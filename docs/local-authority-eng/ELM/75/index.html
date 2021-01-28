@@ -271,7 +271,7 @@
         <dt class="govuk-summary-list__key">planning-permission-history
         </dt>
         <dd class="govuk-summary-list__value">
-        http://emaps.elmbridge.gov.uk/ebc_planning.aspx?requesttype=parseTemplate&template=PlanningHistoryTab.tmplt&Filter=%5eAPPLICATION_NUMBER%5e='2018/3532'&appno:PARAM=2018/3532&address:PARAM=8%20Holtwood%20Road,%20Oxshott,%20Leatherhead,%20Surrey,%20KT22%200QJ&northing:PARAM=160702&easting:PARAM=514297
+        http://emaps.elmbridge.gov.uk/ebc_planning.aspx?requesttype=parseTemplate&amp;template=PlanningHistoryTab.tmplt&amp;Filter=%5eAPPLICATION_NUMBER%5e=&#39;2018/3532&#39;&amp;appno:PARAM=2018/3532&amp;address:PARAM=8%20Holtwood%20Road,%20Oxshott,%20Leatherhead,%20Surrey,%20KT22%200QJ&amp;northing:PARAM=160702&amp;easting:PARAM=514297
         </dd>
     </div>
     <div class="govuk-summary-list__row">
@@ -306,7 +306,7 @@
         <dt class="govuk-summary-list__key">site-plan-url
         </dt>
         <dd class="govuk-summary-list__value">
-        http://emaps.elmbridge.gov.uk/ebc_brownfield.aspx?requesttype=parseTemplate&template=BrownFieldmapsearch.tmplt&layers=Brownfield_Register,ebc_boroughboundary&startzoom=800&startEasting=513297&startNorthing=1607092
+        http://emaps.elmbridge.gov.uk/ebc_brownfield.aspx?requesttype=parseTemplate&amp;template=BrownFieldmapsearch.tmplt&amp;layers=Brownfield_Register,ebc_boroughboundary&amp;startzoom=800&amp;startEasting=513297&amp;startNorthing=1607092
         </dd>
     </div>
     <div class="govuk-summary-list__row">
@@ -410,7 +410,6 @@
 
 
     
-
 <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
 	<script async src='https://www.google-analytics.com/analytics.js'></script>
 	<!-- end google analytics -->
@@ -432,10 +431,6 @@
 	
 
 
-<script>
-    const $mapElement = document.querySelector('[data-module="boundary-map"]')
-    const mapComponent = new DLMaps.Map($mapElement).init({})
-</script>
 <script>
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const mapComponent = new DLMaps.Map($mapElement).init({
