@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title>Brownfield-land | Digital Land</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+      <link rel="manifest" href="/site.webmanifest">
+      <link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
+      <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
+      <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
+      <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    
+
+    
+
+	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+	<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
+    
+    
+    <meta property="og:image" content="/images/govuk-opengraph-image.png">
+  </head>
+  <body class="govuk-template__body ">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    
+
+    
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+    
+
+    
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
+
+  <div id="cookie-banner" class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="cookie-banner__message govuk-!-margin-top-6">
+          <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+          <p class="govuk-body">We use <a class="govuk-link" href="/cookies">cookies to collect information</a> about how you use the Digital Land website to make the website work as well as possible.</p>
+        </div>
+        <div class="cooke-banner__buttons govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie-confirmation" class="govuk-width-container govuk-!-padding-top-6" tabindex="-1" style="display: none;">
+    <p class="cookie-banner__confirmation-message govuk-body">You’ve accepted all cookies. You can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
+    <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
+  </div>
+
+</div>
+
+
+<header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="header-proposition">
+      <div class="govuk-header__content">
+        <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
+        Digital Land
+        </a>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
+        <nav>
+          <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/about">Team</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/project/">Projects</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/weeknote/">Weeknotes</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/blog-post/">Blog</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/guidance/">Guidance</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/dataset/">Datasets</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/organisation/">Organisations</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/map/">Map</a>
+            </li>
+          </ul>
+        </nav>
+        </div>
+    </div>
+  </div>
+</header>
+
+
+
+    
+      <div class="govuk-width-container ">
+        
+  
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+  prototype
+</strong><span class="govuk-phase-banner__text">
+      This is a prototype. Please provide feedback to the Digital Land team.
+    </span>
+  </p>
+</div>
+  
+<div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+  
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/">Digital Land</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="../../">Brownfield Land</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="../">Local Authority Eng</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">BAI</li>
+    
+  
+  </ol>
+</div>
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+          
+
+<h1 class="govuk-heading-xl">Brownfield land</h1>
+
+
+
+<p class="govuk-body">Showing 89 records.</p>
+
+
+
+
+<div class="dl-index-grid"><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0001">BAS0001</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0001</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0002">BAS0002</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0002</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0003">BAS0003</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0003</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0004">BAS0004</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0004</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0005">BAS0005</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0005</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0006">BAS0006</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0006</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0007">BAS0007</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0007</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0008">BAS0008</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0008</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0010">BAS0010</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0010</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0011">BAS0011</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0011</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0012">BAS0012</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0012</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0013">BAS0013</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0013</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0014">BAS0014</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0014</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0015">BAS0015</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0015</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0017">BAS0017</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0017</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0018">BAS0018</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0018</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0019">BAS0019</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0019</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0021">BAS0021</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0021</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0022">BAS0022</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0022</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0023">BAS0023</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0023</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0024">BAS0024</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0024</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0025">BAS0025</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0025</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0026">BAS0026</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0026</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0027">BAS0027</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0027</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0028">BAS0028</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0028</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0029">BAS0029</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0029</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0030">BAS0030</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0030</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0031">BAS0031</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0031</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0032">BAS0032</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0032</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0033">BAS0033</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0033</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0034">BAS0034</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0034</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0035">BAS0035</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0035</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0036">BAS0036</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0036</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0037">BAS0037</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0037</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0038">BAS0038</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0038</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0039">BAS0039</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0039</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0043">BAS0043</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0043</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0044">BAS0044</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0044</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0045">BAS0045</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0045</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0046">BAS0046</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0046</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0048">BAS0048</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0048</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0049">BAS0049</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0049</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0050">BAS0050</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0050</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0051">BAS0051</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0051</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0052">BAS0052</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0052</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0053">BAS0053</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0053</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0054">BAS0054</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0054</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0055">BAS0055</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0055</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0056">BAS0056</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0056</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0057">BAS0057</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0057</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0058">BAS0058</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0058</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0059">BAS0059</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0059</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0060">BAS0060</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0060</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0061">BAS0061</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0061</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0062">BAS0062</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0062</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0063">BAS0063</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0063</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0064">BAS0064</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0064</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0065">BAS0065</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0065</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0066">BAS0066</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0066</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0067">BAS0067</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0067</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0068">BAS0068</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0068</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0069">BAS0069</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0069</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0070">BAS0070</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0070</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0071">BAS0071</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0071</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0009">BAS0009</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0009</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0016">BAS0016</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0016</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0020">BAS0020</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0020</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0040">BAS0040</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0040</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0041">BAS0041</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0041</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0042">BAS0042</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0042</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0047">BAS0047</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0047</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0072">BAS0072</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0072</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0073">BAS0073</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0073</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0074">BAS0074</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0074</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0075">BAS0075</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0075</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0076">BAS0076</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0076</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0077">BAS0077</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0077</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0078">BAS0078</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0078</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0079">BAS0079</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0079</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0080">BAS0080</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0080</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0081">BAS0081</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0081</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0082">BAS0082</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0082</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0083">BAS0083</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0083</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0084">BAS0084</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0084</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0085">BAS0085</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0085</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0086">BAS0086</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0086</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0087">BAS0087</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0087</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0088">BAS0088</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0088</p><h4 class="dl-index-item__head govuk-heading-s govuk-!-font-weight-regular dl-break-word"><a class="govuk-link" href="./BAS0089">BAS0089</a></h4>
+  <p class="dl-index-item__body govuk-body">BAS0089</p></div>
+
+
+
+        </main>
+      </div>
+    
+
+    
+  
+
+
+
+
+
+
+
+<footer class="govuk-footer " role="contentinfo"
+        >
+  <div class="govuk-width-container ">
+    
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+          <h2 class="govuk-visually-hidden">Support links</h2>
+              <ul class="govuk-footer__inline-list">
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          
+          
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+          
+        
+        <svg
+          role="presentation"
+          focusable="false"
+          class="govuk-footer__licence-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 483.2 195.7"
+          height="17"
+          width="41"
+        >
+          <path
+            fill="currentColor"
+            d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+          />
+        </svg>
+        <span class="govuk-footer__licence-description">
+          All content is available under the
+          <a
+            class="govuk-footer__link"
+            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+            rel="license"
+          >Open Government Licence v3.0</a>, except where otherwise stated
+        </span>
+      </div>
+      <div class="govuk-footer__meta-item">
+        <a
+          class="govuk-footer__link govuk-footer__copyright-logo"
+          href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+        >© Crown copyright</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+<script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+	
+
+	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
+
+	
+	
+	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+	
+
+
+
+
+
+  </body>
+</html>
