@@ -2,38 +2,25 @@
 <html lang="en" class="govuk-template ">
   <head>
     <meta charset="utf-8">
-    <title>Brownfield-land | Digital Land</title>
+    <title> | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c"> 
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#0b0c0c">     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    
       <link rel="manifest" href="/site.webmanifest">
       <link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
       <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
       <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
       <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    
 
-    
-
-	<meta name="dl-template" content="dlf-base.html">
-	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
-	<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
-    
-    
+    <meta name="dl-template" content="dlf-base.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
     <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
   <body class="govuk-template__body ">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
-    
 
-    
       <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
-    
 
-    
 <!-- Cookie banner partial version 1.0.1 -->
 <div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
 
@@ -61,18 +48,14 @@
     <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
   </div>
 
-</div>
-
-
-<header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+</div><header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
   <div class="govuk-header__container govuk-width-container">
     <div class="header-proposition">
       <div class="govuk-header__content">
         <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
         Digital Land
         </a>
-        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
-        <nav>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>        <nav>
           <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
             <li class="govuk-header__navigation-item">
               <a class="govuk-header__link" href="/about">Team</a>
@@ -100,17 +83,12 @@
             </li>
           </ul>
         </nav>
-        </div>
+</div>
     </div>
   </div>
 </header>
 
-
-
-    
       <div class="govuk-width-container ">
-        
-  
 <div class="govuk-phase-banner">
   <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
   prototype
@@ -118,397 +96,368 @@
       This is a prototype. Please provide feedback to the Digital Land team.
     </span>
   </p>
-</div>
-  
-<div class="govuk-breadcrumbs ">
+</div><div class="govuk-breadcrumbs ">
   <ol class="govuk-breadcrumbs__list">
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="/">Digital Land</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="../../">Brownfield Land</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="../">Local Authority Eng</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item" aria-current="page">STA</li>
-    
-  
   </ol>
-</div>
-        <main class="govuk-main-wrapper " id="main-content" role="main">
-          
+</div>        <main class="govuk-main-wrapper " id="main-content" role="main">
 
-<h1 class="govuk-heading-xl">Brownfield land</h1>
+<h1 class="govuk-heading-xl"></h1>
 
+    <form class="filter-organisations-list__form filter-organisations-list__form--active govuk-!-margin-bottom-9" data-filter="form">
+        <label class="filter-list__label govuk-label govuk-!-font-weight-bold" for="filter-organisations-list">I'm looking for</label>
+        <input class="filter-list__input govuk-input" type="text" id="filter-organisations-list" placeholder="For example, Harrogate Borough Council">
+    </form>
 
+    <div class="js-no-filter-list-matches"><p class="govuk-body">No matches.</p></div> <!-- needs to go outside of index-list-wrapper -->
+    <div class="index-list-wrapper">
+            <div class="count-wrapper">
+                <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">42</span> records.</p>
+                <p class="govuk-visually-hidden">There are
+                    <span class="js-accessible-list-count">42</span>
+                    records listed.
+                </p>
+            </div>
 
-<p class="govuk-body">Showing 42 records.</p>
-
-
-
-
-<table class="dl-index-list">
-  <tbody><tr>
+            <table class="dl-index-list" data-filter="list">
+  <tbody><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./16-24628-FUL">16-24628-FUL</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./16-24628-FUL" data-filter="match-content">16-24628-FUL</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">16/24628/FUL</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">16/24628/FUL</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./18-28772-OUT">18-28772-OUT</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./18-28772-OUT" data-filter="match-content">18-28772-OUT</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">18/28772/OUT</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">18/28772/OUT</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./128-North-Walls--Stafford">128-North-Walls--Stafford</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./36-Rowley-Street--Stafford" data-filter="match-content">36-Rowley-Street--Stafford</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">128 North Walls, Stafford</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">36 Rowley Street, Stafford</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./36-Rowley-Street--Stafford">36-Rowley-Street--Stafford</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./43-Eccleshall-Road--Stafford--ST16-2SL" data-filter="match-content">43-Eccleshall-Road--Stafford--ST16-2SL</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">36 Rowley Street, Stafford</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">43 Eccleshall Road, Stafford, ST16 2SL</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./69-70-Foregate-Street--Stafford">69-70-Foregate-Street--Stafford</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./69-70-Foregate-Street--Stafford" data-filter="match-content">69-70-Foregate-Street--Stafford</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">69-70 Foregate Street, Stafford</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">69-70 Foregate Street, Stafford</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Areva-Fairway--Stafford">Areva-Fairway--Stafford</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./128-North-Walls--Stafford" data-filter="match-content">128-North-Walls--Stafford</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Areva Fairway, Stafford</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">128 North Walls, Stafford</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./CC4-Greengate-Street--Stafford">CC4-Greengate-Street--Stafford</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Areva-Fairway--Stafford" data-filter="match-content">Areva-Fairway--Stafford</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">CC4 Greengate Street, Stafford</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Areva Fairway, Stafford</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Former-Castleworks---Castle-Street--Stafford">Former-Castleworks---Castle-Street--Stafford</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Britannia-House--6-7-Eastgate-Street--Stafford--Staffordshire--ST16-2NQ" data-filter="match-content">Britannia-House--6-7-Eastgate-Street--Stafford--Staffordshire--ST16-2NQ</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Former Castleworks , Castle Street, Stafford</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Britannia House, 6-7 Eastgate Street, Stafford, Staffordshire, ST16 2NQ</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Land-adjacent-to-Yew-Tree-House--Egg-Lane--Hixon">Land-adjacent-to-Yew-Tree-House--Egg-Lane--Hixon</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./CC4-Greengate-Street--Stafford" data-filter="match-content">CC4-Greengate-Street--Stafford</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Land adjacent to Yew Tree House, Egg Lane, Hixon</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">CC4 Greengate Street, Stafford</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Land-at-Elms-Business-Centre-Phase-2--Main-Road--Great-Haywood">Land-at-Elms-Business-Centre-Phase-2--Main-Road--Great-Haywood</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Claremont-Garage--Stafford-Road--Eccleshall--Stafford--Staffordshire--ST21-6JP" data-filter="match-content">Claremont-Garage--Stafford-Road--Eccleshall--Stafford--Staffordshire--ST21-6JP</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Land at Elms Business Centre Phase 2, Main Road, Great Haywood</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Claremont Garage, Stafford Road, Eccleshall, Stafford, Staffordshire, ST21 6JP</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Land-at-Elms-Business-Centre--Main-Road--Great-Haywood">Land-at-Elms-Business-Centre--Main-Road--Great-Haywood</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Former-Castleworks---Castle-Street--Stafford" data-filter="match-content">Former-Castleworks---Castle-Street--Stafford</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Land at Elms Business Centre, Main Road, Great Haywood</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Former Castleworks , Castle Street, Stafford</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Land-at-Former-Carers-Centre--Austin-Friars--Stafford">Land-at-Former-Carers-Centre--Austin-Friars--Stafford</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Former-Staffordshire-University-Campus--Beaconside-Campus--Beaconside--Stafford" data-filter="match-content">Former-Staffordshire-University-Campus--Beaconside-Campus--Beaconside--Stafford</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Land at Former Carers Centre, Austin Friars, Stafford</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Former Staffordshire University Campus, Beaconside Campus, Beaconside, Stafford</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Land-at-George-Street-Press-and-Car-Park--Fancy-Walk--Stafford">Land-at-George-Street-Press-and-Car-Park--Fancy-Walk--Stafford</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Land-SCC-Development-Service-Parcel-4--Riverway--Stafford" data-filter="match-content">Land-SCC-Development-Service-Parcel-4--Riverway--Stafford</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Land at George Street Press and Car Park, Fancy Walk, Stafford</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land SCC Development Service Parcel 4, Riverway, Stafford</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Land-at-Rock-House-Drive--Barlaston">Land-at-Rock-House-Drive--Barlaston</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Land-adjacent-to-Yew-Tree-House--Egg-Lane--Hixon" data-filter="match-content">Land-adjacent-to-Yew-Tree-House--Egg-Lane--Hixon</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Land at Rock House Drive, Barlaston</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land adjacent to Yew Tree House, Egg Lane, Hixon</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Land-at-Silkmore-Lane--Stafford">Land-at-Silkmore-Lane--Stafford</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Land-at-Elms-Business-Centre--Main-Road--Great-Haywood" data-filter="match-content">Land-at-Elms-Business-Centre--Main-Road--Great-Haywood</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Land at Silkmore Lane, Stafford</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land at Elms Business Centre, Main Road, Great Haywood</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Land-at-Walton-Garage-Car-Park--Milford-Road">Land-at-Walton-Garage-Car-Park--Milford-Road</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Land-at-Elms-Business-Centre-Phase-2--Main-Road--Great-Haywood" data-filter="match-content">Land-at-Elms-Business-Centre-Phase-2--Main-Road--Great-Haywood</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Land at Walton Garage Car Park, Milford Road</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land at Elms Business Centre Phase 2, Main Road, Great Haywood</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Land-at-Yarnfield-Park--Yarnfield">Land-at-Yarnfield-Park--Yarnfield</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Land-at-Former-Carers-Centre--Austin-Friars--Stafford" data-filter="match-content">Land-at-Former-Carers-Centre--Austin-Friars--Stafford</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Land at Yarnfield Park, Yarnfield</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land at Former Carers Centre, Austin Friars, Stafford</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Land-SCC-Development-Service-Parcel-4--Riverway--Stafford">Land-SCC-Development-Service-Parcel-4--Riverway--Stafford</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Land-at-George-Street-Press-and-Car-Park--Fancy-Walk--Stafford" data-filter="match-content">Land-at-George-Street-Press-and-Car-Park--Fancy-Walk--Stafford</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Land SCC Development Service Parcel 4, Riverway, Stafford</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land at George Street Press and Car Park, Fancy Walk, Stafford</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Lichfield-House--24a-Lovatt-Street--Stafford">Lichfield-House--24a-Lovatt-Street--Stafford</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Land-at-Rock-House-Drive--Barlaston" data-filter="match-content">Land-at-Rock-House-Drive--Barlaston</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Lichfield House, 24a Lovatt Street, Stafford</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land at Rock House Drive, Barlaston</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Rickerscote-Arms--Rickerscote-Road--Stafford">Rickerscote-Arms--Rickerscote-Road--Stafford</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Land-at-Silkmore-Lane--Stafford" data-filter="match-content">Land-at-Silkmore-Lane--Stafford</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Rickerscote Arms, Rickerscote Road, Stafford</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land at Silkmore Lane, Stafford</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Sandon-Road-Motors--Sandon-Road">Sandon-Road-Motors--Sandon-Road</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Land-at-Walton-Garage-Car-Park--Milford-Road" data-filter="match-content">Land-at-Walton-Garage-Car-Park--Milford-Road</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Sandon Road Motors, Sandon Road</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land at Walton Garage Car Park, Milford Road</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./The-Albridge-Hotel--72-73-Wolverhampton-Road--Stafford">The-Albridge-Hotel--72-73-Wolverhampton-Road--Stafford</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Land-at-Yarnfield-Park--Yarnfield" data-filter="match-content">Land-at-Yarnfield-Park--Yarnfield</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">The Albridge Hotel, 72-73 Wolverhampton Road, Stafford</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Land at Yarnfield Park, Yarnfield</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./The-Whitehouse--Chapel-Street--Stafford">The-Whitehouse--Chapel-Street--Stafford</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Lank-at-Bank-Top-Garage--Stafford-Road--Gnosall--Staffs--ST20-0EU" data-filter="match-content">Lank-at-Bank-Top-Garage--Stafford-Road--Gnosall--Staffs--ST20-0EU</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">The Whitehouse, Chapel Street, Stafford</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Lank at Bank Top Garage, Stafford Road, Gnosall, Staffs, ST20 0EU</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Whitebridge-Lane--Stone--Staffordshire">Whitebridge-Lane--Stone--Staffordshire</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Leisure-Complex--Yarnfield-Park" data-filter="match-content">Leisure-Complex--Yarnfield-Park</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Whitebridge Lane, Stone, Staffordshire</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Leisure Complex, Yarnfield Park</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./St-John-s-church--Granville-Terrace--Stone--Staffordshire--ST15-8DF">St-John-s-church--Granville-Terrace--Stone--Staffordshire--ST15-8DF</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Lichfield-House--24a-Lovatt-Street--Stafford" data-filter="match-content">Lichfield-House--24a-Lovatt-Street--Stafford</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">St John&#39;s church, Granville Terrace, Stone, Staffordshire, ST15 8DF</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Lichfield House, 24a Lovatt Street, Stafford</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./St-Dominics-Priory-Boarding-School--Hallahan-House--Mount-Road--Stone--Staffordshire--ST15-8LJ">St-Dominics-Priory-Boarding-School--Hallahan-House--Mount-Road--Stone--Staffordshire--ST15-8LJ</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./McDermot--Salt-Works-Farm--Salt-Works-Lane--Weston--Stafford--Staffordshire" data-filter="match-content">McDermot--Salt-Works-Farm--Salt-Works-Lane--Weston--Stafford--Staffordshire</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">St Dominics Priory Boarding School, Hallahan House, Mount Road, Stone, Staffordshire, ST15 8LJ</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">McDermot, Salt Works Farm, Salt Works Lane, Weston, Stafford, Staffordshire</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Truview--12-Sandon-Road--Stafford--Staffordshire--ST16-3ES">Truview--12-Sandon-Road--Stafford--Staffordshire--ST16-3ES</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Midfield-Nurseries-Garden-Centre" data-filter="match-content">Midfield-Nurseries-Garden-Centre</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Truview, 12 Sandon Road, Stafford, Staffordshire, ST16 3ES</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Midfield Nurseries Garden Centre</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Claremont-Garage--Stafford-Road--Eccleshall--Stafford--Staffordshire--ST21-6JP">Claremont-Garage--Stafford-Road--Eccleshall--Stafford--Staffordshire--ST21-6JP</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Rickerscote-Arms--Rickerscote-Road--Stafford" data-filter="match-content">Rickerscote-Arms--Rickerscote-Road--Stafford</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Claremont Garage, Stafford Road, Eccleshall, Stafford, Staffordshire, ST21 6JP</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Rickerscote Arms, Rickerscote Road, Stafford</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./43-Eccleshall-Road--Stafford--ST16-2SL">43-Eccleshall-Road--Stafford--ST16-2SL</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Sandon-Road-Motors--Sandon-Road" data-filter="match-content">Sandon-Road-Motors--Sandon-Road</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">43 Eccleshall Road, Stafford, ST16 2SL</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Sandon Road Motors, Sandon Road</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./McDermot--Salt-Works-Farm--Salt-Works-Lane--Weston--Stafford--Staffordshire">McDermot--Salt-Works-Farm--Salt-Works-Lane--Weston--Stafford--Staffordshire</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Silver-Birches--Stone-Road" data-filter="match-content">Silver-Birches--Stone-Road</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">McDermot, Salt Works Farm, Salt Works Lane, Weston, Stafford, Staffordshire</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Silver Birches, Stone Road</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Woodville--158-Oulton-Road--Stone--Staffordshire--ST15-8DR">Woodville--158-Oulton-Road--Stone--Staffordshire--ST15-8DR</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./St-Dominics-Priory-Boarding-School--Hallahan-House--Mount-Road--Stone--Staffordshire--ST15-8LJ" data-filter="match-content">St-Dominics-Priory-Boarding-School--Hallahan-House--Mount-Road--Stone--Staffordshire--ST15-8LJ</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Woodville, 158 Oulton Road, Stone, Staffordshire, ST15 8DR</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">St Dominics Priory Boarding School, Hallahan House, Mount Road, Stone, Staffordshire, ST15 8LJ</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Staffordshire-Police-Headquarters--Cannock-Road--Stafford">Staffordshire-Police-Headquarters--Cannock-Road--Stafford</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./St-John-s-church--Granville-Terrace--Stone--Staffordshire--ST15-8DF" data-filter="match-content">St-John-s-church--Granville-Terrace--Stone--Staffordshire--ST15-8DF</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Staffordshire Police Headquarters, Cannock Road, Stafford</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">St John&#39;s church, Granville Terrace, Stone, Staffordshire, ST15 8DF</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Britannia-House--6-7-Eastgate-Street--Stafford--Staffordshire--ST16-2NQ">Britannia-House--6-7-Eastgate-Street--Stafford--Staffordshire--ST16-2NQ</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Stafford-Police-Station" data-filter="match-content">Stafford-Police-Station</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Britannia House, 6-7 Eastgate Street, Stafford, Staffordshire, ST16 2NQ</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Stafford Police Station</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Lank-at-Bank-Top-Garage--Stafford-Road--Gnosall--Staffs--ST20-0EU">Lank-at-Bank-Top-Garage--Stafford-Road--Gnosall--Staffs--ST20-0EU</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Staffordshire-Police-Headquarters--Cannock-Road--Stafford" data-filter="match-content">Staffordshire-Police-Headquarters--Cannock-Road--Stafford</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Lank at Bank Top Garage, Stafford Road, Gnosall, Staffs, ST20 0EU</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Staffordshire Police Headquarters, Cannock Road, Stafford</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Former-Staffordshire-University-Campus--Beaconside-Campus--Beaconside--Stafford">Former-Staffordshire-University-Campus--Beaconside-Campus--Beaconside--Stafford</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Stone-Highways-Depot--Newcastle-Road--Stone--Staffs--ST15-8LD" data-filter="match-content">Stone-Highways-Depot--Newcastle-Road--Stone--Staffs--ST15-8LD</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Former Staffordshire University Campus, Beaconside Campus, Beaconside, Stafford</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Stone Highways Depot, Newcastle Road, Stone, Staffs, ST15 8LD</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Stafford-Police-Station">Stafford-Police-Station</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Stone-Police-Station" data-filter="match-content">Stone-Police-Station</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Stafford Police Station</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Stone Police Station</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Stone-Highways-Depot--Newcastle-Road--Stone--Staffs--ST15-8LD">Stone-Highways-Depot--Newcastle-Road--Stone--Staffs--ST15-8LD</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./The-Albridge-Hotel--72-73-Wolverhampton-Road--Stafford" data-filter="match-content">The-Albridge-Hotel--72-73-Wolverhampton-Road--Stafford</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Stone Highways Depot, Newcastle Road, Stone, Staffs, ST15 8LD</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">The Albridge Hotel, 72-73 Wolverhampton Road, Stafford</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Stone-Police-Station">Stone-Police-Station</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./The-Whitehouse--Chapel-Street--Stafford" data-filter="match-content">The-Whitehouse--Chapel-Street--Stafford</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Stone Police Station</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">The Whitehouse, Chapel Street, Stafford</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Midfield-Nurseries-Garden-Centre">Midfield-Nurseries-Garden-Centre</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Truview--12-Sandon-Road--Stafford--Staffordshire--ST16-3ES" data-filter="match-content">Truview--12-Sandon-Road--Stafford--Staffordshire--ST16-3ES</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Midfield Nurseries Garden Centre</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Truview, 12 Sandon Road, Stafford, Staffordshire, ST16 3ES</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Leisure-Complex--Yarnfield-Park">Leisure-Complex--Yarnfield-Park</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Wellbeing-Park--Yarnfield-Lane" data-filter="match-content">Wellbeing-Park--Yarnfield-Lane</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Leisure Complex, Yarnfield Park</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Wellbeing Park, Yarnfield Lane</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Silver-Birches--Stone-Road">Silver-Birches--Stone-Road</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Whitebridge-Lane--Stone--Staffordshire" data-filter="match-content">Whitebridge-Lane--Stone--Staffordshire</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Silver Birches, Stone Road</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Whitebridge Lane, Stone, Staffordshire</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Wellbeing-Park--Yarnfield-Lane">Wellbeing-Park--Yarnfield-Lane</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./Woodville--158-Oulton-Road--Stone--Staffordshire--ST15-8DR" data-filter="match-content">Woodville--158-Oulton-Road--Stone--Staffordshire--ST15-8DR</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">Wellbeing Park, Yarnfield Lane</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Woodville, 158 Oulton Road, Stone, Staffordshire, ST15 8DR</p>
   </td>
 </tr></tbody>
 </table>
 
 
+    </div>
 
         </main>
       </div>
-    
-
-    
-  
-
-
-
-
-
 
 
 <footer class="govuk-footer " role="contentinfo"
-        >
+>
   <div class="govuk-width-container ">
-    
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-        
-          <h2 class="govuk-visually-hidden">Support links</h2>
-              <ul class="govuk-footer__inline-list">
-                
+          <h2 class="govuk-visually-hidden">Support links</h2>              <ul class="govuk-footer__inline-list">
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/cookies">
                       Cookies
                     </a>
                   </li>
-                
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/accessibility-statement">
                       Accessibility statement
                     </a>
                   </li>
-                
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/design-system">
                       Design system
                     </a>
                   </li>
-                
               </ul>
-            
-          
-          
             <div class="govuk-footer__meta-custom">
               The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
             </div>
-          
-        
         <svg
           role="presentation"
           focusable="false"
@@ -541,13 +490,9 @@
     </div>
   </div>
 </footer>
-
-
-    
-<script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
 	<script async src='https://www.google-analytics.com/analytics.js'></script>
 	<!-- end google analytics -->
-	
 
 	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
 	<script>
@@ -555,15 +500,11 @@
 		window.GOVUKFrontend.initAll();
 	</script>
 
-	
-	
 	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
 	<script>
 		// adds any necessary polyfills
 		window.DLFrontend.polyfill();
 	</script>
-	
-
 
 
 

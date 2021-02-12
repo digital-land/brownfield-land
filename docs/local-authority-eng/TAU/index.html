@@ -2,38 +2,25 @@
 <html lang="en" class="govuk-template ">
   <head>
     <meta charset="utf-8">
-    <title>Brownfield-land | Digital Land</title>
+    <title> | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b0c0c"> 
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#0b0c0c">     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    
       <link rel="manifest" href="/site.webmanifest">
       <link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
       <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
       <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
       <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    
 
-    
-
-	<meta name="dl-template" content="dlf-base.html">
-	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
-	<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
-    
-    
+    <meta name="dl-template" content="dlf-base.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
     <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
   <body class="govuk-template__body ">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
-    
 
-    
       <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
-    
 
-    
 <!-- Cookie banner partial version 1.0.1 -->
 <div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
 
@@ -61,18 +48,14 @@
     <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
   </div>
 
-</div>
-
-
-<header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+</div><header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
   <div class="govuk-header__container govuk-width-container">
     <div class="header-proposition">
       <div class="govuk-header__content">
         <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
         Digital Land
         </a>
-        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
-        <nav>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>        <nav>
           <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
             <li class="govuk-header__navigation-item">
               <a class="govuk-header__link" href="/about">Team</a>
@@ -100,17 +83,12 @@
             </li>
           </ul>
         </nav>
-        </div>
+</div>
     </div>
   </div>
 </header>
 
-
-
-    
       <div class="govuk-width-container ">
-        
-  
 <div class="govuk-phase-banner">
   <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
   prototype
@@ -118,404 +96,375 @@
       This is a prototype. Please provide feedback to the Digital Land team.
     </span>
   </p>
-</div>
-  
-<div class="govuk-breadcrumbs ">
+</div><div class="govuk-breadcrumbs ">
   <ol class="govuk-breadcrumbs__list">
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="/">Digital Land</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="../../">Brownfield Land</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="../">Local Authority Eng</a>
     </li>
-    
-  
-    
     <li class="govuk-breadcrumbs__list-item" aria-current="page">TAU</li>
-    
-  
   </ol>
-</div>
-        <main class="govuk-main-wrapper " id="main-content" role="main">
-          
+</div>        <main class="govuk-main-wrapper " id="main-content" role="main">
 
-<h1 class="govuk-heading-xl">Brownfield land</h1>
+<h1 class="govuk-heading-xl"></h1>
 
+    <form class="filter-organisations-list__form filter-organisations-list__form--active govuk-!-margin-bottom-9" data-filter="form">
+        <label class="filter-list__label govuk-label govuk-!-font-weight-bold" for="filter-organisations-list">I'm looking for</label>
+        <input class="filter-list__input govuk-input" type="text" id="filter-organisations-list" placeholder="For example, Harrogate Borough Council">
+    </form>
 
+    <div class="js-no-filter-list-matches"><p class="govuk-body">No matches.</p></div> <!-- needs to go outside of index-list-wrapper -->
+    <div class="index-list-wrapper">
+            <div class="count-wrapper">
+                <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">43</span> records.</p>
+                <p class="govuk-visually-hidden">There are
+                    <span class="js-accessible-list-count">43</span>
+                    records listed.
+                </p>
+            </div>
 
-<p class="govuk-body">Showing 43 records.</p>
-
-
-
-
-<table class="dl-index-list">
-  <tbody><tr>
+            <table class="dl-index-list" data-filter="list">
+  <tbody><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./06-08-0010">06-08-0010</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./06-08-0010" data-filter="match-content">06-08-0010</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">06/08/0010</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">06/08/0010</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./06-15-0019">06-15-0019</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./06-15-0019" data-filter="match-content">06-15-0019</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">06/15/0019</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">06/15/0019</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./25-12-0032oa">25-12-0032oa</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./25-12-0017oa" data-filter="match-content">25-12-0017oa</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">25/12/0032oa</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">25/12/0017oa</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./25-13-0014">25-13-0014</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./25-12-0032oa" data-filter="match-content">25-12-0032oa</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">25/13/0014</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">25/12/0032oa</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./25-12-0017oa">25-12-0017oa</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./25-13-0014" data-filter="match-content">25-13-0014</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">25/12/0017oa</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">25/13/0014</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-05-0430">38-05-0430</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-05-0430" data-filter="match-content">38-05-0430</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">38/05/0430</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">38/05/0430</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-12-0164">38-12-0164</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-11-0596" data-filter="match-content">38-11-0596</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">38/12/0164</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">38/11/0596</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-11-0596">38-11-0596</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-12-0164" data-filter="match-content">38-12-0164</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">38/11/0596</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">38/12/0164</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-13-0477oa">38-13-0477oa</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-12-0234" data-filter="match-content">38-12-0234</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">38/13/0477oa</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">38/12/0234</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-15-0506">38-15-0506</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-12-0429" data-filter="match-content">38-12-0429</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">38/15/0506</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">38/12/0429</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-14-0076">38-14-0076</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-13-0420" data-filter="match-content">38-13-0420</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">38/14/0076</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">38/13/0420</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-12-0234">38-12-0234</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-13-0477oa" data-filter="match-content">38-13-0477oa</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">38/12/0234</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">38/13/0477oa</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-12-0429">38-12-0429</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-14-0076" data-filter="match-content">38-14-0076</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">38/12/0429</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">38/14/0076</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-13-0420">38-13-0420</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-14-0355" data-filter="match-content">38-14-0355</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">38/13/0420</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">38/14/0355</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-14-0355">38-14-0355</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-15-0506" data-filter="match-content">38-15-0506</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">38/14/0355</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">38/15/0506</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-16-0169">38-16-0169</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-16-0169" data-filter="match-content">38-16-0169</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">38/16/0169</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">38/16/0169</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-16-0425">38-16-0425</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-16-0345" data-filter="match-content">38-16-0345</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">38/16/0425</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">38/16/0345</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-16-0472">38-16-0472</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-16-0425" data-filter="match-content">38-16-0425</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">38/16/0472</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">38/16/0425</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-16-0484co">38-16-0484co</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-16-0472" data-filter="match-content">38-16-0472</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">38/16/0484co</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">38/16/0472</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./43-09-0062">43-09-0062</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-16-0484co" data-filter="match-content">38-16-0484co</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">43/09/0062</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">38/16/0484co</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./43-11-0080">43-11-0080</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-17-0224" data-filter="match-content">38-17-0224</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">43/11/0080</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">38/17/0224</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./43-12-0032">43-12-0032</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./43-09-0062" data-filter="match-content">43-09-0062</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">43/12/0032</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">43/09/0062</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./43-14-0137">43-14-0137</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./43-11-0080" data-filter="match-content">43-11-0080</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">43/14/0137</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">43/11/0080</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./43-15-0059">43-15-0059</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./43-12-0032" data-filter="match-content">43-12-0032</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">43/15/0059</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">43/12/0032</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./49-06-0008">49-06-0008</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./43-14-0137" data-filter="match-content">43-14-0137</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">49/06/0008</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">43/14/0137</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./49-15-0044">49-15-0044</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./43-15-0059" data-filter="match-content">43-15-0059</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">49/15/0044</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">43/15/0059</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./49-15-0058CO">49-15-0058CO</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./49-06-0008" data-filter="match-content">49-06-0008</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">49/15/0058CO</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">49/06/0008</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./53-16-0006">53-16-0006</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./49-15-0044" data-filter="match-content">49-15-0044</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">53/16/0006</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">49/15/0044</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-16-0345">38-16-0345</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./49-15-0058CO" data-filter="match-content">49-15-0058CO</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">38/16/0345</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">49/15/0058CO</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./38-17-0224">38-17-0224</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./53-16-0006" data-filter="match-content">53-16-0006</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">38/17/0224</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">53/16/0006</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHLAATAUN005">SHLAATAUN005</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHLAATAUN005" data-filter="match-content">SHLAATAUN005</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">SHLAATAUN005</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">SHLAATAUN005</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHLAATAUN007">SHLAATAUN007</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHLAATAUN007" data-filter="match-content">SHLAATAUN007</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">SHLAATAUN007</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">SHLAATAUN007</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHLAATAUN015">SHLAATAUN015</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHLAATAUN015" data-filter="match-content">SHLAATAUN015</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">SHLAATAUN015</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">SHLAATAUN015</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHLAATAUN016">SHLAATAUN016</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHLAATAUN016" data-filter="match-content">SHLAATAUN016</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">SHLAATAUN016</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">SHLAATAUN016</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHLAATAUN017">SHLAATAUN017</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHLAATAUN017" data-filter="match-content">SHLAATAUN017</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">SHLAATAUN017</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">SHLAATAUN017</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHLAATAUN018">SHLAATAUN018</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHLAATAUN018" data-filter="match-content">SHLAATAUN018</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">SHLAATAUN018</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">SHLAATAUN018</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHLAATAUN019">SHLAATAUN019</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHLAATAUN019" data-filter="match-content">SHLAATAUN019</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">SHLAATAUN019</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">SHLAATAUN019</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHLAATAUN020">SHLAATAUN020</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHLAATAUN020" data-filter="match-content">SHLAATAUN020</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">SHLAATAUN020</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">SHLAATAUN020</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHLAATAUN021">SHLAATAUN021</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHLAATAUN021" data-filter="match-content">SHLAATAUN021</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">SHLAATAUN021</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">SHLAATAUN021</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHLAATAUN024">SHLAATAUN024</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHLAATAUN024" data-filter="match-content">SHLAATAUN024</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">SHLAATAUN024</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">SHLAATAUN024</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHLAAWELL001">SHLAAWELL001</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHLAAWELL001" data-filter="match-content">SHLAAWELL001</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">SHLAAWELL001</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">SHLAAWELL001</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHLAAWELL002">SHLAAWELL002</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHLAAWELL002" data-filter="match-content">SHLAAWELL002</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">SHLAAWELL002</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">SHLAAWELL002</p>
   </td>
-</tr><tr>
+</tr><tr data-filter="item">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHLAAWELL003">SHLAAWELL003</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHLAAWELL003" data-filter="match-content">SHLAAWELL003</a></h4>
   </td>
   <td>
-    <p class="govuk-body govuk-!-margin-bottom-0">SHLAAWELL003</p>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">SHLAAWELL003</p>
   </td>
 </tr></tbody>
 </table>
 
 
+    </div>
 
         </main>
       </div>
-    
-
-    
-  
-
-
-
-
-
 
 
 <footer class="govuk-footer " role="contentinfo"
-        >
+>
   <div class="govuk-width-container ">
-    
     <div class="govuk-footer__meta">
       <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
-        
-          <h2 class="govuk-visually-hidden">Support links</h2>
-              <ul class="govuk-footer__inline-list">
-                
+          <h2 class="govuk-visually-hidden">Support links</h2>              <ul class="govuk-footer__inline-list">
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/cookies">
                       Cookies
                     </a>
                   </li>
-                
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/accessibility-statement">
                       Accessibility statement
                     </a>
                   </li>
-                
                   <li class="govuk-footer__inline-list-item">
                     <a class="govuk-footer__link" href="/design-system">
                       Design system
                     </a>
                   </li>
-                
               </ul>
-            
-          
-          
             <div class="govuk-footer__meta-custom">
               The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
             </div>
-          
-        
         <svg
           role="presentation"
           focusable="false"
@@ -548,13 +497,9 @@
     </div>
   </div>
 </footer>
-
-
-    
-<script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
 	<script async src='https://www.google-analytics.com/analytics.js'></script>
 	<!-- end google analytics -->
-	
 
 	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
 	<script>
@@ -562,15 +507,11 @@
 		window.GOVUKFrontend.initAll();
 	</script>
 
-	
-	
 	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
 	<script>
 		// adds any necessary polyfills
 		window.DLFrontend.polyfill();
 	</script>
-	
-
 
 
 
