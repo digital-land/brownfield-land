@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title> | Digital Land</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c">     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
+      <link rel="mask-icon" href="/assets/images/govuk-mask-icon.svg" color="#0b0c0c">       <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/govuk-apple-touch-icon-180x180.png">
+      <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/govuk-apple-touch-icon-167x167.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/govuk-apple-touch-icon-152x152.png">
+      <link rel="apple-touch-icon" href="/assets/images/govuk-apple-touch-icon.png">
+
+    	<meta name="digital-land:template" content="page-per-thing/index.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
+    <meta property="og:image" content="/assets/images/govuk-opengraph-image.png">
+  </head>
+  <body class="govuk-template__body ">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
+
+  <div id="cookie-banner" class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="cookie-banner__message govuk-!-margin-top-6">
+          <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+          <p class="govuk-body">We use <a class="govuk-link" href="/cookies">cookies to collect information</a> about how you use the Digital Land website to make the website work as well as possible.</p>
+        </div>
+        <div class="cooke-banner__buttons govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie-confirmation" class="govuk-width-container govuk-!-padding-top-6" tabindex="-1" style="display: none;">
+    <p class="cookie-banner__confirmation-message govuk-body">You’ve accepted all cookies. You can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
+    <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
+  </div>
+
+</div><header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="header-proposition">
+      <div class="govuk-header__content">
+        <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
+        Digital Land
+        </a>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>        <nav>
+          <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/about">Team</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/project/">Projects</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/weeknote/">Weeknotes</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/blog-post/">Blog</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/guidance/">Guidance</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/dataset/">Datasets</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/organisation/">Organisations</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/map/">Map</a>
+            </li>
+          </ul>
+        </nav>
+</div>
+    </div>
+  </div>
+</header>
+
+      <div class="govuk-width-container ">
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+  prototype
+</strong><span class="govuk-phase-banner__text">
+      This is a prototype. Please provide feedback to the Digital Land team.
+    </span>
+  </p>
+</div><div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/">Digital Land</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="../../">Brownfield Land</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="../">Local Authority Eng</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">OLD</li>
+  </ol>
+</div>        <main class="govuk-main-wrapper " id="main-content" role="main">
+
+<h1 class="govuk-heading-xl"></h1>
+
+    <form class="filter-organisations-list__form govuk-!-margin-bottom-9" data-filter="form">
+        <label class="filter-list__label govuk-label govuk-!-font-weight-bold" for="filter-organisations-list">I'm looking for</label>
+        <input class="filter-list__input govuk-input" type="text" id="filter-organisations-list" placeholder="For example, Harrogate Borough Council">
+    </form>
+    <div class="js-no-filter-list-matches"><p class="govuk-body">No matches.</p></div> <!-- needs to go outside of index-list-wrapper -->
+
+
+        <div class="index-list-wrapper">
+            <div class="count-wrapper">
+                <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">113</span> records.</p>
+                <p class="govuk-visually-hidden">There are
+                    <span class="js-accessible-list-count">113</span>
+                    records listed.
+                </p>
+            </div>        <form action="" class="govuk-form govuk-!-margin-bottom-4 dl-historical-toggle-form js-hidden" data-historical="form">
+            <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="hsitorical" name="hsitorical" type="checkbox" value="show">
+                    <label class="govuk-label govuk-checkboxes__label" for="hsitorical">
+                    Show historical records
+                    </label>
+                </div>
+            </div>
+        </form>
+<table class="dl-index-list"
+ data-filter="list" data-historical='list'>
+  <tbody>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA1863" data-filter="match-content">HLA1863</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2088" data-filter="match-content">HLA2088</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2091-2-" data-filter="match-content">HLA2091(2)</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2101" data-filter="match-content">HLA2101</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2118" data-filter="match-content">HLA2118</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2147" data-filter="match-content">HLA2147</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2207" data-filter="match-content">HLA2207</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2234" data-filter="match-content">HLA2234</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2338-1-" data-filter="match-content">HLA2338(1)</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2351" data-filter="match-content">HLA2351</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2352" data-filter="match-content">HLA2352</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2353" data-filter="match-content">HLA2353</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2368" data-filter="match-content">HLA2368</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2377" data-filter="match-content">HLA2377</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2409" data-filter="match-content">HLA2409</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2445" data-filter="match-content">HLA2445</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2449" data-filter="match-content">HLA2449</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2516" data-filter="match-content">HLA2516</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2650" data-filter="match-content">HLA2650</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2659" data-filter="match-content">HLA2659</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2661" data-filter="match-content">HLA2661</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2662" data-filter="match-content">HLA2662</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2663" data-filter="match-content">HLA2663</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2664" data-filter="match-content">HLA2664</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2771" data-filter="match-content">HLA2771</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2785" data-filter="match-content">HLA2785</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2796" data-filter="match-content">HLA2796</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2821" data-filter="match-content">HLA2821</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2831" data-filter="match-content">HLA2831</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2835" data-filter="match-content">HLA2835</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2836" data-filter="match-content">HLA2836</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2840" data-filter="match-content">HLA2840</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2842" data-filter="match-content">HLA2842</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2856" data-filter="match-content">HLA2856</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2872" data-filter="match-content">HLA2872</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2893" data-filter="match-content">HLA2893</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2902" data-filter="match-content">HLA2902</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2923" data-filter="match-content">HLA2923</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA2965" data-filter="match-content">HLA2965</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA3008" data-filter="match-content">HLA3008</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA3028" data-filter="match-content">HLA3028</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA3051" data-filter="match-content">HLA3051</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA3082" data-filter="match-content">HLA3082</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA3102" data-filter="match-content">HLA3102</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA3104" data-filter="match-content">HLA3104</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA3118" data-filter="match-content">HLA3118</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA3120" data-filter="match-content">HLA3120</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA3159" data-filter="match-content">HLA3159</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA3160" data-filter="match-content">HLA3160</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA3240" data-filter="match-content">HLA3240</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA3258" data-filter="match-content">HLA3258</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA3267" data-filter="match-content">HLA3267</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA3277" data-filter="match-content">HLA3277</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA3289" data-filter="match-content">HLA3289</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA3308" data-filter="match-content">HLA3308</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA3318" data-filter="match-content">HLA3318</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA3318-1-" data-filter="match-content">HLA3318(1)</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA3319" data-filter="match-content">HLA3319</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA3353" data-filter="match-content">HLA3353</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./HLA3384" data-filter="match-content">HLA3384</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA0086" data-filter="match-content">SHA0086</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA0139" data-filter="match-content">SHA0139</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA0161" data-filter="match-content">SHA0161</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA0203" data-filter="match-content">SHA0203</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA0820" data-filter="match-content">SHA0820</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA0899" data-filter="match-content">SHA0899</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA0901" data-filter="match-content">SHA0901</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA1006" data-filter="match-content">SHA1006</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA1026" data-filter="match-content">SHA1026</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA1066" data-filter="match-content">SHA1066</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA1080" data-filter="match-content">SHA1080</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA1084" data-filter="match-content">SHA1084</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA1128" data-filter="match-content">SHA1128</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA1217" data-filter="match-content">SHA1217</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA1225" data-filter="match-content">SHA1225</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA1314" data-filter="match-content">SHA1314</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA1331" data-filter="match-content">SHA1331</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA1332" data-filter="match-content">SHA1332</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA1370" data-filter="match-content">SHA1370</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA1372" data-filter="match-content">SHA1372</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA1384" data-filter="match-content">SHA1384</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA1599" data-filter="match-content">SHA1599</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA1606" data-filter="match-content">SHA1606</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA1630" data-filter="match-content">SHA1630</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA1660" data-filter="match-content">SHA1660</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA1667" data-filter="match-content">SHA1667</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA1716" data-filter="match-content">SHA1716</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA1723" data-filter="match-content">SHA1723</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA1725" data-filter="match-content">SHA1725</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA1792" data-filter="match-content">SHA1792</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA1797" data-filter="match-content">SHA1797</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA1858" data-filter="match-content">SHA1858</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA1992" data-filter="match-content">SHA1992</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA1997" data-filter="match-content">SHA1997</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA2000" data-filter="match-content">SHA2000</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA2001" data-filter="match-content">SHA2001</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA2002" data-filter="match-content">SHA2002</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA2015" data-filter="match-content">SHA2015</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA2016" data-filter="match-content">SHA2016</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA2017" data-filter="match-content">SHA2017</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA2019" data-filter="match-content">SHA2019</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA2031" data-filter="match-content">SHA2031</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA2032" data-filter="match-content">SHA2032</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA2043" data-filter="match-content">SHA2043</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA2046" data-filter="match-content">SHA2046</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA2047" data-filter="match-content">SHA2047</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA2049" data-filter="match-content">SHA2049</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA2051" data-filter="match-content">SHA2051</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA2052" data-filter="match-content">SHA2052</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA2055" data-filter="match-content">SHA2055</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA2058" data-filter="match-content">SHA2058</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA2059" data-filter="match-content">SHA2059</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHA2060" data-filter="match-content">SHA2060</a>
+    </h4>
+  </td>
+  <td>
+  </td>
+</tr></tbody>
+</table>
+
+        </div>
+
+
+        </main>
+      </div>
+
+
+<footer class="govuk-footer " role="contentinfo"
+>
+  <div class="govuk-width-container ">
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+          <h2 class="govuk-visually-hidden">Support links</h2>              <ul class="govuk-footer__inline-list">
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+              </ul>
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+        <svg
+          role="presentation"
+          focusable="false"
+          class="govuk-footer__licence-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 483.2 195.7"
+          height="17"
+          width="41"
+        >
+          <path
+            fill="currentColor"
+            d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+          />
+        </svg>
+        <span class="govuk-footer__licence-description">
+          All content is available under the
+          <a
+            class="govuk-footer__link"
+            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+            rel="license"
+          >Open Government Licence v3.0</a>, except where otherwise stated
+        </span>
+      </div>
+      <div class="govuk-footer__meta-item">
+        <a
+          class="govuk-footer__link govuk-footer__copyright-logo"
+          href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+        >© Crown copyright</a>
+      </div>
+    </div>
+  </div>
+</footer>
+    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+
+	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
+
+	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+
+
+
+
+        <script>
+        // initialise list filter
+        const $form = document.querySelector('[data-filter="form"]');
+        new window.DLFrontend.FilterList($form).init({
+            list_section_selector: '.index-list-wrapper',
+            count_wrapper_selector: '.count-wrapper'
+        })
+        </script>
+        <script>
+            const showCounts = true
+            const $hist = document.querySelector('[data-historical="form"]');
+            new window.DLFrontend.FilterHistorical($hist).init({
+                triggerEvents: "list:filtered",
+                listWrapperSelector: '.index-list-wrapper',
+                showCountsWhenShowingAll: showCounts
+            })
+        </script>
+
+  </body>
+</html>
