@@ -12,7 +12,7 @@
       <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
       <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
-    <meta name="dl-template" content="dlf-base.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+    	<meta name="digital-land:template" content="page-per-thing/index.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
 <script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
     <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
@@ -114,93 +114,40 @@
 <h1 class="govuk-heading-xl"></h1>
 
 
-    <div class="index-list-wrapper">
+
+        <div class="index-list-wrapper">
             <div class="count-wrapper">
-                <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">12</span> records.</p>
+                <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">1</span> records.</p>
                 <p class="govuk-visually-hidden">There are
-                    <span class="js-accessible-list-count">12</span>
+                    <span class="js-accessible-list-count">1</span>
                     records listed.
                 </p>
+            </div>        <form action="" class="govuk-form govuk-!-margin-bottom-4 dl-historical-toggle-form js-hidden" data-historical="form">
+            <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="hsitorical" name="hsitorical" type="checkbox" value="show">
+                    <label class="govuk-label govuk-checkboxes__label" for="hsitorical">
+                    Show historical records
+                    </label>
+                </div>
             </div>
-
-            <table class="dl-index-list" data-filter="list">
-  <tbody><tr data-filter="item">
+        </form>
+<table class="dl-index-list"
+ data-filter="list" data-historical='list'>
+  <tbody>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./18-28018-FUL" data-filter="match-content">18/28018/FUL</a></h4>
-  </td>
-  <td>
-  </td>
-</tr><tr data-filter="item">
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BF002" data-filter="match-content">BF002</a></h4>
-  </td>
-  <td>
-  </td>
-</tr><tr data-filter="item">
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BF006" data-filter="match-content">BF006</a></h4>
-  </td>
-  <td>
-  </td>
-</tr><tr data-filter="item">
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BF007" data-filter="match-content">BF007</a></h4>
-  </td>
-  <td>
-  </td>
-</tr><tr data-filter="item">
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BF012" data-filter="match-content">BF012</a></h4>
-  </td>
-  <td>
-  </td>
-</tr><tr data-filter="item">
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BF014" data-filter="match-content">BF014</a></h4>
-  </td>
-  <td>
-  </td>
-</tr><tr data-filter="item">
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BF015" data-filter="match-content">BF015</a></h4>
-  </td>
-  <td>
-  </td>
-</tr><tr data-filter="item">
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BF016" data-filter="match-content">BF016</a></h4>
-  </td>
-  <td>
-  </td>
-</tr><tr data-filter="item">
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BF019" data-filter="match-content">BF019</a></h4>
-  </td>
-  <td>
-  </td>
-</tr><tr data-filter="item">
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BF020" data-filter="match-content">BF020</a></h4>
-  </td>
-  <td>
-  </td>
-</tr><tr data-filter="item">
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BF021" data-filter="match-content">BF021</a></h4>
-  </td>
-  <td>
-  </td>
-</tr><tr data-filter="item">
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BF027" data-filter="match-content">BF027</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./18-28018-FUL" data-filter="match-content">18/28018/FUL</a>
+    </h4>
   </td>
   <td>
   </td>
 </tr></tbody>
 </table>
 
+        </div>
 
-    </div>
 
         </main>
       </div>
@@ -282,6 +229,15 @@
 
 
 
+        <script>
+            const showCounts = true
+            const $hist = document.querySelector('[data-historical="form"]');
+            new window.DLFrontend.FilterHistorical($hist).init({
+                triggerEvents: "list:filtered",
+                listWrapperSelector: '.index-list-wrapper',
+                showCountsWhenShowingAll: showCounts
+            })
+        </script>
 
   </body>
 </html>

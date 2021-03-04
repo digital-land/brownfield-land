@@ -12,8 +12,7 @@
       <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
       <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
-<meta name="dl-template" content="dlf-base.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
-<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>    <meta property="og:image" content="/images/govuk-opengraph-image.png">
+	<meta name="digital-land:template" content="page-per-thing/record.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />    <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
   <body class="govuk-template__body ">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
@@ -128,7 +127,7 @@
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">deliverable
             </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
+            <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">end-date
             </dt>
@@ -136,7 +135,7 @@
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
-            <dd class="govuk-summary-list__value">                2017-12-15            </dd>
+            <dd class="govuk-summary-list__value">                2019-12-16            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hazardous-substances
             </dt>
@@ -156,7 +155,7 @@
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">notes
             </dt>
-            <dd class="govuk-summary-list__value">                Planning application 160246 has resolution to grant permission subject to signing S106 agreement. Demolition of existing dwelling and erection of a part one, part two storey building comprising 2 x 1-bed and 6 x 2-bed flats, with associated parking, refuse store, and cycle store.            </dd>
+            <dd class="govuk-summary-list__value">                Permission 160246 under construction. Demolition of existing dwelling and erection of a part one, part two storey building comprising 2 x 1-bed and 6 x 2-bed flats, with associated parking, refuse store, and cycle store.            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -170,7 +169,7 @@
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-date
             </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
+            <dd class="govuk-summary-list__value">                2018-01-11            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-history
             </dt>
@@ -178,15 +177,11 @@
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
-            <dd class="govuk-summary-list__value">                not permissioned            </dd>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-type
             </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">point
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
+            <dd class="govuk-summary-list__value">                full planning permission            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site
             </dt>
@@ -194,19 +189,53 @@
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-plan-url
             </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.reading.gov.uk/media/8108/Brownfield-Register-Maps-BL4001-4023/pdf/Brownfield_Register_Maps_BL4001-4023.pdf">http://www.reading.gov.uk/media/8108/Brownfield-Register-Maps-BL4001-4023/pdf/Brownfield_Register_Maps_BL4001-4023.pdf</a>            </dd>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.reading.gov.uk/media/8108/Brownfield-Register-Maps-BL4001-4025/pdf/Brownfield_Land_Register_Maps_2019_4001_to_4025.pdf">https://www.reading.gov.uk/media/8108/Brownfield-Register-Maps-BL4001-4025/pdf/Brownfield_Land_Register_Maps_2019_4001_to_4025.pdf</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2017-12-15            </dd>
         </div>    
-    </dl>    <footer class="govuk-!-font-size-16 data-record__resource">From resource <a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/6e5c64158ac48d4c74b0d14d97297262b305f4de40f6f3ca21bb79885841b175.csv" class="govuk-link">6e5c64158ac48d4c7...</a></footer>
+    </dl>    <footer class="govuk-!-font-size-16 data-record__resource">From resource <a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/1ebc73d8061d28fa5ff47325ad0e37405cadea4c4ad8bf72d13a3ecf22e4a1fc.csv" class="govuk-link">1ebc73d8061d28fa5...</a></footer>
 </article>
 </div>
             
 </div>
 
-        </main>
+
+<!-- should make this optional, no need to load if not showing a map -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+crossorigin="" />
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+	integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+	crossorigin=""></script>
+
+<!-- assets needed for fullscreen maps -->
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+
+<!-- script needed for recentring map -->
+<script src="https://digital-land.github.io/javascripts/Leaflet.recentre.js"></script>
+
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
+    <h2 class="govuk-heading-m">Geographical area</h2>
+
+    <div class="dl-map__wrapper"><div 
+        class="dl-map govuk-!-margin-top-4 govuk-!-margin-bottom-2"
+        id="aMap"
+        data-module="boundary-map"
+        style="height: 460px;" data-geojson-urls="geometry.geojson"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
+    </div>
+</div>
+
+
+    <div class="govuk-!-margin-top-2">
+        <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
+    </div>        </main>
       </div>
 
 

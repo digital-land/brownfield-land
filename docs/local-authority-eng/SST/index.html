@@ -12,7 +12,7 @@
       <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
       <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
-    <meta name="dl-template" content="dlf-base.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+    	<meta name="digital-land:template" content="page-per-thing/index.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
 <script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
     <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
@@ -113,153 +113,104 @@
 
 <h1 class="govuk-heading-xl"></h1>
 
-    <form class="filter-organisations-list__form govuk-!-margin-bottom-9" data-filter="form">
-        <label class="filter-list__label govuk-label govuk-!-font-weight-bold" for="filter-organisations-list">I'm looking for</label>
-        <input class="filter-list__input govuk-input" type="text" id="filter-organisations-list" placeholder="For example, Harrogate Borough Council">
-    </form>
-    <div class="js-no-filter-list-matches"><p class="govuk-body">No matches.</p></div> <!-- needs to go outside of index-list-wrapper -->
 
-    <div class="index-list-wrapper">
+
+        <div class="index-list-wrapper">
             <div class="count-wrapper">
-                <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">21</span> records.</p>
+                <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">8</span> records.</p>
                 <p class="govuk-visually-hidden">There are
-                    <span class="js-accessible-list-count">21</span>
+                    <span class="js-accessible-list-count">8</span>
                     records listed.
                 </p>
+            </div>        <form action="" class="govuk-form govuk-!-margin-bottom-4 dl-historical-toggle-form js-hidden" data-historical="form">
+            <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="hsitorical" name="hsitorical" type="checkbox" value="show">
+                    <label class="govuk-label govuk-checkboxes__label" for="hsitorical">
+                    Show historical records
+                    </label>
+                </div>
             </div>
-
-            <table class="dl-index-list" data-filter="list">
-  <tbody><tr data-filter="item">
+        </form>
+<table class="dl-index-list"
+ data-filter="list" data-historical='list'>
+  <tbody>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./AC-82" data-filter="match-content">AC 82</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./AC-82" data-filter="match-content">AC/82</a>
+    </h4>
   </td>
   <td>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./AC-82" data-filter="match-content">AC/82</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./BI-41" data-filter="match-content">BI/41</a>
+    </h4>
   </td>
   <td>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./BI-41" data-filter="match-content">BI/41</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./CD-191" data-filter="match-content">CD/191</a>
+    </h4>
   </td>
   <td>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./CD-191" data-filter="match-content">CD 191</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./GW-165" data-filter="match-content">GW/165</a>
+    </h4>
   </td>
   <td>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./CD-191" data-filter="match-content">CD/191</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./PK-165" data-filter="match-content">PK/165</a>
+    </h4>
   </td>
   <td>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./ES-101" data-filter="match-content">ES/101</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHLAA-Site-141" data-filter="match-content">SHLAA Site 141</a>
+    </h4>
   </td>
   <td>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./GW-165" data-filter="match-content">GW 165</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./SHLAA-Site-228" data-filter="match-content">SHLAA Site 228</a>
+    </h4>
   </td>
   <td>
   </td>
-</tr><tr data-filter="item">
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
   <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./GW-165" data-filter="match-content">GW/165</a></h4>
-  </td>
-  <td>
-  </td>
-</tr><tr data-filter="item">
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./KV-361" data-filter="match-content">KV 361</a></h4>
-  </td>
-  <td>
-  </td>
-</tr><tr data-filter="item">
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./PK-165" data-filter="match-content">PK 165</a></h4>
-  </td>
-  <td>
-  </td>
-</tr><tr data-filter="item">
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./PK-165" data-filter="match-content">PK/165</a></h4>
-  </td>
-  <td>
-  </td>
-</tr><tr data-filter="item">
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SE01" data-filter="match-content">SE01</a></h4>
-  </td>
-  <td>
-  </td>
-</tr><tr data-filter="item">
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHELAA-141" data-filter="match-content">SHELAA 141</a></h4>
-  </td>
-  <td>
-  </td>
-</tr><tr data-filter="item">
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHELAA-168" data-filter="match-content">SHELAA 168</a></h4>
-  </td>
-  <td>
-  </td>
-</tr><tr data-filter="item">
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHELAA-228" data-filter="match-content">SHELAA 228</a></h4>
-  </td>
-  <td>
-  </td>
-</tr><tr data-filter="item">
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHELAA-281" data-filter="match-content">SHELAA 281</a></h4>
-  </td>
-  <td>
-  </td>
-</tr><tr data-filter="item">
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHELAA-281b" data-filter="match-content">SHELAA 281b</a></h4>
-  </td>
-  <td>
-  </td>
-</tr><tr data-filter="item">
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHELAA-556" data-filter="match-content">SHELAA 556</a></h4>
-  </td>
-  <td>
-  </td>
-</tr><tr data-filter="item">
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHLAA-Site-141" data-filter="match-content">SHLAA Site 141</a></h4>
-  </td>
-  <td>
-  </td>
-</tr><tr data-filter="item">
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./SHLAA-Site-228" data-filter="match-content">SHLAA Site 228</a></h4>
-  </td>
-  <td>
-  </td>
-</tr><tr data-filter="item">
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0"><a class="govuk-link" href="./WM-234" data-filter="match-content">WM/234</a></h4>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./WM-234" data-filter="match-content">WM/234</a>
+    </h4>
   </td>
   <td>
   </td>
 </tr></tbody>
 </table>
 
+        </div>
 
-    </div>
 
         </main>
       </div>
@@ -342,12 +293,13 @@
 
 
         <script>
-        // initialise list filter
-        const $form = document.querySelector('[data-filter="form"]');
-        new window.DLFrontend.FilterList($form).init({
-            list_section_selector: '.index-list-wrapper',
-            count_wrapper_selector: '.count-wrapper'
-        })
+            const showCounts = true
+            const $hist = document.querySelector('[data-historical="form"]');
+            new window.DLFrontend.FilterHistorical($hist).init({
+                triggerEvents: "list:filtered",
+                listWrapperSelector: '.index-list-wrapper',
+                showCountsWhenShowingAll: showCounts
+            })
         </script>
 
   </body>

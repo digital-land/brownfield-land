@@ -12,8 +12,7 @@
       <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
       <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
-<meta name="dl-template" content="dlf-base.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
-<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>    <meta property="og:image" content="/images/govuk-opengraph-image.png">
+	<meta name="digital-land:template" content="page-per-thing/record.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />    <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
   <body class="govuk-template__body ">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
@@ -136,7 +135,7 @@
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
-            <dd class="govuk-summary-list__value">                2017-09-29            </dd>
+            <dd class="govuk-summary-list__value">                2020-12-15            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hazardous-substances
             </dt>
@@ -156,7 +155,7 @@
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">notes
             </dt>
-            <dd class="govuk-summary-list__value">                Proposed housing allocation in the Rotherham Local Plan            </dd>
+            <dd class="govuk-summary-list__value">                RDF1677 - Housing allocation in the Rotherham Local Plan,H50, LDF0827,            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -184,10 +183,6 @@
             </dt>
             <dd class="govuk-summary-list__value">                            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">point
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site
             </dt>
             <dd class="govuk-summary-list__value">                BR0014            </dd>
@@ -200,13 +195,47 @@
             </dt>
             <dd class="govuk-summary-list__value">                2017-09-29            </dd>
         </div>    
-    </dl>    <footer class="govuk-!-font-size-16 data-record__resource">From resource <a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/fd17b124866f1510cb7b55e2a01b5e59262781aab565a26242fc0f6e755e38e1.csv" class="govuk-link">fd17b124866f1510c...</a></footer>
+    </dl>    <footer class="govuk-!-font-size-16 data-record__resource">From resource <a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/01397495c581be47ae1fbb0d368e3d336927a8b3ff1410d4a2be4faac0481861.csv" class="govuk-link">01397495c581be47a...</a></footer>
 </article>
 </div>
             
 </div>
 
-        </main>
+
+<!-- should make this optional, no need to load if not showing a map -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+crossorigin="" />
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+	integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+	crossorigin=""></script>
+
+<!-- assets needed for fullscreen maps -->
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+
+<!-- script needed for recentring map -->
+<script src="https://digital-land.github.io/javascripts/Leaflet.recentre.js"></script>
+
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
+    <h2 class="govuk-heading-m">Geographical area</h2>
+
+    <div class="dl-map__wrapper"><div 
+        class="dl-map govuk-!-margin-top-4 govuk-!-margin-bottom-2"
+        id="aMap"
+        data-module="boundary-map"
+        style="height: 460px;" data-geojson-urls="geometry.geojson"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
+    </div>
+</div>
+
+
+    <div class="govuk-!-margin-top-2">
+        <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
+    </div>        </main>
       </div>
 
 
