@@ -13,7 +13,24 @@
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 	<meta name="digital-land:template" content="page-per-thing/record.html">
 
-	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />    <meta property="og:image" content="/images/govuk-opengraph-image.png">
+<!-- should make this optional, no need to load if not showing a map -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+crossorigin="" />
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+	integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+	crossorigin=""></script>
+
+<!-- assets needed for fullscreen maps -->
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+
+<!-- script needed for recentring map -->
+<script src="https://digital-land.github.io/javascripts/Leaflet.recentre.js"></script>
+
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />    <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
   <body class="govuk-template__body ">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
@@ -118,45 +135,57 @@
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#BR63</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">notes
             </dt>
-            <dd class="govuk-summary-list__value">                BR63            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                High Mill, Shaw Mills, Harrogate            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">end-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">entry-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-10-04            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hazardous-substances
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.22            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                7            </dd>
+            <dd class="govuk-summary-list__value">                Permission for conversion of mill to form 3 dwellings, conversion of 2 tannery buildings to form 2 dwellings with erection of single storey link and two storey extension, erection of 2 dwellings            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                7            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
+            <dt class="govuk-summary-list__key">site
             </dt>
-            <dd class="govuk-summary-list__value">                Conversion of mill to form 3 dwellings, conversion of 2 tannery buildings to form 2 dwellings, erection of 2 dwellings            </dd>
+            <dd class="govuk-summary-list__value">                BR63            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-history
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://uniformonline.harrogate.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NFDZMTHY08R00">https://uniformonline.harrogate.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NFDZMTHY08R00</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-type
+            </dt>
+            <dd class="govuk-summary-list__value">                full planning permission            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                7            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.22            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://harrogatebc.maps.arcgis.com/apps/webappviewer/index.html?id=35605b223adf4a81b45b1a6e1f129a75&find=BR63">http://harrogatebc.maps.arcgis.com/apps/webappviewer/index.html?id=35605b223adf4a81b45b1a6e1f129a75&find=BR63</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2016-05-25            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                BR63            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -164,45 +193,116 @@
 <span title="Organisation identifier: local-authority-eng:HAG" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:HAG)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
+            <dt class="govuk-summary-list__key">site-address
             </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2016-05-25            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-history
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://uniformonline.harrogate.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NFDZMTHY08R00">https://uniformonline.harrogate.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NFDZMTHY08R00</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
-            </dt>
-            <dd class="govuk-summary-list__value">                full planning permission            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                BR63            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://harrogatebc.maps.arcgis.com/apps/webappviewer/index.html?id=35605b223adf4a81b45b1a6e1f129a75&find=BR63">http://harrogatebc.maps.arcgis.com/apps/webappviewer/index.html?id=35605b223adf4a81b45b1a6e1f129a75&find=BR63</a>            </dd>
+            <dd class="govuk-summary-list__value">                High Mill, Shaw Mills, Harrogate            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2017-10-04            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">entry-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2019-10-04            </dd>
         </div>    
-    </dl>    <footer class="govuk-!-font-size-16 data-record__resource">From resource <a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/ea371d852bf376c050e00acbe72461b5cf1363ccb5ebb6331e6aaa55acb22152.csv" class="govuk-link">ea371d852bf376c05...</a></footer>
-</article>
+    </dl></article>
 </div>
             
 </div>
 
-        </main>
+<a href="https://digital-land.github.io/specification/schema/brownfield-land/">View the schema for brownfield-land</a>
+
+
+    <h2 class="govuk-heading-m">Geographical area</h2>
+
+    <div class="dl-map__wrapper"><div 
+        class="dl-map govuk-!-margin-top-4 govuk-!-margin-bottom-2"
+        id="dlMap"
+        data-module="boundary-map"
+        style="height: 460px;" data-geojson-urls="geometry.geojson"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
+    </div>
+</div>
+
+
+    <div class="govuk-!-margin-top-2">
+        <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
+    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+<div class="data-table__wrapper" data-module="data-table">
+<div class="data-table-left-shadow with-transition"></div>
+<div class="wide-table">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>entry-date</th>
+                <th>resource</th>
+                <th>line</th>
+                <th>planning-permission-type</th>
+                <th>planning-permission-date</th>
+                <th>site</th>
+                <th>minimum-net-dwellings</th>
+                <th>organisation</th>
+                <th>planning-permission-status</th>
+                <th>name</th>
+                <th>notes</th>
+                <th>start-date</th>
+                <th>site-plan-url</th>
+                <th>maximum-net-dwellings</th>
+                <th>ownership-status</th>
+                <th>site-address</th>
+                <th>point</th>
+                <th>deliverable</th>
+                <th>planning-permission-history</th>
+                <th>hectares</th>
+            </tr>
+        </thead>
+        <tbody>            <tr>
+                <td>2019-10-04</td>
+                <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/e74aa67d877102504e1598111692480f8078944b8e542b46343d38e38027506c.csv#L51">e74aa67d8771...</a></td>
+                <td>50</td>
+                    <td>full planning permission</td> 
+                    <td>2016-05-25</td> 
+                    <td>BR63</td> 
+                    <td>7</td> 
+                    <td>local-authority-eng:HAG</td> 
+                    <td>permissioned</td> 
+                    <td>BR63</td> 
+                    <td>Permission for conversion of mill to form 3 dwellings, conversion of 2 tannery buildings to form 2 dwellings with erection of single storey link and two storey extension, erection of 2 dwellings</td> 
+                    <td>2017-10-04</td> 
+                    <td>http://harrogatebc.maps.arcgis.com/apps/webappviewer/index.html?id=35605b223adf4a81b45b1a6e1f129a75&amp;find=BR63</td> 
+                    <td>7</td> 
+                    <td>not owned by a public authority</td> 
+                    <td>High Mill, Shaw Mills, Harrogate</td> 
+                    <td>POINT(-1.615532 54.059498)</td> 
+                    <td>yes</td> 
+                    <td>https://uniformonline.harrogate.gov.uk/online-applications/applicationDetails.do?activeTab=map&amp;keyVal=NFDZMTHY08R00</td> 
+                    <td>0.22</td> 
+            </tr>            <tr>
+                <td>2017-10-04</td>
+                <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/ea371d852bf376c050e00acbe72461b5cf1363ccb5ebb6331e6aaa55acb22152.csv#L51">ea371d852bf3...</a></td>
+                <td>50</td>
+                    <td>full planning permission</td> 
+                    <td>2016-05-25</td> 
+                    <td>BR63</td> 
+                    <td>7</td> 
+                    <td>local-authority-eng:HAG</td> 
+                    <td>permissioned</td> 
+                    <td>BR63</td> 
+                    <td>Conversion of mill to form 3 dwellings, conversion of 2 tannery buildings to form 2 dwellings, erection of 2 dwellings</td> 
+                    <td>2017-10-04</td> 
+                    <td>http://harrogatebc.maps.arcgis.com/apps/webappviewer/index.html?id=35605b223adf4a81b45b1a6e1f129a75&amp;find=BR63</td> 
+                    <td>7</td> 
+                    <td>not owned by a public authority</td> 
+                    <td>High Mill, Shaw Mills, Harrogate</td> 
+                    <td>yes</td> 
+                    <td>https://uniformonline.harrogate.gov.uk/online-applications/applicationDetails.do?activeTab=map&amp;keyVal=NFDZMTHY08R00</td> 
+                    <td>0.22</td> 
+            </tr>        </tbody>
+    </table>
+</div>
+<div class="data-table-right-shadow visible with-transition"></div>
+</div>        </main>
       </div>
 
     <div class="dlf-feedback__wrapper">
@@ -298,6 +398,13 @@
         geojsonOptions: {
             geojsonDataToLayer: DLMaps.brownfieldSites.geojsonToLayer
         }
+    })
+</script>
+<script>
+    // Initialise back to top
+    var $data_tables = document.querySelectorAll('[data-module*="data-table"]')
+    $data_tables.forEach(data_table => {
+        new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
   </body>

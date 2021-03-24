@@ -13,7 +13,24 @@
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 	<meta name="digital-land:template" content="page-per-thing/record.html">
 
-	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />    <meta property="og:image" content="/images/govuk-opengraph-image.png">
+<!-- should make this optional, no need to load if not showing a map -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+crossorigin="" />
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+	integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+	crossorigin=""></script>
+
+<!-- assets needed for fullscreen maps -->
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+
+<!-- script needed for recentring map -->
+<script src="https://digital-land.github.io/javascripts/Leaflet.recentre.js"></script>
+
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />    <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
   <body class="govuk-template__body ">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
@@ -118,45 +135,25 @@
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#BL1002</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                BL1002            </dd>
+            <dd class="govuk-summary-list__value">                33            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-address
             </dt>
             <dd class="govuk-summary-list__value">                29-35 Station Road, Reading            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
+            <dd class="govuk-summary-list__value">                BL1002            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">end-date
+            <dt class="govuk-summary-list__key">planning-permission-date
             </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">entry-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-12-15            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hazardous-substances
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.05            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                33            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                33            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                Prior approval 170772. Forms part of proposed allocation in draft Local Plan (ref CR11a). Change of use from offices to residential under prior approval.. http://www.reading.gov.uk/media/8053/Pre-Submission-Local-Plan-November-2017/pdf/Pre-Submission_Local_Plan_November_2017.pdf            </dd>
+            <dd class="govuk-summary-list__value">                2017-07-10            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -164,45 +161,160 @@
 <span title="Organisation identifier: local-authority-eng:RDG" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:RDG)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
+            <dt class="govuk-summary-list__key">site-plan-url
             </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.reading.gov.uk/media/8109/Brownfield-Register-Maps-BL1001-1052/pdf/Brownfield_Land_Register_Maps_2019_1001_to_1052.pdf">https://www.reading.gov.uk/media/8109/Brownfield-Register-Maps-BL1001-1052/pdf/Brownfield_Land_Register_Maps_2019_1001_to_1052.pdf</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-date
+            <dt class="govuk-summary-list__key">start-date
             </dt>
-            <dd class="govuk-summary-list__value">                2017-07-10            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-history
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
-            </dt>
-            <dd class="govuk-summary-list__value">                full planning permission            </dd>
+            <dd class="govuk-summary-list__value">                2017-12-15            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site
             </dt>
             <dd class="govuk-summary-list__value">                BL1002            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
+            <dt class="govuk-summary-list__key">hectares
             </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.reading.gov.uk/media/8109/Brownfield-Register-Maps-BL1001-1047/pdf/Brownfield_Register_Maps_BL1001-1047.pdf">http://www.reading.gov.uk/media/8109/Brownfield-Register-Maps-BL1001-1047/pdf/Brownfield_Register_Maps_BL1001-1047.pdf</a>            </dd>
+            <dd class="govuk-summary-list__value">                0.05            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">planning-permission-type
             </dt>
-            <dd class="govuk-summary-list__value">                2017-12-15            </dd>
+            <dd class="govuk-summary-list__value">                full planning permission            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                Prior approval 170772. Alternative permission 181930 now in place for redevelopment for hotel. Forms part of allocation in Local Plan (ref CR11a). Change of use from offices to residential under prior approval.. https://www.reading.gov.uk/media/10410/Reading-Borough-Council-Local-Plan/pdf/Local_Plan_Adopted_November_2019.pdf            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                33            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">entry-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2019-12-16            </dd>
         </div>    
-    </dl>    <footer class="govuk-!-font-size-16 data-record__resource">From resource <a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/6e5c64158ac48d4c74b0d14d97297262b305f4de40f6f3ca21bb79885841b175.csv" class="govuk-link">6e5c64158ac48d4c7...</a></footer>
-</article>
+    </dl></article>
 </div>
             
 </div>
 
-        </main>
+<a href="https://digital-land.github.io/specification/schema/brownfield-land/">View the schema for brownfield-land</a>
+
+
+    <h2 class="govuk-heading-m">Geographical area</h2>
+
+    <div class="dl-map__wrapper"><div 
+        class="dl-map govuk-!-margin-top-4 govuk-!-margin-bottom-2"
+        id="dlMap"
+        data-module="boundary-map"
+        style="height: 460px;" data-geojson-urls="geometry.geojson"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
+    </div>
+</div>
+
+
+    <div class="govuk-!-margin-top-2">
+        <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
+    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+<div class="data-table__wrapper" data-module="data-table">
+<div class="data-table-left-shadow with-transition"></div>
+<div class="wide-table">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>entry-date</th>
+                <th>resource</th>
+                <th>line</th>
+                <th>planning-permission-date</th>
+                <th>organisation</th>
+                <th>minimum-net-dwellings</th>
+                <th>site</th>
+                <th>hectares</th>
+                <th>planning-permission-type</th>
+                <th>planning-permission-status</th>
+                <th>name</th>
+                <th>notes</th>
+                <th>start-date</th>
+                <th>site-plan-url</th>
+                <th>maximum-net-dwellings</th>
+                <th>ownership-status</th>
+                <th>point</th>
+                <th>deliverable</th>
+                <th>site-address</th>
+            </tr>
+        </thead>
+        <tbody>            <tr>
+                <td>2019-12-16</td>
+                <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/1ebc73d8061d28fa5ff47325ad0e37405cadea4c4ad8bf72d13a3ecf22e4a1fc.csv#L3">1ebc73d8061d...</a></td>
+                <td>2</td>
+                    <td>2017-07-10</td> 
+                    <td>local-authority-eng:RDG</td> 
+                    <td>33</td> 
+                    <td>BL1002</td> 
+                    <td>0.05</td> 
+                    <td>full planning permission</td> 
+                    <td>permissioned</td> 
+                    <td>BL1002</td> 
+                    <td>Prior approval 170772. Alternative permission 181930 now in place for redevelopment for hotel. Forms part of allocation in Local Plan (ref CR11a). Change of use from offices to residential under prior approval.. https://www.reading.gov.uk/media/10410/Reading-Borough-Council-Local-Plan/pdf/Local_Plan_Adopted_November_2019.pdf</td> 
+                    <td>2017-12-15</td> 
+                    <td>https://www.reading.gov.uk/media/8109/Brownfield-Register-Maps-BL1001-1052/pdf/Brownfield_Land_Register_Maps_2019_1001_to_1052.pdf</td> 
+                    <td>33</td> 
+                    <td>not owned by a public authority</td> 
+                    <td>POINT(-0.972447 51.457764)</td> 
+                    <td>yes</td> 
+                    <td>29-35 Station Road, Reading</td> 
+            </tr>            <tr>
+                <td>2018-12-16</td>
+                <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/5bb8651c0adc0347933c5ac8c3abd1252652f96235ef0690f2fdcb59f8866e82.csv#L3">5bb8651c0adc...</a></td>
+                <td>2</td>
+                    <td>2017-07-10</td> 
+                    <td>local-authority-eng:RDG</td> 
+                    <td>33</td> 
+                    <td>BL1002</td> 
+                    <td>0.05</td> 
+                    <td>full planning permission</td> 
+                    <td>permissioned</td> 
+                    <td>BL1002</td> 
+                    <td>Prior approval 170772. Forms part of proposed allocation in Submission Draft Local Plan (ref CR11a). Change of use from offices to residential under prior approval.. http://www.reading.gov.uk/media/8649/LP001-Submission-Draft-Local-Plan/pdf/LP001_Submission_Draft_Local_Plan.pdf</td> 
+                    <td>2017-12-15</td> 
+                    <td>http://www.reading.gov.uk/media/8109/Brownfield-Register-Maps-BL1001-1050/pdf/Brownfield_Register_maps_1001-1050.pdf</td> 
+                    <td>33</td> 
+                    <td>not owned by a public authority</td> 
+                    <td>yes</td> 
+                    <td>29-35 Station Road, Reading</td> 
+            </tr>            <tr>
+                <td>2017-12-15</td>
+                <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/6e5c64158ac48d4c74b0d14d97297262b305f4de40f6f3ca21bb79885841b175.csv#L3">6e5c64158ac4...</a></td>
+                <td>2</td>
+                    <td>2017-07-10</td> 
+                    <td>local-authority-eng:RDG</td> 
+                    <td>33</td> 
+                    <td>BL1002</td> 
+                    <td>0.05</td> 
+                    <td>full planning permission</td> 
+                    <td>permissioned</td> 
+                    <td>BL1002</td> 
+                    <td>Prior approval 170772. Forms part of proposed allocation in draft Local Plan (ref CR11a). Change of use from offices to residential under prior approval.. http://www.reading.gov.uk/media/8053/Pre-Submission-Local-Plan-November-2017/pdf/Pre-Submission_Local_Plan_November_2017.pdf</td> 
+                    <td>2017-12-15</td> 
+                    <td>http://www.reading.gov.uk/media/8109/Brownfield-Register-Maps-BL1001-1047/pdf/Brownfield_Register_Maps_BL1001-1047.pdf</td> 
+                    <td>33</td> 
+                    <td>not owned by a public authority</td> 
+                    <td>yes</td> 
+                    <td>29-35 Station Road, Reading</td> 
+            </tr>        </tbody>
+    </table>
+</div>
+<div class="data-table-right-shadow visible with-transition"></div>
+</div>        </main>
       </div>
 
     <div class="dlf-feedback__wrapper">
@@ -298,6 +410,13 @@
         geojsonOptions: {
             geojsonDataToLayer: DLMaps.brownfieldSites.geojsonToLayer
         }
+    })
+</script>
+<script>
+    // Initialise back to top
+    var $data_tables = document.querySelectorAll('[data-module*="data-table"]')
+    $data_tables.forEach(data_table => {
+        new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
   </body>

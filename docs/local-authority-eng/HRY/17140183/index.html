@@ -13,7 +13,24 @@
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 	<meta name="digital-land:template" content="page-per-thing/record.html">
 
-	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />    <meta property="og:image" content="/images/govuk-opengraph-image.png">
+<!-- should make this optional, no need to load if not showing a map -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+crossorigin="" />
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+	integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+	crossorigin=""></script>
+
+<!-- assets needed for fullscreen maps -->
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+
+<!-- script needed for recentring map -->
+<script src="https://digital-land.github.io/javascripts/Leaflet.recentre.js"></script>
+
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />    <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
   <body class="govuk-template__body ">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
@@ -118,45 +135,17 @@
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#17140183</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">ownership-status
             </dt>
-            <dd class="govuk-summary-list__value">                17140183            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Tottenham Chances and Nicholson Court            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">end-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">entry-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2019-12-31            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hazardous-substances
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.48            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                34            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                34            </dd>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">notes
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf">http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                34            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -164,27 +153,27 @@
 <span title="Organisation identifier: local-authority-eng:HRY" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:HRY)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+            <dd class="govuk-summary-list__value">                34            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-date
+            <dt class="govuk-summary-list__key">hectares
             </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
+            <dd class="govuk-summary-list__value">                0.48            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-history
+            <dt class="govuk-summary-list__key">start-date
             </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
+            <dd class="govuk-summary-list__value">                2017-12-31            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                17140183            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                17140183            </dd>
         </div>        <div class="govuk-summary-list__row">
@@ -192,17 +181,145 @@
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf">http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">site-address
             </dt>
-            <dd class="govuk-summary-list__value">                2017-12-31            </dd>
+            <dd class="govuk-summary-list__value">                Tottenham Chances and Nicholson Court            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">entry-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2021-02-02            </dd>
         </div>    
-    </dl>    <footer class="govuk-!-font-size-16 data-record__resource">From resource <a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/fc4dab4a7e5c751e408b55fa04c9cd8e5b14e74751e4571bd348780af99846dc.csv" class="govuk-link">fc4dab4a7e5c751e4...</a></footer>
-</article>
+    </dl></article>
 </div>
             
 </div>
 
-        </main>
+<a href="https://digital-land.github.io/specification/schema/brownfield-land/">View the schema for brownfield-land</a>
+
+
+    <h2 class="govuk-heading-m">Geographical area</h2>
+
+    <div class="dl-map__wrapper"><div 
+        class="dl-map govuk-!-margin-top-4 govuk-!-margin-bottom-2"
+        id="dlMap"
+        data-module="boundary-map"
+        style="height: 460px;" data-geojson-urls="geometry.geojson"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
+    </div>
+</div>
+
+
+    <div class="govuk-!-margin-top-2">
+        <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
+    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+<div class="data-table__wrapper" data-module="data-table">
+<div class="data-table-left-shadow with-transition"></div>
+<div class="wide-table">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>entry-date</th>
+                <th>resource</th>
+                <th>line</th>
+                <th>organisation</th>
+                <th>minimum-net-dwellings</th>
+                <th>site</th>
+                <th>name</th>
+                <th>notes</th>
+                <th>start-date</th>
+                <th>site-plan-url</th>
+                <th>maximum-net-dwellings</th>
+                <th>ownership-status</th>
+                <th>site-address</th>
+                <th>point</th>
+                <th>deliverable</th>
+                <th>hectares</th>
+            </tr>
+        </thead>
+        <tbody>            <tr>
+                <td>2021-02-02</td>
+                <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/4c41c7a3739ba8b21a66228d3c0b024db386b32359af97c8b8a15462d9cbba9a.csv#L144">4c41c7a3739b...</a></td>
+                <td>143</td>
+                    <td>local-authority-eng:HRY</td> 
+                    <td>34</td> 
+                    <td>17140183</td> 
+                    <td>17140183</td> 
+                    <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
+                    <td>2017-12-31</td> 
+                    <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
+                    <td>34</td> 
+                    <td>not owned by a public authority</td> 
+                    <td>Tottenham Chances and Nicholson Court</td> 
+                    <td>yes</td> 
+                    <td>0.48</td> 
+            </tr>            <tr>
+                <td>2020-12-22</td>
+                <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/9ee698608d8c7dcad9d872d2e109b28a00e577e100a53fc7f2e46a81c8a126e3.csv#L1820">9ee698608d8c...</a></td>
+                <td>1819</td>
+                    <td>local-authority-eng:HRY</td> 
+                    <td>34</td> 
+                    <td>17140183</td> 
+                    <td>17140183</td> 
+                    <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
+                    <td>34</td> 
+                    <td>not owned by a public authority</td> 
+                    <td>Tottenham Chances and Nicholson Court</td> 
+                    <td>POINT(-0.071054 51.589956)</td> 
+                    <td>yes</td> 
+                    <td>0.48</td> 
+            </tr>            <tr>
+                <td>2019-12-31</td>
+                <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/fc4dab4a7e5c751e408b55fa04c9cd8e5b14e74751e4571bd348780af99846dc.csv#L144">fc4dab4a7e5c...</a></td>
+                <td>143</td>
+                    <td>local-authority-eng:HRY</td> 
+                    <td>34</td> 
+                    <td>17140183</td> 
+                    <td>17140183</td> 
+                    <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
+                    <td>2017-12-31</td> 
+                    <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
+                    <td>34</td> 
+                    <td>not owned by a public authority</td> 
+                    <td>Tottenham Chances and Nicholson Court</td> 
+                    <td>yes</td> 
+                    <td>0.48</td> 
+            </tr>            <tr>
+                <td>2019-10-24</td>
+                <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/53ff7410d03797e7747d4df128ca450bbe808f4eacc79d0e2d18623ab4a99554.csv#L1400">53ff7410d037...</a></td>
+                <td>1399</td>
+                    <td>local-authority-eng:HRY</td> 
+                    <td>34</td> 
+                    <td>17140183</td> 
+                    <td>17140183</td> 
+                    <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
+                    <td>34</td> 
+                    <td>not owned by a public authority</td> 
+                    <td>Tottenham Chances and Nicholson Court</td> 
+                    <td>POINT(-0.071054 51.589956)</td> 
+                    <td>yes</td> 
+                    <td>0.48</td> 
+            </tr>            <tr>
+                <td>2017-12-31</td>
+                <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/c415eaa05263be7c30b30932b8757af97b59962118ccaad9412b173b8f9fb375.csv#L172">c415eaa05263...</a></td>
+                <td>171</td>
+                    <td>local-authority-eng:HRY</td> 
+                    <td>34</td> 
+                    <td>17140183</td> 
+                    <td>17140183</td> 
+                    <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
+                    <td>2017-12-31</td> 
+                    <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
+                    <td>34</td> 
+                    <td>not owned by a public authority</td> 
+                    <td>Tottenham Chances and Nicholson Court</td> 
+                    <td>yes</td> 
+                    <td>0.48</td> 
+            </tr>        </tbody>
+    </table>
+</div>
+<div class="data-table-right-shadow visible with-transition"></div>
+</div>        </main>
       </div>
 
     <div class="dlf-feedback__wrapper">
@@ -298,6 +415,13 @@
         geojsonOptions: {
             geojsonDataToLayer: DLMaps.brownfieldSites.geojsonToLayer
         }
+    })
+</script>
+<script>
+    // Initialise back to top
+    var $data_tables = document.querySelectorAll('[data-module*="data-table"]')
+    $data_tables.forEach(data_table => {
+        new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
   </body>

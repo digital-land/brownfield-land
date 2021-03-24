@@ -13,7 +13,24 @@
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 	<meta name="digital-land:template" content="page-per-thing/record.html">
 
-	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />    <meta property="og:image" content="/images/govuk-opengraph-image.png">
+<!-- should make this optional, no need to load if not showing a map -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+crossorigin="" />
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+	integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+	crossorigin=""></script>
+
+<!-- assets needed for fullscreen maps -->
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+
+<!-- script needed for recentring map -->
+<script src="https://digital-land.github.io/javascripts/Leaflet.recentre.js"></script>
+
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />    <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
   <body class="govuk-template__body ">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
@@ -118,9 +135,9 @@
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#ESBC-BR1</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">ownership-status
             </dt>
-            <dd class="govuk-summary-list__value">                ESBC-BR1            </dd>
+            <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-address
             </dt>
@@ -130,33 +147,9 @@
             </dt>
             <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">end-date
+            <dt class="govuk-summary-list__key">planning-permission-history
             </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">entry-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-09-29            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hazardous-substances
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.5            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                15            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                15            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                Suitable Brownfield Site taken from the SHLAA (SHLAA 26)            </dd>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.eaststaffsbc.gov.uk/planning/applications-and-decisions/applications-and-appeals">http://www.eaststaffsbc.gov.uk/planning/applications-and-decisions/applications-and-appeals</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -164,27 +157,27 @@
 <span title="Organisation identifier: local-authority-eng:EST" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:EST)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
+            <dd class="govuk-summary-list__value">                21            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-date
+            <dt class="govuk-summary-list__key">hectares
             </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
+            <dd class="govuk-summary-list__value">                0.53            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-history
+            <dt class="govuk-summary-list__key">notes
             </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.eaststaffsbc.gov.uk/planning/applications-and-decisions/applications-and-appeals">http://www.eaststaffsbc.gov.uk/planning/applications-and-decisions/applications-and-appeals</a>            </dd>
+            <dd class="govuk-summary-list__value">                Site included in the Housing Permissions - Under Construction but no residential completions on site yet - Suitable Brownfield Site taken from the SHLAA (SHLAA 26). Demolition of school buildings and erection of 21 affordable dwellings including details of access            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                ESBC-BR1            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
-            <dd class="govuk-summary-list__value">                Not Permissioned            </dd>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
+            <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                ESBC-BR1            </dd>
         </div>        <div class="govuk-summary-list__row">
@@ -195,14 +188,140 @@
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2017-09-29            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                21            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">entry-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2019-09-30            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-type
+            </dt>
+            <dd class="govuk-summary-list__value">                full planning permission            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2018-08-03            </dd>
         </div>    
-    </dl>    <footer class="govuk-!-font-size-16 data-record__resource">From resource <a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/ff1500c81752ecbbc2e2cd44385943817d5290cc38e0f359e9b66439af470453.csv" class="govuk-link">ff1500c81752ecbbc...</a></footer>
-</article>
+    </dl></article>
 </div>
             
 </div>
 
-        </main>
+<a href="https://digital-land.github.io/specification/schema/brownfield-land/">View the schema for brownfield-land</a>
+
+
+    <h2 class="govuk-heading-m">Geographical area</h2>
+
+    <div class="dl-map__wrapper"><div 
+        class="dl-map govuk-!-margin-top-4 govuk-!-margin-bottom-2"
+        id="dlMap"
+        data-module="boundary-map"
+        style="height: 460px;" data-geojson-urls="geometry.geojson"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
+    </div>
+</div>
+
+
+    <div class="govuk-!-margin-top-2">
+        <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
+    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+<div class="data-table__wrapper" data-module="data-table">
+<div class="data-table-left-shadow with-transition"></div>
+<div class="wide-table">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>entry-date</th>
+                <th>resource</th>
+                <th>line</th>
+                <th>organisation</th>
+                <th>planning-permission-type</th>
+                <th>site</th>
+                <th>planning-permission-date</th>
+                <th>hectares</th>
+                <th>minimum-net-dwellings</th>
+                <th>planning-permission-status</th>
+                <th>name</th>
+                <th>notes</th>
+                <th>start-date</th>
+                <th>site-plan-url</th>
+                <th>maximum-net-dwellings</th>
+                <th>ownership-status</th>
+                <th>point</th>
+                <th>deliverable</th>
+                <th>planning-permission-history</th>
+                <th>site-address</th>
+            </tr>
+        </thead>
+        <tbody>            <tr>
+                <td>2019-09-30</td>
+                <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/68c338ad134abdb90344ffa4bd07afdb48dae7ab6fd28c7c7dd1b58cf1e43d9a.csv#L2">68c338ad134a...</a></td>
+                <td>1</td>
+                    <td>local-authority-eng:EST</td> 
+                    <td>full planning permission</td> 
+                    <td>ESBC-BR1</td> 
+                    <td>2018-08-03</td> 
+                    <td>0.53</td> 
+                    <td>21</td> 
+                    <td>permissioned</td> 
+                    <td>ESBC-BR1</td> 
+                    <td>Site included in the Housing Permissions - Under Construction but no residential completions on site yet - Suitable Brownfield Site taken from the SHLAA (SHLAA 26). Demolition of school buildings and erection of 21 affordable dwellings including details of access</td> 
+                    <td>2017-09-29</td> 
+                    <td>http://www.eaststaffsbc.gov.uk/planning/planning-policy</td> 
+                    <td>21</td> 
+                    <td>owned by a public authority</td> 
+                    <td>POINT(-1.629437 52.787579)</td> 
+                    <td>yes</td> 
+                    <td>http://www.eaststaffsbc.gov.uk/planning/applications-and-decisions/applications-and-appeals</td> 
+                    <td>Short Street Community Infants School</td> 
+            </tr>            <tr>
+                <td>2018-09-30</td>
+                <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/2071ca67327ab83b90b141b3ec61e253f5e1f3f24a55d0299753e093d972b14d.csv#L2">2071ca67327a...</a></td>
+                <td>1</td>
+                    <td>local-authority-eng:EST</td> 
+                    <td>full planning permission</td> 
+                    <td>ESBC-BR1</td> 
+                    <td>2018-08-03</td> 
+                    <td>0.53</td> 
+                    <td>21</td> 
+                    <td>permissioned</td> 
+                    <td>ESBC-BR1</td> 
+                    <td>Site included in the Housing Permissions - Not yet commenced - Suitable Brownfield Site taken from the SHLAA (SHLAA 26). Demolition of school buildings and erection of 21 affordable dwellings including details of access</td> 
+                    <td>2017-09-29</td> 
+                    <td>http://www.eaststaffsbc.gov.uk/planning/planning-policy</td> 
+                    <td>21</td> 
+                    <td>owned by a public authority</td> 
+                    <td>POINT(-1.629437 52.787579)</td> 
+                    <td>yes</td> 
+                    <td>http://www.eaststaffsbc.gov.uk/planning/applications-and-decisions/applications-and-appeals</td> 
+                    <td>Short Street Community Infants School</td> 
+            </tr>            <tr>
+                <td>2017-09-29</td>
+                <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/ff1500c81752ecbbc2e2cd44385943817d5290cc38e0f359e9b66439af470453.csv#L2">ff1500c81752...</a></td>
+                <td>1</td>
+                    <td>local-authority-eng:EST</td> 
+                    <td>ESBC-BR1</td> 
+                    <td>0.5</td> 
+                    <td>15</td> 
+                    <td>Not Permissioned</td> 
+                    <td>ESBC-BR1</td> 
+                    <td>Suitable Brownfield Site taken from the SHLAA (SHLAA 26)</td> 
+                    <td>2017-09-29</td> 
+                    <td>http://www.eaststaffsbc.gov.uk/planning/planning-policy</td> 
+                    <td>15</td> 
+                    <td>owned by a public authority</td> 
+                    <td>yes</td> 
+                    <td>http://www.eaststaffsbc.gov.uk/planning/applications-and-decisions/applications-and-appeals</td> 
+                    <td>Short Street Community Infants School</td> 
+            </tr>        </tbody>
+    </table>
+</div>
+<div class="data-table-right-shadow visible with-transition"></div>
+</div>        </main>
       </div>
 
     <div class="dlf-feedback__wrapper">
@@ -298,6 +417,13 @@
         geojsonOptions: {
             geojsonDataToLayer: DLMaps.brownfieldSites.geojsonToLayer
         }
+    })
+</script>
+<script>
+    // Initialise back to top
+    var $data_tables = document.querySelectorAll('[data-module*="data-table"]')
+    $data_tables.forEach(data_table => {
+        new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
   </body>

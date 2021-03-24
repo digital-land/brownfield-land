@@ -13,7 +13,24 @@
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 	<meta name="digital-land:template" content="page-per-thing/record.html">
 
-	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />    <meta property="og:image" content="/images/govuk-opengraph-image.png">
+<!-- should make this optional, no need to load if not showing a map -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+crossorigin="" />
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+	integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+	crossorigin=""></script>
+
+<!-- assets needed for fullscreen maps -->
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+
+<!-- script needed for recentring map -->
+<script src="https://digital-land.github.io/javascripts/Leaflet.recentre.js"></script>
+
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />    <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
   <body class="govuk-template__body ">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
@@ -118,51 +135,27 @@
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#5621</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">notes
             </dt>
-            <dd class="govuk-summary-list__value">                5621            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Regency Court, 36-48 High Street, Crewe            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">end-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">entry-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-10-19            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hazardous-substances
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.16            </dd>
+            <dd class="govuk-summary-list__value">                Planning permission expired ref: 16/2855N -Change of use from office use to 18 apartments            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                18            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            <dt class="govuk-summary-list__key">planning-permission-type
             </dt>
-            <dd class="govuk-summary-list__value">                18            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                16/2855N. Change of use from office use to 18 apartments            </dd>
+            <dd class="govuk-summary-list__value">                other            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/CHE" class="govuk-link">Cheshire East Council</a>
 <span title="Organisation identifier: local-authority-eng:CHE" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:CHE)</span>
             </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                5621            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">ownership-status
             </dt>
@@ -172,6 +165,22 @@
             </dt>
             <dd class="govuk-summary-list__value">                2016-08-02            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.16            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Regency Court, 36-48 High Street, Crewe            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                5621            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-history
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://planning.cheshireeast.gov.uk/applicationdetails.aspx?pr=16/2855N&query=219997c3-58fa-4481-a1d2-36ee737eea61">http://planning.cheshireeast.gov.uk/applicationdetails.aspx?pr=16/2855N&query=219997c3-58fa-4481-a1d2-36ee737eea61</a>            </dd>
@@ -180,29 +189,146 @@
             </dt>
             <dd class="govuk-summary-list__value">                permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
+            <dt class="govuk-summary-list__key">start-date
             </dt>
-            <dd class="govuk-summary-list__value">                other            </dd>
+            <dd class="govuk-summary-list__value">                2017-10-19            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                5621            </dd>
+            <dd class="govuk-summary-list__value">                18            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-plan-url
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://cheshireeast.gov.uk/planning/spatial_planning/brownfield-register.aspx">http://cheshireeast.gov.uk/planning/spatial_planning/brownfield-register.aspx</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">entry-date
             </dt>
-            <dd class="govuk-summary-list__value">                2017-10-19            </dd>
+            <dd class="govuk-summary-list__value">                2020-10-30            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">end-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2020-10-30            </dd>
         </div>    
-    </dl>    <footer class="govuk-!-font-size-16 data-record__resource">From resource <a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/b6ed0267c9db2903f719643ff3e153fbdf65894e33706a8a52280ce453e53ec3.csv" class="govuk-link">b6ed0267c9db2903f...</a></footer>
-</article>
+    </dl></article>
 </div>
             
 </div>
 
-        </main>
+<a href="https://digital-land.github.io/specification/schema/brownfield-land/">View the schema for brownfield-land</a>
+
+
+    <h2 class="govuk-heading-m">Geographical area</h2>
+
+    <div class="dl-map__wrapper"><div 
+        class="dl-map govuk-!-margin-top-4 govuk-!-margin-bottom-2"
+        id="dlMap"
+        data-module="boundary-map"
+        style="height: 460px;" data-geojson-urls="geometry.geojson"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
+    </div>
+</div>
+
+
+    <div class="govuk-!-margin-top-2">
+        <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
+    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+<div class="data-table__wrapper" data-module="data-table">
+<div class="data-table-left-shadow with-transition"></div>
+<div class="wide-table">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>entry-date</th>
+                <th>resource</th>
+                <th>line</th>
+                <th>organisation</th>
+                <th>planning-permission-type</th>
+                <th>site</th>
+                <th>planning-permission-date</th>
+                <th>minimum-net-dwellings</th>
+                <th>planning-permission-status</th>
+                <th>name</th>
+                <th>notes</th>
+                <th>start-date</th>
+                <th>end-date</th>
+                <th>maximum-net-dwellings</th>
+                <th>site-plan-url</th>
+                <th>ownership-status</th>
+                <th>site-address</th>
+                <th>point</th>
+                <th>deliverable</th>
+                <th>planning-permission-history</th>
+                <th>hectares</th>
+            </tr>
+        </thead>
+        <tbody>            <tr>
+                <td>2020-10-30</td>
+                <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/ad118ab3e4e5d9ecaa44492a8aa7cf1be0bf91442f12a24310c284eb007ad2ac.csv#L51">ad118ab3e4e5...</a></td>
+                <td>50</td>
+                    <td>local-authority-eng:CHE</td> 
+                    <td>other</td> 
+                    <td>5621</td> 
+                    <td>2016-08-02</td> 
+                    <td>18</td> 
+                    <td>permissioned</td> 
+                    <td>5621</td> 
+                    <td>Planning permission expired ref: 16/2855N -Change of use from office use to 18 apartments</td> 
+                    <td>2017-10-19</td> 
+                    <td>2020-10-30</td> 
+                    <td>18</td> 
+                    <td>http://cheshireeast.gov.uk/planning/spatial_planning/brownfield-register.aspx</td> 
+                    <td>not owned by a public authority</td> 
+                    <td>Regency Court, 36-48 High Street, Crewe</td> 
+                    <td>POINT(-2.441205 53.095519)</td> 
+                    <td>http://planning.cheshireeast.gov.uk/applicationdetails.aspx?pr=16/2855N&amp;query=219997c3-58fa-4481-a1d2-36ee737eea61</td> 
+                    <td>0.16</td> 
+            </tr>            <tr>
+                <td>2019-11-15</td>
+                <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/344488f9ce3e3a4dc76c357eb07a9b6db2d6c4494a733d43fde68ebb21505813.csv#L48">344488f9ce3e...</a></td>
+                <td>47</td>
+                    <td>local-authority-eng:CHE</td> 
+                    <td>other</td> 
+                    <td>5621</td> 
+                    <td>2016-08-02</td> 
+                    <td>18</td> 
+                    <td>permissioned</td> 
+                    <td>5621</td> 
+                    <td>Planning permission ref: 16/2855N -Change of use from office use to 18 apartments</td> 
+                    <td>2017-10-19</td> 
+                    <td>18</td> 
+                    <td>http://cheshireeast.gov.uk/planning/spatial_planning/brownfield-register.aspx</td> 
+                    <td>not owned by a public authority</td> 
+                    <td>Regency Court, 36-48 High Street, Crewe</td> 
+                    <td>POINT(-2.441205 53.095519)</td> 
+                    <td>yes</td> 
+                    <td>http://planning.cheshireeast.gov.uk/applicationdetails.aspx?pr=16/2855N&amp;query=219997c3-58fa-4481-a1d2-36ee737eea61</td> 
+                    <td>0.16</td> 
+            </tr>            <tr>
+                <td>2017-10-19</td>
+                <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/b6ed0267c9db2903f719643ff3e153fbdf65894e33706a8a52280ce453e53ec3.csv#L54">b6ed0267c9db...</a></td>
+                <td>53</td>
+                    <td>local-authority-eng:CHE</td> 
+                    <td>other</td> 
+                    <td>5621</td> 
+                    <td>2016-08-02</td> 
+                    <td>18</td> 
+                    <td>permissioned</td> 
+                    <td>5621</td> 
+                    <td>16/2855N. Change of use from office use to 18 apartments</td> 
+                    <td>2017-10-19</td> 
+                    <td>18</td> 
+                    <td>http://cheshireeast.gov.uk/planning/spatial_planning/brownfield-register.aspx</td> 
+                    <td>not owned by a public authority</td> 
+                    <td>Regency Court, 36-48 High Street, Crewe</td> 
+                    <td>yes</td> 
+                    <td>http://planning.cheshireeast.gov.uk/applicationdetails.aspx?pr=16/2855N&amp;query=219997c3-58fa-4481-a1d2-36ee737eea61</td> 
+                    <td>0.16</td> 
+            </tr>        </tbody>
+    </table>
+</div>
+<div class="data-table-right-shadow visible with-transition"></div>
+</div>        </main>
       </div>
 
     <div class="dlf-feedback__wrapper">
@@ -298,6 +424,13 @@
         geojsonOptions: {
             geojsonDataToLayer: DLMaps.brownfieldSites.geojsonToLayer
         }
+    })
+</script>
+<script>
+    // Initialise back to top
+    var $data_tables = document.querySelectorAll('[data-module*="data-table"]')
+    $data_tables.forEach(data_table => {
+        new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
   </body>

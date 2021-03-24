@@ -133,18 +133,13 @@
     </div>
                
 
-    <form class="filter-organisations-list__form govuk-!-margin-bottom-9" data-filter="form">
-        <label class="filter-list__label govuk-label govuk-!-font-weight-bold" for="filter-organisations-list">I'm looking for</label>
-        <input class="filter-list__input govuk-input" type="text" id="filter-organisations-list" placeholder="For example, Harrogate Borough Council">
-    </form>
-    <div class="js-no-filter-list-matches"><p class="govuk-body">No matches.</p></div> <!-- needs to go outside of index-list-wrapper -->
 
 
         <div class="index-list-wrapper">
             <div class="count-wrapper">
-                <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">21</span> records.</p>
+                <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">17</span> records.</p>
                 <p class="govuk-visually-hidden">There are
-                    <span class="js-accessible-list-count">21</span>
+                    <span class="js-accessible-list-count">17</span>
                     records listed.
                 </p>
             </div>        <form action="" class="govuk-form govuk-!-margin-bottom-4 dl-historical-toggle-form js-hidden" data-historical="form">
@@ -172,15 +167,6 @@
 <tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
-      <a class="govuk-link" href="./AC-82" data-filter="match-content">AC/82</a>
-    </h4>
-  </td>
-  <td>
-  </td>
-</tr>
-<tr class=""  data-filter="item" data-historical-item="false">
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./BI-41" data-filter="match-content">BI/41</a>
     </h4>
   </td>
@@ -191,15 +177,6 @@
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./CD-191" data-filter="match-content">CD 191</a>
-    </h4>
-  </td>
-  <td>
-  </td>
-</tr>
-<tr class=""  data-filter="item" data-historical-item="false">
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
-      <a class="govuk-link" href="./CD-191" data-filter="match-content">CD/191</a>
     </h4>
   </td>
   <td>
@@ -226,15 +203,6 @@
 <tr class=""  data-filter="item" data-historical-item="false">
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
-      <a class="govuk-link" href="./GW-165" data-filter="match-content">GW/165</a>
-    </h4>
-  </td>
-  <td>
-  </td>
-</tr>
-<tr class=""  data-filter="item" data-historical-item="false">
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./KV-361" data-filter="match-content">KV 361</a>
     </h4>
   </td>
@@ -245,15 +213,6 @@
   <td>
     <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
       <a class="govuk-link" href="./PK-165" data-filter="match-content">PK 165</a>
-    </h4>
-  </td>
-  <td>
-  </td>
-</tr>
-<tr class=""  data-filter="item" data-historical-item="false">
-  <td>
-    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
-      <a class="govuk-link" href="./PK-165" data-filter="match-content">PK/165</a>
     </h4>
   </td>
   <td>
@@ -457,14 +416,6 @@
     </script>
 
 
-        <script>
-        // initialise list filter
-        const $form = document.querySelector('[data-filter="form"]');
-        new window.DLFrontend.FilterList($form).init({
-            list_section_selector: '.index-list-wrapper',
-            count_wrapper_selector: '.count-wrapper'
-        })
-        </script>
         <script>
             const showCounts = true
             const $hist = document.querySelector('[data-historical="form"]');

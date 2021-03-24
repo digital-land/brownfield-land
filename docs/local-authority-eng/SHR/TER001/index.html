@@ -13,7 +13,24 @@
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 	<meta name="digital-land:template" content="page-per-thing/record.html">
 
-	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />    <meta property="og:image" content="/images/govuk-opengraph-image.png">
+<!-- should make this optional, no need to load if not showing a map -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+crossorigin="" />
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+	integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+	crossorigin=""></script>
+
+<!-- assets needed for fullscreen maps -->
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+
+<!-- script needed for recentring map -->
+<script src="https://digital-land.github.io/javascripts/Leaflet.recentre.js"></script>
+
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />    <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
   <body class="govuk-template__body ">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
@@ -118,29 +135,27 @@
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#TER001</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://shropshire.maps.arcgis.com/apps/webappviewer/index.html?id=25b8fd6ba2fb4c878775a1aaea210576">https://shropshire.maps.arcgis.com/apps/webappviewer/index.html?id=25b8fd6ba2fb4c878775a1aaea210576</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                Not Permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SHR" class="govuk-link">Shropshire Council</a>
+<span title="Organisation identifier: local-authority-eng:SHR" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SHR)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
             </dt>
             <dd class="govuk-summary-list__value">                TER001            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Clive Barracks at Tern Hill, Shropshire            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">end-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">entry-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-12-22            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hazardous-substances
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hectares
             </dt>
@@ -150,59 +165,116 @@
             </dt>
             <dd class="govuk-summary-list__value">                500            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Clive Barracks at Tern Hill, Shropshire            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                TER001            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                The site is a strategic site that has been identified within the Local Plan Review. | The majority of the 50ha site is brownfield. It is anticipated that it has capacity for around 500 dwellings; significant amounts of employment land; and appropriate community and leisure facilities associated with a development of this scale. | It is anticipated that much of the delivery on this site will occur beyond the next 15 years.            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                500            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                The site is a strategic site that has been identified within the Local Plan Review. | The majority of the 50ha site is brownfield. It is anticipated that it has capacity for around 500 dwellings; 12ha of employment land; and appropriate community and leisure facilities associated with a development of this scale. | It is anticipated that much of the delivery on this site will occur beyond the next 15 years.. Significant mixed use redevelopment, including around 500 dwellings. | It is anticipated that only a small element of this site will be delivered within the next 15 years.            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SHR" class="govuk-link">Shropshire Council</a>
-<span title="Organisation identifier: local-authority-eng:SHR" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SHR)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-date
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-history
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                Not permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
-            </dt>
-            <dd class="govuk-summary-list__value">                            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                TER001            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://shropshire.maps.arcgis.com/apps/webappviewer/index.html?id=25b8fd6ba2fb4c878775a1aaea210576">https://shropshire.maps.arcgis.com/apps/webappviewer/index.html?id=25b8fd6ba2fb4c878775a1aaea210576</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2017-12-22            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">entry-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2020-03-20            </dd>
         </div>    
-    </dl>    <footer class="govuk-!-font-size-16 data-record__resource">From resource <a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/d5049b03ac10ee85dc62fcb7126676754df97918c593f49b21b2aba2a9ffcb32.csv" class="govuk-link">d5049b03ac10ee85d...</a></footer>
-</article>
+    </dl></article>
 </div>
             
 </div>
 
-        </main>
+<a href="https://digital-land.github.io/specification/schema/brownfield-land/">View the schema for brownfield-land</a>
+
+
+    <h2 class="govuk-heading-m">Geographical area</h2>
+
+    <div class="dl-map__wrapper"><div 
+        class="dl-map govuk-!-margin-top-4 govuk-!-margin-bottom-2"
+        id="dlMap"
+        data-module="boundary-map"
+        style="height: 460px;" data-geojson-urls="geometry.geojson"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
+    </div>
+</div>
+
+
+    <div class="govuk-!-margin-top-2">
+        <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
+    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+<div class="data-table__wrapper" data-module="data-table">
+<div class="data-table-left-shadow with-transition"></div>
+<div class="wide-table">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>entry-date</th>
+                <th>resource</th>
+                <th>line</th>
+                <th>organisation</th>
+                <th>site</th>
+                <th>minimum-net-dwellings</th>
+                <th>planning-permission-status</th>
+                <th>name</th>
+                <th>notes</th>
+                <th>start-date</th>
+                <th>maximum-net-dwellings</th>
+                <th>ownership-status</th>
+                <th>site-address</th>
+                <th>point</th>
+                <th>site-plan-url</th>
+                <th>hectares</th>
+            </tr>
+        </thead>
+        <tbody>            <tr>
+                <td>2020-03-20</td>
+                <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/2091dd8344d35c5108e4eebbc6865b14d3a1fefbddfe7f356d18c25996d8aa2c.csv#L109">2091dd8344d3...</a></td>
+                <td>108</td>
+                    <td>local-authority-eng:SHR</td> 
+                    <td>TER001</td> 
+                    <td>500</td> 
+                    <td>Not Permissioned</td> 
+                    <td>TER001</td> 
+                    <td>The site is a strategic site that has been identified within the Local Plan Review. | The majority of the 50ha site is brownfield. It is anticipated that it has capacity for around 500 dwellings; significant amounts of employment land; and appropriate community and leisure facilities associated with a development of this scale. | It is anticipated that much of the delivery on this site will occur beyond the next 15 years.</td> 
+                    <td>2017-12-22</td> 
+                    <td>500</td> 
+                    <td>owned by a public authority</td> 
+                    <td>Clive Barracks at Tern Hill, Shropshire</td> 
+                    <td>POINT(-2.546454 52.884689)</td> 
+                    <td>https://shropshire.maps.arcgis.com/apps/webappviewer/index.html?id=25b8fd6ba2fb4c878775a1aaea210576</td> 
+                    <td>50</td> 
+            </tr>            <tr>
+                <td>2017-12-22</td>
+                <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/d5049b03ac10ee85dc62fcb7126676754df97918c593f49b21b2aba2a9ffcb32.csv#L80">d5049b03ac10...</a></td>
+                <td>79</td>
+                    <td>local-authority-eng:SHR</td> 
+                    <td>TER001</td> 
+                    <td>500</td> 
+                    <td>Not permissioned</td> 
+                    <td>TER001</td> 
+                    <td>The site is a strategic site that has been identified within the Local Plan Review. | The majority of the 50ha site is brownfield. It is anticipated that it has capacity for around 500 dwellings; 12ha of employment land; and appropriate community and leisure facilities associated with a development of this scale. | It is anticipated that much of the delivery on this site will occur beyond the next 15 years.. Significant mixed use redevelopment, including around 500 dwellings. | It is anticipated that only a small element of this site will be delivered within the next 15 years.</td> 
+                    <td>2017-12-22</td> 
+                    <td>500</td> 
+                    <td>owned by a public authority</td> 
+                    <td>Clive Barracks at Tern Hill, Shropshire</td> 
+                    <td>https://shropshire.maps.arcgis.com/apps/webappviewer/index.html?id=25b8fd6ba2fb4c878775a1aaea210576</td> 
+                    <td>50</td> 
+            </tr>        </tbody>
+    </table>
+</div>
+<div class="data-table-right-shadow visible with-transition"></div>
+</div>        </main>
       </div>
 
     <div class="dlf-feedback__wrapper">
@@ -298,6 +370,13 @@
         geojsonOptions: {
             geojsonDataToLayer: DLMaps.brownfieldSites.geojsonToLayer
         }
+    })
+</script>
+<script>
+    // Initialise back to top
+    var $data_tables = document.querySelectorAll('[data-module*="data-table"]')
+    $data_tables.forEach(data_table => {
+        new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
   </body>
