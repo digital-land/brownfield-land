@@ -132,28 +132,31 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">brownfield-land</span>
     <h1 class="govuk-heading-xl">10</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#10</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                77            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Alaska Street Housing Site, Alaska Street, Blackburn            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                10            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -161,13 +164,13 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:BBD" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BBD)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                10            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                39            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-plan-url
             </dt>
@@ -177,13 +180,33 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                1.29            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Alaska Street Housing Site, Alaska Street, Blackburn            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                10            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2017-09-07            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                10            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2017-12-19            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                Land allocated in Local Plan Part 2 for residential development. Issues relating to construction traffic over bridge owned by Canal &amp; River Trust and need for a Construction Management Plan need to be addressed at Technical Details Consent stage.            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-date
             </dt>
@@ -192,10 +215,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">planning-permission-type
             </dt>
             <dd class="govuk-summary-list__value">                permission in principle            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                Land allocated in Local Plan Part 2 for residential development. Issues relating to construction traffic over bridge owned by Canal &amp; River Trust and need for a Construction Management Plan need to be addressed at Technical Details Consent stage.            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">deliverable
             </dt>
@@ -206,7 +225,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/brownfield-land/">View the schema for brownfield-land</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/brownfield-land/">View the brownfield-land schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -224,74 +245,78 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>hectares</th>
-                <th>organisation</th>
-                <th>minimum-net-dwellings</th>
-                <th>site</th>
-                <th>planning-permission-date</th>
-                <th>planning-permission-type</th>
-                <th>planning-permission-status</th>
-                <th>name</th>
-                <th>notes</th>
-                <th>start-date</th>
-                <th>site-plan-url</th>
-                <th>maximum-net-dwellings</th>
-                <th>ownership-status</th>
-                <th>point</th>
-                <th>deliverable</th>
-                <th>site-address</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2017-12-19</td>
-                <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/049b06464791f4a1dc2c73ecb1d9e5009d9fb0e109a828069babb2c588415f6c.csv#L11">049b06464791...</a></td>
-                <td>10</td>
-                    <td>1.29</td> 
-                    <td>local-authority-eng:BBD</td> 
-                    <td>39</td> 
-                    <td>10</td> 
-                    <td>2017-12-19</td> 
-                    <td>permission in principle</td> 
-                    <td>permissioned</td> 
-                    <td>10</td> 
-                    <td>Land allocated in Local Plan Part 2 for residential development. Issues relating to construction traffic over bridge owned by Canal &amp; River Trust and need for a Construction Management Plan need to be addressed at Technical Details Consent stage.</td> 
-                    <td>2017-09-07</td> 
-                    <td>http://www.blackburn.gov.uk/Brownfield%20land%20register%20plans/10%20Alaska%20Street%20Houisng%20Site.pdf</td> 
-                    <td>77</td> 
-                    <td>owned by a public authority</td> 
-                    <td>POINT(-2.480693 53.738041)</td> 
-                    <td>yes</td> 
-                    <td>Alaska Street Housing Site, Alaska Street, Blackburn</td> 
-            </tr>            <tr>
-                <td>2017-09-07</td>
-                <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/03e51ed503cd400209f247df5539aa9dce49e0c63a9846890c8ea3647b101341.csv#L11">03e51ed503cd...</a></td>
-                <td>10</td>
-                    <td>4.52</td> 
-                    <td>local-authority-eng:BBD</td> 
-                    <td>135</td> 
-                    <td>10</td> 
-                    <td>not permissioned</td> 
-                    <td>10</td> 
-                    <td>2017-09-07</td> 
-                    <td>https://www.blackburn.gov.uk/sites/default/files/media/pdfs/10%20Blakewater,%20Shadsworth%20Road.pdf</td> 
-                    <td>271</td> 
-                    <td>owned by a public authority</td> 
-                    <td>POINT(-2.451173 53.736332)</td> 
-                    <td>Blakewater, Shadsworth Road, Blackburn</td> 
-            </tr>        </tbody>
-    </table>
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>maximum-net-dwellings</th>
+            <th>planning-permission-date</th>
+            <th>minimum-net-dwellings</th>
+            <th>hectares</th>
+            <th>start-date</th>
+            <th>site-plan-url</th>
+            <th>planning-permission-type</th>
+            <th>organisation</th>
+            <th>name</th>
+            <th>notes</th>
+            <th>site-address</th>
+            <th>site</th>
+            <th>point</th>
+            <th>ownership-status</th>
+            <th>deliverable</th>
+            <th>planning-permission-status</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2017-12-19</td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/049b06464791f4a1dc2c73ecb1d9e5009d9fb0e109a828069babb2c588415f6c.csv#L11">049b06464791...</a></td>
+            <td>10</td>
+                <td>77</td> 
+                <td>2017-12-19</td> 
+                <td>39</td> 
+                <td>1.29</td> 
+                <td>2017-09-07</td> 
+                <td>http://www.blackburn.gov.uk/Brownfield%20land%20register%20plans/10%20Alaska%20Street%20Houisng%20Site.pdf</td> 
+                <td>permission in principle</td> 
+                <td>local-authority-eng:BBD</td> 
+                <td>10</td> 
+                <td>Land allocated in Local Plan Part 2 for residential development. Issues relating to construction traffic over bridge owned by Canal &amp; River Trust and need for a Construction Management Plan need to be addressed at Technical Details Consent stage.</td> 
+                <td>Alaska Street Housing Site, Alaska Street, Blackburn</td> 
+                <td>10</td> 
+                <td>POINT(-2.480693 53.738041)</td> 
+                <td>owned by a public authority</td> 
+                <td>yes</td> 
+                <td>permissioned</td> 
+        </tr>        <tr>
+            <td>2017-09-07</td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/03e51ed503cd400209f247df5539aa9dce49e0c63a9846890c8ea3647b101341.csv#L11">03e51ed503cd...</a></td>
+            <td>10</td>
+                <td>271</td> 
+                <td>135</td> 
+                <td>4.52</td> 
+                <td>2017-09-07</td> 
+                <td>https://www.blackburn.gov.uk/sites/default/files/media/pdfs/10%20Blakewater,%20Shadsworth%20Road.pdf</td> 
+                <td>local-authority-eng:BBD</td> 
+                <td>10</td> 
+                <td>Blakewater, Shadsworth Road, Blackburn</td> 
+                <td>10</td> 
+                <td>POINT(-2.451173 53.736332)</td> 
+                <td>owned by a public authority</td> 
+                <td>not permissioned</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -397,5 +422,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

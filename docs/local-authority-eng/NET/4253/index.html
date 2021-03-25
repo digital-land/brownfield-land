@@ -132,9 +132,36 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">brownfield-land</span>
     <h1 class="govuk-heading-xl">4253</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#4253</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                1.63            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                88            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                72            </dd>
@@ -143,13 +170,13 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.newcastle.gov.uk/sites/default/files/wwwfileroot/planning-and-buildings/planning-policy/housing_combined_web.pdf">https://www.newcastle.gov.uk/sites/default/files/wwwfileroot/planning-and-buildings/planning-policy/housing_combined_web.pdf</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                4253            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.newcastle.gov.uk/sites/default/files/planning/policy/Brownfield%20Register%20Map%202019.pdf">https://www.newcastle.gov.uk/sites/default/files/planning/policy/Brownfield%20Register%20Map%202019.pdf</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site
             </dt>
@@ -159,21 +186,13 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                2017-12-19            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Site of 25-161 Dovercourt Road and 1540-1572 Walker Road, Walker            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
             <dd class="govuk-summary-list__value">                Not Permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
+            <dt class="govuk-summary-list__key">site-address
             </dt>
-            <dd class="govuk-summary-list__value">                1.63            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                88            </dd>
+            <dd class="govuk-summary-list__value">                Site of 25-161 Dovercourt Road and 1540-1572 Walker Road Walker            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -190,7 +209,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/brownfield-land/">View the schema for brownfield-land</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/brownfield-land/">View the brownfield-land schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -208,96 +229,100 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>hectares</th>
-                <th>organisation</th>
-                <th>site</th>
-                <th>minimum-net-dwellings</th>
-                <th>planning-permission-status</th>
-                <th>name</th>
-                <th>start-date</th>
-                <th>maximum-net-dwellings</th>
-                <th>ownership-status</th>
-                <th>point</th>
-                <th>site-plan-url</th>
-                <th>site-address</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2019-02-07</td>
-                <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/0fcbbed589cfe611b57cb5f7733bade8974584164e743f377ca0057ff08b1ec5.csv#L54">0fcbbed589cf...</a></td>
-                <td>53</td>
-                    <td>1.63</td> 
-                    <td>local-authority-eng:NET</td> 
-                    <td>4253</td> 
-                    <td>72</td> 
-                    <td>Not Permissioned</td> 
-                    <td>4253</td> 
-                    <td>88</td> 
-                    <td>owned by a public authority</td> 
-                    <td>POINT(-1.546053 54.96697)</td> 
-                    <td>https://www.newcastle.gov.uk/sites/default/files/wwwfileroot/planning-and-buildings/planning-policy/housing_combined_web.pdf</td> 
-                    <td>Site of 25-161 Dovercourt Road and 1540-1572 Walker Road, Walker</td> 
-            </tr>            <tr>
-                <td>2019-02-07</td>
-                <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/5942368bc0ebda4372d6cc52186a78c6886ee26489c2724f78ae389477639832.csv#L43">5942368bc0eb...</a></td>
-                <td>42</td>
-                    <td>1.63</td> 
-                    <td>local-authority-eng:NET</td> 
-                    <td>4253</td> 
-                    <td>72</td> 
-                    <td>Not Permissioned</td> 
-                    <td>4253</td> 
-                    <td>88</td> 
-                    <td>owned by a public authority</td> 
-                    <td>POINT(-1.546053 54.96697)</td> 
-                    <td>https://www.newcastle.gov.uk/sites/default/files/planning/policy/Brownfield%20Register%20Map%202019.pdf</td> 
-                    <td>Site of 25-161 Dovercourt Road and 1540-1572 Walker Road Walker</td> 
-            </tr>            <tr>
-                <td>2019-02-07</td>
-                <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/9014202f7bbe64489d191df55e1068d8ff70dcdabe7aa6c07a3408d4e49c9f5b.csv#L43">9014202f7bbe...</a></td>
-                <td>42</td>
-                    <td>1.63</td> 
-                    <td>local-authority-eng:NET</td> 
-                    <td>4253</td> 
-                    <td>72</td> 
-                    <td>Not Permissioned</td> 
-                    <td>4253</td> 
-                    <td>2017-12-19</td> 
-                    <td>88</td> 
-                    <td>owned by a public authority</td> 
-                    <td>POINT(-1.546053 54.96697)</td> 
-                    <td>https://www.newcastle.gov.uk/sites/default/files/planning/policy/Brownfield%20Register%20Map%202019.pdf</td> 
-                    <td>Site of 25-161 Dovercourt Road and 1540-1572 Walker Road Walker</td> 
-            </tr>            <tr>
-                <td>2017-12-19</td>
-                <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/f56d96493d2f3bbdc7ac9769789e3dbdbdd4066097dbfff6c8c162ee8a5bf64b.csv#L46">f56d96493d2f...</a></td>
-                <td>45</td>
-                    <td>1.63</td> 
-                    <td>local-authority-eng:NET</td> 
-                    <td>4253</td> 
-                    <td>67</td> 
-                    <td>Not Permissioned</td> 
-                    <td>4253</td> 
-                    <td>2017-12-19</td> 
-                    <td>94</td> 
-                    <td>owned by a public authority</td> 
-                    <td>POINT(-1.546053 54.96697)</td> 
-                    <td>https://www.newcastle.gov.uk/sites/default/files/wwwfileroot/planning-and-buildings/planning-policy/brownfield_register_map-18122017.pdf</td> 
-                    <td>Site of 25-161 Dovercourt Road and 1540-1572 Walker Road, Walker</td> 
-            </tr>        </tbody>
-    </table>
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>maximum-net-dwellings</th>
+            <th>minimum-net-dwellings</th>
+            <th>hectares</th>
+            <th>start-date</th>
+            <th>site-plan-url</th>
+            <th>organisation</th>
+            <th>site-address</th>
+            <th>name</th>
+            <th>site</th>
+            <th>point</th>
+            <th>ownership-status</th>
+            <th>planning-permission-status</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2019-02-07</td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/9014202f7bbe64489d191df55e1068d8ff70dcdabe7aa6c07a3408d4e49c9f5b.csv#L43">9014202f7bbe...</a></td>
+            <td>42</td>
+                <td>88</td> 
+                <td>72</td> 
+                <td>1.63</td> 
+                <td>2017-12-19</td> 
+                <td>https://www.newcastle.gov.uk/sites/default/files/planning/policy/Brownfield%20Register%20Map%202019.pdf</td> 
+                <td>local-authority-eng:NET</td> 
+                <td>Site of 25-161 Dovercourt Road and 1540-1572 Walker Road Walker</td> 
+                <td>4253</td> 
+                <td>4253</td> 
+                <td>POINT(-1.546053 54.96697)</td> 
+                <td>owned by a public authority</td> 
+                <td>Not Permissioned</td> 
+        </tr>        <tr>
+            <td>2019-02-07</td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/0fcbbed589cfe611b57cb5f7733bade8974584164e743f377ca0057ff08b1ec5.csv#L54">0fcbbed589cf...</a></td>
+            <td>53</td>
+                <td>88</td> 
+                <td>72</td> 
+                <td>1.63</td> 
+                <td>https://www.newcastle.gov.uk/sites/default/files/wwwfileroot/planning-and-buildings/planning-policy/housing_combined_web.pdf</td> 
+                <td>local-authority-eng:NET</td> 
+                <td>Site of 25-161 Dovercourt Road and 1540-1572 Walker Road, Walker</td> 
+                <td>4253</td> 
+                <td>4253</td> 
+                <td>POINT(-1.546053 54.96697)</td> 
+                <td>owned by a public authority</td> 
+                <td>Not Permissioned</td> 
+        </tr>        <tr>
+            <td>2019-02-07</td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/5942368bc0ebda4372d6cc52186a78c6886ee26489c2724f78ae389477639832.csv#L43">5942368bc0eb...</a></td>
+            <td>42</td>
+                <td>88</td> 
+                <td>72</td> 
+                <td>1.63</td> 
+                <td>https://www.newcastle.gov.uk/sites/default/files/planning/policy/Brownfield%20Register%20Map%202019.pdf</td> 
+                <td>local-authority-eng:NET</td> 
+                <td>Site of 25-161 Dovercourt Road and 1540-1572 Walker Road Walker</td> 
+                <td>4253</td> 
+                <td>4253</td> 
+                <td>POINT(-1.546053 54.96697)</td> 
+                <td>owned by a public authority</td> 
+                <td>Not Permissioned</td> 
+        </tr>        <tr>
+            <td>2017-12-19</td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/f56d96493d2f3bbdc7ac9769789e3dbdbdd4066097dbfff6c8c162ee8a5bf64b.csv#L46">f56d96493d2f...</a></td>
+            <td>45</td>
+                <td>94</td> 
+                <td>67</td> 
+                <td>1.63</td> 
+                <td>2017-12-19</td> 
+                <td>https://www.newcastle.gov.uk/sites/default/files/wwwfileroot/planning-and-buildings/planning-policy/brownfield_register_map-18122017.pdf</td> 
+                <td>local-authority-eng:NET</td> 
+                <td>Site of 25-161 Dovercourt Road and 1540-1572 Walker Road, Walker</td> 
+                <td>4253</td> 
+                <td>4253</td> 
+                <td>POINT(-1.546053 54.96697)</td> 
+                <td>owned by a public authority</td> 
+                <td>Not Permissioned</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -403,5 +428,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>

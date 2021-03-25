@@ -132,12 +132,39 @@ crossorigin="" />
 
 <span class="govuk-caption-xl">brownfield-land</span>
     <h1 class="govuk-heading-xl">GLOSBR009</h1>
+<div class="govuk-tabs" data-module="dlf-subnav">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <nav class="dlf-subnav" aria-label="Sub navigation">
+        <ul class="dlf-subnav__list">
+            <li class="dlf-subnav__list-item dlf-subnav__list-item--selected">
+                <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
+                Record
+                </a>
+            </li>
+            <li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
+                History
+                </a>
+            </li></ul>
+    </nav>
+
+<div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#GLOSBR009</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                12            </dd>
+            <dd class="govuk-summary-list__value">                GLOSBR009            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Hare Lane Car Park, Hare Lane, Kingsholm and Wotton            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                GLOSBR009            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hectares
             </dt>
@@ -147,9 +174,9 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                not permissioned            </dd>
+            <dd class="govuk-summary-list__value">                12            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -157,33 +184,25 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:GLO" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:GLO)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
+            <dt class="govuk-summary-list__key">start-date
             </dt>
-            <dd class="govuk-summary-list__value">                GLOSBR009            </dd>
+            <dd class="govuk-summary-list__value">                2017-12-01            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-plan-url
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.gloucester.gov.uk/Documents/GLOSBR009%20%20Hare%20Lane%20Car%20Park.pdf">http://www.gloucester.gov.uk/Documents/GLOSBR009%20%20Hare%20Lane%20Car%20Park.pdf</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Hare Lane Car Park, Hare Lane, Kingsholm and Wotton            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                12            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-12-01            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">notes
             </dt>
             <dd class="govuk-summary-list__value">                flood risk is significant on this site but mitigation design may be possible which would mean that housing could be viable. no housing development is currently proposed but could potentially come forward at a later date            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                GLOSBR009            </dd>
+            <dd class="govuk-summary-list__value">                12            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -194,7 +213,9 @@ crossorigin="" />
             
 </div>
 
-<a href="https://digital-land.github.io/specification/schema/brownfield-land/">View the schema for brownfield-land</a>
+<p class="govuk-body">
+    <a href="https://digital-land.github.io/specification/schema/brownfield-land/">View the brownfield-land schema</a>
+</p>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -212,52 +233,56 @@ crossorigin="" />
 
     <div class="govuk-!-margin-top-2">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
+    </div></div>
+
+<div id="history"><h2 class="govuk-heading-m govuk-!-margin-top-9">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
-<div class="data-table-left-shadow with-transition"></div>
-<div class="wide-table">
-    <table class="data-table">
-        <thead>
-            <tr>
-                <th>entry-date</th>
-                <th>resource</th>
-                <th>line</th>
-                <th>organisation</th>
-                <th>minimum-net-dwellings</th>
-                <th>site</th>
-                <th>planning-permission-status</th>
-                <th>name</th>
-                <th>notes</th>
-                <th>start-date</th>
-                <th>maximum-net-dwellings</th>
-                <th>ownership-status</th>
-                <th>site-address</th>
-                <th>point</th>
-                <th>site-plan-url</th>
-                <th>hectares</th>
-            </tr>
-        </thead>
-        <tbody>            <tr>
-                <td>2017-12-01</td>
-                <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/4ebbf80c15a14ea35ed19f9799ab3682d0bf4aa2e33d8590929342402486749f.csv#L10">4ebbf80c15a1...</a></td>
-                <td>9</td>
-                    <td>local-authority-eng:GLO</td> 
-                    <td>12</td> 
-                    <td>GLOSBR009</td> 
-                    <td>not permissioned</td> 
-                    <td>GLOSBR009</td> 
-                    <td>flood risk is significant on this site but mitigation design may be possible which would mean that housing could be viable. no housing development is currently proposed but could potentially come forward at a later date</td> 
-                    <td>2017-12-01</td> 
-                    <td>12</td> 
-                    <td>owned by a public authority</td> 
-                    <td>Hare Lane Car Park, Hare Lane, Kingsholm and Wotton</td> 
-                    <td>POINT(-2.242763 51.869252)</td> 
-                    <td>http://www.gloucester.gov.uk/Documents/GLOSBR009%20%20Hare%20Lane%20Car%20Park.pdf</td> 
-                    <td>0.32</td> 
-            </tr>        </tbody>
-    </table>
+    <div class="data-table-left-shadow with-transition"></div>
+    <div class="wide-table">
+        <table class="data-table">
+    <thead>
+        <tr>
+            <th>entry-date</th>
+            <th>resource</th>
+            <th>line</th>
+            <th>maximum-net-dwellings</th>
+            <th>minimum-net-dwellings</th>
+            <th>hectares</th>
+            <th>start-date</th>
+            <th>site-plan-url</th>
+            <th>organisation</th>
+            <th>site-address</th>
+            <th>name</th>
+            <th>site</th>
+            <th>notes</th>
+            <th>point</th>
+            <th>ownership-status</th>
+            <th>planning-permission-status</th>
+        </tr>
+    </thead>
+    <tbody>        <tr>
+            <td>2017-12-01</td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/4ebbf80c15a14ea35ed19f9799ab3682d0bf4aa2e33d8590929342402486749f.csv#L10">4ebbf80c15a1...</a></td>
+            <td>9</td>
+                <td>12</td> 
+                <td>12</td> 
+                <td>0.32</td> 
+                <td>2017-12-01</td> 
+                <td>http://www.gloucester.gov.uk/Documents/GLOSBR009%20%20Hare%20Lane%20Car%20Park.pdf</td> 
+                <td>local-authority-eng:GLO</td> 
+                <td>Hare Lane Car Park, Hare Lane, Kingsholm and Wotton</td> 
+                <td>GLOSBR009</td> 
+                <td>GLOSBR009</td> 
+                <td>flood risk is significant on this site but mitigation design may be possible which would mean that housing could be viable. no housing development is currently proposed but could potentially come forward at a later date</td> 
+                <td>POINT(-2.242763 51.869252)</td> 
+                <td>owned by a public authority</td> 
+                <td>not permissioned</td> 
+        </tr>    </tbody>
+</table>
+
+    </div>
+    <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-<div class="data-table-right-shadow visible with-transition"></div>
 </div>        </main>
       </div>
 
@@ -363,5 +388,9 @@ crossorigin="" />
         new window.DLFrontend.ScrollableTables(data_table).init()
     })
 </script>
-  </body>
+
+<script>
+    const $subNavTabs = document.querySelector('[data-module="dlf-subnav"]')
+    const subNavTabsComponent = new DLFrontend.SubNavTabs($subNavTabs).init({})
+</script>  </body>
 </html>
