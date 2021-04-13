@@ -154,6 +154,18 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#SHELAA: 360</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Stuart Turner, Greys Road, Henley-on-Thames            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-12-22            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SOX" class="govuk-link">South Oxfordshire District Council</a>
@@ -164,29 +176,17 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                42            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-12-22            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">notes
             </dt>
             <dd class="govuk-summary-list__value">                Mininum number of net dwellings is based on the capacity calculated in the SHELAA. http://maps.southoxon.gov.uk/gis/?cat=HELAA&amp;ref=360            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            <dt class="govuk-summary-list__key">site-plan-url
             </dt>
-            <dd class="govuk-summary-list__value">                0            </dd>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.southoxon.gov.uk/sites/default/files/360_Stuart%20Turner,%20Greys%20Road.pdf">http://www.southoxon.gov.uk/sites/default/files/360_Stuart%20Turner,%20Greys%20Road.pdf</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
+            <dt class="govuk-summary-list__key">deliverable
             </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not permissioned            </dd>
+            <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hectares
             </dt>
@@ -196,9 +196,17 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                SHELAA: 360            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                Stuart Turner, Greys Road, Henley-on-Thames            </dd>
+            <dd class="govuk-summary-list__value">                0            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-history
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://maps.southoxon.gov.uk/gis/?cat=HELAA&ref=360">http://maps.southoxon.gov.uk/gis/?cat=HELAA&ref=360</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site
             </dt>
@@ -207,14 +215,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2017-12-22            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.southoxon.gov.uk/sites/default/files/360_Stuart%20Turner,%20Greys%20Road.pdf">http://www.southoxon.gov.uk/sites/default/files/360_Stuart%20Turner,%20Greys%20Road.pdf</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-history
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://maps.southoxon.gov.uk/gis/?cat=HELAA&ref=360">http://maps.southoxon.gov.uk/gis/?cat=HELAA&ref=360</a>            </dd>
         </div>    
     </dl></article>
 </div>
@@ -253,61 +253,80 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>deliverable</th>
             <th>minimum-net-dwellings</th>
-            <th>site</th>
+            <th>planning-permission-history</th>
             <th>site-plan-url</th>
+            <th>name</th>
+            <th>start-date</th>
+            <th>notes</th>
+            <th>organisation</th>
+            <th>site</th>
+            <th>maximum-net-dwellings</th>
+            <th>site-address</th>
+            <th>planning-permission-status</th>
             <th>ownership-status</th>
             <th>hectares</th>
-            <th>organisation</th>
-            <th>name</th>
-            <th>notes</th>
-            <th>site-address</th>
             <th>point</th>
-            <th>deliverable</th>
-            <th>planning-permission-status</th>
-            <th>start-date</th>
-            <th>planning-permission-history</th>
-            <th>maximum-net-dwellings</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2017-12-22</td>
-            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/ea0d0eb808d415aeff93b9b600217a766e8624d3c9a55cdab97cdb37188d6ffa.csv#L30">ea0d0eb808d4...</a></td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/2626c62a6065e507ec3f93f60f4b138579f7b795b914c01deaef7f3f79a49bc7.csv#L30">2626c62a6065...</a></td>
             <td>29</td>
+                <td>yes</td> 
                 <td>0</td> 
-                <td>SHELAA: 360</td> 
+                <td>http://maps.southoxon.gov.uk/gis/?cat=HELAA&amp;ref=360</td> 
                 <td>http://www.southoxon.gov.uk/sites/default/files/360_Stuart%20Turner,%20Greys%20Road.pdf</td> 
-                <td>not owned by a public authority</td> 
-                <td>0.75</td> 
+                <td>SHELAA: 360</td> 
+                <td>2017-12-22</td> 
+                <td>Mininum number of net dwellings is based on the capacity calculated in the SHELAA. http://maps.southoxon.gov.uk/gis/?cat=HELAA&amp;ref=360</td> 
                 <td>local-authority-eng:SOX</td> 
                 <td>SHELAA: 360</td> 
-                <td>Mininum number of net dwellings is based on the capacity calculated in the SHELAA. http://maps.southoxon.gov.uk/gis/?cat=HELAA&amp;ref=360</td> 
-                <td>Stuart Turner, Greys Road, Henley-on-Thames</td> 
-                <td>POINT(-0.90621 51.535979)</td> 
-                <td>yes</td> 
-                <td>not permissioned</td> 
-                <td>2017-12-22</td> 
-                <td>http://maps.southoxon.gov.uk/gis/?cat=HELAA&amp;ref=360</td> 
                 <td>42</td> 
+                <td>Stuart Turner, Greys Road, Henley-on-Thames</td> 
+                <td>not permissioned</td> 
+                <td>not owned by a public authority</td> 
+                <td>0.75</td> 
+                <td>POINT(-0.90621 51.535979)</td> 
         </tr>        <tr>
             <td>2017-12-22</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/ef3de6b7ad0832dd8e26d33d1c91053ffa1f8ef56ba1544abc1493d0bc4eb791.csv#L28">ef3de6b7ad08...</a></td>
             <td>27</td>
+                <td>yes</td> 
                 <td>42</td> 
-                <td>SHELAA: 360</td> 
             <td></td>
-                <td>not owned by a public authority</td> 
-                <td>0.750543</td> 
+            <td></td>
+                <td>SHELAA: 360</td> 
+                <td>2017-12-22</td> 
+                <td>Mininum number of net dwellings is based on the capacity calculated in the SHELAA</td> 
                 <td>local-authority-eng:SOX</td> 
                 <td>SHELAA: 360</td> 
-                <td>Mininum number of net dwellings is based on the capacity calculated in the SHELAA</td> 
-                <td>Stuart Turner, Greys Road, Henley-on-Thames</td> 
-                <td>POINT(-0.90621 51.535979)</td> 
-                <td>yes</td> 
-                <td>not permissioned</td> 
-                <td>2017-12-22</td> 
-            <td></td>
                 <td>42</td> 
+                <td>Stuart Turner, Greys Road, Henley-on-Thames</td> 
+                <td>not permissioned</td> 
+                <td>not owned by a public authority</td> 
+                <td>0.750543</td> 
+                <td>POINT(-0.90621 51.535979)</td> 
+        </tr>        <tr>
+            <td>2017-12-22</td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/ea0d0eb808d415aeff93b9b600217a766e8624d3c9a55cdab97cdb37188d6ffa.csv#L30">ea0d0eb808d4...</a></td>
+            <td>29</td>
+                <td>yes</td> 
+                <td>0</td> 
+                <td>http://maps.southoxon.gov.uk/gis/?cat=HELAA&amp;ref=360</td> 
+                <td>http://www.southoxon.gov.uk/sites/default/files/360_Stuart%20Turner,%20Greys%20Road.pdf</td> 
+                <td>SHELAA: 360</td> 
+                <td>2017-12-22</td> 
+                <td>Mininum number of net dwellings is based on the capacity calculated in the SHELAA. http://maps.southoxon.gov.uk/gis/?cat=HELAA&amp;ref=360</td> 
+                <td>local-authority-eng:SOX</td> 
+                <td>SHELAA: 360</td> 
+                <td>42</td> 
+                <td>Stuart Turner, Greys Road, Henley-on-Thames</td> 
+                <td>not permissioned</td> 
+                <td>not owned by a public authority</td> 
+                <td>0.75</td> 
+                <td>POINT(-0.90621 51.535979)</td> 
         </tr>    </tbody>
 </table>
 
