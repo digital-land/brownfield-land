@@ -11,9 +11,7 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html">
-
-<!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -154,33 +152,29 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#BFR095</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-12-22            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                BFR095            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
+            <dt class="govuk-summary-list__key">site-address
             </dt>
-            <dd class="govuk-summary-list__value">                P/01413/18. Proposed 6 x dwellings with associated parking, landscaping and works            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.1            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                BFR095            </dd>
+            <dd class="govuk-summary-list__value">                Test Centre, 23 Medina Avenue, Newport            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">ownership-status
             </dt>
             <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
+            <dt class="govuk-summary-list__key">site-plan-url
             </dt>
-            <dd class="govuk-summary-list__value">                Test Centre, 23 Medina Avenue, Newport            </dd>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.iwight.com/brownfieldlandregister">https://www.iwight.com/brownfieldlandregister</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                6            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.1            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -192,17 +186,21 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                6            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
+            <dt class="govuk-summary-list__key">site
             </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.iwight.com/brownfieldlandregister">https://www.iwight.com/brownfieldlandregister</a>            </dd>
+            <dd class="govuk-summary-list__value">                BFR095            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            <dt class="govuk-summary-list__key">start-date
             </dt>
-            <dd class="govuk-summary-list__value">                6            </dd>
+            <dd class="govuk-summary-list__value">                2017-12-22            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
             <dd class="govuk-summary-list__value">                permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                P/01413/18. Proposed 6 x dwellings with associated parking, landscaping and works            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -253,80 +251,99 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>minimum-net-dwellings</th>
-            <th>site</th>
-            <th>name</th>
-            <th>site-address</th>
-            <th>point</th>
-            <th>start-date</th>
-            <th>site-plan-url</th>
-            <th>planning-permission-date</th>
-            <th>organisation</th>
-            <th>planning-permission-type</th>
-            <th>notes</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
             <th>hectares</th>
+            <th>planning-permission-type</th>
+            <th>maximum-net-dwellings</th>
+            <th>planning-permission-date</th>
+            <th>ownership-status</th>
+            <th>notes</th>
             <th>planning-permission-status</th>
+            <th>site-address</th>
+            <th>site-plan-url</th>
+            <th>point</th>
+            <th>name</th>
+            <th>start-date</th>
+            <th>site</th>
+            <th>organisation</th>
+            <th>minimum-net-dwellings</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2019-12-16</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/0aa04f5b5c737b7d3acdcd30232ead73de7ea766c42af5886c9afa9d8323a5fe.csv#L24">0aa04f5b5c73...</a></td>
             <td>23</td>
-                <td>6</td> 
-                <td>BFR095</td> 
-                <td>BFR095</td> 
-                <td>Test Centre, 23 Medina Avenue, Newport</td> 
-                <td>POINT(-1.290793 50.695761)</td> 
-                <td>2017-12-22</td> 
-                <td>https://www.iwight.com/brownfieldlandregister</td> 
-                <td>2019-03-06</td> 
-                <td>local-authority-eng:IOW</td> 
+                <td>0.1</td> 
                 <td>full planning permission</td> 
-                <td>P/01413/18. Proposed 6 x dwellings with associated parking, landscaping and works</td> 
-                <td>owned by a public authority</td> 
                 <td>6</td> 
-                <td>0.1</td> 
-                <td>permissioned</td> 
-        </tr>        <tr>
-            <td>2017-12-22</td>
-            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/cc84216fa3981dc8b3ae5a193e2a4db169922496ef969aba1d46f3870e3cc6e8.csv#L24">cc84216fa398...</a></td>
-            <td>23</td>
-                <td>5</td> 
-                <td>BFR095</td> 
-                <td>BFR095</td> 
-                <td>Test Centre, 23 Medina Avenue, Newport</td> 
-                <td>POINT(-1.290793 50.695761)</td> 
-                <td>2017-12-22</td> 
-                <td>https://www.iwight.com/brownfieldlandregister</td> 
-            <td></td>
-                <td>local-authority-eng:IOW</td> 
-            <td></td>
-                <td>Residential led development</td> 
+                <td>2019-03-06</td> 
                 <td>owned by a public authority</td> 
-                <td>5</td> 
-                <td>0.1</td> 
-                <td>not permissioned</td> 
+                <td>P/01413/18. Proposed 6 x dwellings with associated parking, landscaping and works</td> 
+                <td>permissioned</td> 
+                <td>Test Centre, 23 Medina Avenue, Newport</td> 
+                <td>https://www.iwight.com/brownfieldlandregister</td> 
+                <td>POINT(-1.290793 50.695761)</td> 
+                <td>BFR095</td> 
+                <td>2017-12-22</td> 
+                <td>BFR095</td> 
+                <td>local-authority-eng:IOW</td> 
+                <td>6</td> 
         </tr>        <tr>
             <td>2017-12-22</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/78a918b2ddeded372d6ec6414a17ef35c99c5b0323ee6e84024d14ecc2a26d43.csv#L24">78a918b2dded...</a></td>
             <td>23</td>
-                <td>5</td> 
-                <td>BFR095</td> 
-                <td>BFR095</td> 
-                <td>Test Centre, 23 Medina Avenue, Newport</td> 
-                <td>POINT(-1.290793 50.695761)</td> 
-                <td>2017-12-22</td> 
-                <td>https://www.iwight.com/brownfieldlandregister</td> 
-            <td></td>
-                <td>local-authority-eng:IOW</td> 
-            <td></td>
-                <td>Residential led development</td> 
-                <td>owned by a public authority</td> 
-                <td>5</td> 
                 <td>0.1</td> 
+            <td></td>
+                <td>5</td> 
+            <td></td>
+                <td>owned by a public authority</td> 
+                <td>Residential led development</td> 
                 <td>Not permissioned</td> 
+                <td>Test Centre, 23 Medina Avenue, Newport</td> 
+                <td>https://www.iwight.com/brownfieldlandregister</td> 
+                <td>POINT(-1.290793 50.695761)</td> 
+                <td>BFR095</td> 
+                <td>2017-12-22</td> 
+                <td>BFR095</td> 
+                <td>local-authority-eng:IOW</td> 
+                <td>5</td> 
+        </tr>        <tr>
+            <td>2017-12-22</td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/cc84216fa3981dc8b3ae5a193e2a4db169922496ef969aba1d46f3870e3cc6e8.csv#L24">cc84216fa398...</a></td>
+            <td>23</td>
+                <td>0.1</td> 
+            <td></td>
+                <td>5</td> 
+            <td></td>
+                <td>owned by a public authority</td> 
+                <td>Residential led development</td> 
+                <td>not permissioned</td> 
+                <td>Test Centre, 23 Medina Avenue, Newport</td> 
+                <td>https://www.iwight.com/brownfieldlandregister</td> 
+                <td>POINT(-1.290793 50.695761)</td> 
+                <td>BFR095</td> 
+                <td>2017-12-22</td> 
+                <td>BFR095</td> 
+                <td>local-authority-eng:IOW</td> 
+                <td>5</td> 
+        </tr>        <tr>
+            <td>2017-12-22</td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/5c6f6b7edce1592cda94845130f30623c155fdcea9c676add368916eaf4108fe.csv#L24">5c6f6b7edce1...</a></td>
+            <td>23</td>
+                <td>0.1</td> 
+            <td></td>
+                <td>5</td> 
+            <td></td>
+                <td>owned by a public authority</td> 
+                <td>Residential led development</td> 
+                <td>Not permissioned</td> 
+                <td>Test Centre, 23 Medina Avenue, Newport</td> 
+                <td>https://www.iwight.com/brownfieldlandregister</td> 
+                <td>POINT(-1.290793 50.695761)</td> 
+                <td>BFR095</td> 
+                <td>2017-12-22</td> 
+                <td>BFR095</td> 
+                <td>local-authority-eng:IOW</td> 
+                <td>5</td> 
         </tr>    </tbody>
 </table>
 
@@ -343,7 +360,7 @@ crossorigin="" />
             <span class="dlf-feedback__prompt-content__text">Spotted an issue? Let us know so we can improve the data.</span>
         </div>
         <div class="dlf-feedback__prompt-action">
-            <a href="mailto:digitalLand@communities.gov.uk?subject=Feedback on (BFR095) BFR095 -- brownfield-land" class="govuk-button dlf-feedback__prompt__link">There is something wrong with the data</a>
+            <a href="mailto:digitalLand@communities.gov.uk?subject=Feedback on (site) BFR095 -- brownfield-land" class="govuk-button dlf-feedback__prompt__link">There is something wrong with the data</a>
         </div>
     </div>
 </div>

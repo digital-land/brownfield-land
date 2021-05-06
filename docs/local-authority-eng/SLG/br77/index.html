@@ -11,9 +11,7 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html">
-
-<!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -154,13 +152,23 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#br77</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
+            <dt class="govuk-summary-list__key">notes
             </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+            <dd class="govuk-summary-list__value">                oth141. Residential/mixed use. http://webarchive.nationalarchives.gov.uk/20140328084622/http://publications.environment-agency.gov.uk/pdf/SCHO0195BJJX-e-e.pdf|http://webarchive.nationalarchives.gov.uk/20140328084622/http://publications.environment-agency.gov.uk/pdf/SCHO0            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Mill Street South            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                br77            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SLG" class="govuk-link">Slough Borough Council</a>
+<span title="Organisation identifier: local-authority-eng:SLG" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SLG)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
@@ -178,13 +186,13 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                0            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Mill Street South            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-plan-url
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.slough.gov.uk/connect/analyst/mobile/#/main?mapcfg=public_brownfield_register">http://www.slough.gov.uk/connect/analyst/mobile/#/main?mapcfg=public_brownfield_register</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hectares
             </dt>
@@ -193,16 +201,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
             <dd class="govuk-summary-list__value">                not permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SLG" class="govuk-link">Slough Borough Council</a>
-<span title="Organisation identifier: local-authority-eng:SLG" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SLG)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                oth141. Residential/mixed use. http://webarchive.nationalarchives.gov.uk/20140328084622/http://publications.environment-agency.gov.uk/pdf/SCHO0195BJJX-e-e.pdf|http://webarchive.nationalarchives.gov.uk/20140328084622/http://publications.environment-agency.gov.uk/pdf/SCHO0            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -245,55 +243,55 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>minimum-net-dwellings</th>
-            <th>site</th>
-            <th>name</th>
-            <th>site-address</th>
-            <th>point</th>
-            <th>start-date</th>
             <th>hectares</th>
-            <th>organisation</th>
-            <th>planning-permission-status</th>
-            <th>notes</th>
-            <th>ownership-status</th>
             <th>maximum-net-dwellings</th>
+            <th>ownership-status</th>
+            <th>notes</th>
+            <th>planning-permission-status</th>
+            <th>site-address</th>
             <th>site-plan-url</th>
+            <th>point</th>
+            <th>name</th>
+            <th>start-date</th>
+            <th>site</th>
+            <th>organisation</th>
+            <th>minimum-net-dwellings</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2019-12-06</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/c6f2cc6c5d79f806ebdee3d81d0d4509a9219f34ec10c465c80d59b858815c1a.csv#L85">c6f2cc6c5d79...</a></td>
             <td>84</td>
-                <td>0</td> 
-                <td>br77</td> 
-                <td>br77</td> 
-                <td>Mill Street South</td> 
-                <td>POINT(-0.591331 51.513292)</td> 
-                <td>2018-12-13</td> 
                 <td>3.38</td> 
-                <td>local-authority-eng:SLG</td> 
-                <td>not permissioned</td> 
-                <td>oth141. Residential/mixed use. http://webarchive.nationalarchives.gov.uk/20140328084622/http://publications.environment-agency.gov.uk/pdf/SCHO0195BJJX-e-e.pdf|http://webarchive.nationalarchives.gov.uk/20140328084622/http://publications.environment-agency.gov.uk/pdf/SCHO0</td> 
-                <td>not owned by a public authority</td> 
                 <td>0</td> 
+                <td>not owned by a public authority</td> 
+                <td>oth141. Residential/mixed use. http://webarchive.nationalarchives.gov.uk/20140328084622/http://publications.environment-agency.gov.uk/pdf/SCHO0195BJJX-e-e.pdf|http://webarchive.nationalarchives.gov.uk/20140328084622/http://publications.environment-agency.gov.uk/pdf/SCHO0</td> 
+                <td>not permissioned</td> 
+                <td>Mill Street South</td> 
                 <td>http://www.slough.gov.uk/connect/analyst/mobile/#/main?mapcfg=public_brownfield_register</td> 
+                <td>POINT(-0.591331 51.513292)</td> 
+                <td>br77</td> 
+                <td>2018-12-13</td> 
+                <td>br77</td> 
+                <td>local-authority-eng:SLG</td> 
+                <td>0</td> 
         </tr>        <tr>
             <td>2018-12-13</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/ea0c72de28fa2181f7a4bb172b542a89631bd6aa439f40c1a699d2a71dc659d6.csv#L70">ea0c72de28fa...</a></td>
             <td>69</td>
-                <td>50</td> 
-                <td>br77</td> 
-                <td>br77</td> 
-                <td>Mill Street South</td> 
-                <td>POINT(-0.591331 51.513292)</td> 
-                <td>2018-12-13</td> 
                 <td>3.38</td> 
-                <td>local-authority-eng:SLG</td> 
-                <td>not permissioned</td> 
-                <td>oth141. Residential/mixed use. http://webarchive.nationalarchives.gov.uk/20140328084622/http://publications.environment-agency.gov.uk/pdf/SCHO0195BJJX-e-e.pdf|http://webarchive.nationalarchives.gov.uk/20140328084622/http://publications.environment-agency.gov.uk/pdf/SCHO0195BJKQ-e-e.pdf|http://webarchive.nationalarchives.gov.uk/20140328084622/http://publications.environment-agency.gov.uk/pdf/SCHO0195BJKT-e-e.pdf|http://webarchive.nationalarchives.gov.uk/20140328084622/http://publications.environment-agency.gov.uk/pdf/SCHO0195BJKO-e-e.pdf</td> 
-                <td>mixed ownership</td> 
                 <td>50</td> 
+                <td>mixed ownership</td> 
+                <td>oth141. Residential/mixed use. http://webarchive.nationalarchives.gov.uk/20140328084622/http://publications.environment-agency.gov.uk/pdf/SCHO0195BJJX-e-e.pdf|http://webarchive.nationalarchives.gov.uk/20140328084622/http://publications.environment-agency.gov.uk/pdf/SCHO0195BJKQ-e-e.pdf|http://webarchive.nationalarchives.gov.uk/20140328084622/http://publications.environment-agency.gov.uk/pdf/SCHO0195BJKT-e-e.pdf|http://webarchive.nationalarchives.gov.uk/20140328084622/http://publications.environment-agency.gov.uk/pdf/SCHO0195BJKO-e-e.pdf</td> 
+                <td>not permissioned</td> 
+                <td>Mill Street South</td> 
                 <td>http://www.slough.gov.uk/downloads/slough_brownfield_land_register_site_br77.pdf</td> 
+                <td>POINT(-0.591331 51.513292)</td> 
+                <td>br77</td> 
+                <td>2018-12-13</td> 
+                <td>br77</td> 
+                <td>local-authority-eng:SLG</td> 
+                <td>50</td> 
         </tr>    </tbody>
 </table>
 
@@ -310,7 +308,7 @@ crossorigin="" />
             <span class="dlf-feedback__prompt-content__text">Spotted an issue? Let us know so we can improve the data.</span>
         </div>
         <div class="dlf-feedback__prompt-action">
-            <a href="mailto:digitalLand@communities.gov.uk?subject=Feedback on (br77) br77 -- brownfield-land" class="govuk-button dlf-feedback__prompt__link">There is something wrong with the data</a>
+            <a href="mailto:digitalLand@communities.gov.uk?subject=Feedback on (site) br77 -- brownfield-land" class="govuk-button dlf-feedback__prompt__link">There is something wrong with the data</a>
         </div>
     </div>
 </div>

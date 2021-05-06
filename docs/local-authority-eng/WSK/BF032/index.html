@@ -11,9 +11,7 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html">
-
-<!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -154,9 +152,17 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#BF032</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                not permissioned            </dd>
+            <dd class="govuk-summary-list__value">                50            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                Brownfield - bus depot and car repairs/ dealership            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
@@ -166,33 +172,17 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                BF032            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                Brownfield - bus depot and car repairs/ dealership            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+            <dd class="govuk-summary-list__value">                50            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2017-09-01            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
+            <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
-            <dd class="govuk-summary-list__value">                GaragesAndBusDepot,CottonLane,BuryStEdmunds            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                50            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                50            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
+            <dd class="govuk-summary-list__value">                not permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hectares
             </dt>
@@ -203,6 +193,14 @@ crossorigin="" />
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/WSK" class="govuk-link">West Suffolk Council</a>
 <span title="Organisation identifier: local-authority-eng:WSK" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WSK)</span>
             </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                GaragesAndBusDepot,CottonLane,BuryStEdmunds            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -245,38 +243,38 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
-            <th>name</th>
-            <th>site-address</th>
-            <th>point</th>
-            <th>start-date</th>
             <th>hectares</th>
-            <th>deliverable</th>
-            <th>organisation</th>
-            <th>planning-permission-status</th>
-            <th>notes</th>
+            <th>minimum-net-dwellings</th>
             <th>maximum-net-dwellings</th>
             <th>ownership-status</th>
+            <th>notes</th>
+            <th>planning-permission-status</th>
+            <th>organisation</th>
+            <th>site-address</th>
+            <th>point</th>
+            <th>name</th>
+            <th>start-date</th>
+            <th>site</th>
+            <th>deliverable</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2019-12-16</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/8b3d934973e57b487c0c3cadf77040ca7f2f3bb22d9487f5abeeae8056758c94.csv#L11">8b3d934973e5...</a></td>
             <td>10</td>
-                <td>BF032</td> 
-                <td>50</td> 
-                <td>BF032</td> 
-                <td>GaragesAndBusDepot,CottonLane,BuryStEdmunds</td> 
-                <td>POINT(0.719236 52.24697)</td> 
-                <td>2017-09-01</td> 
                 <td>0.65</td> 
-                <td>yes</td> 
-                <td>local-authority-eng:WSK</td> 
-                <td>not permissioned</td> 
-                <td>Brownfield - bus depot and car repairs/ dealership</td> 
+                <td>50</td> 
                 <td>50</td> 
                 <td>not owned by a public authority</td> 
+                <td>Brownfield - bus depot and car repairs/ dealership</td> 
+                <td>not permissioned</td> 
+                <td>local-authority-eng:WSK</td> 
+                <td>GaragesAndBusDepot,CottonLane,BuryStEdmunds</td> 
+                <td>POINT(0.719236 52.24697)</td> 
+                <td>BF032</td> 
+                <td>2017-09-01</td> 
+                <td>BF032</td> 
+                <td>yes</td> 
         </tr>    </tbody>
 </table>
 
@@ -293,7 +291,7 @@ crossorigin="" />
             <span class="dlf-feedback__prompt-content__text">Spotted an issue? Let us know so we can improve the data.</span>
         </div>
         <div class="dlf-feedback__prompt-action">
-            <a href="mailto:digitalLand@communities.gov.uk?subject=Feedback on (BF032) BF032 -- brownfield-land" class="govuk-button dlf-feedback__prompt__link">There is something wrong with the data</a>
+            <a href="mailto:digitalLand@communities.gov.uk?subject=Feedback on (site) BF032 -- brownfield-land" class="govuk-button dlf-feedback__prompt__link">There is something wrong with the data</a>
         </div>
     </div>
 </div>

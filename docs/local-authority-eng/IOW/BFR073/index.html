@@ -11,9 +11,7 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html">
-
-<!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -154,6 +152,10 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#BFR073</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                BFR073            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">ownership-status
             </dt>
             <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
@@ -161,34 +163,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                5            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Cheeks Farm, Merstone Lane, Merstone, Newport, PO30 3DE            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.6            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.iwight.com/brownfieldlandregister">https://www.iwight.com/brownfieldlandregister</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-12-22            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                BFR073            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                BFR073            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">notes
             </dt>
@@ -198,11 +172,35 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                5            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.6            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.iwight.com/brownfieldlandregister">https://www.iwight.com/brownfieldlandregister</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Cheeks Farm, Merstone Lane, Merstone, Newport, PO30 3DE            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                BFR073            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/IOW" class="govuk-link">Isle of Wight Council</a>
 <span title="Organisation identifier: local-authority-eng:IOW" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:IOW)</span>
             </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                Not permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-12-22            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -245,55 +243,72 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>hectares</th>
+            <th>maximum-net-dwellings</th>
+            <th>ownership-status</th>
+            <th>notes</th>
+            <th>planning-permission-status</th>
+            <th>site-address</th>
+            <th>site-plan-url</th>
+            <th>point</th>
+            <th>name</th>
+            <th>organisation</th>
+            <th>start-date</th>
             <th>site</th>
             <th>minimum-net-dwellings</th>
-            <th>name</th>
-            <th>site-address</th>
-            <th>start-date</th>
-            <th>point</th>
-            <th>hectares</th>
-            <th>organisation</th>
-            <th>planning-permission-status</th>
-            <th>notes</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2017-12-22</td>
-            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/0aa04f5b5c737b7d3acdcd30232ead73de7ea766c42af5886c9afa9d8323a5fe.csv#L9">0aa04f5b5c73...</a></td>
-            <td>8</td>
-                <td>BFR073</td> 
-                <td>5</td> 
-                <td>BFR073</td> 
-                <td>Cheeks Farm, Merstone Lane, Merstone, Newport, PO30 3DE</td> 
-                <td>2017-12-22</td> 
-                <td>POINT(-1.25409 50.664786)</td> 
-                <td>0.6</td> 
-                <td>local-authority-eng:IOW</td> 
-                <td>not permissioned</td> 
-                <td>Residential led development</td> 
-                <td>not owned by a public authority</td> 
-                <td>5</td> 
-                <td>https://www.iwight.com/brownfieldlandregister</td> 
-        </tr>        <tr>
-            <td>2017-12-22</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/78a918b2ddeded372d6ec6414a17ef35c99c5b0323ee6e84024d14ecc2a26d43.csv#L9">78a918b2dded...</a></td>
             <td>8</td>
-                <td>BFR073</td> 
-                <td>5</td> 
-                <td>BFR073</td> 
-                <td>Cheeks Farm, Merstone Lane, Merstone, Newport, PO30 3DE</td> 
-                <td>2017-12-22</td> 
-                <td>POINT(-1.25409 50.664786)</td> 
                 <td>0.6</td> 
-                <td>local-authority-eng:IOW</td> 
-                <td>Not permissioned</td> 
-                <td>Residential led development</td> 
-                <td>not owned by a public authority</td> 
                 <td>5</td> 
+                <td>not owned by a public authority</td> 
+                <td>Residential led development</td> 
+                <td>Not permissioned</td> 
+                <td>Cheeks Farm, Merstone Lane, Merstone, Newport, PO30 3DE</td> 
                 <td>https://www.iwight.com/brownfieldlandregister</td> 
+                <td>POINT(-1.25409 50.664786)</td> 
+                <td>BFR073</td> 
+                <td>local-authority-eng:IOW</td> 
+                <td>2017-12-22</td> 
+                <td>BFR073</td> 
+                <td>5</td> 
+        </tr>        <tr>
+            <td>2017-12-22</td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/cc84216fa3981dc8b3ae5a193e2a4db169922496ef969aba1d46f3870e3cc6e8.csv#L9">cc84216fa398...</a></td>
+            <td>8</td>
+                <td>0.6</td> 
+                <td>5</td> 
+                <td>not owned by a public authority</td> 
+                <td>Residential led development</td> 
+                <td>not permissioned</td> 
+                <td>Cheeks Farm, Merstone Lane, Merstone, Newport, PO30 3DE</td> 
+                <td>https://www.iwight.com/brownfieldlandregister</td> 
+                <td>POINT(-1.25409 50.664786)</td> 
+                <td>BFR073</td> 
+                <td>local-authority-eng:IOW</td> 
+                <td>2017-12-22</td> 
+                <td>BFR073</td> 
+                <td>5</td> 
+        </tr>        <tr>
+            <td>2017-12-22</td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/5c6f6b7edce1592cda94845130f30623c155fdcea9c676add368916eaf4108fe.csv#L9">5c6f6b7edce1...</a></td>
+            <td>8</td>
+                <td>0.6</td> 
+                <td>5</td> 
+                <td>not owned by a public authority</td> 
+                <td>Residential led development</td> 
+                <td>Not permissioned</td> 
+                <td>Cheeks Farm, Merstone Lane, Merstone, Newport, PO30 3DE</td> 
+                <td>https://www.iwight.com/brownfieldlandregister</td> 
+                <td>POINT(-1.25409 50.664786)</td> 
+                <td>BFR073</td> 
+                <td>local-authority-eng:IOW</td> 
+                <td>2017-12-22</td> 
+                <td>BFR073</td> 
+                <td>5</td> 
         </tr>    </tbody>
 </table>
 
@@ -310,7 +325,7 @@ crossorigin="" />
             <span class="dlf-feedback__prompt-content__text">Spotted an issue? Let us know so we can improve the data.</span>
         </div>
         <div class="dlf-feedback__prompt-action">
-            <a href="mailto:digitalLand@communities.gov.uk?subject=Feedback on (BFR073) BFR073 -- brownfield-land" class="govuk-button dlf-feedback__prompt__link">There is something wrong with the data</a>
+            <a href="mailto:digitalLand@communities.gov.uk?subject=Feedback on (site) BFR073 -- brownfield-land" class="govuk-button dlf-feedback__prompt__link">There is something wrong with the data</a>
         </div>
     </div>
 </div>

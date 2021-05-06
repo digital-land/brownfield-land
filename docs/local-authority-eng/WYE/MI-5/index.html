@@ -11,9 +11,7 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html">
-
-<!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -154,29 +152,17 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#MI/5</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
+            <dt class="govuk-summary-list__key">ownership-status
             </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                MI/5            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            <dt class="govuk-summary-list__key">start-date
             </dt>
-            <dd class="govuk-summary-list__value">                55            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                MI/5            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.8316            </dd>
+            <dd class="govuk-summary-list__value">                2017-12-31            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -184,25 +170,37 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:WYE" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WYE)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Land off Baldwin Road            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                MI/5            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-plan-url
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.wyreforestdc.gov.uk/media/3411877/MI5-Baldwin-Road.png">http://www.wyreforestdc.gov.uk/media/3411877/MI5-Baldwin-Road.png</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                55            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.8316            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                72            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
+            <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
-            <dd class="govuk-summary-list__value">                Land off Baldwin Road            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-12-31            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -253,61 +251,61 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>hectares</th>
+            <th>planning-permission-type</th>
             <th>minimum-net-dwellings</th>
-            <th>site</th>
-            <th>name</th>
+            <th>maximum-net-dwellings</th>
+            <th>ownership-status</th>
+            <th>notes</th>
+            <th>planning-permission-status</th>
             <th>site-address</th>
+            <th>site-plan-url</th>
             <th>point</th>
             <th>start-date</th>
-            <th>site-plan-url</th>
-            <th>deliverable</th>
             <th>organisation</th>
-            <th>planning-permission-status</th>
-            <th>planning-permission-type</th>
-            <th>notes</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>hectares</th>
+            <th>name</th>
+            <th>site</th>
+            <th>deliverable</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2017-12-31</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/9745c8ea5cb4e2fb4b4a4f766509318bbd0b95bde236e04f0ad42bd232b5ba10.csv#L39">9745c8ea5cb4...</a></td>
             <td>38</td>
+                <td>0.8316</td> 
+                <td>full planning permission</td> 
                 <td>55</td> 
-                <td>MI/5</td> 
-                <td>MI/5</td> 
+                <td>72</td> 
+                <td>not owned by a public authority</td> 
+                <td>multiple permissions in place. See also http://www.wyreforest.gov.uk/fastweb/detail.asp?AltRef=15/0716/FULL; http://www.wyreforest.gov.uk/fastweb/detail.asp?AltRef=16/0603/FULL; http://www.wyreforest.gov.uk/fastweb/detail.asp?AltRef=15/0429/FULL</td> 
+                <td>permissioned</td> 
                 <td>Land off Baldwin Road</td> 
+            <td></td>
                 <td>POINT(-2.271601 52.341764)</td> 
                 <td>2017-12-31</td> 
-            <td></td>
-                <td>yes</td> 
                 <td>local-authority-eng:WYE</td> 
-                <td>permissioned</td> 
-                <td>full planning permission</td> 
-                <td>multiple permissions in place. See also http://www.wyreforest.gov.uk/fastweb/detail.asp?AltRef=15/0716/FULL; http://www.wyreforest.gov.uk/fastweb/detail.asp?AltRef=16/0603/FULL; http://www.wyreforest.gov.uk/fastweb/detail.asp?AltRef=15/0429/FULL</td> 
-                <td>not owned by a public authority</td> 
-                <td>72</td> 
-                <td>0.8316</td> 
+                <td>MI/5</td> 
+                <td>MI/5</td> 
+                <td>yes</td> 
         </tr>        <tr>
             <td>2017-12-31</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/5f964c7120fcfc160f46d61ec00d6ceb96476773224ab45a85a6340b1b55b1ff.csv#L40">5f964c7120fc...</a></td>
             <td>39</td>
+                <td>0.8316</td> 
+            <td></td>
                 <td>55</td> 
-                <td>MI/5</td> 
-                <td>MI/5</td> 
+                <td>55</td> 
+                <td>not owned by a public authority</td> 
+            <td></td>
+                <td>permissioned</td> 
                 <td>Land off Baldwin Road</td> 
+                <td>http://www.wyreforestdc.gov.uk/media/3411877/MI5-Baldwin-Road.png</td> 
             <td></td>
                 <td>2017-12-31</td> 
-                <td>http://www.wyreforestdc.gov.uk/media/3411877/MI5-Baldwin-Road.png</td> 
-                <td>yes</td> 
                 <td>local-authority-eng:WYE</td> 
-                <td>permissioned</td> 
-            <td></td>
-            <td></td>
-                <td>not owned by a public authority</td> 
-                <td>55</td> 
-                <td>0.8316</td> 
+                <td>MI/5</td> 
+                <td>MI/5</td> 
+                <td>yes</td> 
         </tr>    </tbody>
 </table>
 
@@ -324,7 +322,7 @@ crossorigin="" />
             <span class="dlf-feedback__prompt-content__text">Spotted an issue? Let us know so we can improve the data.</span>
         </div>
         <div class="dlf-feedback__prompt-action">
-            <a href="mailto:digitalLand@communities.gov.uk?subject=Feedback on (MI/5) MI/5 -- brownfield-land" class="govuk-button dlf-feedback__prompt__link">There is something wrong with the data</a>
+            <a href="mailto:digitalLand@communities.gov.uk?subject=Feedback on (site) MI/5 -- brownfield-land" class="govuk-button dlf-feedback__prompt__link">There is something wrong with the data</a>
         </div>
     </div>
 </div>
