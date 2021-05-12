@@ -145,7 +145,12 @@ crossorigin="" />
                 <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
                 History
                 </a>
-            </li></ul>
+            </li><li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#referenced-by" data-module-sub-nav="tab">
+                Referenced by (0)
+                </a>
+            </li>
+        </ul>
     </nav>
 
 <div id="record">
@@ -158,17 +163,9 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:HRY" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:HRY)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                2017-12-31            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                1.25            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                mixed ownership            </dd>
+            <dd class="govuk-summary-list__value">                17140356            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-plan-url
             </dt>
@@ -178,25 +175,33 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                17140356            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            <dt class="govuk-summary-list__key">site-address
             </dt>
-            <dd class="govuk-summary-list__value">                213            </dd>
+            <dd class="govuk-summary-list__value">                Station Square North            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                1.25            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                213            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-12-31            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                213            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                mixed ownership            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">deliverable
             </dt>
             <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Station Square North            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                17140356            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">notes
             </dt>
@@ -210,11 +215,6 @@ crossorigin="" />
 </div>
             
 </div>
-
-<h3 class="govuk-heading-m">Associated information</h3>
-
-<ul class="govuk-list govuk-list--bullet">
-    <li><a href="https://digital-land.github.io/specification/schema/brownfield-land/">View the brownfield-land schema</a></li></ul>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -230,9 +230,15 @@ crossorigin="" />
 </div>
 
 
-    <div class="govuk-!-margin-top-2">
+    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div></div>
+    </div>
+<h3 class="govuk-heading-m">Associated information</h3>
+
+<ul class="govuk-list govuk-list--bullet">
+    <li><a href="https://digital-land.github.io/specification/schema/brownfield-land/">View the brownfield-land schema</a></li></ul>
+
+</div>
 
 <div id="history"><h2 class="govuk-heading-m dlf-subnav__heading">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
@@ -244,113 +250,121 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
-            <th>organisation</th>
             <th>minimum-net-dwellings</th>
-            <th>deliverable</th>
-            <th>point</th>
-            <th>notes</th>
-            <th>ownership-status</th>
             <th>site-plan-url</th>
+            <th>notes</th>
+            <th>point</th>
+            <th>site</th>
+            <th>organisation</th>
+            <th>name</th>
+            <th>site-address</th>
+            <th>ownership-status</th>
             <th>hectares</th>
             <th>start-date</th>
-            <th>site-address</th>
             <th>maximum-net-dwellings</th>
-            <th>site</th>
+            <th>deliverable</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-02-02</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/4c41c7a3739ba8b21a66228d3c0b024db386b32359af97c8b8a15462d9cbba9a.csv#L129">4c41c7a3739b...</a></td>
             <td>128</td>
+                <td>213</td> 
+                <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
+                <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
+            <td></td>
                 <td>17140356</td> 
                 <td>local-authority-eng:HRY</td> 
-                <td>213</td> 
-                <td>yes</td> 
-            <td></td>
-                <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
+                <td>17140356</td> 
+                <td>Station Square North</td> 
                 <td>mixed ownership</td> 
-                <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
                 <td>1.25</td> 
                 <td>2017-12-31</td> 
-                <td>Station Square North</td> 
                 <td>213</td> 
-                <td>17140356</td> 
+                <td>yes</td> 
         </tr>        <tr>
             <td>2020-12-22</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/9ee698608d8c7dcad9d872d2e109b28a00e577e100a53fc7f2e46a81c8a126e3.csv#L2209">9ee698608d8c...</a></td>
             <td>2208</td>
+                <td>213</td> 
+                <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
+            <td></td>
+                <td>POINT(-0.061904 51.589508)</td> 
                 <td>17140356</td> 
                 <td>local-authority-eng:HRY</td> 
-                <td>213</td> 
-                <td>yes</td> 
-                <td>POINT(-0.061904 51.589508)</td> 
-            <td></td>
+                <td>17140356</td> 
+                <td>Station Square North</td> 
                 <td>mixed ownership</td> 
-                <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
                 <td>1.25</td> 
             <td></td>
-                <td>Station Square North</td> 
                 <td>213</td> 
-                <td>17140356</td> 
+                <td>yes</td> 
         </tr>        <tr>
             <td>2019-12-31</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/caa60d5ffae6d94a73fa94be2f5c02a5ab40172f4cc37d01fe8f4c4bed94b7c5.csv#L129">caa60d5ffae6...</a></td>
             <td>128</td>
+                <td>213</td> 
+                <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
+                <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
+            <td></td>
                 <td>17140356</td> 
                 <td>local-authority-eng:HRY</td> 
-                <td>213</td> 
-                <td>yes</td> 
-            <td></td>
-                <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
+                <td>17140356</td> 
+                <td>Station Square North</td> 
                 <td>mixed ownership</td> 
-                <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
                 <td>1.25</td> 
                 <td>2017-12-31</td> 
-                <td>Station Square North</td> 
                 <td>213</td> 
-                <td>17140356</td> 
+                <td>yes</td> 
         </tr>        <tr>
             <td>2019-10-24</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/53ff7410d03797e7747d4df128ca450bbe808f4eacc79d0e2d18623ab4a99554.csv#L1642">53ff7410d037...</a></td>
             <td>1641</td>
+                <td>213</td> 
+                <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
+            <td></td>
+                <td>POINT(-0.061904 51.589508)</td> 
                 <td>17140356</td> 
                 <td>local-authority-eng:HRY</td> 
-                <td>213</td> 
-                <td>yes</td> 
-                <td>POINT(-0.061904 51.589508)</td> 
-            <td></td>
+                <td>17140356</td> 
+                <td>Station Square North</td> 
                 <td>mixed ownership</td> 
-                <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
                 <td>1.25</td> 
             <td></td>
-                <td>Station Square North</td> 
                 <td>213</td> 
-                <td>17140356</td> 
+                <td>yes</td> 
         </tr>        <tr>
             <td>2017-12-31</td>
-            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/32545a25faa6d113e9db91f4a77eb740b2d19a05e03928c75d8d2dd9b9a1b737.csv#L157">32545a25faa6...</a></td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/c415eaa05263be7c30b30932b8757af97b59962118ccaad9412b173b8f9fb375.csv#L157">c415eaa05263...</a></td>
             <td>156</td>
+                <td>213</td> 
+                <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
+                <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
+            <td></td>
                 <td>17140356</td> 
                 <td>local-authority-eng:HRY</td> 
-                <td>213</td> 
-                <td>yes</td> 
-            <td></td>
-                <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
+                <td>17140356</td> 
+                <td>Station Square North</td> 
                 <td>mixed ownership</td> 
-                <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
                 <td>1.25</td> 
                 <td>2017-12-31</td> 
-                <td>Station Square North</td> 
                 <td>213</td> 
-                <td>17140356</td> 
+                <td>yes</td> 
         </tr>    </tbody>
 </table>
 
     </div>
     <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-</div>        </main>
+</div><div id="referenced-by">
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h2 class="govuk-heading-m dlf-subnav__heading">Referenced by</h2>
+            <p class="govuk-body">This record is referenced by 0 other planning related data records.</p>
+</div>
+    </div>
+</div>
+        </main>
       </div>
 
     <div class="dlf-feedback__wrapper">

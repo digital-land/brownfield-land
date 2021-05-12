@@ -145,20 +145,25 @@ crossorigin="" />
                 <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
                 History
                 </a>
-            </li></ul>
+            </li><li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#referenced-by" data-module-sub-nav="tab">
+                Referenced by (0)
+                </a>
+            </li>
+        </ul>
     </nav>
 
 <div id="record">
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#BRL36</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.24            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">deliverable
             </dt>
             <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                NYCCDepot,Kirkgate            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -166,11 +171,23 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:CRA" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:CRA)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
+            <dt class="govuk-summary-list__key">hectares
             </dt>
-            <dd class="govuk-summary-list__value">                NYCCDepot,Kirkgate            </dd>
+            <dd class="govuk-summary-list__value">                0.24            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                Land allocated within Draft Local Plan            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                BRL36            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2018-01-09            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                BRL36            </dd>
         </div>        <div class="govuk-summary-list__row">
@@ -182,25 +199,13 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                Not permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                8            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                BRL36            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">ownership-status
             </dt>
             <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                Land allocated within Draft Local Plan            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2018-01-09            </dd>
+            <dd class="govuk-summary-list__value">                8            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -210,11 +215,6 @@ crossorigin="" />
 </div>
             
 </div>
-
-<h3 class="govuk-heading-m">Associated information</h3>
-
-<ul class="govuk-list govuk-list--bullet">
-    <li><a href="https://digital-land.github.io/specification/schema/brownfield-land/">View the brownfield-land schema</a></li></ul>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -230,9 +230,15 @@ crossorigin="" />
 </div>
 
 
-    <div class="govuk-!-margin-top-2">
+    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div></div>
+    </div>
+<h3 class="govuk-heading-m">Associated information</h3>
+
+<ul class="govuk-list govuk-list--bullet">
+    <li><a href="https://digital-land.github.io/specification/schema/brownfield-land/">View the brownfield-land schema</a></li></ul>
+
+</div>
 
 <div id="history"><h2 class="govuk-heading-m dlf-subnav__heading">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
@@ -244,45 +250,53 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
-            <th>organisation</th>
             <th>minimum-net-dwellings</th>
-            <th>deliverable</th>
-            <th>point</th>
             <th>notes</th>
+            <th>point</th>
+            <th>planning-permission-status</th>
+            <th>site</th>
+            <th>organisation</th>
+            <th>site-address</th>
+            <th>name</th>
             <th>ownership-status</th>
             <th>hectares</th>
             <th>start-date</th>
-            <th>site-address</th>
-            <th>planning-permission-status</th>
             <th>maximum-net-dwellings</th>
-            <th>site</th>
+            <th>deliverable</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2018-02-02</td>
-            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/76b5d6f58c019347ef23ddae1e190f368c1976adc72bb10ee4dd6504c4fc1563.csv#L36">76b5d6f58c01...</a></td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/33a975ffd0c514f6b63d6fdb32b46f4f8b4471a48f13869974d5cac687e04c66.csv#L36">33a975ffd0c5...</a></td>
             <td>35</td>
+                <td>8</td> 
+                <td>Land allocated within Draft Local Plan</td> 
+                <td>POINT(-2.278879 54.0692)</td> 
+                <td>Not permissioned</td> 
                 <td>BRL36</td> 
                 <td>local-authority-eng:CRA</td> 
-                <td>8</td> 
-                <td>yes</td> 
-                <td>POINT(-2.278879 54.0692)</td> 
-                <td>Land allocated within Draft Local Plan</td> 
+                <td>NYCCDepot,Kirkgate</td> 
+                <td>BRL36</td> 
                 <td>owned by a public authority</td> 
                 <td>0.24</td> 
                 <td>2018-01-09</td> 
-                <td>NYCCDepot,Kirkgate</td> 
-                <td>Not permissioned</td> 
                 <td>8</td> 
-                <td>BRL36</td> 
+                <td>yes</td> 
         </tr>    </tbody>
 </table>
 
     </div>
     <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-</div>        </main>
+</div><div id="referenced-by">
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h2 class="govuk-heading-m dlf-subnav__heading">Referenced by</h2>
+            <p class="govuk-body">This record is referenced by 0 other planning related data records.</p>
+</div>
+    </div>
+</div>
+        </main>
       </div>
 
     <div class="dlf-feedback__wrapper">

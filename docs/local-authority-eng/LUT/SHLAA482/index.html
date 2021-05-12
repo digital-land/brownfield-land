@@ -145,7 +145,12 @@ crossorigin="" />
                 <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
                 History
                 </a>
-            </li></ul>
+            </li><li class="dlf-subnav__list-item">
+                <a class="dlf-subnav__list-item__link" href="#referenced-by" data-module-sub-nav="tab">
+                Referenced by (0)
+                </a>
+            </li>
+        </ul>
     </nav>
 
 <div id="record">
@@ -156,37 +161,21 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                SHLAA482            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-12-01            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                27            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                SHLAA482            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps1/482-483-and-484.pdf">https://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps1/482-483-and-484.pdf</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.16            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
             <dd class="govuk-summary-list__value">                not permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                High Town plot 7            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">notes
             </dt>
             <dd class="govuk-summary-list__value">                No planning history provided as site covers multiple plots with multiple histories            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-12-01            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                High Town plot 7            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
@@ -198,6 +187,22 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:LUT" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:LUT)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                SHLAA482            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                27            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps1/482-483-and-484.pdf">https://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps1/482-483-and-484.pdf</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.16            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2019-11-18            </dd>
@@ -206,11 +211,6 @@ crossorigin="" />
 </div>
             
 </div>
-
-<h3 class="govuk-heading-m">Associated information</h3>
-
-<ul class="govuk-list govuk-list--bullet">
-    <li><a href="https://digital-land.github.io/specification/schema/brownfield-land/">View the brownfield-land schema</a></li></ul>
 
 
     <h2 class="govuk-heading-m">Geographical area</h2>
@@ -226,9 +226,15 @@ crossorigin="" />
 </div>
 
 
-    <div class="govuk-!-margin-top-2">
+    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
-    </div></div>
+    </div>
+<h3 class="govuk-heading-m">Associated information</h3>
+
+<ul class="govuk-list govuk-list--bullet">
+    <li><a href="https://digital-land.github.io/specification/schema/brownfield-land/">View the brownfield-land schema</a></li></ul>
+
+</div>
 
 <div id="history"><h2 class="govuk-heading-m dlf-subnav__heading">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
@@ -240,59 +246,67 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>name</th>
-            <th>organisation</th>
             <th>minimum-net-dwellings</th>
+            <th>site-plan-url</th>
             <th>point</th>
             <th>notes</th>
-            <th>hectares</th>
-            <th>site-plan-url</th>
-            <th>start-date</th>
-            <th>site-address</th>
             <th>planning-permission-status</th>
-            <th>maximum-net-dwellings</th>
             <th>site</th>
+            <th>organisation</th>
+            <th>name</th>
+            <th>site-address</th>
+            <th>hectares</th>
+            <th>start-date</th>
+            <th>maximum-net-dwellings</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2019-11-18</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/2f7c0fef68e882c3acba02073190cf0e6de4e616807f81fd211a0c1b03a10cad.csv#L53">2f7c0fef68e8...</a></td>
             <td>52</td>
-                <td>SHLAA482</td> 
-                <td>local-authority-eng:LUT</td> 
                 <td>27</td> 
+                <td>https://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps1/482-483-and-484.pdf</td> 
                 <td>POINT(-0.415969 51.884469)</td> 
                 <td>No planning history provided as site covers multiple plots with multiple histories</td> 
-                <td>0.16</td> 
-                <td>https://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps1/482-483-and-484.pdf</td> 
-                <td>2017-12-01</td> 
-                <td>High Town plot 7</td> 
                 <td>not permissioned</td> 
-                <td>30</td> 
                 <td>SHLAA482</td> 
+                <td>local-authority-eng:LUT</td> 
+                <td>SHLAA482</td> 
+                <td>High Town plot 7</td> 
+                <td>0.16</td> 
+                <td>2017-12-01</td> 
+                <td>30</td> 
         </tr>        <tr>
             <td>2018-12-28</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/d592c9c125651be573b8528b3334920b98dedc1388c589abf5227249dae847e1.csv#L58">d592c9c12565...</a></td>
             <td>57</td>
-                <td>SHLAA482</td> 
-                <td>local-authority-eng:LUT</td> 
                 <td>27</td> 
+                <td>http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/482_483-and-484.pdf</td> 
                 <td>POINT(-0.415969 51.884469)</td> 
                 <td>No planning history provided as site covers multiple plots with multiple histories. https://www.luton.gov.uk/ENVIRONMENT/PLANNING/REGIONAL%20AND%20LOCAL%20PLANNING/HIGHTOWN-MASTERPLAN/Pages/default.aspx</td> 
-                <td>0.16</td> 
-                <td>http://www.luton.gov.uk/Environment/Lists/LutonDocuments/PDF/SHLAA-2017/Maps/482_483-and-484.pdf</td> 
-                <td>2017-12-01</td> 
-                <td>High Town plot 7</td> 
                 <td>not permissioned</td> 
-                <td>30</td> 
                 <td>SHLAA482</td> 
+                <td>local-authority-eng:LUT</td> 
+                <td>SHLAA482</td> 
+                <td>High Town plot 7</td> 
+                <td>0.16</td> 
+                <td>2017-12-01</td> 
+                <td>30</td> 
         </tr>    </tbody>
 </table>
 
     </div>
     <div class="data-table-right-shadow visible with-transition"></div>
 </div>
-</div>        </main>
+</div><div id="referenced-by">
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h2 class="govuk-heading-m dlf-subnav__heading">Referenced by</h2>
+            <p class="govuk-body">This record is referenced by 0 other planning related data records.</p>
+</div>
+    </div>
+</div>
+        </main>
       </div>
 
     <div class="dlf-feedback__wrapper">
