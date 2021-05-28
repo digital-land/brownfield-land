@@ -147,7 +147,7 @@ crossorigin="" />
                 </a>
             </li><li class="dlf-subnav__list-item">
                 <a class="dlf-subnav__list-item__link" href="#referenced-by" data-module-sub-nav="tab">
-                Referenced by (0)
+                2 References
                 </a>
             </li>
         </ul>
@@ -157,10 +157,6 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#Dean2001</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Hill Quays, 1 Jordan Street (additional units)            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site
             </dt>
             <dd class="govuk-summary-list__value">                Dean2001            </dd>
@@ -175,9 +171,25 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                Dean2001            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2020-12-31            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Hill Quays, 1 Jordan Street (additional units)            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">deliverable
             </dt>
             <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.12            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-history
             </dt>
@@ -187,23 +199,11 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://mappinggm.org.uk/gmodin/">https://mappinggm.org.uk/gmodin/</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                11            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2020-12-31            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.12            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                11            </dd>
         </div>        <div class="govuk-summary-list__row">
@@ -216,19 +216,20 @@ crossorigin="" />
             
 </div>
 
-
     <h2 class="govuk-heading-m">Geographical area</h2>
 
     <div class="dl-map__wrapper"><div 
-        class="dl-map govuk-!-margin-top-4 govuk-!-margin-bottom-2"
-        id="dlMap"
-        data-module="boundary-map"
-        style="height: 460px;" data-geojson-urls="geometry.geojson"   
-    >
-        <noscript>To view this map, you need to enable JavaScript.</noscript>
-    </div>
+    class="dl-map govuk-!-margin-top-4"
+    id="dlMap"
+    data-module="boundary-map"
+    style="height: 460px;" data-geojson-urls="geometry.geojson"   
+>
+    <noscript>To view this map, you need to enable JavaScript.</noscript>
 </div>
-
+        <div class="dl-map__note-panel">
+            <a class="js-hidden dl-link-national-map" href="">See geometry on national map.</a>
+        </div>
+    </div>
 
     <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
@@ -250,18 +251,18 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>maximum-net-dwellings</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>start-date</th>
             <th>minimum-net-dwellings</th>
             <th>site-plan-url</th>
-            <th>point</th>
-            <th>planning-permission-history</th>
             <th>planning-permission-status</th>
-            <th>site</th>
-            <th>organisation</th>
+            <th>planning-permission-history</th>
+            <th>point</th>
             <th>name</th>
+            <th>site</th>
             <th>site-address</th>
-            <th>hectares</th>
-            <th>start-date</th>
-            <th>maximum-net-dwellings</th>
             <th>deliverable</th>
         </tr>
     </thead>
@@ -270,17 +271,17 @@ crossorigin="" />
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/88981f6adef16e8395069f589dc8b602625e1c4e6f0b6d0ff2d909c23857d68a.csv#L202">88981f6adef1...</a></td>
             <td>201</td>
                 <td>11</td> 
-                <td>https://mappinggm.org.uk/gmodin/</td> 
-                <td>POINT(-2.250078 53.472915)</td> 
-                <td>http://pa.manchester.gov.uk/online-applications/</td> 
-                <td>not permissioned</td> 
-                <td>Dean2001</td> 
-                <td>local-authority-eng:MAN</td> 
-                <td>Dean2001</td> 
-                <td>Hill Quays, 1 Jordan Street (additional units)</td> 
                 <td>0.12</td> 
+                <td>local-authority-eng:MAN</td> 
                 <td>2020-12-31</td> 
                 <td>11</td> 
+                <td>https://mappinggm.org.uk/gmodin/</td> 
+                <td>not permissioned</td> 
+                <td>http://pa.manchester.gov.uk/online-applications/</td> 
+                <td>POINT(-2.250078 53.472915)</td> 
+                <td>Dean2001</td> 
+                <td>Dean2001</td> 
+                <td>Hill Quays, 1 Jordan Street (additional units)</td> 
                 <td>yes</td> 
         </tr>    </tbody>
 </table>
@@ -292,7 +293,17 @@ crossorigin="" />
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
             <h2 class="govuk-heading-m dlf-subnav__heading">Referenced by</h2>
-            <p class="govuk-body">This record is referenced by 0 other planning related data records.</p>
+            <p class="govuk-body">This record is referenced by 2 other planning related data records.</p>
+            <h3 class="govuk-heading-s">Category</h3>
+            <ul class="govuk-list govuk-list--bullet">                <li>
+                    <a href=/planning-permission-status/not-permissioned>None</a>
+                    <span class="secondary-text data-reference">(122)</span>
+                </li>
+                <li>
+                    <a href=/site-category/deliverable>Deliverable</a>
+                    <span class="secondary-text data-reference">(132)</span>
+                </li>
+</ul>
 </div>
     </div>
 </div>

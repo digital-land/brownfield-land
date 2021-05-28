@@ -147,7 +147,7 @@ crossorigin="" />
                 </a>
             </li><li class="dlf-subnav__list-item">
                 <a class="dlf-subnav__list-item__link" href="#referenced-by" data-module-sub-nav="tab">
-                Referenced by (0)
+                0 References
                 </a>
             </li>
         </ul>
@@ -161,6 +161,10 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                BR14            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">ownership-status
             </dt>
             <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
@@ -169,17 +173,13 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                Police Station, High Street, Hoddesdon, EN11 8BJ, Former Hoddesdon Police Station            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.321            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site
             </dt>
             <dd class="govuk-summary-list__value">                BR14            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.321            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -196,19 +196,20 @@ crossorigin="" />
             
 </div>
 
-
     <h2 class="govuk-heading-m">Geographical area</h2>
 
     <div class="dl-map__wrapper"><div 
-        class="dl-map govuk-!-margin-top-4 govuk-!-margin-bottom-2"
-        id="dlMap"
-        data-module="boundary-map"
-        style="height: 460px;" data-geojson-urls="geometry.geojson"   
-    >
-        <noscript>To view this map, you need to enable JavaScript.</noscript>
-    </div>
+    class="dl-map govuk-!-margin-top-4"
+    id="dlMap"
+    data-module="boundary-map"
+    style="height: 460px;" data-geojson-urls="geometry.geojson"   
+>
+    <noscript>To view this map, you need to enable JavaScript.</noscript>
 </div>
-
+        <div class="dl-map__note-panel">
+            <a class="js-hidden dl-link-national-map" href="">See geometry on national map.</a>
+        </div>
+    </div>
 
     <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
@@ -230,40 +231,40 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>point</th>
-            <th>planning-permission-status</th>
-            <th>site</th>
+            <th>hectares</th>
             <th>organisation</th>
+            <th>planning-permission-status</th>
+            <th>point</th>
             <th>name</th>
+            <th>site</th>
             <th>site-address</th>
             <th>ownership-status</th>
-            <th>hectares</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2019-11-29</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/f14b2fd2524272086e8c00ee6f30a90fb36585e873be0f0c28a2f8f480653e0f.csv#L15">f14b2fd25242...</a></td>
             <td>14</td>
-                <td>POINT(-4.978803 54.692968)</td> 
-                <td>not permissioned</td> 
-                <td>BR14</td> 
+                <td>0.321</td> 
                 <td>local-authority-eng:BRX</td> 
+                <td>not permissioned</td> 
+                <td>POINT(-4.978803 54.692968)</td> 
+                <td>BR14</td> 
                 <td>BR14</td> 
                 <td>Police Station, High Street, Hoddesdon, EN11 8BJ, Former Hoddesdon Police Station</td> 
                 <td>owned by a public authority</td> 
-                <td>0.321</td> 
         </tr>        <tr>
             <td>2018-05-22</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/a4a214334df3b54c8fffa74c29638644383a07511b022adaf866a78d15bf2952.csv#L15">a4a214334df3...</a></td>
             <td>14</td>
-                <td>POINT(-0.003161 51.763356)</td> 
-                <td>permissioned</td> 
-                <td>BR14</td> 
+                <td>0.908</td> 
                 <td>local-authority-eng:BRX</td> 
+                <td>permissioned</td> 
+                <td>POINT(-0.003161 51.763356)</td> 
+                <td>BR14</td> 
                 <td>BR14</td> 
                 <td>Essex Road, Hoddesdon, EN11 0BX, Oaklands Yard</td> 
                 <td>not owned by a public authority</td> 
-                <td>0.908</td> 
         </tr>    </tbody>
 </table>
 
