@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,41 +160,9 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#WL006</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                128            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
-            </dt>
-            <dd class="govuk-summary-list__value">                outline planning permission            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                WL006            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-history
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://pa.westlancs.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=O9FZERRHIVZ00">https://pa.westlancs.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=O9FZERRHIVZ00</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                2016/0706/ARM For 128 dwellings light industrial units and assoicated road and infrastructure including details of appearance landscaping layout and scale - Pending decision.. Site promoted through the SHELAA. Outline consent granted, and Reserved Matters has since been approved (2016/0706/ARM) some conditions discharged. 2018/0732/CON still awaiting decision.            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                10.26            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-date
             </dt>
@@ -201,11 +172,9 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                2016-08-04            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
+            <dt class="govuk-summary-list__key">ownership-status
             </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/WLA" class="govuk-link">West Lancashire Borough Council</a>
-<span title="Organisation identifier: local-authority-eng:WLA" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WLA)</span>
-            </dd>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-address
             </dt>
@@ -215,7 +184,41 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                WL006            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/WLA" class="govuk-link">West Lancashire Borough Council</a>
+<span title="Organisation identifier: local-authority-eng:WLA" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WLA)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-type
+            </dt>
+            <dd class="govuk-summary-list__value">                outline planning permission            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                10.26            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                2016/0706/ARM For 128 dwellings light industrial units and assoicated road and infrastructure including details of appearance landscaping layout and scale - Pending decision.. Site promoted through the SHELAA. Outline consent granted, and Reserved Matters has since been approved (2016/0706/ARM) some conditions discharged. 2018/0732/CON still awaiting decision.            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-history
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://pa.westlancs.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=O9FZERRHIVZ00">https://pa.westlancs.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=O9FZERRHIVZ00</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                128            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                128            </dd>
         </div>        <div class="govuk-summary-list__row">
@@ -263,64 +266,64 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
+            <th>point</th>
+            <th>notes</th>
+            <th>site</th>
+            <th>start-date</th>
+            <th>planning-permission-status</th>
+            <th>minimum-net-dwellings</th>
+            <th>planning-permission-date</th>
             <th>deliverable</th>
             <th>planning-permission-type</th>
-            <th>hectares</th>
-            <th>planning-permission-date</th>
-            <th>planning-permission-status</th>
-            <th>point</th>
+            <th>ownership-status</th>
             <th>name</th>
-            <th>start-date</th>
-            <th>organisation</th>
             <th>site-address</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
             <th>planning-permission-history</th>
-            <th>notes</th>
+            <th>maximum-net-dwellings</th>
+            <th>hectares</th>
+            <th>organisation</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2018-11-08</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/fea579a9805f6b23a047035ac8bfa7857f3d30a98fff45205e49bfb2bea1877f.csv#L5">fea579a9805f...</a></td>
             <td>4</td>
-                <td>not owned by a public authority</td> 
-                <td>128</td> 
-                <td>yes</td> 
-                <td>outline planning permission</td> 
-                <td>10.26</td> 
-                <td>2014-06-27</td> 
-                <td>permissioned</td> 
                 <td>POINT(-2.91439 53.676507)</td> 
+                <td>2016/0706/ARM For 128 dwellings light industrial units and assoicated road and infrastructure including details of appearance landscaping layout and scale - Pending decision.. Site promoted through the SHELAA. Outline consent granted, and Reserved Matters has since been approved (2016/0706/ARM) some conditions discharged. 2018/0732/CON still awaiting decision.</td> 
                 <td>WL006</td> 
                 <td>2016-08-04</td> 
-                <td>local-authority-eng:WLA</td> 
-                <td>Site of Former Greaves Hall Hospital, Greaves Hall Avenue, Banks</td> 
-                <td>WL006</td> 
+                <td>permissioned</td> 
                 <td>128</td> 
+                <td>2014-06-27</td> 
+                <td>yes</td> 
+                <td>outline planning permission</td> 
+                <td>not owned by a public authority</td> 
+                <td>WL006</td> 
+                <td>Site of Former Greaves Hall Hospital, Greaves Hall Avenue, Banks</td> 
                 <td>https://pa.westlancs.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=O9FZERRHIVZ00</td> 
-                <td>2016/0706/ARM For 128 dwellings light industrial units and assoicated road and infrastructure including details of appearance landscaping layout and scale - Pending decision.. Site promoted through the SHELAA. Outline consent granted, and Reserved Matters has since been approved (2016/0706/ARM) some conditions discharged. 2018/0732/CON still awaiting decision.</td> 
+                <td>128</td> 
+                <td>10.26</td> 
+                <td>local-authority-eng:WLA</td> 
         </tr>        <tr>
             <td>2017-10-26</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/b8b3ddd50ffcdf945d8ebff7400d467ecc5dbf505c8ded1c08c55aa411b892f0.csv#L6">b8b3ddd50ffc...</a></td>
             <td>5</td>
-                <td>not owned by a public authority</td> 
-                <td>128</td> 
-                <td>yes</td> 
-                <td>outline planning permission</td> 
-                <td>10.26</td> 
-                <td>2014-06-27</td> 
-                <td>permissioned</td> 
                 <td>POINT(-2.91439 53.676507)</td> 
+                <td>2016/0706/ARM For 128 dwellings light industrial units and assoicated road and infrastructure including details of appearance landscaping layout and scale - Pending decision.. Site promoted through the SHELAA and has planning permission outline 2013/0104/OUT for residenital development and a reserved pending planning application for the erection of 128 dwellings 2016/0706/AMR.</td> 
                 <td>WL006</td> 
                 <td>2016-08-04</td> 
-                <td>local-authority-eng:WLA</td> 
-                <td>Site of Former Greaves Hall Hospital, Greaves Hall Avenue, Banks</td> 
-                <td>WL006</td> 
+                <td>permissioned</td> 
                 <td>128</td> 
+                <td>2014-06-27</td> 
+                <td>yes</td> 
+                <td>outline planning permission</td> 
+                <td>not owned by a public authority</td> 
+                <td>WL006</td> 
+                <td>Site of Former Greaves Hall Hospital, Greaves Hall Avenue, Banks</td> 
                 <td>https://pa.westlancs.gov.uk/online-applications/search.do?action=simple&amp;searchType=Application</td> 
-                <td>2016/0706/ARM For 128 dwellings light industrial units and assoicated road and infrastructure including details of appearance landscaping layout and scale - Pending decision.. Site promoted through the SHELAA and has planning permission outline 2013/0104/OUT for residenital development and a reserved pending planning application for the erection of 128 dwellings 2016/0706/AMR.</td> 
+                <td>128</td> 
+                <td>10.26</td> 
+                <td>local-authority-eng:WLA</td> 
         </tr>    </tbody>
 </table>
 

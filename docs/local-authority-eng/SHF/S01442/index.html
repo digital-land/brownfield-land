@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -161,28 +164,6 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                10            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                Estimated to comprise of 1 Apartments and 9 Houses            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SHF" class="govuk-link">Sheffield City Council</a>
-<span title="Organisation identifier: local-authority-eng:SHF" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SHF)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Firs Hill Sheltered Scheme, Firshill Crescent S4 7BS            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                10            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">ownership-status
             </dt>
             <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
@@ -195,25 +176,47 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                0.25            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                full planning permission            </dd>
+            <dd class="govuk-summary-list__value">                10            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site
             </dt>
             <dd class="govuk-summary-list__value">                S01442            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">planning-permission-history
             </dt>
-            <dd class="govuk-summary-list__value">                2017-12-05            </dd>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://planningapps.sheffield.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=N5ZJISNYFY000">https://planningapps.sheffield.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=N5ZJISNYFY000</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-plan-url
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html">https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-history
+            <dt class="govuk-summary-list__key">start-date
             </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://planningapps.sheffield.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=N5ZJISNYFY000">https://planningapps.sheffield.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=N5ZJISNYFY000</a>            </dd>
+            <dd class="govuk-summary-list__value">                2017-12-05            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                Estimated to comprise of 1 Apartments and 9 Houses            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SHF" class="govuk-link">Sheffield City Council</a>
+<span title="Organisation identifier: local-authority-eng:SHF" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SHF)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-type
+            </dt>
+            <dd class="govuk-summary-list__value">                full planning permission            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Firs Hill Sheltered Scheme, Firshill Crescent S4 7BS            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-date
             </dt>
@@ -263,64 +266,64 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>hectares</th>
-            <th>site-plan-url</th>
-            <th>planning-permission-type</th>
-            <th>site-address</th>
-            <th>point</th>
-            <th>planning-permission-status</th>
-            <th>name</th>
-            <th>organisation</th>
-            <th>start-date</th>
-            <th>planning-permission-date</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
-            <th>planning-permission-history</th>
             <th>notes</th>
+            <th>point</th>
+            <th>site</th>
+            <th>start-date</th>
+            <th>planning-permission-status</th>
+            <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>planning-permission-type</th>
+            <th>planning-permission-date</th>
+            <th>ownership-status</th>
+            <th>name</th>
+            <th>planning-permission-history</th>
+            <th>site-address</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2018-12-18</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/0edf56e3a97bc3b2118b3d811737d21c369efaf48952ad7e2038f05074854670.csv#L125">0edf56e3a97b...</a></td>
             <td>124</td>
-                <td>owned by a public authority</td> 
-                <td>10</td> 
-                <td>0.25</td> 
-                <td>https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html</td> 
-            <td></td>
-                <td>Firs Hill Sheltered Scheme, Firshill Crescent S4 7BS</td> 
-                <td>POINT(-1.466604 53.402979)</td> 
-                <td>not permissioned</td> 
-                <td>S01442</td> 
-                <td>local-authority-eng:SHF</td> 
-                <td>2017-12-05</td> 
-            <td></td>
-                <td>S01442</td> 
-                <td>10</td> 
-                <td>https://planningapps.sheffield.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=N5ZJISNYFY000</td> 
                 <td>Estimated to comprise of 1 Apartments and 9 Houses</td> 
+                <td>POINT(-1.466604 53.402979)</td> 
+                <td>S01442</td> 
+                <td>2017-12-05</td> 
+                <td>not permissioned</td> 
+                <td>10</td> 
+                <td>10</td> 
+            <td></td>
+            <td></td>
+                <td>owned by a public authority</td> 
+                <td>S01442</td> 
+                <td>https://planningapps.sheffield.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=N5ZJISNYFY000</td> 
+                <td>Firs Hill Sheltered Scheme, Firshill Crescent S4 7BS</td> 
+                <td>0.25</td> 
+                <td>local-authority-eng:SHF</td> 
+                <td>https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html</td> 
         </tr>        <tr>
             <td>2017-12-12</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/6b550bfc3c67f77e313aa8c44018e3fb7e0ce2017692f025ed25af4ababd20e9.csv#L53">6b550bfc3c67...</a></td>
             <td>52</td>
-                <td>owned by a public authority</td> 
-                <td>14</td> 
-                <td>0.25</td> 
-                <td>https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html</td> 
-                <td>full planning permission</td> 
-                <td>Firs Hill Sheltered Scheme, Firshill Crescent S4 7BS</td> 
-                <td>POINT(-1.466604 53.402979)</td> 
-                <td>permissioned</td> 
-                <td>S01442</td> 
-                <td>local-authority-eng:SHF</td> 
-                <td>2017-12-05</td> 
-                <td>2015-01-22</td> 
-                <td>S01442</td> 
-                <td>14</td> 
-                <td>https://planningapps.sheffield.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=N5ZJISNYFY000</td> 
                 <td>Estimated to comprise of 14 Apartments</td> 
+                <td>POINT(-1.466604 53.402979)</td> 
+                <td>S01442</td> 
+                <td>2017-12-05</td> 
+                <td>permissioned</td> 
+                <td>14</td> 
+                <td>14</td> 
+                <td>full planning permission</td> 
+                <td>2015-01-22</td> 
+                <td>owned by a public authority</td> 
+                <td>S01442</td> 
+                <td>https://planningapps.sheffield.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=N5ZJISNYFY000</td> 
+                <td>Firs Hill Sheltered Scheme, Firshill Crescent S4 7BS</td> 
+                <td>0.25</td> 
+                <td>local-authority-eng:SHF</td> 
+                <td>https://www.sheffield.gov.uk/content/sheffield/home/planning-development/housing-land-sites.html</td> 
         </tr>    </tbody>
 </table>
 

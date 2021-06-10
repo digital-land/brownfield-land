@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -161,34 +164,6 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                21            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                mixed ownership            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                N514            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://maps.birmingham.gov.uk/webapps/shlaa/">https://maps.birmingham.gov.uk/webapps/shlaa/</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                21            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.72            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Gower Street, Lozells            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                N514            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2017-12-19            </dd>
@@ -199,9 +174,37 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:BIR" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BIR)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Gower Street, Lozells            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://maps.birmingham.gov.uk/webapps/shlaa/">https://maps.birmingham.gov.uk/webapps/shlaa/</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
             <dd class="govuk-summary-list__value">                Not Permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.72            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                21            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                mixed ownership            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                N514            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                N514            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -251,55 +254,55 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>hectares</th>
-            <th>site-plan-url</th>
-            <th>site-address</th>
             <th>point</th>
-            <th>start-date</th>
-            <th>name</th>
-            <th>organisation</th>
-            <th>planning-permission-status</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
             <th>notes</th>
+            <th>site</th>
+            <th>start-date</th>
+            <th>planning-permission-status</th>
+            <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>ownership-status</th>
+            <th>site-address</th>
+            <th>name</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2019-12-31</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/77da1087f91eafee42797dbaa9bebef573d2eb759b39d9db130c99d34cbe4ec4.csv#L905">77da1087f91e...</a></td>
             <td>904</td>
-                <td>mixed ownership</td> 
-                <td>21</td> 
-                <td>0.72</td> 
-                <td>https://maps.birmingham.gov.uk/webapps/shlaa/</td> 
-                <td>Gower Street, Lozells</td> 
                 <td>POINT(-1.901833 52.502037)</td> 
-                <td>2017-12-19</td> 
-                <td>N514</td> 
-                <td>local-authority-eng:BIR</td> 
-                <td>Not Permissioned</td> 
-                <td>N514</td> 
-                <td>21</td> 
                 <td>Aston, Newtown and Lozells AAP</td> 
+                <td>N514</td> 
+                <td>2017-12-19</td> 
+                <td>Not Permissioned</td> 
+                <td>21</td> 
+                <td>21</td> 
+                <td>mixed ownership</td> 
+                <td>Gower Street, Lozells</td> 
+                <td>N514</td> 
+                <td>0.72</td> 
+                <td>local-authority-eng:BIR</td> 
+                <td>https://maps.birmingham.gov.uk/webapps/shlaa/</td> 
         </tr>        <tr>
             <td>2018-09-21</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/586fd8bf0779012ac7c4b8681341b640e538deeaaf5529b2363862253b528703.csv#L337">586fd8bf0779...</a></td>
             <td>336</td>
-                <td>owned by a public authority</td> 
-                <td>21</td> 
-                <td>0.71</td> 
-                <td>https://localview.birmingham.gov.uk/Planning/Sites/SHLAA/</td> 
-                <td>Gower Street, Lozells</td> 
                 <td>POINT(-1.901833 52.502037)</td> 
-                <td>2017-12-19</td> 
-                <td>N514</td> 
-                <td>local-authority-eng:BIR</td> 
-                <td>Not Permissioned</td> 
-                <td>N514</td> 
-                <td>21</td> 
             <td></td>
+                <td>N514</td> 
+                <td>2017-12-19</td> 
+                <td>Not Permissioned</td> 
+                <td>21</td> 
+                <td>21</td> 
+                <td>owned by a public authority</td> 
+                <td>Gower Street, Lozells</td> 
+                <td>N514</td> 
+                <td>0.71</td> 
+                <td>local-authority-eng:BIR</td> 
+                <td>https://localview.birmingham.gov.uk/Planning/Sites/SHLAA/</td> 
         </tr>    </tbody>
 </table>
 

@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,6 +160,10 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#3140</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.1            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                6            </dd>
@@ -165,39 +172,11 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                2016-06-14            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.1            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                3140            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/CHE" class="govuk-link">Cheshire East Council</a>
 <span title="Organisation identifier: local-authority-eng:CHE" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:CHE)</span>
             </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
-            </dt>
-            <dd class="govuk-summary-list__value">                full planning permission            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Hurdsfield Community Centre, Carisbrook Avenue, Macclesfield            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-10-19            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">notes
             </dt>
@@ -207,15 +186,39 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                6            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-10-19            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                3140            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-type
+            </dt>
+            <dd class="govuk-summary-list__value">                full planning permission            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-plan-url
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://cheshireeast.gov.uk/planning/spatial_planning/brownfield-register.aspx">http://cheshireeast.gov.uk/planning/spatial_planning/brownfield-register.aspx</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Hurdsfield Community Centre, Carisbrook Avenue, Macclesfield            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-history
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://planning.cheshireeast.gov.uk/applicationdetails.aspx?pr=16/1898M&query=4ee5f921-d452-4420-8bb3-2ef0f82a4f83">http://planning.cheshireeast.gov.uk/applicationdetails.aspx?pr=16/1898M&query=4ee5f921-d452-4420-8bb3-2ef0f82a4f83</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
+            <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                3140            </dd>
         </div>        <div class="govuk-summary-list__row">
@@ -271,92 +274,92 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>hectares</th>
-            <th>planning-permission-type</th>
-            <th>site-plan-url</th>
-            <th>deliverable</th>
-            <th>planning-permission-date</th>
-            <th>point</th>
-            <th>planning-permission-status</th>
-            <th>name</th>
-            <th>organisation</th>
-            <th>site-address</th>
-            <th>start-date</th>
-            <th>end-date</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
-            <th>planning-permission-history</th>
             <th>notes</th>
+            <th>point</th>
+            <th>site</th>
+            <th>end-date</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
+            <th>minimum-net-dwellings</th>
+            <th>planning-permission-date</th>
+            <th>maximum-net-dwellings</th>
+            <th>planning-permission-type</th>
+            <th>ownership-status</th>
+            <th>site-address</th>
+            <th>planning-permission-history</th>
+            <th>name</th>
+            <th>deliverable</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-10-30</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/ad118ab3e4e5d9ecaa44492a8aa7cf1be0bf91442f12a24310c284eb007ad2ac.csv#L21">ad118ab3e4e5...</a></td>
             <td>20</td>
-                <td>not owned by a public authority</td> 
-                <td>6</td> 
-                <td>0.1</td> 
-                <td>full planning permission</td> 
-                <td>http://cheshireeast.gov.uk/planning/spatial_planning/brownfield-register.aspx</td> 
-            <td></td>
-                <td>2016-06-14</td> 
-                <td>POINT(-2.113804 53.267626)</td> 
-                <td>permissioned</td> 
-                <td>3140</td> 
-                <td>local-authority-eng:CHE</td> 
-                <td>Hurdsfield Community Centre, Carisbrook Avenue, Macclesfield</td> 
-                <td>2017-10-19</td> 
-                <td>2020-10-30</td> 
-                <td>3140</td> 
-                <td>6</td> 
-                <td>http://planning.cheshireeast.gov.uk/applicationdetails.aspx?pr=16/1898M&amp;query=4ee5f921-d452-4420-8bb3-2ef0f82a4f83</td> 
                 <td>Site is completed. Planning permission ref: 16/1898M -Demolition of Hurdsfield Community Centre and the construction of 6 two-storey dwellings with associated landscaping and car parking</td> 
+                <td>POINT(-2.113804 53.267626)</td> 
+                <td>3140</td> 
+                <td>2020-10-30</td> 
+                <td>permissioned</td> 
+                <td>2017-10-19</td> 
+                <td>6</td> 
+                <td>2016-06-14</td> 
+                <td>6</td> 
+                <td>full planning permission</td> 
+                <td>not owned by a public authority</td> 
+                <td>Hurdsfield Community Centre, Carisbrook Avenue, Macclesfield</td> 
+                <td>http://planning.cheshireeast.gov.uk/applicationdetails.aspx?pr=16/1898M&amp;query=4ee5f921-d452-4420-8bb3-2ef0f82a4f83</td> 
+                <td>3140</td> 
+            <td></td>
+                <td>0.1</td> 
+                <td>local-authority-eng:CHE</td> 
+                <td>http://cheshireeast.gov.uk/planning/spatial_planning/brownfield-register.aspx</td> 
         </tr>        <tr>
             <td>2019-11-15</td>
-            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/344488f9ce3e3a4dc76c357eb07a9b6db2d6c4494a733d43fde68ebb21505813.csv#L20">344488f9ce3e...</a></td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/243dc9cd8161e864e6945a5b41949aeee0d4a484f5ded4ca6a9c5999cf24f96a.csv#L20">243dc9cd8161...</a></td>
             <td>19</td>
-                <td>not owned by a public authority</td> 
-                <td>6</td> 
-                <td>0.1</td> 
-                <td>full planning permission</td> 
-                <td>http://cheshireeast.gov.uk/planning/spatial_planning/brownfield-register.aspx</td> 
-                <td>yes</td> 
-                <td>2016-06-14</td> 
-                <td>POINT(-2.113804 53.267626)</td> 
-                <td>permissioned</td> 
-                <td>3140</td> 
-                <td>local-authority-eng:CHE</td> 
-                <td>Hurdsfield Community Centre, Carisbrook Avenue, Macclesfield</td> 
-                <td>2017-10-19</td> 
-            <td></td>
-                <td>3140</td> 
-                <td>6</td> 
-                <td>http://planning.cheshireeast.gov.uk/applicationdetails.aspx?pr=16/1898M&amp;query=4ee5f921-d452-4420-8bb3-2ef0f82a4f83</td> 
                 <td>Planning permission ref: 16/1898M -Demolition of Hurdsfield Community Centre and the construction of 6 two-storey dwellings with associated landscaping and car parking</td> 
+                <td>POINT(-2.113804 53.267626)</td> 
+                <td>3140</td> 
+            <td></td>
+                <td>permissioned</td> 
+                <td>2017-10-19</td> 
+                <td>6</td> 
+                <td>2016-06-14</td> 
+                <td>6</td> 
+                <td>full planning permission</td> 
+                <td>not owned by a public authority</td> 
+                <td>Hurdsfield Community Centre, Carisbrook Avenue, Macclesfield</td> 
+                <td>http://planning.cheshireeast.gov.uk/applicationdetails.aspx?pr=16/1898M&amp;query=4ee5f921-d452-4420-8bb3-2ef0f82a4f83</td> 
+                <td>3140</td> 
+                <td>yes</td> 
+                <td>0.1</td> 
+                <td>local-authority-eng:CHE</td> 
+                <td>http://cheshireeast.gov.uk/planning/spatial_planning/brownfield-register.aspx</td> 
         </tr>        <tr>
             <td>2017-10-19</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/b6ed0267c9db2903f719643ff3e153fbdf65894e33706a8a52280ce453e53ec3.csv#L22">b6ed0267c9db...</a></td>
             <td>21</td>
-                <td>not owned by a public authority</td> 
-                <td>6</td> 
-                <td>0.1</td> 
-                <td>full planning permission</td> 
-                <td>http://cheshireeast.gov.uk/planning/spatial_planning/brownfield-register.aspx</td> 
+                <td>16/1898M. Demolition of Hurdsfield Community Centre and the construction of 6 two-storey dwellings with associated landscaping and car parking</td> 
             <td></td>
-                <td>2016-06-14</td> 
+                <td>3140</td> 
             <td></td>
                 <td>permissioned</td> 
-                <td>3140</td> 
-                <td>local-authority-eng:CHE</td> 
-                <td>Hurdsfield Community Centre, Carisbrook Avenue, Macclesfield</td> 
                 <td>2017-10-19</td> 
-            <td></td>
-                <td>3140</td> 
                 <td>6</td> 
+                <td>2016-06-14</td> 
+                <td>6</td> 
+                <td>full planning permission</td> 
+                <td>not owned by a public authority</td> 
+                <td>Hurdsfield Community Centre, Carisbrook Avenue, Macclesfield</td> 
                 <td>http://planning.cheshireeast.gov.uk/applicationdetails.aspx?pr=16/1898M&amp;query=4ee5f921-d452-4420-8bb3-2ef0f82a4f83</td> 
-                <td>16/1898M. Demolition of Hurdsfield Community Centre and the construction of 6 two-storey dwellings with associated landscaping and car parking</td> 
+                <td>3140</td> 
+            <td></td>
+                <td>0.1</td> 
+                <td>local-authority-eng:CHE</td> 
+                <td>http://cheshireeast.gov.uk/planning/spatial_planning/brownfield-register.aspx</td> 
         </tr>    </tbody>
 </table>
 

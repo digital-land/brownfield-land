@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,13 +160,21 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#CBCBLR013</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                44            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.9            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-address
             </dt>
             <dd class="govuk-summary-list__value">                Former depot adj to SW corner of Goffs Park, Old Horsham Road, Southgate, Crawley            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
+            <dt class="govuk-summary-list__key">site
             </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
+            <dd class="govuk-summary-list__value">                CBCBLR013            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -171,41 +182,21 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:CRW" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:CRW)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
+            <dt class="govuk-summary-list__key">deliverable
             </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
+            <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-plan-url
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.crawley.gov.uk/pw/web/PUB327106">http://www.crawley.gov.uk/pw/web/PUB327106</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.9            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                44            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                Allocated as a deliverable key housing site in Local Plan Policy H2 (Key Housing Sites).. Construction of 22 flats in four blocks and 22 houses in five terraces.. http://www.crawley.gov.uk/pw/Planning_and_Development/Planning_Permission___Applications/Planning_Applications_Search/index.htm?accept=Search&amp;pRecordID=41261&amp;pApplicationNo=cr/2016/1053&amp;pAD=yes&amp;pAppNo=CR/2016/1053/FUL            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-11-29            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-type
             </dt>
             <dd class="govuk-summary-list__value">                full planning permission            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                44            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-date
             </dt>
@@ -215,9 +206,21 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                CBCBLR013            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
+            <dt class="govuk-summary-list__key">ownership-status
             </dt>
-            <dd class="govuk-summary-list__value">                CBCBLR013            </dd>
+            <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                Allocated as a deliverable key housing site in Local Plan Policy H2 (Key Housing Sites).. Construction of 22 flats in four blocks and 22 houses in five terraces.. http://www.crawley.gov.uk/pw/Planning_and_Development/Planning_Permission___Applications/Planning_Applications_Search/index.htm?accept=Search&amp;pRecordID=41261&amp;pApplicationNo=cr/2016/1053&amp;pAD=yes&amp;pAppNo=CR/2016/1053/FUL            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-11-29            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -263,44 +266,44 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>site-plan-url</th>
-            <th>deliverable</th>
-            <th>hectares</th>
-            <th>planning-permission-type</th>
-            <th>site-address</th>
-            <th>planning-permission-status</th>
             <th>point</th>
-            <th>start-date</th>
-            <th>organisation</th>
-            <th>planning-permission-date</th>
-            <th>name</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
             <th>notes</th>
+            <th>site</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
+            <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>deliverable</th>
+            <th>planning-permission-type</th>
+            <th>planning-permission-date</th>
+            <th>site-address</th>
+            <th>name</th>
+            <th>ownership-status</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2017-11-29</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/c71e462d50d267b08240d3405317b68e8f844d4adb96e80457d2cca107859d2b.csv#L11">c71e462d50d2...</a></td>
             <td>10</td>
-                <td>owned by a public authority</td> 
-                <td>44</td> 
-                <td>http://www.crawley.gov.uk/pw/web/PUB327106</td> 
-                <td>yes</td> 
-                <td>0.9</td> 
-                <td>full planning permission</td> 
-                <td>Former depot adj to SW corner of Goffs Park, Old Horsham Road, Southgate, Crawley</td> 
-                <td>permissioned</td> 
                 <td>POINT(-0.2016 51.1101)</td> 
-                <td>2017-11-29</td> 
-                <td>local-authority-eng:CRW</td> 
-                <td>2017-08-25</td> 
-                <td>CBCBLR013</td> 
-                <td>CBCBLR013</td> 
-                <td>44</td> 
                 <td>Allocated as a deliverable key housing site in Local Plan Policy H2 (Key Housing Sites).. Construction of 22 flats in four blocks and 22 houses in five terraces.. http://www.crawley.gov.uk/pw/Planning_and_Development/Planning_Permission___Applications/Planning_Applications_Search/index.htm?accept=Search&amp;pRecordID=41261&amp;pApplicationNo=cr/2016/1053&amp;pAD=yes&amp;pAppNo=CR/2016/1053/FUL</td> 
+                <td>CBCBLR013</td> 
+                <td>permissioned</td> 
+                <td>2017-11-29</td> 
+                <td>44</td> 
+                <td>44</td> 
+                <td>yes</td> 
+                <td>full planning permission</td> 
+                <td>2017-08-25</td> 
+                <td>Former depot adj to SW corner of Goffs Park, Old Horsham Road, Southgate, Crawley</td> 
+                <td>CBCBLR013</td> 
+                <td>owned by a public authority</td> 
+                <td>0.9</td> 
+                <td>local-authority-eng:CRW</td> 
+                <td>http://www.crawley.gov.uk/pw/web/PUB327106</td> 
         </tr>    </tbody>
 </table>
 

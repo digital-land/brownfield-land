@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,9 +160,27 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#br55</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2018-12-13            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SLG" class="govuk-link">Slough Borough Council</a>
+<span title="Organisation identifier: local-authority-eng:SLG" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SLG)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                28            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                P/01766/025. Demolition of existing building. Construction of a six storey building to accommodate 24no. 3 bed flats with undercroft parking.            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2018-03-22            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
@@ -169,14 +190,6 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                0.1            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2018-12-13            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2018-03-22            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
             <dd class="govuk-summary-list__value">                permissioned            </dd>
@@ -185,31 +198,21 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.slough.gov.uk/downloads/slough_brownfield_land_register_site_br55.pdf">http://www.slough.gov.uk/downloads/slough_brownfield_land_register_site_br55.pdf</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
+            <dt class="govuk-summary-list__key">site-address
             </dt>
-            <dd class="govuk-summary-list__value">                br55            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                P/01766/025. Demolition of existing building. Construction of a six storey building to accommodate 24no. 3 bed flats with undercroft parking.            </dd>
+            <dd class="govuk-summary-list__value">                172-184, Bath Road, Slough, Berkshire, SL1 3XE            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                28            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                172-184, Bath Road, Slough, Berkshire, SL1 3XE            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-type
             </dt>
             <dd class="govuk-summary-list__value">                full planning permission            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
+            <dt class="govuk-summary-list__key">site
             </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SLG" class="govuk-link">Slough Borough Council</a>
-<span title="Organisation identifier: local-authority-eng:SLG" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SLG)</span>
-            </dd>
+            <dd class="govuk-summary-list__value">                br55            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -255,40 +258,40 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>maximum-net-dwellings</th>
-            <th>hectares</th>
-            <th>site-plan-url</th>
-            <th>planning-permission-type</th>
+            <th>notes</th>
+            <th>point</th>
+            <th>site</th>
             <th>start-date</th>
-            <th>planning-permission-date</th>
             <th>planning-permission-status</th>
+            <th>minimum-net-dwellings</th>
+            <th>planning-permission-date</th>
+            <th>maximum-net-dwellings</th>
+            <th>planning-permission-type</th>
             <th>name</th>
             <th>site-address</th>
-            <th>point</th>
+            <th>hectares</th>
             <th>organisation</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
-            <th>notes</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2018-12-13</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/ea0c72de28fa2181f7a4bb172b542a89631bd6aa439f40c1a699d2a71dc659d6.csv#L67">ea0c72de28fa...</a></td>
             <td>66</td>
-                <td>28</td> 
-                <td>0.1</td> 
-                <td>http://www.slough.gov.uk/downloads/slough_brownfield_land_register_site_br55.pdf</td> 
-                <td>full planning permission</td> 
+                <td>P/01766/025. Demolition of existing building. Construction of a six storey building to accommodate 24no. 3 bed flats with undercroft parking.</td> 
+                <td>POINT(-0.617061 51.513983)</td> 
+                <td>br55</td> 
                 <td>2018-12-13</td> 
-                <td>2018-03-22</td> 
                 <td>permissioned</td> 
+                <td>28</td> 
+                <td>2018-03-22</td> 
+                <td>28</td> 
+                <td>full planning permission</td> 
                 <td>br55</td> 
                 <td>172-184, Bath Road, Slough, Berkshire, SL1 3XE</td> 
-                <td>POINT(-0.617061 51.513983)</td> 
+                <td>0.1</td> 
                 <td>local-authority-eng:SLG</td> 
-                <td>br55</td> 
-                <td>28</td> 
-                <td>P/01766/025. Demolition of existing building. Construction of a six storey building to accommodate 24no. 3 bed flats with undercroft parking.</td> 
+                <td>http://www.slough.gov.uk/downloads/slough_brownfield_land_register_site_br55.pdf</td> 
         </tr>    </tbody>
 </table>
 

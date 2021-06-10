@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,21 +160,29 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#X5EJ7</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">site
             </dt>
             <dd class="govuk-summary-list__value">                X5EJ7            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2018-12-18            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hectares
             </dt>
             <dd class="govuk-summary-list__value">                0.31            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                X5EJ7            </dd>
+            <dd class="govuk-summary-list__value">                27            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                27            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=493140.361136339&StartNorthing=418353.737024812&StartZoom=1000&Layers=Brownfield_Register">https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=493140.361136339&StartNorthing=418353.737024812&StartZoom=1000&Layers=Brownfield_Register</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                Not permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -183,25 +194,17 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2018-12-18            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-address
             </dt>
             <dd class="govuk-summary-list__value">                6 Park Street, Winterton            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                27            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                27            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                Not permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=493140.361136339&StartNorthing=418353.737024812&StartZoom=1000&Layers=Brownfield_Register">https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&StartEasting=493140.361136339&StartNorthing=418353.737024812&StartZoom=1000&Layers=Brownfield_Register</a>            </dd>
+            <dd class="govuk-summary-list__value">                X5EJ7            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -251,55 +254,55 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>hectares</th>
-            <th>site-plan-url</th>
-            <th>start-date</th>
+            <th>notes</th>
             <th>point</th>
+            <th>site</th>
+            <th>start-date</th>
+            <th>planning-permission-status</th>
+            <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>ownership-status</th>
             <th>site-address</th>
             <th>name</th>
+            <th>hectares</th>
             <th>organisation</th>
-            <th>planning-permission-status</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
-            <th>notes</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2019-12-17</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/09a3e48a3346b574437259343471e3ff27c5aebfaed96abe01a4ba1141926c10.csv#L8">09a3e48a3346...</a></td>
             <td>7</td>
-                <td>not owned by a public authority</td> 
-                <td>27</td> 
-                <td>0.31</td> 
-                <td>https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&amp;StartEasting=493140.361136339&amp;StartNorthing=418353.737024812&amp;StartZoom=1000&amp;Layers=Brownfield_Register</td> 
-                <td>2018-12-18</td> 
+                <td>Part of the site is within the development limit of Winterton</td> 
                 <td>POINT(-0.59224 53.653398)</td> 
+                <td>X5EJ7</td> 
+                <td>2018-12-18</td> 
+                <td>Not permissioned</td> 
+                <td>27</td> 
+                <td>27</td> 
+                <td>not owned by a public authority</td> 
                 <td>6 Park Street, Winterton</td> 
                 <td>X5EJ7</td> 
+                <td>0.31</td> 
                 <td>local-authority-eng:NLN</td> 
-                <td>Not permissioned</td> 
-                <td>X5EJ7</td> 
-                <td>27</td> 
-                <td>Part of the site is within the development limit of Winterton</td> 
+                <td>https://map.northlincs.gov.uk/mycouncil.aspx?mapsource=nlincs_mapsources/AllMaps&amp;StartEasting=493140.361136339&amp;StartNorthing=418353.737024812&amp;StartZoom=1000&amp;Layers=Brownfield_Register</td> 
         </tr>        <tr>
             <td>2018-12-18</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/b0bcc17c0af4975a5f47dbb6d3a6c9802d17caec592de1ddd92fd4ff65d460c8.csv#L4">b0bcc17c0af4...</a></td>
             <td>3</td>
-                <td>not owned by a public authority</td> 
-                <td>27</td> 
-                <td>0.31</td> 
-                <td>http://maps.northlincs.gov.uk/iSharewebin.Web/myNorthlincs.aspx?mapsource=Northlincs_webin/nlc_AllMaps&amp;StartEasting=493140.361136339&amp;StartNorthing=418353.737024812&amp;StartZoom=1000&amp;Layers=brownfield</td> 
-                <td>2018-12-18</td> 
+            <td></td>
                 <td>POINT(-0.59224 53.653398)</td> 
+                <td>X5EJ7</td> 
+                <td>2018-12-18</td> 
+                <td>not permissioned</td> 
+                <td>27</td> 
+                <td>27</td> 
+                <td>not owned by a public authority</td> 
                 <td>6 Park Street, Winterton</td> 
                 <td>X5EJ7</td> 
+                <td>0.31</td> 
                 <td>local-authority-eng:NLN</td> 
-                <td>not permissioned</td> 
-                <td>X5EJ7</td> 
-                <td>27</td> 
-            <td></td>
+                <td>http://maps.northlincs.gov.uk/iSharewebin.Web/myNorthlincs.aspx?mapsource=Northlincs_webin/nlc_AllMaps&amp;StartEasting=493140.361136339&amp;StartNorthing=418353.737024812&amp;StartZoom=1000&amp;Layers=brownfield</td> 
         </tr>    </tbody>
 </table>
 

@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,26 +160,6 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#BR37</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2020-12-01            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                BR37            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.44            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                9            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                BR37            </dd>
@@ -191,21 +174,41 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:THE" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:THE)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
+            <dt class="govuk-summary-list__key">site-plan-url
             </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.planvu.co.uk/trdc/">http://www.planvu.co.uk/trdc/</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-address
             </dt>
             <dd class="govuk-summary-list__value">                Bedmond Road, Abbots Langley            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.planvu.co.uk/trdc/">http://www.planvu.co.uk/trdc/</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                13            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                9            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                BR37            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.44            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2020-12-01            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">deliverable
             </dt>
@@ -255,58 +258,58 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>hectares</th>
-            <th>deliverable</th>
-            <th>site-plan-url</th>
+            <th>point</th>
+            <th>notes</th>
+            <th>site</th>
             <th>start-date</th>
             <th>planning-permission-status</th>
-            <th>site-address</th>
-            <th>name</th>
-            <th>organisation</th>
-            <th>point</th>
-            <th>site</th>
             <th>minimum-net-dwellings</th>
-            <th>notes</th>
+            <th>maximum-net-dwellings</th>
+            <th>deliverable</th>
+            <th>ownership-status</th>
+            <th>name</th>
+            <th>site-address</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-12-01</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/b137cf593b3a2513c08b54326dd224499113af8063b433e309cc9073346897ba.csv#L39">b137cf593b3a...</a></td>
             <td>38</td>
-                <td>not owned by a public authority</td> 
-                <td>13</td> 
-                <td>0.44</td> 
-                <td>yes</td> 
-                <td>http://www.planvu.co.uk/trdc/</td> 
+                <td>POINT(-0.416334 51.712632)</td> 
+                <td>Site put forward to Call for Sites (ACFS9d)</td> 
+                <td>BR37</td> 
                 <td>2020-12-01</td> 
                 <td>not permissioned</td> 
-                <td>Bedmond Road, Abbots Langley</td> 
-                <td>BR37</td> 
-                <td>local-authority-eng:THE</td> 
-                <td>POINT(-0.416334 51.712632)</td> 
-                <td>BR37</td> 
                 <td>9</td> 
-                <td>Site put forward to Call for Sites (ACFS9d)</td> 
+                <td>13</td> 
+                <td>yes</td> 
+                <td>not owned by a public authority</td> 
+                <td>BR37</td> 
+                <td>Bedmond Road, Abbots Langley</td> 
+                <td>0.44</td> 
+                <td>local-authority-eng:THE</td> 
+                <td>http://www.planvu.co.uk/trdc/</td> 
         </tr>        <tr>
             <td>2018-12-10</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/9fe78bed7e853a8e13011843dab52f6aa24b672a946f5db77f5fd605d711fc15.csv#L39">9fe78bed7e85...</a></td>
             <td>38</td>
-                <td>not owned by a public authority</td> 
-                <td>20</td> 
-                <td>0.48</td> 
-                <td>yes</td> 
-                <td>http://www.mapsinteractive.co.uk/planvu/trdc/index.php</td> 
+                <td>POINT(-0.402277 51.707343)</td> 
+                <td>Part of site PCS42</td> 
+                <td>BR37</td> 
                 <td>2018-12-10</td> 
                 <td>not permissioned</td> 
-                <td>Leavesden Pumping Station, Abbots Langley</td> 
-                <td>BR37</td> 
-                <td>local-authority-eng:THE</td> 
-                <td>POINT(-0.402277 51.707343)</td> 
-                <td>BR37</td> 
                 <td>15</td> 
-                <td>Part of site PCS42</td> 
+                <td>20</td> 
+                <td>yes</td> 
+                <td>not owned by a public authority</td> 
+                <td>BR37</td> 
+                <td>Leavesden Pumping Station, Abbots Langley</td> 
+                <td>0.48</td> 
+                <td>local-authority-eng:THE</td> 
+                <td>http://www.mapsinteractive.co.uk/planvu/trdc/index.php</td> 
         </tr>    </tbody>
 </table>
 

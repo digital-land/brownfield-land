@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,33 +160,21 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#19/03645/F</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://pa.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=PV7DSIDNJ7D00">https://pa.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=PV7DSIDNJ7D00</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-type
             </dt>
             <dd class="govuk-summary-list__value">                full planning permission            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            <dt class="govuk-summary-list__key">site-address
             </dt>
-            <dd class="govuk-summary-list__value">                8            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                8            </dd>
+            <dd class="govuk-summary-list__value">                2 Emery Road Bristol BS4 5PN            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hectares
             </dt>
             <dd class="govuk-summary-list__value">                0.08            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
+            <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                19/03645/F            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2020-12-18            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -191,33 +182,45 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:BST" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BST)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
-            <dd class="govuk-summary-list__value">                19/03645/F            </dd>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-history
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://pa.bristol.gov.uk/online-applications/applicationDetails.do?keyVal=PV7DSIDNJ7D00&activeTab=summary">https://pa.bristol.gov.uk/online-applications/applicationDetails.do?keyVal=PV7DSIDNJ7D00&activeTab=summary</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
+            <dt class="govuk-summary-list__key">site
             </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
+            <dd class="govuk-summary-list__value">                19/03645/F            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                2 Emery Road Bristol BS4 5PN            </dd>
+            <dd class="govuk-summary-list__value">                8            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                8            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2020-12-18            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-date
             </dt>
             <dd class="govuk-summary-list__value">                2019-10-16            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://pa.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=PV7DSIDNJ7D00">https://pa.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=PV7DSIDNJ7D00</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">notes
             </dt>
             <dd class="govuk-summary-list__value">                Alternative site reference: U10_6391            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -263,44 +266,44 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>maximum-net-dwellings</th>
-            <th>planning-permission-type</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
-            <th>deliverable</th>
-            <th>start-date</th>
             <th>point</th>
-            <th>planning-permission-status</th>
-            <th>name</th>
-            <th>organisation</th>
-            <th>site-address</th>
-            <th>planning-permission-date</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
-            <th>planning-permission-history</th>
             <th>notes</th>
+            <th>site</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
+            <th>minimum-net-dwellings</th>
+            <th>planning-permission-type</th>
+            <th>maximum-net-dwellings</th>
+            <th>deliverable</th>
+            <th>planning-permission-date</th>
+            <th>site-address</th>
+            <th>name</th>
+            <th>planning-permission-history</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-12-18</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/27d67f0288c6a07d38c0d2ce05b31d76f492a57fc7e378428ac2cbbe9f628ce6.csv#L239">27d67f0288c6...</a></td>
             <td>238</td>
+                <td>POINT(-2.537967 51.429892)</td> 
+                <td>Alternative site reference: U10_6391</td> 
+                <td>19/03645/F</td> 
+                <td>permissioned</td> 
+                <td>2020-12-18</td> 
                 <td>8</td> 
                 <td>full planning permission</td> 
-                <td>https://pa.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&amp;keyVal=PV7DSIDNJ7D00</td> 
-                <td>0.08</td> 
-                <td>yes</td> 
-                <td>2020-12-18</td> 
-                <td>POINT(-2.537967 51.429892)</td> 
-                <td>permissioned</td> 
-                <td>19/03645/F</td> 
-                <td>local-authority-eng:BST</td> 
-                <td>2 Emery Road Bristol BS4 5PN</td> 
-                <td>2019-10-16</td> 
-                <td>19/03645/F</td> 
                 <td>8</td> 
+                <td>yes</td> 
+                <td>2019-10-16</td> 
+                <td>2 Emery Road Bristol BS4 5PN</td> 
+                <td>19/03645/F</td> 
                 <td>https://pa.bristol.gov.uk/online-applications/applicationDetails.do?keyVal=PV7DSIDNJ7D00&amp;activeTab=summary</td> 
-                <td>Alternative site reference: U10_6391</td> 
+                <td>0.08</td> 
+                <td>local-authority-eng:BST</td> 
+                <td>https://pa.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&amp;keyVal=PV7DSIDNJ7D00</td> 
         </tr>    </tbody>
 </table>
 

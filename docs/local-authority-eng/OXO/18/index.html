@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,34 +160,6 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#18</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-10-26            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                1.73            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                18            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                mixed ownership            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                The site is allocated for a retail-led mixed use development (which could include housing or student accommodation) in the Sites and Housing Plan adopted in February 2013. The site is also allocated in the emerging Local Plan 2036, which is currently undergoing an examination in public (consultation on proposed modifications following hearings). The City Council has adopted the Diamond Place SPD to guide development on this site.            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.oxford.gov.uk/downloads/file/4188/site_018_-_diamond_place">https://www.oxford.gov.uk/downloads/file/4188/site_018_-_diamond_place</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-history
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://public.oxford.gov.uk/online-applications/">http://public.oxford.gov.uk/online-applications/</a>            </dd>
@@ -193,11 +168,39 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                Ewert House, Ewert Place, Oxford, OX2 7DD, (Diamond Place and Ewert House)            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                18            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                The site is allocated for a retail-led mixed use development (which could include housing or student accommodation) in the Sites and Housing Plan adopted in February 2013. The site is also allocated in the emerging Local Plan 2036, which is currently undergoing an examination in public (consultation on proposed modifications following hearings). The City Council has adopted the Diamond Place SPD to guide development on this site.            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                mixed ownership            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/OXO" class="govuk-link">Oxford City Council</a>
 <span title="Organisation identifier: local-authority-eng:OXO" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:OXO)</span>
             </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.oxford.gov.uk/downloads/file/4188/site_018_-_diamond_place">https://www.oxford.gov.uk/downloads/file/4188/site_018_-_diamond_place</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-10-26            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                1.73            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site
             </dt>
@@ -247,36 +250,36 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>hectares</th>
-            <th>site-plan-url</th>
+            <th>point</th>
+            <th>notes</th>
+            <th>site</th>
             <th>start-date</th>
             <th>planning-permission-status</th>
+            <th>ownership-status</th>
             <th>site-address</th>
             <th>name</th>
-            <th>point</th>
-            <th>organisation</th>
-            <th>site</th>
             <th>planning-permission-history</th>
-            <th>notes</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2019-12-04</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/09507a469d95be4189fab5558f4adf2c03c61ac26204b65c60387529544d2788.csv#L11">09507a469d95...</a></td>
             <td>10</td>
-                <td>mixed ownership</td> 
-                <td>1.73</td> 
-                <td>https://www.oxford.gov.uk/downloads/file/4188/site_018_-_diamond_place</td> 
+                <td>POINT(-1.262524 51.776795)</td> 
+                <td>The site is allocated for a retail-led mixed use development (which could include housing or student accommodation) in the Sites and Housing Plan adopted in February 2013. The site is also allocated in the emerging Local Plan 2036, which is currently undergoing an examination in public (consultation on proposed modifications following hearings). The City Council has adopted the Diamond Place SPD to guide development on this site.</td> 
+                <td>18</td> 
                 <td>2017-10-26</td> 
                 <td>not permissioned</td> 
+                <td>mixed ownership</td> 
                 <td>Ewert House, Ewert Place, Oxford, OX2 7DD, (Diamond Place and Ewert House)</td> 
                 <td>18</td> 
-                <td>POINT(-1.262524 51.776795)</td> 
-                <td>local-authority-eng:OXO</td> 
-                <td>18</td> 
                 <td>http://public.oxford.gov.uk/online-applications/</td> 
-                <td>The site is allocated for a retail-led mixed use development (which could include housing or student accommodation) in the Sites and Housing Plan adopted in February 2013. The site is also allocated in the emerging Local Plan 2036, which is currently undergoing an examination in public (consultation on proposed modifications following hearings). The City Council has adopted the Diamond Place SPD to guide development on this site.</td> 
+                <td>1.73</td> 
+                <td>local-authority-eng:OXO</td> 
+                <td>https://www.oxford.gov.uk/downloads/file/4188/site_018_-_diamond_place</td> 
         </tr>    </tbody>
 </table>
 

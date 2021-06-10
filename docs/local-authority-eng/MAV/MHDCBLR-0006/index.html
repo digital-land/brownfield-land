@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,27 +160,21 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#MHDCBLR/0006</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/MAV" class="govuk-link">Malvern Hills District Council</a>
-<span title="Organisation identifier: local-authority-eng:MAV" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:MAV)</span>
-            </dd>
+            <dd class="govuk-summary-list__value">                21            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
-            <dd class="govuk-summary-list__value">                2017-12-28            </dd>
+            <dd class="govuk-summary-list__value">                Not Permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-address
             </dt>
             <dd class="govuk-summary-list__value">                Victoria Road Car Park, Malvern            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                21            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                MHDCBLR/0006            </dd>
+            <dd class="govuk-summary-list__value">                18            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">ownership-status
             </dt>
@@ -187,21 +184,27 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0006+Victoria+Road+Car+Park%2C+Malvern.pdf/769cfa34-62c2-380b-8884-c974287a2539">https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0006+Victoria+Road+Car+Park%2C+Malvern.pdf/769cfa34-62c2-380b-8884-c974287a2539</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            <dt class="govuk-summary-list__key">hectares
             </dt>
-            <dd class="govuk-summary-list__value">                18            </dd>
+            <dd class="govuk-summary-list__value">                0.28            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                MHDCBLR/0006            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                MHDCBLR/0006            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
+            <dt class="govuk-summary-list__key">organisation
             </dt>
-            <dd class="govuk-summary-list__value">                0.28            </dd>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/MAV" class="govuk-link">Malvern Hills District Council</a>
+<span title="Organisation identifier: local-authority-eng:MAV" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:MAV)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
+            <dt class="govuk-summary-list__key">start-date
             </dt>
-            <dd class="govuk-summary-list__value">                Not Permissioned            </dd>
+            <dd class="govuk-summary-list__value">                2017-12-28            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -247,36 +250,36 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
-            <th>start-date</th>
-            <th>site-address</th>
             <th>point</th>
-            <th>name</th>
-            <th>organisation</th>
-            <th>planning-permission-status</th>
             <th>site</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
             <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>ownership-status</th>
+            <th>site-address</th>
+            <th>name</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2019-01-07</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/78a1ca9af1af9204799549f3517913de4788529cf696aa22bb86518d347fcd30.csv#L7">78a1ca9af1af...</a></td>
             <td>6</td>
-                <td>owned by a public authority</td> 
-                <td>21</td> 
-                <td>https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0006+Victoria+Road+Car+Park%2C+Malvern.pdf/769cfa34-62c2-380b-8884-c974287a2539</td> 
-                <td>0.28</td> 
-                <td>2017-12-28</td> 
-                <td>Victoria Road Car Park, Malvern</td> 
                 <td>POINT(-2.325412 52.113331)</td> 
                 <td>MHDCBLR/0006</td> 
-                <td>local-authority-eng:MAV</td> 
                 <td>Not Permissioned</td> 
-                <td>MHDCBLR/0006</td> 
+                <td>2017-12-28</td> 
                 <td>18</td> 
+                <td>21</td> 
+                <td>owned by a public authority</td> 
+                <td>Victoria Road Car Park, Malvern</td> 
+                <td>MHDCBLR/0006</td> 
+                <td>0.28</td> 
+                <td>local-authority-eng:MAV</td> 
+                <td>https://www.malvernhills.gov.uk/documents/283188/8904555/MHDCBLR0006+Victoria+Road+Car+Park%2C+Malvern.pdf/769cfa34-62c2-380b-8884-c974287a2539</td> 
         </tr>    </tbody>
 </table>
 

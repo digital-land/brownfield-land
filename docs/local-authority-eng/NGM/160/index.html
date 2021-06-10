@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -159,7 +162,31 @@ crossorigin="" />
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-date
             </dt>
-            <dd class="govuk-summary-list__value">                2020-03-25            </dd>
+            <dd class="govuk-summary-list__value">                2015-12-31            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                5            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.05            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-history
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://publicaccess.nottinghamcity.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=NXJQRTLYCB000">http://publicaccess.nottinghamcity.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=NXJQRTLYCB000</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-12-14            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-type
+            </dt>
+            <dd class="govuk-summary-list__value">                outline planning permission            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -167,65 +194,41 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:NGM" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:NGM)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                160            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">notes
             </dt>
-            <dd class="govuk-summary-list__value">                DevelopmentDescription: Demolition of existing storage units and workshops and erection of a terrace of 5 No. 3-storey dwellings (Class C3). (Re-submission of 19/01999/PFUL3); SiteInformation: N/A; NonHousingDevelopment: N/A; ProposedForPIP: No; Notes: N/A            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
-            </dt>
-            <dd class="govuk-summary-list__value">                outline planning permission            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.05            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                Not Permissioned            </dd>
+            <dd class="govuk-summary-list__value">                DevelopmentDescription: Lapsed Outline application for 5 dwellings following demolition of existing building.; SiteInformation: N/A; NonHousingDevelopment: N/A; ProposedForPIP: No; Notes: N/A            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">ownership-status
             </dt>
             <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                5            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-plan-url
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://maps.nottinghamcity.gov.uk/insightmapping/?l=0.21,9.63&xmin=456167.4009999996&xmax=456194.94770000037&ymin=341882.74620000087&ymax=341901.75090000033">http://maps.nottinghamcity.gov.uk/insightmapping/?l=0.21,9.63&xmin=456167.4009999996&xmax=456194.94770000037&ymin=341882.74620000087&ymax=341901.75090000033</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                P J Towey Construction, 197 Gladstone Street, NG7 6HX            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                160            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-history
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://publicaccess.nottinghamcity.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=Q3DCD9LY0KU00">http://publicaccess.nottinghamcity.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=Q3DCD9LY0KU00</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site
             </dt>
             <dd class="govuk-summary-list__value">                160            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">site-address
             </dt>
-            <dd class="govuk-summary-list__value">                2017-12-14            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">entry-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-12-14            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                5            </dd>
+            <dd class="govuk-summary-list__value">                P J Towey Construction, 197 Gladstone Street, NG7 6HX            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">deliverable
             </dt>
             <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            <dt class="govuk-summary-list__key">entry-date
             </dt>
-            <dd class="govuk-summary-list__value">                5            </dd>
+            <dd class="govuk-summary-list__value">                2017-12-14            </dd>
         </div>    
     </dl></article>
 </div>
@@ -267,67 +270,67 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>hectares</th>
-            <th>planning-permission-type</th>
-            <th>site-plan-url</th>
-            <th>deliverable</th>
-            <th>site-address</th>
-            <th>planning-permission-status</th>
-            <th>planning-permission-date</th>
-            <th>name</th>
-            <th>organisation</th>
-            <th>point</th>
-            <th>start-date</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
-            <th>planning-permission-history</th>
             <th>notes</th>
+            <th>point</th>
+            <th>site</th>
+            <th>start-date</th>
+            <th>planning-permission-status</th>
+            <th>minimum-net-dwellings</th>
+            <th>planning-permission-date</th>
+            <th>planning-permission-type</th>
+            <th>maximum-net-dwellings</th>
+            <th>ownership-status</th>
+            <th>name</th>
+            <th>planning-permission-history</th>
+            <th>site-address</th>
+            <th>deliverable</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2017-12-14</td>
-            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/6b69fd3da198c6993fbe725db0f4e8d850ddeddffb446c29f8f72365e631287d.csv#L68">6b69fd3da198...</a></td>
-            <td>67</td>
-                <td>not owned by a public authority</td> 
-                <td>5</td> 
-                <td>0.05</td> 
-                <td>outline planning permission</td> 
-                <td>http://maps.nottinghamcity.gov.uk/insightmapping/?l=0.21,9.63&amp;xmin=456167.4009999996&amp;xmax=456194.94770000037&amp;ymin=341882.74620000087&amp;ymax=341901.75090000033</td> 
-                <td>yes</td> 
-                <td>P J Towey Construction, 197 Gladstone Street, NG7 6HX</td> 
-                <td>Not Permissioned</td> 
-                <td>2020-03-25</td> 
-                <td>160</td> 
-                <td>local-authority-eng:NGM</td> 
-                <td>POINT(-1.165086 52.971547)</td> 
-                <td>2017-12-14</td> 
-                <td>160</td> 
-                <td>5</td> 
-                <td>http://publicaccess.nottinghamcity.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=Q3DCD9LY0KU00</td> 
-                <td>DevelopmentDescription: Demolition of existing storage units and workshops and erection of a terrace of 5 No. 3-storey dwellings (Class C3). (Re-submission of 19/01999/PFUL3); SiteInformation: N/A; NonHousingDevelopment: N/A; ProposedForPIP: No; Notes: N/A</td> 
-        </tr>        <tr>
-            <td>2017-12-14</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/7e41b7383b9eeb6ba0c93fb5b21931a0ff0f33663adc59214846dc4850347224.csv#L68">7e41b7383b9e...</a></td>
             <td>67</td>
+                <td>DevelopmentDescription: Lapsed Outline application for 5 dwellings following demolition of existing building.; SiteInformation: N/A; NonHousingDevelopment: N/A; ProposedForPIP: No; Notes: N/A</td> 
+                <td>POINT(-1.165086 52.971547)</td> 
+                <td>160</td> 
+                <td>2017-12-14</td> 
+                <td>permissioned</td> 
+            <td></td>
+                <td>2015-12-31</td> 
+                <td>outline planning permission</td> 
+            <td></td>
                 <td>not owned by a public authority</td> 
+                <td>160</td> 
+                <td>http://publicaccess.nottinghamcity.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=NXJQRTLYCB000</td> 
+                <td>P J Towey Construction, 197 Gladstone Street, NG7 6HX</td> 
             <td></td>
                 <td>0.05</td> 
-                <td>outline planning permission</td> 
-                <td>http://maps.nottinghamcity.gov.uk/insightmapping/?l=0.21,9.63&amp;xmin=456167.4009999996&amp;xmax=456194.94770000037&amp;ymin=341882.74620000087&amp;ymax=341901.75090000033</td> 
-            <td></td>
-                <td>P J Towey Construction, 197 Gladstone Street, NG7 6HX</td> 
-                <td>permissioned</td> 
-                <td>2015-12-31</td> 
-                <td>160</td> 
                 <td>local-authority-eng:NGM</td> 
+                <td>http://maps.nottinghamcity.gov.uk/insightmapping/?l=0.21,9.63&amp;xmin=456167.4009999996&amp;xmax=456194.94770000037&amp;ymin=341882.74620000087&amp;ymax=341901.75090000033</td> 
+        </tr>        <tr>
+            <td>2017-12-14</td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/6b69fd3da198c6993fbe725db0f4e8d850ddeddffb446c29f8f72365e631287d.csv#L68">6b69fd3da198...</a></td>
+            <td>67</td>
+                <td>DevelopmentDescription: Demolition of existing storage units and workshops and erection of a terrace of 5 No. 3-storey dwellings (Class C3). (Re-submission of 19/01999/PFUL3); SiteInformation: N/A; NonHousingDevelopment: N/A; ProposedForPIP: No; Notes: N/A</td> 
                 <td>POINT(-1.165086 52.971547)</td> 
-                <td>2017-12-14</td> 
                 <td>160</td> 
-            <td></td>
-                <td>http://publicaccess.nottinghamcity.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=NXJQRTLYCB000</td> 
-                <td>DevelopmentDescription: Lapsed Outline application for 5 dwellings following demolition of existing building.; SiteInformation: N/A; NonHousingDevelopment: N/A; ProposedForPIP: No; Notes: N/A</td> 
+                <td>2017-12-14</td> 
+                <td>Not Permissioned</td> 
+                <td>5</td> 
+                <td>2020-03-25</td> 
+                <td>outline planning permission</td> 
+                <td>5</td> 
+                <td>not owned by a public authority</td> 
+                <td>160</td> 
+                <td>http://publicaccess.nottinghamcity.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=Q3DCD9LY0KU00</td> 
+                <td>P J Towey Construction, 197 Gladstone Street, NG7 6HX</td> 
+                <td>yes</td> 
+                <td>0.05</td> 
+                <td>local-authority-eng:NGM</td> 
+                <td>http://maps.nottinghamcity.gov.uk/insightmapping/?l=0.21,9.63&amp;xmin=456167.4009999996&amp;xmax=456194.94770000037&amp;ymin=341882.74620000087&amp;ymax=341901.75090000033</td> 
         </tr>    </tbody>
 </table>
 

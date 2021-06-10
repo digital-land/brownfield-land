@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -161,15 +164,27 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                pending decision            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
+            <dt class="govuk-summary-list__key">deliverable
             </dt>
-            <dd class="govuk-summary-list__value">                WBCBR23            </dd>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                11            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                11            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">planning-permission-history
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://planning.adur-worthing.gov.uk/online-applications/">https://planning.adur-worthing.gov.uk/online-applications/</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
             </dt>
             <dd class="govuk-summary-list__value">                WBCBR23            </dd>
         </div>        <div class="govuk-summary-list__row">
@@ -177,21 +192,17 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                25 Broadwater Road            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                WBCBR23            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hectares
             </dt>
             <dd class="govuk-summary-list__value">                0.079            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                11            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2017-10-16            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">notes
             </dt>
@@ -200,14 +211,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">site-plan-url
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.adur-worthing.gov.uk/media/media,146503,en.pdf">https://www.adur-worthing.gov.uk/media/media,146503,en.pdf</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-history
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://planning.adur-worthing.gov.uk/online-applications/">https://planning.adur-worthing.gov.uk/online-applications/</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -259,42 +262,42 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>hectares</th>
-            <th>site-plan-url</th>
-            <th>deliverable</th>
-            <th>site-address</th>
+            <th>point</th>
+            <th>notes</th>
+            <th>site</th>
             <th>planning-permission-status</th>
             <th>start-date</th>
-            <th>name</th>
-            <th>point</th>
-            <th>organisation</th>
-            <th>site</th>
             <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>deliverable</th>
+            <th>ownership-status</th>
+            <th>site-address</th>
             <th>planning-permission-history</th>
-            <th>notes</th>
+            <th>name</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2017-10-16</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/5512f8393683186d3e1a2f260710f01a283944a2b7975f8695403db72898a383.csv#L41">5512f8393683...</a></td>
             <td>40</td>
-                <td>not owned by a public authority</td> 
-                <td>11</td> 
-                <td>0.079</td> 
-                <td>https://www.adur-worthing.gov.uk/media/media,146503,en.pdf</td> 
-                <td>yes</td> 
-                <td>25 Broadwater Road</td> 
+                <td>POINT(-0.373448 50.82292)</td> 
+                <td>This is a privately owned which is considered to be suitable, achievable and deliverable. A planning application has been submitted for 12 residential units (AWDM/1921/16) and the decision is pending.. Change of use from 2 x 4no. bedroom semi-detached dwellings to 7 no. one bedroom and 3 no. two bedroom flats/maisonettes with the addition of a second floor (no&#39;s 25 and 27 Broadwater Road). SHLAA Ref: WB17015 Planning Ref: AWDM/1921/16</td> 
+                <td>WBCBR23</td> 
                 <td>pending decision</td> 
                 <td>2017-10-16</td> 
-                <td>WBCBR23</td> 
-                <td>POINT(-0.373448 50.82292)</td> 
-                <td>local-authority-eng:WOT</td> 
-                <td>WBCBR23</td> 
                 <td>11</td> 
+                <td>11</td> 
+                <td>yes</td> 
+                <td>not owned by a public authority</td> 
+                <td>25 Broadwater Road</td> 
                 <td>https://planning.adur-worthing.gov.uk/online-applications/</td> 
-                <td>This is a privately owned which is considered to be suitable, achievable and deliverable. A planning application has been submitted for 12 residential units (AWDM/1921/16) and the decision is pending.. Change of use from 2 x 4no. bedroom semi-detached dwellings to 7 no. one bedroom and 3 no. two bedroom flats/maisonettes with the addition of a second floor (no&#39;s 25 and 27 Broadwater Road). SHLAA Ref: WB17015 Planning Ref: AWDM/1921/16</td> 
+                <td>WBCBR23</td> 
+                <td>0.079</td> 
+                <td>local-authority-eng:WOT</td> 
+                <td>https://www.adur-worthing.gov.uk/media/media,146503,en.pdf</td> 
         </tr>    </tbody>
 </table>
 

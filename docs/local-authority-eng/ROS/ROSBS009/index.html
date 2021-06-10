@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,45 +160,9 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#ROSBS009</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-history
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://publicaccess.rossendale.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=NIUF3UND02K00">https://publicaccess.rossendale.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=NIUF3UND02K00</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                9            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.15            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                ROSBS009            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2017-12-15            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                HARE AND HOUNDS GARAGE, STACKSTEADS            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                ROSBS009            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                9            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -203,25 +170,61 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:ROS" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:ROS)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                9            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                ROSBS009            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                HARE AND HOUNDS GARAGE, STACKSTEADS            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.15            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-history
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://publicaccess.rossendale.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=NIUF3UND02K00">https://publicaccess.rossendale.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=NIUF3UND02K00</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                9            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                ROSBS009            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-12-17            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                2015/0030 - outline approval has expired. Local Plan Submission version proposes to allocate the site (H36) for 9 dwellings. 2018/0476 - Variation of cond. 2 of 2015/0030 planning permission (to re-position 4 of the 9 houses previously permitted) (Application Withdrawn). Demolition of existing workshop/garage and construction of 9 dwellings with access from Four Lane Ends Road            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-plan-url
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.rossendale.gov.uk/downloads/download/10897/brownfield_register">https://www.rossendale.gov.uk/downloads/download/10897/brownfield_register</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
-            </dt>
-            <dd class="govuk-summary-list__value">                outline planning permission            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-date
             </dt>
             <dd class="govuk-summary-list__value">                2015-11-06            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                2015/0030 - outline approval has expired. Local Plan Submission version proposes to allocate the site (H36) for 9 dwellings. 2018/0476 - Variation of cond. 2 of 2015/0030 planning permission (to re-position 4 of the 9 houses previously permitted) (Application Withdrawn). Demolition of existing workshop/garage and construction of 9 dwellings with access from Four Lane Ends Road            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-type
+            </dt>
+            <dd class="govuk-summary-list__value">                outline planning permission            </dd>
         </div>    
     </dl></article>
 </div>
@@ -263,123 +266,123 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
-            <th>planning-permission-type</th>
-            <th>start-date</th>
-            <th>planning-permission-status</th>
-            <th>site-address</th>
-            <th>name</th>
-            <th>organisation</th>
-            <th>point</th>
-            <th>planning-permission-date</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
-            <th>planning-permission-history</th>
             <th>notes</th>
+            <th>point</th>
+            <th>site</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
+            <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>planning-permission-date</th>
+            <th>planning-permission-type</th>
+            <th>ownership-status</th>
+            <th>name</th>
+            <th>planning-permission-history</th>
+            <th>site-address</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-12-17</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/10f63e69ca120af87f5877a0bbabd92a75a05fc5a868f001ac5dda59e59b83d8.csv#L4">10f63e69ca12...</a></td>
             <td>3</td>
-                <td>not owned by a public authority</td> 
-                <td>9</td> 
-                <td>https://www.rossendale.gov.uk/downloads/download/10897/brownfield_register</td> 
-                <td>0.15</td> 
-            <td></td>
-                <td>2017-12-15</td> 
-                <td>not permissioned</td> 
-                <td>HARE AND HOUNDS GARAGE, STACKSTEADS</td> 
-                <td>ROSBS009</td> 
-                <td>local-authority-eng:ROS</td> 
-                <td>POINT(-2.23197 53.6923)</td> 
-            <td></td>
-                <td>ROSBS009</td> 
-                <td>9</td> 
-                <td>https://publicaccess.rossendale.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=NIUF3UND02K00</td> 
                 <td>2015/0030 - outline approval has expired. Local Plan Submission version proposes to allocate the site (H36) for 9 dwellings. 2018/0476 - Variation of cond. 2 of 2015/0030 planning permission (to re-position 4 of the 9 houses previously permitted) (Application Withdrawn). Demolition of existing workshop/garage and construction of 9 dwellings with access from Four Lane Ends Road</td> 
+                <td>POINT(-2.23197 53.6923)</td> 
+                <td>ROSBS009</td> 
+                <td>not permissioned</td> 
+                <td>2017-12-15</td> 
+                <td>9</td> 
+                <td>9</td> 
+            <td></td>
+            <td></td>
+                <td>not owned by a public authority</td> 
+                <td>ROSBS009</td> 
+                <td>https://publicaccess.rossendale.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=NIUF3UND02K00</td> 
+                <td>HARE AND HOUNDS GARAGE, STACKSTEADS</td> 
+                <td>0.15</td> 
+                <td>local-authority-eng:ROS</td> 
+                <td>https://www.rossendale.gov.uk/downloads/download/10897/brownfield_register</td> 
         </tr>        <tr>
             <td>2019-12-20</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/d7bd614f1d65f7066a4976cd4b7bddc55dc6b5654d5c394c738b77ba06721f26.csv#L4">d7bd614f1d65...</a></td>
             <td>3</td>
-                <td>not owned by a public authority</td> 
-                <td>9</td> 
-                <td>https://www.rossendale.gov.uk/downloads/download/10897/brownfield_register</td> 
-                <td>0.15</td> 
-            <td></td>
-                <td>2017-12-15</td> 
-                <td>not permissioned</td> 
-                <td>HARE AND HOUNDS GARAGE, STACKSTEADS</td> 
-                <td>ROSBS009</td> 
-                <td>local-authority-eng:ROS</td> 
-                <td>POINT(-2.23197 53.6923)</td> 
-            <td></td>
-                <td>ROSBS009</td> 
-                <td>9</td> 
-                <td>https://publicaccess.rossendale.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=NIUF3UND02K00</td> 
                 <td>2015/0030 - outline approval has expired. Local Plan Submission version proposes to allocate the site (H36) for 9 dwellings.. Demolition of existing workshop/garage and construction of 9 dwellings with access from Four Lane Ends Road</td> 
+                <td>POINT(-2.23197 53.6923)</td> 
+                <td>ROSBS009</td> 
+                <td>not permissioned</td> 
+                <td>2017-12-15</td> 
+                <td>9</td> 
+                <td>9</td> 
+            <td></td>
+            <td></td>
+                <td>not owned by a public authority</td> 
+                <td>ROSBS009</td> 
+                <td>https://publicaccess.rossendale.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=NIUF3UND02K00</td> 
+                <td>HARE AND HOUNDS GARAGE, STACKSTEADS</td> 
+                <td>0.15</td> 
+                <td>local-authority-eng:ROS</td> 
+                <td>https://www.rossendale.gov.uk/downloads/download/10897/brownfield_register</td> 
         </tr>        <tr>
             <td>2018-12-14</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/23c91c585f87ed0f8e78122e234a8922cf75cd4323ec51ed6764034b37ee936f.csv#L5">23c91c585f87...</a></td>
             <td>4</td>
-                <td>not owned by a public authority</td> 
-                <td>9</td> 
-                <td>https://www.rossendale.gov.uk/downloads/download/10897/brownfield_register</td> 
-                <td>0.15</td> 
-            <td></td>
-                <td>2017-12-15</td> 
-                <td>not permissioned</td> 
-                <td>HARE AND HOUNDS GARAGE, STACKSTEADS</td> 
-                <td>ROSBS009</td> 
-                <td>local-authority-eng:ROS</td> 
-                <td>POINT(-2.23197 53.6923)</td> 
-            <td></td>
-                <td>ROSBS009</td> 
-                <td>9</td> 
-                <td>https://publicaccess.rossendale.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=NIUF3UND02K00</td> 
                 <td>2015/0030 - outline approval has expired. Demolition of existing workshop/garage and construction of 9 dwellings with access from Four Lane Ends Road</td> 
+                <td>POINT(-2.23197 53.6923)</td> 
+                <td>ROSBS009</td> 
+                <td>not permissioned</td> 
+                <td>2017-12-15</td> 
+                <td>9</td> 
+                <td>9</td> 
+            <td></td>
+            <td></td>
+                <td>not owned by a public authority</td> 
+                <td>ROSBS009</td> 
+                <td>https://publicaccess.rossendale.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=NIUF3UND02K00</td> 
+                <td>HARE AND HOUNDS GARAGE, STACKSTEADS</td> 
+                <td>0.15</td> 
+                <td>local-authority-eng:ROS</td> 
+                <td>https://www.rossendale.gov.uk/downloads/download/10897/brownfield_register</td> 
         </tr>        <tr>
             <td>2017-12-15</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/1d30971549fffb840a714b5f7fd74d9966ed8aca2118c17b0bd57e4ea7b27970.csv#L7">1d30971549ff...</a></td>
             <td>6</td>
-                <td>not owned by a public authority</td> 
-                <td>9</td> 
-                <td>https://www.rossendale.gov.uk/downloads/download/10897/brownfield_register</td> 
-                <td>0.15</td> 
-                <td>outline planning permission</td> 
-                <td>2017-12-15</td> 
-                <td>permissioned</td> 
-                <td>HARE AND HOUNDS GARAGE, STACKSTEADS</td> 
-                <td>ROSBS009</td> 
-                <td>local-authority-eng:ROS</td> 
-                <td>POINT(-2.23197 53.6923)</td> 
-                <td>2015-11-06</td> 
-                <td>ROSBS009</td> 
-                <td>9</td> 
-                <td>https://publicaccess.rossendale.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=NIUF3UND02K00</td> 
                 <td>2015/0030 - outline approval. Demolition of existing workshop/garage and construction of 9 dwellings with access from Four Lane Ends Road</td> 
+                <td>POINT(-2.23197 53.6923)</td> 
+                <td>ROSBS009</td> 
+                <td>permissioned</td> 
+                <td>2017-12-15</td> 
+                <td>9</td> 
+                <td>9</td> 
+                <td>2015-11-06</td> 
+                <td>outline planning permission</td> 
+                <td>not owned by a public authority</td> 
+                <td>ROSBS009</td> 
+                <td>https://publicaccess.rossendale.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=NIUF3UND02K00</td> 
+                <td>HARE AND HOUNDS GARAGE, STACKSTEADS</td> 
+                <td>0.15</td> 
+                <td>local-authority-eng:ROS</td> 
+                <td>https://www.rossendale.gov.uk/downloads/download/10897/brownfield_register</td> 
         </tr>        <tr>
             <td>2016-07-08</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/6feacf958788c876313dbcc4d6b570a4e56747e5dfc4deab54a78e92ca970799.csv#L10">6feacf958788...</a></td>
             <td>9</td>
-                <td>not owned by a public authority</td> 
-                <td>9</td> 
             <td></td>
-                <td>0.14</td> 
-            <td></td>
-                <td>2016-06-17</td> 
-                <td>permissioned</td> 
-                <td>Newchurch Road, Stacksteads</td> 
-                <td>ROSBS009</td> 
-                <td>local-authority-eng:ROS</td> 
                 <td>POINT(-2.231968 53.692298)</td> 
-            <td></td>
                 <td>ROSBS009</td> 
+                <td>permissioned</td> 
+                <td>2016-06-17</td> 
                 <td>9</td> 
+                <td>9</td> 
+            <td></td>
+            <td></td>
+                <td>not owned by a public authority</td> 
+                <td>ROSBS009</td> 
                 <td>http://www.rossendale.gov.uk/site/scripts/planx_details.php?appID=3985</td> 
+                <td>Newchurch Road, Stacksteads</td> 
+                <td>0.14</td> 
+                <td>local-authority-eng:ROS</td> 
             <td></td>
         </tr>    </tbody>
 </table>

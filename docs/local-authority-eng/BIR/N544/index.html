@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,41 +160,13 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#N544</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">end-date
+            <dt class="govuk-summary-list__key">site
             </dt>
-            <dd class="govuk-summary-list__value">                2019-12-31            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                Not Permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                60            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Station Street/Brassington Avenue Sutton, Sutton Trinity            </dd>
+            <dd class="govuk-summary-list__value">                N544            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hectares
             </dt>
             <dd class="govuk-summary-list__value">                0.15            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                60            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-12-19            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                mixed ownership            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                N544            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -199,17 +174,45 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:BIR" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BIR)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-12-19            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-plan-url
             </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://localview.birmingham.gov.uk/Planning/Sites/SHLAA/">https://localview.birmingham.gov.uk/Planning/Sites/SHLAA/</a>            </dd>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://maps.birmingham.gov.uk/webapps/shlaa/">https://maps.birmingham.gov.uk/webapps/shlaa/</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                60            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                mixed ownership            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Station Street/Brassington Avenue Sutton, Sutton Trinity            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                Not Permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                N544            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                60            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2017-12-19            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">end-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2019-12-31            </dd>
         </div>    
     </dl></article>
 </div>
@@ -251,55 +254,55 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
-            <th>site-address</th>
-            <th>planning-permission-status</th>
             <th>point</th>
-            <th>start-date</th>
-            <th>organisation</th>
-            <th>name</th>
-            <th>end-date</th>
             <th>site</th>
+            <th>end-date</th>
+            <th>start-date</th>
+            <th>planning-permission-status</th>
             <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>ownership-status</th>
+            <th>site-address</th>
+            <th>name</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2017-12-19</td>
-            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/586fd8bf0779012ac7c4b8681341b640e538deeaaf5529b2363862253b528703.csv#L344">586fd8bf0779...</a></td>
-            <td>343</td>
-                <td>mixed ownership</td> 
-                <td>60</td> 
-                <td>https://localview.birmingham.gov.uk/Planning/Sites/SHLAA/</td> 
-                <td>0.15</td> 
-                <td>Station Street/Brassington Avenue Sutton, Sutton Trinity</td> 
-                <td>Not Permissioned</td> 
-                <td>POINT(-1.824619 52.564488)</td> 
-                <td>2017-12-19</td> 
-                <td>local-authority-eng:BIR</td> 
-                <td>N544</td> 
-            <td></td>
-                <td>N544</td> 
-                <td>60</td> 
-        </tr>        <tr>
-            <td>2017-12-19</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/77da1087f91eafee42797dbaa9bebef573d2eb759b39d9db130c99d34cbe4ec4.csv#L958">77da1087f91e...</a></td>
             <td>957</td>
-                <td>mixed ownership</td> 
-                <td>60</td> 
-                <td>https://maps.birmingham.gov.uk/webapps/shlaa/</td> 
-                <td>0.15</td> 
-                <td>Station Street/Brassington Avenue Sutton, Sutton Trinity</td> 
-                <td>Not Permissioned</td> 
                 <td>POINT(-1.82462 52.5645)</td> 
-                <td>2017-12-19</td> 
-                <td>local-authority-eng:BIR</td> 
                 <td>N544</td> 
                 <td>2019-12-31</td> 
-                <td>N544</td> 
+                <td>2017-12-19</td> 
+                <td>Not Permissioned</td> 
                 <td>60</td> 
+                <td>60</td> 
+                <td>mixed ownership</td> 
+                <td>Station Street/Brassington Avenue Sutton, Sutton Trinity</td> 
+                <td>N544</td> 
+                <td>0.15</td> 
+                <td>local-authority-eng:BIR</td> 
+                <td>https://maps.birmingham.gov.uk/webapps/shlaa/</td> 
+        </tr>        <tr>
+            <td>2017-12-19</td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/586fd8bf0779012ac7c4b8681341b640e538deeaaf5529b2363862253b528703.csv#L344">586fd8bf0779...</a></td>
+            <td>343</td>
+                <td>POINT(-1.824619 52.564488)</td> 
+                <td>N544</td> 
+            <td></td>
+                <td>2017-12-19</td> 
+                <td>Not Permissioned</td> 
+                <td>60</td> 
+                <td>60</td> 
+                <td>mixed ownership</td> 
+                <td>Station Street/Brassington Avenue Sutton, Sutton Trinity</td> 
+                <td>N544</td> 
+                <td>0.15</td> 
+                <td>local-authority-eng:BIR</td> 
+                <td>https://localview.birmingham.gov.uk/Planning/Sites/SHLAA/</td> 
         </tr>    </tbody>
 </table>
 

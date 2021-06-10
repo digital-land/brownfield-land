@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,33 +160,11 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#14/11837/FULL</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">site-address
             </dt>
-            <dd class="govuk-summary-list__value">                14/11837/FULL            </dd>
+            <dd class="govuk-summary-list__value">                87-89 Cleveland Street London W1T 6PJ            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2015-11-10            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.17            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/WSM" class="govuk-link">City of Westminster</a>
-<span title="Organisation identifier: local-authority-eng:WSM" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WSM)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-history
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://idoxpa.westminster.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=NFWSD4RP01R00">http://idoxpa.westminster.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=NFWSD4RP01R00</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2020-07-23            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                0            </dd>
         </div>        <div class="govuk-summary-list__row">
@@ -195,25 +176,47 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                full planning permission            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                0            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-plan-url
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://lbhf.maps.arcgis.com/apps/View/index.html?appid=d0d51e7d013a4d1a953ecc1cff697d24&site=14/11837/FULL">https://lbhf.maps.arcgis.com/apps/View/index.html?appid=d0d51e7d013a4d1a953ecc1cff697d24&site=14/11837/FULL</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
+            <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                14/11837/FULL            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                87-89 Cleveland Street London W1T 6PJ            </dd>
+            <dd class="govuk-summary-list__value">                0            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/WSM" class="govuk-link">City of Westminster</a>
+<span title="Organisation identifier: local-authority-eng:WSM" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WSM)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">notes
             </dt>
             <dd class="govuk-summary-list__value">                Demolition of existing building and redevelopment to provide a building of three blocks separated by landscaped areas (Block A - comprising ground and nine upper floors, Block B - ground and three upper floors and Block C - ground and three upper floors, each with basement and sub-basement) to provide up to 105 residential units, a petrol filling station, a mix of retail (Class A1)/ restaurant (Class A3)/ drinking establishment (Class A4)/office (Class B1)/ non-residential institution (Class D1) and assembly and leisure (Class D2) floorspace, and 46 residential parking spaces with associated plant space across sub-basement, basement and ground floor levels.. http://idoxpa.westminster.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=NFWSD4RP01R00            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2015-11-10            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.17            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-history
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://idoxpa.westminster.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=NFWSD4RP01R00">http://idoxpa.westminster.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=NFWSD4RP01R00</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2020-07-23            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                14/11837/FULL            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -259,42 +262,42 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>maximum-net-dwellings</th>
-            <th>hectares</th>
-            <th>planning-permission-type</th>
-            <th>site-plan-url</th>
-            <th>planning-permission-date</th>
-            <th>point</th>
-            <th>start-date</th>
-            <th>name</th>
-            <th>organisation</th>
-            <th>planning-permission-status</th>
-            <th>site-address</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
-            <th>planning-permission-history</th>
             <th>notes</th>
+            <th>point</th>
+            <th>site</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
+            <th>minimum-net-dwellings</th>
+            <th>planning-permission-type</th>
+            <th>maximum-net-dwellings</th>
+            <th>planning-permission-date</th>
+            <th>site-address</th>
+            <th>name</th>
+            <th>planning-permission-history</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-07-23</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/e15d044221879b726f765f81f353255e6801aad634d654f79d20068ff257a00e.csv#L32">e15d04422187...</a></td>
             <td>31</td>
-                <td>0</td> 
-                <td>0.17</td> 
-                <td>full planning permission</td> 
-                <td>https://lbhf.maps.arcgis.com/apps/View/index.html?appid=d0d51e7d013a4d1a953ecc1cff697d24&amp;site=14/11837/FULL</td> 
-                <td>2015-11-10</td> 
+                <td>Demolition of existing building and redevelopment to provide a building of three blocks separated by landscaped areas (Block A - comprising ground and nine upper floors, Block B - ground and three upper floors and Block C - ground and three upper floors, each with basement and sub-basement) to provide up to 105 residential units, a petrol filling station, a mix of retail (Class A1)/ restaurant (Class A3)/ drinking establishment (Class A4)/office (Class B1)/ non-residential institution (Class D1) and assembly and leisure (Class D2) floorspace, and 46 residential parking spaces with associated plant space across sub-basement, basement and ground floor levels.. http://idoxpa.westminster.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=NFWSD4RP01R00</td> 
                 <td>POINT(-0.140247 51.521554)</td> 
-                <td>2020-07-23</td> 
                 <td>14/11837/FULL</td> 
-                <td>local-authority-eng:WSM</td> 
                 <td>permissioned</td> 
+                <td>2020-07-23</td> 
+                <td>0</td> 
+                <td>full planning permission</td> 
+                <td>0</td> 
+                <td>2015-11-10</td> 
                 <td>87-89 Cleveland Street London W1T 6PJ</td> 
                 <td>14/11837/FULL</td> 
-                <td>0</td> 
                 <td>http://idoxpa.westminster.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=NFWSD4RP01R00</td> 
-                <td>Demolition of existing building and redevelopment to provide a building of three blocks separated by landscaped areas (Block A - comprising ground and nine upper floors, Block B - ground and three upper floors and Block C - ground and three upper floors, each with basement and sub-basement) to provide up to 105 residential units, a petrol filling station, a mix of retail (Class A1)/ restaurant (Class A3)/ drinking establishment (Class A4)/office (Class B1)/ non-residential institution (Class D1) and assembly and leisure (Class D2) floorspace, and 46 residential parking spaces with associated plant space across sub-basement, basement and ground floor levels.. http://idoxpa.westminster.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=NFWSD4RP01R00</td> 
+                <td>0.17</td> 
+                <td>local-authority-eng:WSM</td> 
+                <td>https://lbhf.maps.arcgis.com/apps/View/index.html?appid=d0d51e7d013a4d1a953ecc1cff697d24&amp;site=14/11837/FULL</td> 
         </tr>    </tbody>
 </table>
 

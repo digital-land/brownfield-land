@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,28 +160,6 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#18/00154/FUL</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                18/00154/FUL            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                4 Duke Street Chelmsford            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2019-04-15            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/CHL" class="govuk-link">Chelmsford City Council</a>
-<span title="Organisation identifier: local-authority-eng:CHL" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:CHL)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://publicaccess.chelmsford.gov.uk/online-applications/search.do">https://publicaccess.chelmsford.gov.uk/online-applications/search.do</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hectares
             </dt>
             <dd class="govuk-summary-list__value">                0.01            </dd>
@@ -187,25 +168,47 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                2018-04-04            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
+            <dt class="govuk-summary-list__key">deliverable
             </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/CHL" class="govuk-link">Chelmsford City Council</a>
+<span title="Organisation identifier: local-authority-eng:CHL" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:CHL)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2019-04-15            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                4 Duke Street Chelmsford            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-type
             </dt>
             <dd class="govuk-summary-list__value">                full planning permission            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site
             </dt>
             <dd class="govuk-summary-list__value">                18/00154/FUL            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
+            <dd class="govuk-summary-list__value">                18/00154/FUL            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://publicaccess.chelmsford.gov.uk/online-applications/search.do">https://publicaccess.chelmsford.gov.uk/online-applications/search.do</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -251,38 +254,38 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
-            <th>planning-permission-type</th>
-            <th>deliverable</th>
-            <th>site-address</th>
-            <th>start-date</th>
-            <th>planning-permission-date</th>
-            <th>name</th>
-            <th>organisation</th>
-            <th>planning-permission-status</th>
             <th>point</th>
             <th>site</th>
+            <th>start-date</th>
+            <th>planning-permission-status</th>
+            <th>planning-permission-date</th>
+            <th>deliverable</th>
+            <th>planning-permission-type</th>
+            <th>ownership-status</th>
+            <th>site-address</th>
+            <th>name</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2019-04-15</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/392dfc38759ad0454fb096e616771f3c713046b54a3e4b0289425ec3aebcb90d.csv#L51">392dfc38759a...</a></td>
             <td>50</td>
-                <td>not owned by a public authority</td> 
-                <td>https://publicaccess.chelmsford.gov.uk/online-applications/search.do</td> 
-                <td>0.01</td> 
-                <td>full planning permission</td> 
-                <td>yes</td> 
-                <td>4 Duke Street Chelmsford</td> 
-                <td>2019-04-15</td> 
-                <td>2018-04-04</td> 
-                <td>18/00154/FUL</td> 
-                <td>local-authority-eng:CHL</td> 
-                <td>permissioned</td> 
                 <td>POINT(0.472006 51.734806)</td> 
                 <td>18/00154/FUL</td> 
+                <td>2019-04-15</td> 
+                <td>permissioned</td> 
+                <td>2018-04-04</td> 
+                <td>yes</td> 
+                <td>full planning permission</td> 
+                <td>not owned by a public authority</td> 
+                <td>4 Duke Street Chelmsford</td> 
+                <td>18/00154/FUL</td> 
+                <td>0.01</td> 
+                <td>local-authority-eng:CHL</td> 
+                <td>https://publicaccess.chelmsford.gov.uk/online-applications/search.do</td> 
         </tr>    </tbody>
 </table>
 

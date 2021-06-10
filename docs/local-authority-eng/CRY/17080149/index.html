@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,33 +160,21 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#17080149</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
+            <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
-            <dd class="govuk-summary-list__value">                0.13            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                59            </dd>
+            <dd class="govuk-summary-list__value">                not permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2017-12-31            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-address
             </dt>
             <dd class="govuk-summary-list__value">                AIG Building, 2-8 Altyre Road            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.croydon.gov.uk/sites/default/files/articles/downloads/All%20SHLAA%20sites%20in%20Brownfield%20Register.pdf">https://www.croydon.gov.uk/sites/default/files/articles/downloads/All%20SHLAA%20sites%20in%20Brownfield%20Register.pdf</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                17080149            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -195,11 +186,23 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                59            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                not permissioned            </dd>
+            <dd class="govuk-summary-list__value">                59            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.croydon.gov.uk/sites/default/files/articles/downloads/All%20SHLAA%20sites%20in%20Brownfield%20Register.pdf">https://www.croydon.gov.uk/sites/default/files/articles/downloads/All%20SHLAA%20sites%20in%20Brownfield%20Register.pdf</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                17080149            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.13            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                17080149            </dd>
         </div>        <div class="govuk-summary-list__row">
@@ -247,36 +250,36 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>hectares</th>
-            <th>site-plan-url</th>
-            <th>site-address</th>
-            <th>start-date</th>
             <th>point</th>
-            <th>name</th>
-            <th>organisation</th>
-            <th>planning-permission-status</th>
             <th>site</th>
+            <th>start-date</th>
+            <th>planning-permission-status</th>
             <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>ownership-status</th>
+            <th>site-address</th>
+            <th>name</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2018-11-30</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/c9efead8107b7fdb58be9dd4117badd72df58f56a9137ea12110b570fd200003.csv#L239">c9efead8107b...</a></td>
             <td>238</td>
-                <td>not owned by a public authority</td> 
-                <td>59</td> 
-                <td>0.13</td> 
-                <td>https://www.croydon.gov.uk/sites/default/files/articles/downloads/All%20SHLAA%20sites%20in%20Brownfield%20Register.pdf</td> 
-                <td>AIG Building, 2-8 Altyre Road</td> 
-                <td>2017-12-31</td> 
                 <td>POINT(-0.092193 51.374427)</td> 
                 <td>17080149</td> 
-                <td>local-authority-eng:CRY</td> 
+                <td>2017-12-31</td> 
                 <td>not permissioned</td> 
-                <td>17080149</td> 
                 <td>59</td> 
+                <td>59</td> 
+                <td>not owned by a public authority</td> 
+                <td>AIG Building, 2-8 Altyre Road</td> 
+                <td>17080149</td> 
+                <td>0.13</td> 
+                <td>local-authority-eng:CRY</td> 
+                <td>https://www.croydon.gov.uk/sites/default/files/articles/downloads/All%20SHLAA%20sites%20in%20Brownfield%20Register.pdf</td> 
         </tr>    </tbody>
 </table>
 

@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,33 +160,21 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#BLR002</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
+            <dt class="govuk-summary-list__key">deliverable
             </dt>
-            <dd class="govuk-summary-list__value">                0.5            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-02-06            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                124            </dd>
+            <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-plan-url
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://data.london.gov.uk/dataset/brownfield-land-register">https://data.london.gov.uk/dataset/brownfield-land-register</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            <dt class="govuk-summary-list__key">hectares
             </dt>
-            <dd class="govuk-summary-list__value">                124            </dd>
+            <dd class="govuk-summary-list__value">                0.5            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
+            <dt class="govuk-summary-list__key">site-address
             </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
+            <dd class="govuk-summary-list__value">                Higgs Industrial Estate            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -191,37 +182,49 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:LBH" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:LBH)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-history
+            <dt class="govuk-summary-list__key">planning-permission-date
             </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://planning.lambeth.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=NK2VQDBO0GI00">https://planning.lambeth.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=NK2VQDBO0GI00</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                BLR002            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                Demolition of existing buildings. Mixed-use redevelopment providing five new build blocks (between 5 and 8 storeys in height) comprising class B1 and B2 floorspace and 124 residential units.            </dd>
+            <dd class="govuk-summary-list__value">                2017-02-06            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                BLR002            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                2018-03-12            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Higgs Industrial Estate            </dd>
+            <dd class="govuk-summary-list__value">                124            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-type
             </dt>
             <dd class="govuk-summary-list__value">                full planning permission            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                Demolition of existing buildings. Mixed-use redevelopment providing five new build blocks (between 5 and 8 storeys in height) comprising class B1 and B2 floorspace and 124 residential units.            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2018-03-12            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                124            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                BLR002            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-history
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://planning.lambeth.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=NK2VQDBO0GI00">https://planning.lambeth.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=NK2VQDBO0GI00</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -267,67 +270,67 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>deliverable</th>
-            <th>hectares</th>
-            <th>planning-permission-type</th>
-            <th>site-plan-url</th>
-            <th>planning-permission-date</th>
-            <th>planning-permission-status</th>
             <th>point</th>
-            <th>name</th>
-            <th>organisation</th>
-            <th>site-address</th>
-            <th>start-date</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
-            <th>planning-permission-history</th>
             <th>notes</th>
+            <th>site</th>
+            <th>start-date</th>
+            <th>planning-permission-status</th>
+            <th>minimum-net-dwellings</th>
+            <th>planning-permission-date</th>
+            <th>deliverable</th>
+            <th>planning-permission-type</th>
+            <th>ownership-status</th>
+            <th>site-address</th>
+            <th>name</th>
+            <th>maximum-net-dwellings</th>
+            <th>planning-permission-history</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2018-03-12</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/de3918b3af88df0eebce7fbb3f8bc36f571f59fda90470f9b1e8bee3145f8ca0.csv#L840">de3918b3af88...</a></td>
             <td>839</td>
-                <td>not owned by a public authority</td> 
-                <td>124</td> 
-                <td>yes</td> 
-                <td>0.5</td> 
-                <td>full planning permission</td> 
-                <td>https://data.london.gov.uk/dataset/brownfield-land-register</td> 
-                <td>2017-02-06</td> 
-                <td>permissioned</td> 
                 <td>POINT(-0.101398 51.465493)</td> 
+                <td>Demolition of existing buildings. Mixed-use redevelopment providing five new build blocks (between 5 and 8 storeys in height) comprising class B1 and B2 floorspace and 124 residential units.</td> 
                 <td>BLR002</td> 
-                <td>local-authority-eng:LBH</td> 
-                <td>Higgs Industrial Estate</td> 
                 <td>2018-03-12</td> 
+                <td>permissioned</td> 
+                <td>124</td> 
+                <td>2017-02-06</td> 
+                <td>yes</td> 
+                <td>full planning permission</td> 
+                <td>not owned by a public authority</td> 
+                <td>Higgs Industrial Estate</td> 
                 <td>BLR002</td> 
                 <td>124</td> 
                 <td>https://planning.lambeth.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=NK2VQDBO0GI00</td> 
-                <td>Demolition of existing buildings. Mixed-use redevelopment providing five new build blocks (between 5 and 8 storeys in height) comprising class B1 and B2 floorspace and 124 residential units.</td> 
+                <td>0.5</td> 
+                <td>local-authority-eng:LBH</td> 
+                <td>https://data.london.gov.uk/dataset/brownfield-land-register</td> 
         </tr>        <tr>
             <td>2017-12-16</td>
-            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/ff3eb8bccf873f1e2c9894121d498805c0722cb5c15c4e5b5db50201459899ea.csv#L3">ff3eb8bccf87...</a></td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/214cc3f7fe4500164761e60367f12ce1c9b4f57852569f75a60f17dbb4366be0.csv#L3">214cc3f7fe45...</a></td>
             <td>2</td>
-                <td>not owned by a public authority</td> 
-                <td>124</td> 
-                <td>yes</td> 
-                <td>0.5</td> 
-                <td>full planning permission</td> 
-                <td>https://maps.london.gov.uk/brownfield-site-register</td> 
-                <td>2015-06-26</td> 
-                <td>permissioned</td> 
             <td></td>
+                <td>Demolition of existing buildings. Mixed-use redevelopment providing five new build blocks (between 5 and 8 storeys in height) comprising class B1 and B2 floorspace and 124 residential units.</td> 
                 <td>BLR002</td> 
-                <td>local-authority-eng:LBH</td> 
-                <td>Higgs Industrial Estate</td> 
                 <td>2017-12-15</td> 
+                <td>permissioned</td> 
+                <td>124</td> 
+                <td>2015-06-26</td> 
+                <td>yes</td> 
+                <td>full planning permission</td> 
+                <td>not owned by a public authority</td> 
+                <td>Higgs Industrial Estate</td> 
                 <td>BLR002</td> 
                 <td>124</td> 
                 <td>https://planning.lambeth.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=NK2VQDBO0GI00</td> 
-                <td>Demolition of existing buildings. Mixed-use redevelopment providing five new build blocks (between 5 and 8 storeys in height) comprising class B1 and B2 floorspace and 124 residential units.</td> 
+                <td>0.5</td> 
+                <td>local-authority-eng:LBH</td> 
+                <td>https://maps.london.gov.uk/brownfield-site-register</td> 
         </tr>    </tbody>
 </table>
 

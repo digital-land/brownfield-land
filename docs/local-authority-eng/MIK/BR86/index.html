@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,47 +160,35 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#BR86</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
+            <dt class="govuk-summary-list__key">notes
             </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/MIK" class="govuk-link">Milton Keynes Council</a>
-<span title="Organisation identifier: local-authority-eng:MIK" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:MIK)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Food Centre, Lower Twelfth Street, Central Milton Keynes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                298            </dd>
+            <dd class="govuk-summary-list__value">                SHLAA            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hectares
             </dt>
             <dd class="govuk-summary-list__value">                2.38            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
+            <dt class="govuk-summary-list__key">start-date
             </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://mapping.milton-keynes.gov.uk/mymiltonkeynes.aspx">https://mapping.milton-keynes.gov.uk/mymiltonkeynes.aspx</a>            </dd>
+            <dd class="govuk-summary-list__value">                2018-09-30            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site
             </dt>
             <dd class="govuk-summary-list__value">                BR86            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                Not Permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                SHLAA            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2018-09-30            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">ownership-status
             </dt>
             <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Food Centre, Lower Twelfth Street, Central Milton Keynes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/MIK" class="govuk-link">Milton Keynes Council</a>
+<span title="Organisation identifier: local-authority-eng:MIK" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:MIK)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
@@ -206,6 +197,18 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                298            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                298            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://mapping.milton-keynes.gov.uk/mymiltonkeynes.aspx">https://mapping.milton-keynes.gov.uk/mymiltonkeynes.aspx</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                Not Permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -251,38 +254,38 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>hectares</th>
-            <th>site-plan-url</th>
-            <th>site-address</th>
-            <th>point</th>
-            <th>planning-permission-status</th>
-            <th>start-date</th>
-            <th>organisation</th>
-            <th>name</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
             <th>notes</th>
+            <th>point</th>
+            <th>site</th>
+            <th>start-date</th>
+            <th>planning-permission-status</th>
+            <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>ownership-status</th>
+            <th>site-address</th>
+            <th>name</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2018-09-30</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/9990c3f46b50c3f193e4e174fc0825cca1e81d54ac366c76bcd88b0735391dd0.csv#L58">9990c3f46b50...</a></td>
             <td>57</td>
-                <td>not owned by a public authority</td> 
-                <td>298</td> 
-                <td>2.38</td> 
-                <td>https://mapping.milton-keynes.gov.uk/mymiltonkeynes.aspx</td> 
-                <td>Food Centre, Lower Twelfth Street, Central Milton Keynes</td> 
-                <td>POINT(-0.751297 52.042849)</td> 
-                <td>Not Permissioned</td> 
-                <td>2018-09-30</td> 
-                <td>local-authority-eng:MIK</td> 
-                <td>BR86</td> 
-                <td>BR86</td> 
-                <td>298</td> 
                 <td>SHLAA</td> 
+                <td>POINT(-0.751297 52.042849)</td> 
+                <td>BR86</td> 
+                <td>2018-09-30</td> 
+                <td>Not Permissioned</td> 
+                <td>298</td> 
+                <td>298</td> 
+                <td>not owned by a public authority</td> 
+                <td>Food Centre, Lower Twelfth Street, Central Milton Keynes</td> 
+                <td>BR86</td> 
+                <td>2.38</td> 
+                <td>local-authority-eng:MIK</td> 
+                <td>https://mapping.milton-keynes.gov.uk/mymiltonkeynes.aspx</td> 
         </tr>    </tbody>
 </table>
 

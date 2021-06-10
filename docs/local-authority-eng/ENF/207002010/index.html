@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,33 +160,15 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#207002010</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
+            <dt class="govuk-summary-list__key">organisation
             </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/ENF" class="govuk-link">London Borough of Enfield</a>
+<span title="Organisation identifier: local-authority-eng:ENF" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:ENF)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">hectares
             </dt>
-            <dd class="govuk-summary-list__value">                207002010            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                Redevelopment of site to provide 5 additional dwellings involving demolition of north barn and erection of a part single, part 2-storey block to provide 2 x 2-bed single family dwellings, conversion of south barn involving a part single, part 2-storey side extension to provide 3 residential units comprising 2 x 2-bed and 1 x 3-bed single family dwellings, demolition of conservatory to existing farm house and shop, off street parking and associated landscaping.            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2016-11-25            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=ZZZZLAJNXE008">http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=ZZZZLAJNXE008</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
+            <dd class="govuk-summary-list__value">                0.085            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
@@ -193,31 +178,49 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                5            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
-            </dt>
-            <dd class="govuk-summary-list__value">                full planning permission            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
+            <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                207002010            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.085            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2017-12-31            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
+            <dt class="govuk-summary-list__key">planning-permission-date
             </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/ENF" class="govuk-link">London Borough of Enfield</a>
-<span title="Organisation identifier: local-authority-eng:ENF" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:ENF)</span>
-            </dd>
+            <dd class="govuk-summary-list__value">                2016-11-25            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                207002010            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=ZZZZLAJNXE008">http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=ZZZZLAJNXE008</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-type
+            </dt>
+            <dd class="govuk-summary-list__value">                full planning permission            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-address
             </dt>
             <dd class="govuk-summary-list__value">                103 Chase Side, EN2 6NL            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                Redevelopment of site to provide 5 additional dwellings involving demolition of north barn and erection of a part single, part 2-storey block to provide 2 x 2-bed single family dwellings, conversion of south barn involving a part single, part 2-storey side extension to provide 3 residential units comprising 2 x 2-bed and 1 x 3-bed single family dwellings, demolition of conservatory to existing farm house and shop, off street parking and associated landscaping.            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -263,44 +266,44 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>deliverable</th>
-            <th>site-plan-url</th>
-            <th>planning-permission-type</th>
-            <th>hectares</th>
-            <th>planning-permission-date</th>
             <th>point</th>
-            <th>planning-permission-status</th>
-            <th>name</th>
-            <th>start-date</th>
-            <th>organisation</th>
-            <th>site-address</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
             <th>notes</th>
+            <th>site</th>
+            <th>start-date</th>
+            <th>planning-permission-status</th>
+            <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>planning-permission-date</th>
+            <th>deliverable</th>
+            <th>ownership-status</th>
+            <th>name</th>
+            <th>planning-permission-type</th>
+            <th>site-address</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2017-12-31</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/3f600edb563e84569505441b2caced08574d4a2a36cc27a963b2f8e9f885f253.csv#L4">3f600edb563e...</a></td>
             <td>3</td>
-                <td>not owned by a public authority</td> 
-                <td>5</td> 
-                <td>yes</td> 
-                <td>http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&amp;keyVal=ZZZZLAJNXE008</td> 
-                <td>full planning permission</td> 
-                <td>0.085</td> 
-                <td>2016-11-25</td> 
                 <td>POINT(-0.087943 51.658362)</td> 
-                <td>permissioned</td> 
+                <td>Redevelopment of site to provide 5 additional dwellings involving demolition of north barn and erection of a part single, part 2-storey block to provide 2 x 2-bed single family dwellings, conversion of south barn involving a part single, part 2-storey side extension to provide 3 residential units comprising 2 x 2-bed and 1 x 3-bed single family dwellings, demolition of conservatory to existing farm house and shop, off street parking and associated landscaping.</td> 
                 <td>207002010</td> 
                 <td>2017-12-31</td> 
-                <td>local-authority-eng:ENF</td> 
-                <td>103 Chase Side, EN2 6NL</td> 
-                <td>207002010</td> 
+                <td>permissioned</td> 
                 <td>5</td> 
-                <td>Redevelopment of site to provide 5 additional dwellings involving demolition of north barn and erection of a part single, part 2-storey block to provide 2 x 2-bed single family dwellings, conversion of south barn involving a part single, part 2-storey side extension to provide 3 residential units comprising 2 x 2-bed and 1 x 3-bed single family dwellings, demolition of conservatory to existing farm house and shop, off street parking and associated landscaping.</td> 
+                <td>5</td> 
+                <td>2016-11-25</td> 
+                <td>yes</td> 
+                <td>not owned by a public authority</td> 
+                <td>207002010</td> 
+                <td>full planning permission</td> 
+                <td>103 Chase Side, EN2 6NL</td> 
+                <td>0.085</td> 
+                <td>local-authority-eng:ENF</td> 
+                <td>http://planningandbuildingcontrol.enfield.gov.uk/online-applications/applicationDetails.do?activeTab=map&amp;keyVal=ZZZZLAJNXE008</td> 
         </tr>    </tbody>
 </table>
 

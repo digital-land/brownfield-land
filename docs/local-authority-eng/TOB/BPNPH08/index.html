@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,23 +160,21 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#BPNPH08</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
-            <dd class="govuk-summary-list__value">                12            </dd>
+            <dd class="govuk-summary-list__value">                not permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                BPNPH08            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hectares
             </dt>
             <dd class="govuk-summary-list__value">                0.15            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                not permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/TOB" class="govuk-link">Torbay Council</a>
-<span title="Organisation identifier: local-authority-eng:TOB" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:TOB)</span>
-            </dd>
+            <dd class="govuk-summary-list__value">                12            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
@@ -183,13 +184,15 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                2016-06-24            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/TOB" class="govuk-link">Torbay Council</a>
+<span title="Organisation identifier: local-authority-eng:TOB" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:TOB)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-address
             </dt>
             <dd class="govuk-summary-list__value">                Brixham Police Station, Rea Barn Road, Brixham            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                BPNPH08            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
@@ -243,34 +246,34 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>maximum-net-dwellings</th>
-            <th>hectares</th>
-            <th>site-plan-url</th>
-            <th>start-date</th>
-            <th>planning-permission-status</th>
-            <th>site-address</th>
-            <th>name</th>
-            <th>organisation</th>
             <th>point</th>
             <th>site</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
             <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>site-address</th>
+            <th>name</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2017-12-13</td>
-            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/2457750c57579f594e7150db97950de0e1e16e8d6f7d2cc9aaa1214aca94ed56.csv#L7">2457750c5757...</a></td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/a9fa177888344fa8a83112bd9e613373907f144d3ae2a2d04025f2f4709dda62.csv#L7">a9fa17788834...</a></td>
             <td>6</td>
-                <td>12</td> 
-                <td>0.15</td> 
-                <td>http://torbay.addresscafe.com/app/exploreit/default.aspx</td> 
-                <td>2016-06-24</td> 
-                <td>not permissioned</td> 
-                <td>Brixham Police Station, Rea Barn Road, Brixham</td> 
-                <td>BPNPH08</td> 
-                <td>local-authority-eng:TOB</td> 
                 <td>POINT(-3.50852 50.3903)</td> 
                 <td>BPNPH08</td> 
+                <td>not permissioned</td> 
+                <td>2016-06-24</td> 
                 <td>6</td> 
+                <td>12</td> 
+                <td>Brixham Police Station, Rea Barn Road, Brixham</td> 
+                <td>BPNPH08</td> 
+                <td>0.15</td> 
+                <td>local-authority-eng:TOB</td> 
+                <td>http://torbay.addresscafe.com/app/exploreit/default.aspx</td> 
         </tr>    </tbody>
 </table>
 

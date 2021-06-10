@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -161,41 +164,45 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                HLH2            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            <dt class="govuk-summary-list__key">ownership-status
             </dt>
-            <dd class="govuk-summary-list__value">                218            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                HLH2            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                102            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://gis.gateshead.gov.uk/gatesheadmaps/BFR20/app.html">https://gis.gateshead.gov.uk/gatesheadmaps/BFR20/app.html</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-12-21            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
+            <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hectares
             </dt>
             <dd class="govuk-summary-list__value">                6.8            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
+            <dt class="govuk-summary-list__key">site-address
             </dt>
-            <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
+            <dd class="govuk-summary-list__value">                Clasper Village, Tyne Rd E, Redheugh, Gateshead            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://gis.gateshead.gov.uk/gatesheadmaps/BFR20/app.html">https://gis.gateshead.gov.uk/gatesheadmaps/BFR20/app.html</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                HLH2            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                218            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                102            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-12-21            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -203,21 +210,17 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:GAT" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:GAT)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Clasper Village, Tyne Rd E, Redheugh, Gateshead            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2019-12-31            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                DC/19/00213/OUT; hybrid application with full pewrmission for the housing element. 191 houses            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-type
             </dt>
             <dd class="govuk-summary-list__value">                full planning permission            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                DC/19/00213/OUT; hybrid application with full pewrmission for the housing element. 191 houses            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-date
             </dt>
@@ -263,64 +266,64 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>hectares</th>
-            <th>deliverable</th>
-            <th>site-plan-url</th>
-            <th>planning-permission-type</th>
-            <th>start-date</th>
-            <th>planning-permission-status</th>
-            <th>planning-permission-date</th>
-            <th>name</th>
-            <th>organisation</th>
             <th>point</th>
-            <th>site-address</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
             <th>notes</th>
+            <th>site</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
+            <th>minimum-net-dwellings</th>
+            <th>planning-permission-type</th>
+            <th>maximum-net-dwellings</th>
+            <th>planning-permission-date</th>
+            <th>ownership-status</th>
+            <th>name</th>
+            <th>site-address</th>
+            <th>deliverable</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2019-12-31</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/97875b7df30743cbe4c12bfb94057e1ad74ab97edcfa7b311cc25ab6e0c0cc1a.csv#L45">97875b7df307...</a></td>
             <td>44</td>
-                <td>owned by a public authority</td> 
-                <td>218</td> 
-                <td>6.8</td> 
-                <td>yes</td> 
-                <td>https://gis.gateshead.gov.uk/gatesheadmaps/BFR20/app.html</td> 
-                <td>full planning permission</td> 
-                <td>2017-12-21</td> 
-                <td>permissioned</td> 
-                <td>2019-07-19</td> 
-                <td>HLH2</td> 
-                <td>local-authority-eng:GAT</td> 
                 <td>POINT(-1.649965 54.954085)</td> 
-                <td>Clasper Village, Tyne Rd E, Redheugh, Gateshead</td> 
-                <td>HLH2</td> 
-                <td>102</td> 
                 <td>DC/19/00213/OUT; hybrid application with full pewrmission for the housing element. 191 houses</td> 
+                <td>HLH2</td> 
+                <td>permissioned</td> 
+                <td>2017-12-21</td> 
+                <td>102</td> 
+                <td>full planning permission</td> 
+                <td>218</td> 
+                <td>2019-07-19</td> 
+                <td>owned by a public authority</td> 
+                <td>HLH2</td> 
+                <td>Clasper Village, Tyne Rd E, Redheugh, Gateshead</td> 
+                <td>yes</td> 
+                <td>6.8</td> 
+                <td>local-authority-eng:GAT</td> 
+                <td>https://gis.gateshead.gov.uk/gatesheadmaps/BFR20/app.html</td> 
         </tr>        <tr>
             <td>2017-12-21</td>
-            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/cc670f5aa877b66a1dbe21efe8a4a0cad0051c937d5fd63b07b622b7e2cb51b9.csv#L42">cc670f5aa877...</a></td>
-            <td>41</td>
-                <td>owned by a public authority</td> 
-                <td>199</td> 
-                <td>6.8</td> 
-                <td>yes</td> 
-                <td>http://www.gateshead.gov.uk/DocumentLibrary/Building/PlanningPolicy/MSGP-Documents-2017/Evidence/Draft-SHLAA-report.pdf</td> 
-            <td></td>
-                <td>2017-12-21</td> 
-                <td>not permissioned</td> 
-            <td></td>
-                <td>HLH2</td> 
-                <td>local-authority-eng:GAT</td> 
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/becc2c28d541aa411702272ca66bc1fc3440fbd1916fee794efa830d9241c970.csv#L43">becc2c28d541...</a></td>
+            <td>42</td>
                 <td>POINT(-1.649965 54.954085)</td> 
-                <td>Clasper Village, Tyne Rd E, Redheugh, Gateshead</td> 
+            <td></td>
                 <td>HLH2</td> 
+                <td>not permissioned</td> 
+                <td>2017-12-21</td> 
                 <td>136</td> 
             <td></td>
+                <td>199</td> 
+            <td></td>
+                <td>owned by a public authority</td> 
+                <td>HLH2</td> 
+                <td>Clasper Village, Tyne Rd E, Redheugh, Gateshead</td> 
+                <td>yes</td> 
+                <td>6.8</td> 
+                <td>local-authority-eng:GAT</td> 
+                <td>http://www.gateshead.gov.uk/DocumentLibrary/Building/PlanningPolicy/MSGP-Documents-2017/Evidence/Draft-SHLAA-report.pdf</td> 
         </tr>    </tbody>
 </table>
 

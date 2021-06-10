@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,32 +160,6 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#SHBR139</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                41            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                SHBR139            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                SHBR139            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SUR" class="govuk-link">Surrey Heath Borough Council</a>
-<span title="Organisation identifier: local-authority-eng:SUR" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SUR)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Bagshot Highway Depot &amp; Archaeology Ctr, London Road, Bagshot, GU19 5HN            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.surreyheath.gov.uk/sites/default/files/documents/residents/planning/planning-policy/SLAA2019/4.%20SLAA%202019%20Appendix%202%20-%20Bagshot%20Site%20Assessments.pdf">https://www.surreyheath.gov.uk/sites/default/files/documents/residents/planning/planning-policy/SLAA2019/4.%20SLAA%202019%20Appendix%202%20-%20Bagshot%20Site%20Assessments.pdf</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">ownership-status
             </dt>
             <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
@@ -191,9 +168,9 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                Not permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            <dt class="govuk-summary-list__key">site
             </dt>
-            <dd class="govuk-summary-list__value">                41            </dd>
+            <dd class="govuk-summary-list__value">                SHBR139            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">notes
             </dt>
@@ -202,6 +179,32 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">hectares
             </dt>
             <dd class="govuk-summary-list__value">                0.94            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                41            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.surreyheath.gov.uk/sites/default/files/documents/residents/planning/planning-policy/SLAA2019/4.%20SLAA%202019%20Appendix%202%20-%20Bagshot%20Site%20Assessments.pdf">https://www.surreyheath.gov.uk/sites/default/files/documents/residents/planning/planning-policy/SLAA2019/4.%20SLAA%202019%20Appendix%202%20-%20Bagshot%20Site%20Assessments.pdf</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Bagshot Highway Depot &amp; Archaeology Ctr, London Road, Bagshot, GU19 5HN            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                SHBR139            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                41            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SUR" class="govuk-link">Surrey Heath Borough Council</a>
+<span title="Organisation identifier: local-authority-eng:SUR" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SUR)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
@@ -251,38 +254,38 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
-            <th>site-address</th>
             <th>point</th>
-            <th>planning-permission-status</th>
-            <th>name</th>
-            <th>organisation</th>
-            <th>start-date</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
             <th>notes</th>
+            <th>site</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
+            <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>ownership-status</th>
+            <th>site-address</th>
+            <th>name</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-12-19</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/63e6008cc6e1164ffc50a1c54dab61a1c4bc4b7ed0b0967fd4550d6e6a83eb8d.csv#L6">63e6008cc6e1...</a></td>
             <td>5</td>
-                <td>owned by a public authority</td> 
-                <td>41</td> 
-                <td>https://www.surreyheath.gov.uk/sites/default/files/documents/residents/planning/planning-policy/SLAA2019/4.%20SLAA%202019%20Appendix%202%20-%20Bagshot%20Site%20Assessments.pdf</td> 
-                <td>0.94</td> 
-                <td>Bagshot Highway Depot &amp; Archaeology Ctr, London Road, Bagshot, GU19 5HN</td> 
                 <td>POINT(-0.6883 51.3673)</td> 
-                <td>Not permissioned</td> 
-                <td>SHBR139</td> 
-                <td>local-authority-eng:SUR</td> 
-                <td>2020-12-19</td> 
-                <td>SHBR139</td> 
-                <td>41</td> 
                 <td>https://www.surreyheath.gov.uk/sites/default/files/documents/residents/planning/planning-policy/SLAA2019/4.%20SLAA%202019%20Appendix%202%20-%20Bagshot%20Site%20Assessments.pdf. https://www.surreyheath.gov.uk/sites/default/files/documents/residents/planning/planning-policy/SLAA2019/4.%20SLAA%202019%20Appendix%202%20-%20Bagshot%20Site%20Assessments.pdf</td> 
+                <td>SHBR139</td> 
+                <td>Not permissioned</td> 
+                <td>2020-12-19</td> 
+                <td>41</td> 
+                <td>41</td> 
+                <td>owned by a public authority</td> 
+                <td>Bagshot Highway Depot &amp; Archaeology Ctr, London Road, Bagshot, GU19 5HN</td> 
+                <td>SHBR139</td> 
+                <td>0.94</td> 
+                <td>local-authority-eng:SUR</td> 
+                <td>https://www.surreyheath.gov.uk/sites/default/files/documents/residents/planning/planning-policy/SLAA2019/4.%20SLAA%202019%20Appendix%202%20-%20Bagshot%20Site%20Assessments.pdf</td> 
         </tr>    </tbody>
 </table>
 

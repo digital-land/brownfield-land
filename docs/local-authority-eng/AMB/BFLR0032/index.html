@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -161,38 +164,6 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                not permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                2.13            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-12-06            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                85            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                BFLR0032            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                proposed housing allocation in the Pre-Submission Local Plan            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Asher Lane Business Park (North) Ripley            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0623322729&lng=-1.4095252228">http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0623322729&lng=-1.4095252228</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/AMB" class="govuk-link">Amber Valley Borough Council</a>
@@ -203,9 +174,41 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                BFLR0032            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                proposed housing allocation in the Pre-Submission Local Plan            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                2.13            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                85            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                85            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0623322729&lng=-1.4095252228">http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0623322729&lng=-1.4095252228</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Asher Lane Business Park (North) Ripley            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-12-06            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
@@ -255,40 +258,40 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>hectares</th>
-            <th>deliverable</th>
-            <th>site-plan-url</th>
-            <th>start-date</th>
-            <th>planning-permission-status</th>
-            <th>site-address</th>
-            <th>point</th>
-            <th>organisation</th>
-            <th>name</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
             <th>notes</th>
+            <th>point</th>
+            <th>site</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
+            <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>deliverable</th>
+            <th>ownership-status</th>
+            <th>site-address</th>
+            <th>name</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2018-12-17</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/ad2030e211cbb0f3b7b72d1739b25798620f8913d5615859116de41f21a4ff8a.csv#L26">ad2030e211cb...</a></td>
             <td>25</td>
-                <td>not owned by a public authority</td> 
-                <td>85</td> 
-                <td>2.13</td> 
-                <td>yes</td> 
-                <td>http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0623322729&amp;lng=-1.4095252228</td> 
-                <td>2017-12-06</td> 
-                <td>not permissioned</td> 
-                <td>Asher Lane Business Park (North) Ripley</td> 
-                <td>POINT(-1.409525 53.062332)</td> 
-                <td>local-authority-eng:AMB</td> 
-                <td>BFLR0032</td> 
-                <td>BFLR0032</td> 
-                <td>85</td> 
                 <td>proposed housing allocation in the Pre-Submission Local Plan</td> 
+                <td>POINT(-1.409525 53.062332)</td> 
+                <td>BFLR0032</td> 
+                <td>not permissioned</td> 
+                <td>2017-12-06</td> 
+                <td>85</td> 
+                <td>85</td> 
+                <td>yes</td> 
+                <td>not owned by a public authority</td> 
+                <td>Asher Lane Business Park (North) Ripley</td> 
+                <td>BFLR0032</td> 
+                <td>2.13</td> 
+                <td>local-authority-eng:AMB</td> 
+                <td>http://info.ambervalley.gov.uk/maps/brownfieldmap.html?lat=53.0623322729&amp;lng=-1.4095252228</td> 
         </tr>    </tbody>
 </table>
 

@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,43 +160,9 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#WBR/18/0004</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-plan-url
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always">https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&nocache=614915663&resize=always</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/WND" class="govuk-link">London Borough of Wandsworth</a>
-<span title="Organisation identifier: local-authority-eng:WND" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WND)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                WBR/18/0004            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-history
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://planning1.wandsworth.gov.uk/Northgate/PlanningExplorer/DisplayAppDetails.aspx?AppNo=2016/7392">https://planning1.wandsworth.gov.uk/Northgate/PlanningExplorer/DisplayAppDetails.aspx?AppNo=2016/7392</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
-            </dt>
-            <dd class="govuk-summary-list__value">                full planning permission            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Mauritius Building 200, 198-202 Garratt Lane            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-03-24            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                6            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
@@ -203,21 +172,55 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                WBR/18/0004            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            <dt class="govuk-summary-list__key">planning-permission-type
             </dt>
-            <dd class="govuk-summary-list__value">                6            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
+            <dd class="govuk-summary-list__value">                full planning permission            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hectares
             </dt>
             <dd class="govuk-summary-list__value">                0.03            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                6            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-history
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://planning1.wandsworth.gov.uk/Northgate/PlanningExplorer/DisplayAppDetails.aspx?AppNo=2016/7392">https://planning1.wandsworth.gov.uk/Northgate/PlanningExplorer/DisplayAppDetails.aspx?AppNo=2016/7392</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/WND" class="govuk-link">London Borough of Wandsworth</a>
+<span title="Organisation identifier: local-authority-eng:WND" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WND)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2018-03-31            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Mauritius Building 200, 198-202 Garratt Lane            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                WBR/18/0004            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-03-24            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                6            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -267,67 +270,67 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>site-plan-url</th>
-            <th>planning-permission-type</th>
-            <th>hectares</th>
-            <th>deliverable</th>
-            <th>site-address</th>
-            <th>planning-permission-date</th>
-            <th>planning-permission-status</th>
-            <th>name</th>
-            <th>organisation</th>
             <th>point</th>
             <th>end-date</th>
             <th>site</th>
+            <th>planning-permission-status</th>
             <th>start-date</th>
             <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>planning-permission-type</th>
+            <th>planning-permission-date</th>
+            <th>ownership-status</th>
+            <th>name</th>
             <th>planning-permission-history</th>
+            <th>site-address</th>
+            <th>deliverable</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2019-03-31</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/c5ce1222c0174faa58299756be940e0055a53de9faf9a5aa8a7711855a7ddbe2.csv#L144">c5ce1222c017...</a></td>
             <td>143</td>
-                <td>not owned by a public authority</td> 
-                <td>6</td> 
-                <td>https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&amp;nocache=614915663&amp;resize=always</td> 
-                <td>full planning permission</td> 
-                <td>0.03</td> 
-            <td></td>
-                <td>Mauritius Building 200, 198-202 Garratt Lane</td> 
-                <td>2017-03-24</td> 
-                <td>permissioned</td> 
-                <td>WBR/18/0004</td> 
-                <td>local-authority-eng:WND</td> 
                 <td>POINT(-0.189617 51.447464)</td> 
                 <td>2019-03-31</td> 
                 <td>WBR/18/0004</td> 
+                <td>permissioned</td> 
                 <td>2018-03-31</td> 
                 <td>6</td> 
+                <td>6</td> 
+                <td>full planning permission</td> 
+                <td>2017-03-24</td> 
+                <td>not owned by a public authority</td> 
+                <td>WBR/18/0004</td> 
                 <td>https://planning1.wandsworth.gov.uk/Northgate/PlanningExplorer/DisplayAppDetails.aspx?AppNo=2016/7392</td> 
+                <td>Mauritius Building 200, 198-202 Garratt Lane</td> 
+            <td></td>
+                <td>0.03</td> 
+                <td>local-authority-eng:WND</td> 
+                <td>https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&amp;nocache=614915663&amp;resize=always</td> 
         </tr>        <tr>
             <td>2018-03-31</td>
-            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/4c1ef9b195388a400b97b708b0e53cff12d5ce1f9f2db1961e8e5e5b941ddb7e.csv#L148">4c1ef9b19538...</a></td>
-            <td>147</td>
-                <td>not owned by a public authority</td> 
-                <td>10</td> 
-                <td>https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&amp;nocache=614915663&amp;resize=always</td> 
-                <td>full planning permission</td> 
-                <td>0.03</td> 
-                <td>yes</td> 
-                <td>Mauritius Building 200, 198-202 Garratt Lane</td> 
-                <td>2017-03-24</td> 
-                <td>permissioned</td> 
-                <td>WBR/18/0004</td> 
-                <td>local-authority-eng:WND</td> 
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/9ee698608d8c7dcad9d872d2e109b28a00e577e100a53fc7f2e46a81c8a126e3.csv#L392">9ee698608d8c...</a></td>
+            <td>391</td>
                 <td>POINT(-0.189642 51.447464)</td> 
             <td></td>
                 <td>WBR/18/0004</td> 
+                <td>permissioned</td> 
                 <td>2018-03-31</td> 
                 <td>10</td> 
+                <td>10</td> 
+                <td>full planning permission</td> 
+                <td>2017-03-24</td> 
+                <td>not owned by a public authority</td> 
+                <td>WBR/18/0004</td> 
                 <td>https://planning1.wandsworth.gov.uk/Northgate/PlanningExplorer/DisplayAppDetails.aspx?AppNo=2016/7392</td> 
+                <td>Mauritius Building 200, 198-202 Garratt Lane</td> 
+                <td>yes</td> 
+                <td>0.03</td> 
+                <td>local-authority-eng:WND</td> 
+                <td>https://maps.wandsworth.gov.uk/map/Aurora.svc/run?script=%5cAurora%5cpublic_Brownfield_Sites.AuroraScript%24&amp;nocache=614915663&amp;resize=always</td> 
         </tr>    </tbody>
 </table>
 

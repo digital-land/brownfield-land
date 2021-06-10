@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,21 +160,9 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#17/PEN/0005</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-date
+            <dt class="govuk-summary-list__key">site-address
             </dt>
-            <dd class="govuk-summary-list__value">                2015-03-05            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
-            </dt>
-            <dd class="govuk-summary-list__value">                full planning permission            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                9            </dd>
+            <dd class="govuk-summary-list__value">                14a Carleton Road, Penrith            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -183,45 +174,57 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                17/PEN/0005            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                2017-12-01            </dd>
+            <dd class="govuk-summary-list__value">                9            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
             <dd class="govuk-summary-list__value">                permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
+            <dt class="govuk-summary-list__key">ownership-status
             </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-12-01            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-type
+            </dt>
+            <dd class="govuk-summary-list__value">                full planning permission            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                17/PEN/0005            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
+            <dt class="govuk-summary-list__key">deliverable
             </dt>
-            <dd class="govuk-summary-list__value">                0.05            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://eforms.eden.gov.uk/fastweb_upload/2014%20Planning%20Applications/14-0922/0922-Site-Plan.pdf">http://eforms.eden.gov.uk/fastweb_upload/2014%20Planning%20Applications/14-0922/0922-Site-Plan.pdf</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                14a Carleton Road, Penrith            </dd>
+            <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                9            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">entry-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-12-01            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-history
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://eforms.eden.gov.uk/fastweb/detail.asp?AltRef=04/0280&ApplicationNumber=04%2F0280&AddressPrefix=&Postcode=&Submit=Search│http://eforms.eden.gov.uk/fastweb/detail.asp?AltRef=14/0922&ApplicationNumber=14%2F0922&AddressPrefix=&Postcode=&Submit=Search">http://eforms.eden.gov.uk/fastweb/detail.asp?AltRef=04/0280&ApplicationNumber=04%2F0280&AddressPrefix=&Postcode=&Submit=Search│http://eforms.eden.gov.uk/fastweb/detail.asp?AltRef=14/0922&ApplicationNumber=14%2F0922&AddressPrefix=&Postcode=&Submit=Search</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2015-03-05            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://eforms.eden.gov.uk/fastweb_upload/2014%20Planning%20Applications/14-0922/0922-Site-Plan.pdf">http://eforms.eden.gov.uk/fastweb_upload/2014%20Planning%20Applications/14-0922/0922-Site-Plan.pdf</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.05            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">entry-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-12-01            </dd>
         </div>    
     </dl></article>
 </div>
@@ -263,64 +266,64 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
+            <th>point</th>
+            <th>site</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
+            <th>minimum-net-dwellings</th>
             <th>planning-permission-type</th>
             <th>deliverable</th>
-            <th>hectares</th>
-            <th>site-plan-url</th>
-            <th>planning-permission-date</th>
-            <th>point</th>
-            <th>start-date</th>
-            <th>planning-permission-status</th>
-            <th>organisation</th>
-            <th>name</th>
+            <th>maximum-net-dwellings</th>
+            <th>ownership-status</th>
             <th>site-address</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
+            <th>name</th>
+            <th>planning-permission-date</th>
             <th>planning-permission-history</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2017-12-01</td>
-            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/941cb9ebdf1a917696f8d29d9c0e6411590469e5ccff664a8c33d714f3cd8b14.csv#L6">941cb9ebdf1a...</a></td>
-            <td>5</td>
-                <td>not owned by a public authority</td> 
-                <td>9</td> 
-                <td>full planning permission</td> 
-                <td>yes</td> 
-                <td>0.05</td> 
-                <td>http://eforms.eden.gov.uk/fastweb_upload/2014%20Planning%20Applications/14-0922/0922-Site-Plan.pdf</td> 
-                <td>2015-03-05</td> 
-                <td>POINT(-2.74416 54.661311)</td> 
-                <td>2017-12-01</td> 
-                <td>permissioned</td> 
-                <td>local-authority-eng:EDN</td> 
-                <td>17/PEN/0005</td> 
-                <td>14a Carleton Road, Penrith</td> 
-                <td>17/PEN/0005</td> 
-                <td>9</td> 
-                <td>http://eforms.eden.gov.uk/fastweb/detail.asp?AltRef=04/0280&amp;ApplicationNumber=04%2F0280&amp;AddressPrefix=&amp;Postcode=&amp;Submit=Search│http://eforms.eden.gov.uk/fastweb/detail.asp?AltRef=14/0922&amp;ApplicationNumber=14%2F0922&amp;AddressPrefix=&amp;Postcode=&amp;Submit=Search</td> 
-        </tr>        <tr>
-            <td>2017-12-01</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/9d9a0457ea5f34e841b7f25a3da5c99ddb2176075946f7a3049a015849763c91.csv#L6">9d9a0457ea5f...</a></td>
             <td>5</td>
-                <td>not owned by a public authority</td> 
+                <td>POINT(-2.74416 54.661311)</td> 
+                <td>17/PEN/0005</td> 
+                <td>permissioned</td> 
+                <td>2017-12-01</td> 
                 <td>9</td> 
                 <td>full planning permission</td> 
                 <td>yes</td> 
-                <td>0.05</td> 
-                <td>http://eforms.eden.gov.uk/fastweb_upload/2014%20Planning%20Applications/14-0922/0922-Site-Plan.pdf</td> 
-                <td>2015-03-05</td> 
-                <td>POINT(-2.74416 54.661311)</td> 
-                <td>2017-12-01</td> 
-                <td>permissioned</td> 
-                <td>local-authority-eng:EDN</td> 
-                <td>17/PEN/0005</td> 
+                <td>9</td> 
+                <td>not owned by a public authority</td> 
                 <td>14a Carleton Road, Penrith</td> 
                 <td>17/PEN/0005</td> 
-                <td>9</td> 
+                <td>2015-03-05</td> 
             <td></td>
+                <td>0.05</td> 
+                <td>local-authority-eng:EDN</td> 
+                <td>http://eforms.eden.gov.uk/fastweb_upload/2014%20Planning%20Applications/14-0922/0922-Site-Plan.pdf</td> 
+        </tr>        <tr>
+            <td>2017-12-01</td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/941cb9ebdf1a917696f8d29d9c0e6411590469e5ccff664a8c33d714f3cd8b14.csv#L6">941cb9ebdf1a...</a></td>
+            <td>5</td>
+                <td>POINT(-2.74416 54.661311)</td> 
+                <td>17/PEN/0005</td> 
+                <td>permissioned</td> 
+                <td>2017-12-01</td> 
+                <td>9</td> 
+                <td>full planning permission</td> 
+                <td>yes</td> 
+                <td>9</td> 
+                <td>not owned by a public authority</td> 
+                <td>14a Carleton Road, Penrith</td> 
+                <td>17/PEN/0005</td> 
+                <td>2015-03-05</td> 
+                <td>http://eforms.eden.gov.uk/fastweb/detail.asp?AltRef=04/0280&amp;ApplicationNumber=04%2F0280&amp;AddressPrefix=&amp;Postcode=&amp;Submit=Search│http://eforms.eden.gov.uk/fastweb/detail.asp?AltRef=14/0922&amp;ApplicationNumber=14%2F0922&amp;AddressPrefix=&amp;Postcode=&amp;Submit=Search</td> 
+                <td>0.05</td> 
+                <td>local-authority-eng:EDN</td> 
+                <td>http://eforms.eden.gov.uk/fastweb_upload/2014%20Planning%20Applications/14-0922/0922-Site-Plan.pdf</td> 
         </tr>    </tbody>
 </table>
 

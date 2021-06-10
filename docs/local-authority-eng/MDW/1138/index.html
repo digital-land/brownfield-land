@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,21 +160,17 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#1138</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                1138            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-03-05            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
+            <dt class="govuk-summary-list__key">site-address
             </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                14            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                1138            </dd>
+            <dd class="govuk-summary-list__value">                263-267 High Street Chatham            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hectares
             </dt>
@@ -181,33 +180,21 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://maps.medway.gov.uk/webmaplayersext/map.aspx">https://maps.medway.gov.uk/webmaplayersext/map.aspx</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                263-267 High Street Chatham            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-history
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://publicaccess1.medway.gov.uk/online-applications/applicationDetails.do?activeTab=documents&keyVal=Q2YSKBKNH1N00">https://publicaccess1.medway.gov.uk/online-applications/applicationDetails.do?activeTab=documents&keyVal=Q2YSKBKNH1N00</a>            </dd>
+            <dd class="govuk-summary-list__value">                14            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                14            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-date
+            <dt class="govuk-summary-list__key">planning-permission-history
             </dt>
-            <dd class="govuk-summary-list__value">                2020-03-10            </dd>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://publicaccess1.medway.gov.uk/online-applications/applicationDetails.do?activeTab=documents&keyVal=Q2YSKBKNH1N00">https://publicaccess1.medway.gov.uk/online-applications/applicationDetails.do?activeTab=documents&keyVal=Q2YSKBKNH1N00</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
+            <dt class="govuk-summary-list__key">deliverable
             </dt>
-            <dd class="govuk-summary-list__value">                full planning permission            </dd>
+            <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -215,9 +202,25 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:MDW" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:MDW)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2020-03-10            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://maps.medway.gov.uk/webmaplayersext/map.aspx">https://maps.medway.gov.uk/webmaplayersext/map.aspx</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site
             </dt>
             <dd class="govuk-summary-list__value">                1138            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-type
+            </dt>
+            <dd class="govuk-summary-list__value">                full planning permission            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -267,67 +270,67 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>hectares</th>
-            <th>deliverable</th>
-            <th>site-plan-url</th>
-            <th>planning-permission-type</th>
-            <th>start-date</th>
-            <th>planning-permission-status</th>
-            <th>planning-permission-date</th>
-            <th>name</th>
-            <th>site-address</th>
-            <th>organisation</th>
+            <th>notes</th>
             <th>point</th>
             <th>site</th>
+            <th>start-date</th>
+            <th>planning-permission-status</th>
             <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>deliverable</th>
+            <th>planning-permission-type</th>
+            <th>ownership-status</th>
+            <th>name</th>
             <th>planning-permission-history</th>
-            <th>notes</th>
+            <th>site-address</th>
+            <th>planning-permission-date</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-12-01</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/3604e88dda5437232af6ebde334af75bc1f304c47a401590abaabaa27eb6b5c5.csv#L37">3604e88dda54...</a></td>
             <td>36</td>
-                <td>not owned by a public authority</td> 
-                <td>14</td> 
-                <td>0.03</td> 
-                <td>yes</td> 
-                <td>https://maps.medway.gov.uk/webmaplayersext/map.aspx</td> 
-                <td>full planning permission</td> 
-                <td>2020-03-05</td> 
-                <td>permissioned</td> 
-                <td>2020-03-10</td> 
-                <td>1138</td> 
-                <td>263-267 High Street Chatham</td> 
-                <td>local-authority-eng:MDW</td> 
+                <td>Extant permissions on other parts of site MC/19/0100 permitted 14/3/2019 and MC/19/0180 permitted 15/8/2019. Previous superseded permissions MC/15/3488 and MC/15/4562.</td> 
                 <td>POINT(0.528152 51.31197)</td> 
                 <td>1138</td> 
+                <td>2020-03-05</td> 
+                <td>permissioned</td> 
                 <td>14</td> 
+                <td>14</td> 
+                <td>yes</td> 
+                <td>full planning permission</td> 
+                <td>not owned by a public authority</td> 
+                <td>1138</td> 
                 <td>https://publicaccess1.medway.gov.uk/online-applications/applicationDetails.do?activeTab=documents&amp;keyVal=Q2YSKBKNH1N00</td> 
-                <td>Extant permissions on other parts of site MC/19/0100 permitted 14/3/2019 and MC/19/0180 permitted 15/8/2019. Previous superseded permissions MC/15/3488 and MC/15/4562.</td> 
+                <td>263-267 High Street Chatham</td> 
+                <td>2020-03-10</td> 
+                <td>0.03</td> 
+                <td>local-authority-eng:MDW</td> 
+                <td>https://maps.medway.gov.uk/webmaplayersext/map.aspx</td> 
         </tr>        <tr>
             <td>2020-03-05</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/fcc3eadb11e1c253374bfe1cfd7f58e1826292203dfc96f234a6dfff99ed3c28.csv#L37">fcc3eadb11e1...</a></td>
             <td>36</td>
-                <td>not owned by a public authority</td> 
-                <td>9</td> 
-                <td>0.03</td> 
-                <td>yes</td> 
-                <td>https://maps.medway.gov.uk/webmaplayersext/map.aspx</td> 
-                <td>full planning permission</td> 
-                <td>2020-03-05</td> 
-                <td>permissioned</td> 
-                <td>2019-08-15</td> 
-                <td>1138</td> 
-                <td>263-267 High Street Chatham</td> 
-                <td>local-authority-eng:MDW</td> 
+            <td></td>
                 <td>POINT(0.528152 51.31197)</td> 
                 <td>1138</td> 
+                <td>2020-03-05</td> 
+                <td>permissioned</td> 
                 <td>9</td> 
+                <td>9</td> 
+                <td>yes</td> 
+                <td>full planning permission</td> 
+                <td>not owned by a public authority</td> 
+                <td>1138</td> 
                 <td>https://publicaccess1.medway.gov.uk/online-applications/applicationDetails.do?activeTab=documents&amp;keyVal=PLQE6TKN03T00</td> 
-            <td></td>
+                <td>263-267 High Street Chatham</td> 
+                <td>2019-08-15</td> 
+                <td>0.03</td> 
+                <td>local-authority-eng:MDW</td> 
+                <td>https://maps.medway.gov.uk/webmaplayersext/map.aspx</td> 
         </tr>    </tbody>
 </table>
 

@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,13 +160,27 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#BFR020</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
+            <dt class="govuk-summary-list__key">site
             </dt>
-            <dd class="govuk-summary-list__value">                full planning permission            </dd>
+            <dd class="govuk-summary-list__value">                BFR020            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
+            <dt class="govuk-summary-list__key">planning-permission-date
             </dt>
-            <dd class="govuk-summary-list__value">                Hatters Arms, Church Road, Warton            </dd>
+            <dd class="govuk-summary-list__value">                2015-07-17            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/NWA" class="govuk-link">North Warwickshire Borough Council</a>
+<span title="Organisation identifier: local-authority-eng:NWA" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:NWA)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                Conversion of former public house into four 2-bedroom apartments and construction of two 3-bedroom houses and one 2-bedroomed house on the former car park area            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
@@ -177,43 +194,29 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                BFR020            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-type
+            </dt>
+            <dd class="govuk-summary-list__value">                full planning permission            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                7            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2018-12-10            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2015-07-17            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                BFR020            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">ownership-status
             </dt>
             <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Hatters Arms, Church Road, Warton            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hectares
             </dt>
             <dd class="govuk-summary-list__value">                0.09            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
+            <dt class="govuk-summary-list__key">start-date
             </dt>
-            <dd class="govuk-summary-list__value">                Conversion of former public house into four 2-bedroom apartments and construction of two 3-bedroom houses and one 2-bedroomed house on the former car park area            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/NWA" class="govuk-link">North Warwickshire Borough Council</a>
-<span title="Organisation identifier: local-authority-eng:NWA" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:NWA)</span>
-            </dd>
+            <dd class="govuk-summary-list__value">                2018-12-10            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">deliverable
             </dt>
@@ -267,88 +270,88 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>planning-permission-type</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
-            <th>deliverable</th>
-            <th>site-address</th>
-            <th>planning-permission-date</th>
-            <th>start-date</th>
-            <th>name</th>
-            <th>planning-permission-status</th>
-            <th>organisation</th>
+            <th>notes</th>
             <th>point</th>
             <th>site</th>
+            <th>start-date</th>
+            <th>planning-permission-status</th>
             <th>minimum-net-dwellings</th>
+            <th>planning-permission-date</th>
+            <th>planning-permission-type</th>
+            <th>maximum-net-dwellings</th>
+            <th>ownership-status</th>
+            <th>name</th>
             <th>planning-permission-history</th>
-            <th>notes</th>
+            <th>site-address</th>
+            <th>deliverable</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-03-02</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/55c35f4d35a9938de2e3487d0ff4fe99492aef7b326cc33642d5a3c179783146.csv#L19">55c35f4d35a9...</a></td>
             <td>18</td>
-                <td>not owned by a public authority</td> 
-                <td>7</td> 
-                <td>full planning permission</td> 
-                <td>https://www.northwarks.gov.uk/info/20027/development_control/1088/self_custom_build_and_brownfield_land_register</td> 
-                <td>0.09</td> 
-                <td>yes</td> 
-                <td>Hatters Arms, Church Road, Warton</td> 
-                <td>2015-07-17</td> 
-                <td>2018-12-10</td> 
-                <td>BFR020</td> 
-                <td>permissioned</td> 
-                <td>local-authority-eng:NWA</td> 
+                <td>Conversion of former public house into four 2-bedroom apartments and construction of two 3-bedroom houses and one 2-bedroomed house on the former car park area</td> 
                 <td>POINT(-1.584134 52.629696)</td> 
                 <td>BFR020</td> 
+                <td>2018-12-10</td> 
+                <td>permissioned</td> 
                 <td>7</td> 
+                <td>2015-07-17</td> 
+                <td>full planning permission</td> 
+                <td>7</td> 
+                <td>not owned by a public authority</td> 
+                <td>BFR020</td> 
                 <td>http://planning.northwarks.gov.uk/portal/servlets/ApplicationSearchServlet</td> 
-                <td>Conversion of former public house into four 2-bedroom apartments and construction of two 3-bedroom houses and one 2-bedroomed house on the former car park area</td> 
+                <td>Hatters Arms, Church Road, Warton</td> 
+                <td>yes</td> 
+                <td>0.09</td> 
+                <td>local-authority-eng:NWA</td> 
+                <td>https://www.northwarks.gov.uk/info/20027/development_control/1088/self_custom_build_and_brownfield_land_register</td> 
         </tr>        <tr>
             <td>2020-02-15</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/84f68a64564729bcd43c861df0d909ee6591ff73be0a02cebcd7aad84d253689.csv#L19">84f68a645647...</a></td>
             <td>18</td>
-                <td>not owned by a public authority</td> 
-                <td>7</td> 
-                <td>full planning permission</td> 
-            <td></td>
-                <td>0.09</td> 
-                <td>yes</td> 
-                <td>Hatters Arms, Church Road, Warton</td> 
-                <td>2015-07-17</td> 
-                <td>2018-12-10</td> 
-                <td>BFR020</td> 
-                <td>permissioned</td> 
-                <td>local-authority-eng:NWA</td> 
+                <td>Conversion of former public house into four 2-bedroom apartments and construction of two 3-bedroom houses and one 2-bedroomed house on the former car park area</td> 
                 <td>POINT(-1.584133 52.629696)</td> 
                 <td>BFR020</td> 
+                <td>2018-12-10</td> 
+                <td>permissioned</td> 
                 <td>7</td> 
+                <td>2015-07-17</td> 
+                <td>full planning permission</td> 
+                <td>7</td> 
+                <td>not owned by a public authority</td> 
+                <td>BFR020</td> 
                 <td>http://planning.northwarks.gov.uk/portal/servlets/ApplicationSearchServlet</td> 
-                <td>Conversion of former public house into four 2-bedroom apartments and construction of two 3-bedroom houses and one 2-bedroomed house on the former car park area</td> 
+                <td>Hatters Arms, Church Road, Warton</td> 
+                <td>yes</td> 
+                <td>0.09</td> 
+                <td>local-authority-eng:NWA</td> 
+            <td></td>
         </tr>        <tr>
             <td>2018-12-13</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/723447ef60611babd812113719b6e97c72385682965dde7223794e96e3a8dd22.csv#L21">723447ef6061...</a></td>
             <td>20</td>
-                <td>not owned by a public authority</td> 
-                <td>7</td> 
-                <td>full planning permission</td> 
-            <td></td>
-                <td>0.09</td> 
-                <td>yes</td> 
-                <td>Hatters Arms, Church Road, Warton</td> 
-                <td>2015-07-17</td> 
-                <td>2018-12-13</td> 
-                <td>BFR020</td> 
-                <td>permissioned</td> 
-                <td>local-authority-eng:NWA</td> 
+                <td>Discharge of conditions approved in 2015, DOC/2015/0054. Conversion of former public house into four 2-bedroom apartments and construction of two 3-bedroom houses and one 2-bedroomed house on the former car park area</td> 
                 <td>POINT(-1.584133 52.629696)</td> 
                 <td>BFR020</td> 
+                <td>2018-12-13</td> 
+                <td>permissioned</td> 
                 <td>7</td> 
+                <td>2015-07-17</td> 
+                <td>full planning permission</td> 
+                <td>7</td> 
+                <td>not owned by a public authority</td> 
+                <td>BFR020</td> 
                 <td>http://planning.northwarks.gov.uk/portal/servlets/ApplicationSearchServlet?PKID=111235</td> 
-                <td>Discharge of conditions approved in 2015, DOC/2015/0054. Conversion of former public house into four 2-bedroom apartments and construction of two 3-bedroom houses and one 2-bedroomed house on the former car park area</td> 
+                <td>Hatters Arms, Church Road, Warton</td> 
+                <td>yes</td> 
+                <td>0.09</td> 
+                <td>local-authority-eng:NWA</td> 
+            <td></td>
         </tr>    </tbody>
 </table>
 

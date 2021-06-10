@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,25 +160,33 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#BLR271</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Parker House, 5 Powerscroft Road            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                BLR271            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2019-11-01            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                BLR271            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-history
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://pa.bexley.gov.uk/online-applications/propertyDetails.do?activeTab=relatedCases&keyVal=0026C8BELI000">https://pa.bexley.gov.uk/online-applications/propertyDetails.do?activeTab=relatedCases&keyVal=0026C8BELI000</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
-            <dd class="govuk-summary-list__value">                17            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register">https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.08            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
-            </dt>
-            <dd class="govuk-summary-list__value">                other            </dd>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -183,45 +194,37 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:BEX" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BEX)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
+            <dt class="govuk-summary-list__key">hectares
             </dt>
-            <dd class="govuk-summary-list__value">                Parker House, 5 Powerscroft Road            </dd>
+            <dd class="govuk-summary-list__value">                0.08            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
+            <dt class="govuk-summary-list__key">start-date
             </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
+            <dd class="govuk-summary-list__value">                2020-03-31            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                BLR271            </dd>
+            <dd class="govuk-summary-list__value">                17            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
+            <dt class="govuk-summary-list__key">planning-permission-type
             </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
+            <dd class="govuk-summary-list__value">                other            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">ownership-status
             </dt>
             <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2019-11-01            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                BLR271            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">notes
             </dt>
             <dd class="govuk-summary-list__value">                19/02025/PRIOR, Prior Notification for proposed change of use of building from offices (Class B1a) to 17 self-contained studio flats (Class C3).            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register">https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                17            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2020-03-31            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -267,46 +270,46 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>site-plan-url</th>
-            <th>planning-permission-type</th>
-            <th>hectares</th>
-            <th>deliverable</th>
-            <th>site-address</th>
             <th>point</th>
-            <th>planning-permission-status</th>
-            <th>planning-permission-date</th>
-            <th>organisation</th>
-            <th>name</th>
-            <th>start-date</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
-            <th>planning-permission-history</th>
             <th>notes</th>
+            <th>site</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
+            <th>minimum-net-dwellings</th>
+            <th>planning-permission-date</th>
+            <th>deliverable</th>
+            <th>planning-permission-type</th>
+            <th>ownership-status</th>
+            <th>site-address</th>
+            <th>name</th>
+            <th>planning-permission-history</th>
+            <th>maximum-net-dwellings</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-03-31</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/537b71b8024387a7b0a2f7cac683793d67a8afdc3258c2038a69b2ce3df723ca.csv#L72">537b71b80243...</a></td>
             <td>71</td>
-                <td>not owned by a public authority</td> 
-                <td>17</td> 
-                <td>https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register</td> 
-                <td>other</td> 
-                <td>0.08</td> 
-                <td>yes</td> 
-                <td>Parker House, 5 Powerscroft Road</td> 
                 <td>POINT(0.115188 51.414832)</td> 
-                <td>permissioned</td> 
-                <td>2019-11-01</td> 
-                <td>local-authority-eng:BEX</td> 
-                <td>BLR271</td> 
-                <td>2020-03-31</td> 
-                <td>BLR271</td> 
-                <td>17</td> 
-                <td>https://pa.bexley.gov.uk/online-applications/propertyDetails.do?activeTab=relatedCases&amp;keyVal=0026C8BELI000</td> 
                 <td>19/02025/PRIOR, Prior Notification for proposed change of use of building from offices (Class B1a) to 17 self-contained studio flats (Class C3).</td> 
+                <td>BLR271</td> 
+                <td>permissioned</td> 
+                <td>2020-03-31</td> 
+                <td>17</td> 
+                <td>2019-11-01</td> 
+                <td>yes</td> 
+                <td>other</td> 
+                <td>not owned by a public authority</td> 
+                <td>Parker House, 5 Powerscroft Road</td> 
+                <td>BLR271</td> 
+                <td>https://pa.bexley.gov.uk/online-applications/propertyDetails.do?activeTab=relatedCases&amp;keyVal=0026C8BELI000</td> 
+                <td>17</td> 
+                <td>0.08</td> 
+                <td>local-authority-eng:BEX</td> 
+                <td>https://www.bexley.gov.uk/services/planning-and-building-control/planning-policy/brownfield-land-register</td> 
         </tr>    </tbody>
 </table>
 

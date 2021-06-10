@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,37 +160,27 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#BFR28</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
-            <dd class="govuk-summary-list__value">                BFR28            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                BFR28            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-12-20            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                New planning application under consideration - 06/18/0582/F, potential for contaminated land associated with hospital, a Site Investigation Report has been considered with the application.            </dd>
+            <dd class="govuk-summary-list__value">                pending decision            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">deliverable
             </dt>
             <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
+            <dt class="govuk-summary-list__key">notes
             </dt>
-            <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/GRY" class="govuk-link">Great Yarmouth Borough Council</a>
-<span title="Organisation identifier: local-authority-eng:GRY" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:GRY)</span>
-            </dd>
+            <dd class="govuk-summary-list__value">                New planning application under consideration - 06/18/0582/F, potential for contaminated land associated with hospital, a Site Investigation Report has been considered with the application.            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                79            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                BFR28            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                79            </dd>
         </div>        <div class="govuk-summary-list__row">
@@ -195,21 +188,31 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                Northgate Hospital, Great Yarmouth            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                pending decision            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                79            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hectares
             </dt>
             <dd class="govuk-summary-list__value">                2.18            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/GRY" class="govuk-link">Great Yarmouth Borough Council</a>
+<span title="Organisation identifier: local-authority-eng:GRY" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:GRY)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-12-20            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-plan-url
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.great-yarmouth.gov.uk/CHttpHandler.ashx?id=2595&p=0">https://www.great-yarmouth.gov.uk/CHttpHandler.ashx?id=2595&p=0</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                BFR28            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -255,76 +258,76 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
+            <th>notes</th>
+            <th>point</th>
+            <th>site</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
+            <th>minimum-net-dwellings</th>
             <th>maximum-net-dwellings</th>
             <th>deliverable</th>
-            <th>hectares</th>
-            <th>site-plan-url</th>
-            <th>start-date</th>
-            <th>point</th>
+            <th>ownership-status</th>
             <th>site-address</th>
             <th>name</th>
+            <th>hectares</th>
             <th>organisation</th>
-            <th>planning-permission-status</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
-            <th>notes</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2019-12-19</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/48b55c8a98a07576b6de955ccc33c95ba4f4a6da8fb49752501d6f05fae125b0.csv#L25">48b55c8a98a0...</a></td>
             <td>24</td>
-                <td>owned by a public authority</td> 
+                <td>New planning application under consideration - 06/18/0582/F, potential for contaminated land associated with hospital, a Site Investigation Report has been considered with the application.</td> 
+                <td>POINT(1.730036 52.618031)</td> 
+                <td>BFR28</td> 
+                <td>pending decision</td> 
+                <td>2017-12-20</td> 
+                <td>79</td> 
                 <td>79</td> 
                 <td>yes</td> 
-                <td>2.18</td> 
-                <td>https://www.great-yarmouth.gov.uk/CHttpHandler.ashx?id=2595&amp;p=0</td> 
-                <td>2017-12-20</td> 
-                <td>POINT(1.730036 52.618031)</td> 
+                <td>owned by a public authority</td> 
                 <td>Northgate Hospital, Great Yarmouth</td> 
                 <td>BFR28</td> 
+                <td>2.18</td> 
                 <td>local-authority-eng:GRY</td> 
-                <td>pending decision</td> 
-                <td>BFR28</td> 
-                <td>79</td> 
-                <td>New planning application under consideration - 06/18/0582/F, potential for contaminated land associated with hospital, a Site Investigation Report has been considered with the application.</td> 
+                <td>https://www.great-yarmouth.gov.uk/CHttpHandler.ashx?id=2595&amp;p=0</td> 
         </tr>        <tr>
             <td>2018-12-20</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/d1b37c7ad6a7997598fcd0de2882081d7c063e3b14099e12fc2bb69d06ea2d3b.csv#L25">d1b37c7ad6a7...</a></td>
             <td>24</td>
-                <td>owned by a public authority</td> 
+                <td>New planning application under consideration - 06/18/0582/F, potential for contaminated land associated with hospital, a Site Investigation Report has been considered with the application.. Erection of up to 79 residential units on former hospital site</td> 
+                <td>POINT(1.730013 52.618005)</td> 
+                <td>BFR28</td> 
+                <td>pending decision</td> 
+                <td>2017-12-20</td> 
+                <td>79</td> 
                 <td>79</td> 
                 <td>yes</td> 
-                <td>2.18</td> 
-                <td>https://www.great-yarmouth.gov.uk/CHttpHandler.ashx?id=2595&amp;p=0</td> 
-                <td>2017-12-20</td> 
-                <td>POINT(1.730013 52.618005)</td> 
+                <td>owned by a public authority</td> 
                 <td>Northgate Hospital, Great Yarmouth</td> 
                 <td>BFR28</td> 
+                <td>2.18</td> 
                 <td>local-authority-eng:GRY</td> 
-                <td>pending decision</td> 
-                <td>BFR28</td> 
-                <td>79</td> 
-                <td>New planning application under consideration - 06/18/0582/F, potential for contaminated land associated with hospital, a Site Investigation Report has been considered with the application.. Erection of up to 79 residential units on former hospital site</td> 
+                <td>https://www.great-yarmouth.gov.uk/CHttpHandler.ashx?id=2595&amp;p=0</td> 
         </tr>        <tr>
             <td>2017-12-20</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/e897f9b6fb2a6d2de1282a6a1376cf5bd2fc15a3a08dda1ed805ffb647480b74.csv#L29">e897f9b6fb2a...</a></td>
             <td>28</td>
-                <td>owned by a public authority</td> 
+                <td>06/13/0472/O, potential for contaminated land associated with hospital, a Site Investigation Report has been considered with the application. Erection of up to 79 residential units on former hospital site</td> 
+                <td>POINT(1.730013 52.618005)</td> 
+                <td>BFR28</td> 
+                <td>pending decision</td> 
+                <td>2017-12-20</td> 
+                <td>79</td> 
                 <td>79</td> 
                 <td>yes</td> 
-                <td>2.18</td> 
-                <td>https://www.great-yarmouth.gov.uk/CHttpHandler.ashx?id=2595&amp;p=0</td> 
-                <td>2017-12-20</td> 
-                <td>POINT(1.730013 52.618005)</td> 
+                <td>owned by a public authority</td> 
                 <td>Northgate Hospital, Great Yarmouth</td> 
                 <td>BFR28</td> 
+                <td>2.18</td> 
                 <td>local-authority-eng:GRY</td> 
-                <td>pending decision</td> 
-                <td>BFR28</td> 
-                <td>79</td> 
-                <td>06/13/0472/O, potential for contaminated land associated with hospital, a Site Investigation Report has been considered with the application. Erection of up to 79 residential units on former hospital site</td> 
+                <td>https://www.great-yarmouth.gov.uk/CHttpHandler.ashx?id=2595&amp;p=0</td> 
         </tr>    </tbody>
 </table>
 

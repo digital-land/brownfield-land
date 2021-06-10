@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,49 +160,33 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#16/00492/FULL</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.15            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                16/00492/FULL            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-date
             </dt>
             <dd class="govuk-summary-list__value">                2017-01-30            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                Demolition of existing building and the erection of a four storey building to accommodate 44 residential dwellings (Class C3) and associated works including landscaping and the provision of car parking.. http://idoxpa.westminster.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=O19UKARPFN100            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2017-11-30            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
+            <dt class="govuk-summary-list__key">planning-permission-type
             </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
+            <dd class="govuk-summary-list__value">                full planning permission            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            <dt class="govuk-summary-list__key">notes
             </dt>
-            <dd class="govuk-summary-list__value">                0            </dd>
+            <dd class="govuk-summary-list__value">                Demolition of existing building and the erection of a four storey building to accommodate 44 residential dwellings (Class C3) and associated works including landscaping and the provision of car parking.. http://idoxpa.westminster.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=O19UKARPFN100            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-history
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://idoxpa.westminster.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=O19UKARPFN100">http://idoxpa.westminster.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=O19UKARPFN100</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
+            <dt class="govuk-summary-list__key">hectares
             </dt>
-            <dd class="govuk-summary-list__value">                full planning permission            </dd>
+            <dd class="govuk-summary-list__value">                0.15            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            <dt class="govuk-summary-list__key">deliverable
             </dt>
-            <dd class="govuk-summary-list__value">                0            </dd>
+            <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -207,17 +194,33 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:WSM" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WSM)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Chesterfield Lodge            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-plan-url
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://lbhf.maps.arcgis.com/apps/View/index.html?appid=d0d51e7d013a4d1a953ecc1cff697d24&site=16/00492/FULL">https://lbhf.maps.arcgis.com/apps/View/index.html?appid=d0d51e7d013a4d1a953ecc1cff697d24&site=16/00492/FULL</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                16/00492/FULL            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                0            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site
             </dt>
             <dd class="govuk-summary-list__value">                16/00492/FULL            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                Chesterfield Lodge            </dd>
+            <dd class="govuk-summary-list__value">                0            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -263,22 +266,22 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>maximum-net-dwellings</th>
+            <th>point</th>
+            <th>notes</th>
+            <th>site</th>
+            <th>start-date</th>
+            <th>planning-permission-status</th>
+            <th>minimum-net-dwellings</th>
+            <th>planning-permission-date</th>
             <th>planning-permission-type</th>
-            <th>hectares</th>
-            <th>site-plan-url</th>
+            <th>maximum-net-dwellings</th>
             <th>deliverable</th>
             <th>site-address</th>
-            <th>planning-permission-date</th>
-            <th>start-date</th>
             <th>name</th>
-            <th>organisation</th>
-            <th>planning-permission-status</th>
-            <th>point</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
             <th>planning-permission-history</th>
-            <th>notes</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
@@ -287,120 +290,100 @@ crossorigin="" />
             <td>1027</td>
             <td></td>
             <td></td>
+                <td>16/00492/FULL</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>
                 <td>Chesterfield Lodge</td> 
-            <td></td>
-            <td></td>
                 <td>16/00492/FULL</td> 
+            <td></td>
+            <td></td>
                 <td>local-authority-eng:WSM</td> 
-            <td></td>
-            <td></td>
-                <td>16/00492/FULL</td> 
-            <td></td>
-            <td></td>
             <td></td>
         </tr>        <tr>
             <td>2020-07-23</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/e15d044221879b726f765f81f353255e6801aad634d654f79d20068ff257a00e.csv#L57">e15d04422187...</a></td>
             <td>56</td>
+                <td>POINT(-0.167661 51.535986)</td> 
+                <td>Demolition of existing building and the erection of a four storey building to accommodate 44 residential dwellings (Class C3) and associated works including landscaping and the provision of car parking.. http://idoxpa.westminster.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=O19UKARPFN100</td> 
+                <td>16/00492/FULL</td> 
+                <td>2017-11-30</td> 
+                <td>permissioned</td> 
                 <td>0</td> 
+                <td>2017-01-30</td> 
                 <td>full planning permission</td> 
-                <td>0.15</td> 
-                <td>https://lbhf.maps.arcgis.com/apps/View/index.html?appid=d0d51e7d013a4d1a953ecc1cff697d24&amp;site=16/00492/FULL</td> 
+                <td>0</td> 
             <td></td>
                 <td>Chesterfield Lodge 75 St John&#39;s Wood Terrace London NW8 6LF</td> 
-                <td>2017-01-30</td> 
-                <td>2017-11-30</td> 
                 <td>16/00492/FULL</td> 
-                <td>local-authority-eng:WSM</td> 
-                <td>permissioned</td> 
-                <td>POINT(-0.167661 51.535986)</td> 
-                <td>16/00492/FULL</td> 
-                <td>0</td> 
                 <td>http://idoxpa.westminster.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=O19UKARPFN100</td> 
-                <td>Demolition of existing building and the erection of a four storey building to accommodate 44 residential dwellings (Class C3) and associated works including landscaping and the provision of car parking.. http://idoxpa.westminster.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=O19UKARPFN100</td> 
-        </tr>        <tr>
-            <td>2017-11-30</td>
-            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/86dee119f806d0c7f62295e6aae502851827e848202c4e43e833126ed62773db.csv#L785">86dee119f806...</a></td>
-            <td>784</td>
-                <td>0</td> 
-                <td>full planning permission</td> 
-                <td>0.088811</td> 
+                <td>0.15</td> 
+                <td>local-authority-eng:WSM</td> 
                 <td>https://lbhf.maps.arcgis.com/apps/View/index.html?appid=d0d51e7d013a4d1a953ecc1cff697d24&amp;site=16/00492/FULL</td> 
-                <td>yes</td> 
-                <td>Chesterfield Lodge 75 St John&#39;s Wood Terrace London NW8 6LF</td> 
-                <td>2017-01-30</td> 
-                <td>2017-11-30</td> 
-                <td>16/00492/FULL</td> 
-                <td>local-authority-eng:WSM</td> 
-                <td>permissioned</td> 
-                <td>POINT(-0.167552 51.536026)</td> 
-                <td>16/00492/FULL</td> 
-                <td>0</td> 
-                <td>http://idoxpa.westminster.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=O19UKARPFN100</td> 
-                <td>5-15 House Supply. Demolition of existing building and the erection of a four storey building to accommodate 44 residential dwellings (Class C3) and associated works including landscaping and the provision of car parkin. http://idoxpa.westminster.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=O19UKARPFN100</td> 
-        </tr>        <tr>
-            <td>2017-11-30</td>
-            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/4949844d97e7364fe37aecedd8c948a431aa74cbabd7bfd9d6918f221f7cc5db.csv#L77">4949844d97e7...</a></td>
-            <td>76</td>
-                <td>0</td> 
-                <td>full planning permission</td> 
-                <td>0.088811</td> 
-                <td>https://lbhf.maps.arcgis.com/apps/View/index.html?appid=d0d51e7d013a4d1a953ecc1cff697d24&amp;site=16/00492/FULL</td> 
-                <td>yes</td> 
-                <td>Chesterfield Lodge 75 St John&#39;s Wood Terrace London NW8 6LF</td> 
-                <td>2017-01-30</td> 
-                <td>2017-11-30</td> 
-                <td>16/00492/FULL</td> 
-                <td>local-authority-eng:WSM</td> 
-                <td>permissioned</td> 
-                <td>POINT(-0.167552 51.536026)</td> 
-                <td>16/00492/FULL</td> 
-                <td>0</td> 
-                <td>http://idoxpa.westminster.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=O19UKARPFN100</td> 
-                <td>5-15 House Supply. Demolition of existing building and the erection of a four storey building to accommodate 44 residential dwellings (Class C3) and associated works including landscaping and the provision of car parking.. http://idoxpa.westminster.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=O19UKARPFN100</td> 
-        </tr>        <tr>
-            <td>2017-11-30</td>
-            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/53ff7410d03797e7747d4df128ca450bbe808f4eacc79d0e2d18623ab4a99554.csv#L785">53ff7410d037...</a></td>
-            <td>784</td>
-                <td>0</td> 
-                <td>full planning permission</td> 
-                <td>0.088811</td> 
-                <td>https://lbhf.maps.arcgis.com/apps/View/index.html?appid=d0d51e7d013a4d1a953ecc1cff697d24&amp;site=16/00492/FULL</td> 
-                <td>yes</td> 
-                <td>Chesterfield Lodge 75 St John&#39;s Wood Terrace London NW8 6LF</td> 
-                <td>2017-01-30</td> 
-                <td>2017-11-30</td> 
-                <td>16/00492/FULL</td> 
-                <td>local-authority-eng:WSM</td> 
-                <td>permissioned</td> 
-                <td>POINT(-0.167552 51.536026)</td> 
-                <td>16/00492/FULL</td> 
-                <td>0</td> 
-                <td>http://idoxpa.westminster.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=O19UKARPFN100</td> 
-                <td>5-15 House Supply. Demolition of existing building and the erection of a four storey building to accommodate 44 residential dwellings (Class C3) and associated works including landscaping and the provision of car parkin. http://idoxpa.westminster.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=O19UKARPFN100</td> 
         </tr>        <tr>
             <td>2017-11-30</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/8ed1928d72d46e293eefc00199dd82e514e492b9583cb2d97d5970d0993227dd.csv#L77">8ed1928d72d4...</a></td>
             <td>76</td>
+                <td>POINT(-0.167552 51.536026)</td> 
+                <td>5-15 House Supply. Demolition of existing building and the erection of a four storey building to accommodate 44 residential dwellings (Class C3) and associated works including landscaping and the provision of car parking.. http://idoxpa.westminster.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=O19UKARPFN100</td> 
+                <td>16/00492/FULL</td> 
+                <td>2017-11-30</td> 
+                <td>permissioned</td> 
                 <td>0</td> 
+                <td>2017-01-30</td> 
                 <td>full planning permission</td> 
-                <td>0.088811</td> 
-                <td>https://lbhf.maps.arcgis.com/apps/View/index.html?appid=d0d51e7d013a4d1a953ecc1cff697d24&amp;site=16/00492/FULL</td> 
+                <td>0</td> 
                 <td>yes</td> 
                 <td>Chesterfield Lodge 75 St John&#39;s Wood Terrace London NW8 6LF</td> 
-                <td>2017-01-30</td> 
-                <td>2017-11-30</td> 
                 <td>16/00492/FULL</td> 
-                <td>local-authority-eng:WSM</td> 
-                <td>permissioned</td> 
-                <td>POINT(-0.167552 51.536026)</td> 
-                <td>16/00492/FULL</td> 
-                <td>0</td> 
                 <td>http://idoxpa.westminster.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=O19UKARPFN100</td> 
+                <td>0.088811</td> 
+                <td>local-authority-eng:WSM</td> 
+                <td>https://lbhf.maps.arcgis.com/apps/View/index.html?appid=d0d51e7d013a4d1a953ecc1cff697d24&amp;site=16/00492/FULL</td> 
+        </tr>        <tr>
+            <td>2017-11-30</td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/86dee119f806d0c7f62295e6aae502851827e848202c4e43e833126ed62773db.csv#L785">86dee119f806...</a></td>
+            <td>784</td>
+                <td>POINT(-0.167552 51.536026)</td> 
+                <td>5-15 House Supply. Demolition of existing building and the erection of a four storey building to accommodate 44 residential dwellings (Class C3) and associated works including landscaping and the provision of car parkin. http://idoxpa.westminster.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=O19UKARPFN100</td> 
+                <td>16/00492/FULL</td> 
+                <td>2017-11-30</td> 
+                <td>permissioned</td> 
+                <td>0</td> 
+                <td>2017-01-30</td> 
+                <td>full planning permission</td> 
+                <td>0</td> 
+                <td>yes</td> 
+                <td>Chesterfield Lodge 75 St John&#39;s Wood Terrace London NW8 6LF</td> 
+                <td>16/00492/FULL</td> 
+                <td>http://idoxpa.westminster.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=O19UKARPFN100</td> 
+                <td>0.088811</td> 
+                <td>local-authority-eng:WSM</td> 
+                <td>https://lbhf.maps.arcgis.com/apps/View/index.html?appid=d0d51e7d013a4d1a953ecc1cff697d24&amp;site=16/00492/FULL</td> 
+        </tr>        <tr>
+            <td>2017-11-30</td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/4949844d97e7364fe37aecedd8c948a431aa74cbabd7bfd9d6918f221f7cc5db.csv#L77">4949844d97e7...</a></td>
+            <td>76</td>
+                <td>POINT(-0.167552 51.536026)</td> 
                 <td>5-15 House Supply. Demolition of existing building and the erection of a four storey building to accommodate 44 residential dwellings (Class C3) and associated works including landscaping and the provision of car parking.. http://idoxpa.westminster.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=O19UKARPFN100</td> 
+                <td>16/00492/FULL</td> 
+                <td>2017-11-30</td> 
+                <td>permissioned</td> 
+                <td>0</td> 
+                <td>2017-01-30</td> 
+                <td>full planning permission</td> 
+                <td>0</td> 
+                <td>yes</td> 
+                <td>Chesterfield Lodge 75 St John&#39;s Wood Terrace London NW8 6LF</td> 
+                <td>16/00492/FULL</td> 
+                <td>http://idoxpa.westminster.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=O19UKARPFN100</td> 
+                <td>0.088811</td> 
+                <td>local-authority-eng:WSM</td> 
+                <td>https://lbhf.maps.arcgis.com/apps/View/index.html?appid=d0d51e7d013a4d1a953ecc1cff697d24&amp;site=16/00492/FULL</td> 
         </tr>    </tbody>
 </table>
 

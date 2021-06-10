@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,9 +160,25 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#15/03524/P</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                6            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-type
             </dt>
             <dd class="govuk-summary-list__value">                outline planning permission            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                6 Dwellings            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -167,37 +186,25 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:BST" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BST)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-12-19            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-date
             </dt>
             <dd class="govuk-summary-list__value">                2016-06-15            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Land To The Rear Of 50 Old Market Street St Philips Bristol BS2 0ER            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-history
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=NR69REDNLD100">http://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=NR69REDNLD100</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                2017-12-19            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                6 Dwellings            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NR69REDNLD100">http://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NR69REDNLD100</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Land To The Rear Of 50 Old Market Street St Philips Bristol BS2 0ER            </dd>
+            <dd class="govuk-summary-list__value">                6            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hectares
             </dt>
@@ -207,13 +214,9 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                15/03524/P            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            <dt class="govuk-summary-list__key">site-plan-url
             </dt>
-            <dd class="govuk-summary-list__value">                6            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                6            </dd>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NR69REDNLD100">http://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=NR69REDNLD100</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
@@ -263,44 +266,44 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>maximum-net-dwellings</th>
-            <th>planning-permission-type</th>
-            <th>deliverable</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
-            <th>planning-permission-date</th>
-            <th>start-date</th>
-            <th>planning-permission-status</th>
-            <th>site-address</th>
-            <th>organisation</th>
-            <th>point</th>
-            <th>name</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
-            <th>planning-permission-history</th>
             <th>notes</th>
+            <th>point</th>
+            <th>site</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
+            <th>minimum-net-dwellings</th>
+            <th>planning-permission-type</th>
+            <th>maximum-net-dwellings</th>
+            <th>deliverable</th>
+            <th>planning-permission-date</th>
+            <th>site-address</th>
+            <th>planning-permission-history</th>
+            <th>name</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2017-12-19</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/b1272eab32c771263b63ea25e900f20406a8c77854f228d07766054cd8c3d801.csv#L182">b1272eab32c7...</a></td>
             <td>181</td>
-                <td>6</td> 
-                <td>outline planning permission</td> 
-                <td>yes</td> 
-                <td>http://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&amp;keyVal=NR69REDNLD100</td> 
-                <td>0.03</td> 
-                <td>2016-06-15</td> 
-                <td>2017-12-19</td> 
-                <td>permissioned</td> 
-                <td>Land To The Rear Of 50 Old Market Street St Philips Bristol BS2 0ER</td> 
-                <td>local-authority-eng:BST</td> 
+                <td>6 Dwellings</td> 
                 <td>POINT(-2.580439 51.455845)</td> 
                 <td>15/03524/P</td> 
-                <td>15/03524/P</td> 
+                <td>permissioned</td> 
+                <td>2017-12-19</td> 
                 <td>6</td> 
+                <td>outline planning permission</td> 
+                <td>6</td> 
+                <td>yes</td> 
+                <td>2016-06-15</td> 
+                <td>Land To The Rear Of 50 Old Market Street St Philips Bristol BS2 0ER</td> 
                 <td>http://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=NR69REDNLD100</td> 
-                <td>6 Dwellings</td> 
+                <td>15/03524/P</td> 
+                <td>0.03</td> 
+                <td>local-authority-eng:BST</td> 
+                <td>http://planningonline.bristol.gov.uk/online-applications/applicationDetails.do?activeTab=map&amp;keyVal=NR69REDNLD100</td> 
         </tr>    </tbody>
 </table>
 

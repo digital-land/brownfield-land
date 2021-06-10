@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,11 +160,7 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#BR42</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">site
             </dt>
             <dd class="govuk-summary-list__value">                BR42            </dd>
         </div>        <div class="govuk-summary-list__row">
@@ -173,19 +172,23 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                0.108            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                High Street, Waltham Cross, EN8 7TU, Bartholomew Court            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/BRX" class="govuk-link">Broxbourne Borough Council</a>
 <span title="Organisation identifier: local-authority-eng:BRX" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BRX)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                BR42            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                High Street, Waltham Cross, EN8 7TU, Bartholomew Court            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -231,28 +234,28 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>hectares</th>
-            <th>site-address</th>
-            <th>planning-permission-status</th>
             <th>point</th>
-            <th>name</th>
-            <th>organisation</th>
             <th>site</th>
+            <th>planning-permission-status</th>
+            <th>ownership-status</th>
+            <th>site-address</th>
+            <th>name</th>
+            <th>hectares</th>
+            <th>organisation</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2018-05-22</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/a4a214334df3b54c8fffa74c29638644383a07511b022adaf866a78d15bf2952.csv#L43">a4a214334df3...</a></td>
             <td>42</td>
-                <td>not owned by a public authority</td> 
-                <td>0.108</td> 
-                <td>High Street, Waltham Cross, EN8 7TU, Bartholomew Court</td> 
-                <td>permissioned</td> 
                 <td>POINT(-5.097312 54.681219)</td> 
                 <td>BR42</td> 
-                <td>local-authority-eng:BRX</td> 
+                <td>permissioned</td> 
+                <td>not owned by a public authority</td> 
+                <td>High Street, Waltham Cross, EN8 7TU, Bartholomew Court</td> 
                 <td>BR42</td> 
+                <td>0.108</td> 
+                <td>local-authority-eng:BRX</td> 
         </tr>    </tbody>
 </table>
 

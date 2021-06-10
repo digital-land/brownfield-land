@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,9 +160,39 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#SHLAAID843</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-12-13            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.62            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                145            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/MSS" class="govuk-link">Mid Sussex District Council</a>
+<span title="Organisation identifier: local-authority-eng:MSS" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:MSS)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                SHLAAID843            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                Planning Permission Reference: DM/17/3413. Outline planning application for redevelopment of the site to provide up to 145 new residential units including 30% affordable housing and 1209 sq. metres of commercial floorspace (A2 use class), together with associated car parking. All matters to be reserved except from access.. https://www.midsussex.gov.uk/planning-building/evidence-supporting-documents/            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-plan-url
             </dt>
@@ -169,51 +202,21 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                37-39 Perrymount Road, Haywards Heath            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/MSS" class="govuk-link">Mid Sussex District Council</a>
-<span title="Organisation identifier: local-authority-eng:MSS" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:MSS)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-history
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://pa.midsussex.gov.uk/online-applications/">https://pa.midsussex.gov.uk/online-applications/</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.62            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                Planning Permission Reference: DM/17/3413. Outline planning application for redevelopment of the site to provide up to 145 new residential units including 30% affordable housing and 1209 sq. metres of commercial floorspace (A2 use class), together with associated car parking. All matters to be reserved except from access.. https://www.midsussex.gov.uk/planning-building/evidence-supporting-documents/            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                145            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
             </dt>
             <dd class="govuk-summary-list__value">                SHLAAID843            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                145            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-12-13            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -263,64 +266,64 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>planning-permission-type</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
-            <th>deliverable</th>
-            <th>site-address</th>
-            <th>planning-permission-status</th>
             <th>point</th>
-            <th>name</th>
-            <th>organisation</th>
-            <th>start-date</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
-            <th>planning-permission-history</th>
             <th>notes</th>
+            <th>site</th>
+            <th>start-date</th>
+            <th>planning-permission-status</th>
+            <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>deliverable</th>
+            <th>planning-permission-type</th>
+            <th>ownership-status</th>
+            <th>site-address</th>
+            <th>name</th>
+            <th>planning-permission-history</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2017-12-13</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/2e658d064e582dc8f81528733d18695c86c5a8530e7bd3cc09579d4b86d99069.csv#L24">2e658d064e58...</a></td>
             <td>23</td>
-                <td>not owned by a public authority</td> 
-                <td>145</td> 
-                <td>outline planning permission</td> 
-                <td>https://www.midsussex.gov.uk/planning-building/evidence-supporting-documents/</td> 
-                <td>0.62</td> 
-                <td>yes</td> 
-                <td>37-39 Perrymount Road, Haywards Heath</td> 
-                <td>permissioned</td> 
                 <td>POINT(-0.10413 51.003799)</td> 
-                <td>SHLAAID843</td> 
-                <td>local-authority-eng:MSS</td> 
-                <td>2017-12-13</td> 
-                <td>SHLAAID843</td> 
-                <td>145</td> 
-                <td>https://pa.midsussex.gov.uk/online-applications/</td> 
                 <td>Planning Permission Reference: DM/17/3413. Outline planning application for redevelopment of the site to provide up to 145 new residential units including 30% affordable housing and 1209 sq. metres of commercial floorspace (A2 use class), together with associated car parking. All matters to be reserved except from access.. https://www.midsussex.gov.uk/planning-building/evidence-supporting-documents/</td> 
+                <td>SHLAAID843</td> 
+                <td>2017-12-13</td> 
+                <td>permissioned</td> 
+                <td>145</td> 
+                <td>145</td> 
+                <td>yes</td> 
+                <td>outline planning permission</td> 
+                <td>not owned by a public authority</td> 
+                <td>37-39 Perrymount Road, Haywards Heath</td> 
+                <td>SHLAAID843</td> 
+                <td>https://pa.midsussex.gov.uk/online-applications/</td> 
+                <td>0.62</td> 
+                <td>local-authority-eng:MSS</td> 
+                <td>https://www.midsussex.gov.uk/planning-building/evidence-supporting-documents/</td> 
         </tr>        <tr>
             <td>2017-12-13</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/c021132ca39041f30ebbc15847e212ebe5d6fe30421f365ee2e365aa9167dc5d.csv#L57">c021132ca390...</a></td>
             <td>56</td>
-                <td>not owned by a public authority</td> 
-                <td>145</td> 
-            <td></td>
-                <td>http://www.midsussex.gov.uk/planning-licensing-building-control/planning-policy/local-development-framework/evidence-base/strategic-housing-land-availability-assessment/brownfield-land-register/</td> 
-                <td>0.62</td> 
-                <td>yes</td> 
-                <td>37-35 Perrymount Road, Haywards Heath</td> 
-                <td>pending decision</td> 
                 <td>POINT(-0.10413 51.003802)</td> 
-                <td>SHLAAID843</td> 
-                <td>local-authority-eng:MSS</td> 
-                <td>2017-12-13</td> 
-                <td>SHLAAID843</td> 
-                <td>145</td> 
-                <td>https://pa.midsussex.gov.uk/online-applications/</td> 
                 <td>Planning Permission Reference: DM/17/3413. Outline planning application for redevelopment of the site to provide up to 145 new residential units including 30% affordable housing and 1209 sq. metres of commercial floorspace (A2 use class), together with associated car parking. All matters to be reserved except from access.. http://www.midsussex.gov.uk/planning-licensing-building-control/planning-policy/local-development-framework/evidence-base/strategic-housing-land-availability-assessment/</td> 
+                <td>SHLAAID843</td> 
+                <td>2017-12-13</td> 
+                <td>pending decision</td> 
+                <td>145</td> 
+                <td>145</td> 
+                <td>yes</td> 
+            <td></td>
+                <td>not owned by a public authority</td> 
+                <td>37-35 Perrymount Road, Haywards Heath</td> 
+                <td>SHLAAID843</td> 
+                <td>https://pa.midsussex.gov.uk/online-applications/</td> 
+                <td>0.62</td> 
+                <td>local-authority-eng:MSS</td> 
+                <td>http://www.midsussex.gov.uk/planning-licensing-building-control/planning-policy/local-development-framework/evidence-base/strategic-housing-land-availability-assessment/brownfield-land-register/</td> 
         </tr>    </tbody>
 </table>
 

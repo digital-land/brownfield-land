@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,14 +160,6 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#S899</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                S899            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-12-19            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/BIR" class="govuk-link">Birmingham City Council</a>
@@ -175,9 +170,9 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                2016/01708/PA. Outline application for the erection of 80 no. dwellings, roadway and foot paths and parking. All matters reserved apart from access and scale.            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
+            <dd class="govuk-summary-list__value">                78            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
@@ -186,6 +181,30 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">planning-permission-type
             </dt>
             <dd class="govuk-summary-list__value">                outline planning permission            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2016-08-04            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://localview.birmingham.gov.uk/Planning/Sites/SHLAA/">https://localview.birmingham.gov.uk/Planning/Sites/SHLAA/</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                S899            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-12-19            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
@@ -198,22 +217,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
             <dd class="govuk-summary-list__value">                permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://localview.birmingham.gov.uk/Planning/Sites/SHLAA/">https://localview.birmingham.gov.uk/Planning/Sites/SHLAA/</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2016-08-04            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                78            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hectares
             </dt>
@@ -263,44 +266,44 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>deliverable</th>
-            <th>planning-permission-type</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
-            <th>start-date</th>
-            <th>point</th>
-            <th>site-address</th>
-            <th>name</th>
-            <th>organisation</th>
-            <th>planning-permission-status</th>
-            <th>planning-permission-date</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
             <th>notes</th>
+            <th>point</th>
+            <th>site</th>
+            <th>start-date</th>
+            <th>planning-permission-status</th>
+            <th>minimum-net-dwellings</th>
+            <th>planning-permission-type</th>
+            <th>planning-permission-date</th>
+            <th>deliverable</th>
+            <th>ownership-status</th>
+            <th>name</th>
+            <th>maximum-net-dwellings</th>
+            <th>site-address</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2018-09-21</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/586fd8bf0779012ac7c4b8681341b640e538deeaaf5529b2363862253b528703.csv#L60">586fd8bf0779...</a></td>
             <td>59</td>
-                <td>owned by a public authority</td> 
-                <td>78</td> 
-                <td>yes</td> 
-                <td>outline planning permission</td> 
-                <td>https://localview.birmingham.gov.uk/Planning/Sites/SHLAA/</td> 
-                <td>2.25</td> 
-                <td>2017-12-19</td> 
-                <td>POINT(-1.989297 52.434532)</td> 
-                <td>Site of Near Oak Drive Della Drive, Bartley Green</td> 
-                <td>S899</td> 
-                <td>local-authority-eng:BIR</td> 
-                <td>permissioned</td> 
-                <td>2016-08-04</td> 
-                <td>S899</td> 
-                <td>78</td> 
                 <td>2016/01708/PA. Outline application for the erection of 80 no. dwellings, roadway and foot paths and parking. All matters reserved apart from access and scale.</td> 
+                <td>POINT(-1.989297 52.434532)</td> 
+                <td>S899</td> 
+                <td>2017-12-19</td> 
+                <td>permissioned</td> 
+                <td>78</td> 
+                <td>outline planning permission</td> 
+                <td>2016-08-04</td> 
+                <td>yes</td> 
+                <td>owned by a public authority</td> 
+                <td>S899</td> 
+                <td>78</td> 
+                <td>Site of Near Oak Drive Della Drive, Bartley Green</td> 
+                <td>2.25</td> 
+                <td>local-authority-eng:BIR</td> 
+                <td>https://localview.birmingham.gov.uk/Planning/Sites/SHLAA/</td> 
         </tr>    </tbody>
 </table>
 

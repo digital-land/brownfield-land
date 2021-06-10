@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,37 +160,51 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#8080</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
+            <dt class="govuk-summary-list__key">hectares
             </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://northumberland.maps.arcgis.com/apps/webappviewer/index.html?id=c1b801d50f8040efbf8c9bc9f916cfae">http://northumberland.maps.arcgis.com/apps/webappviewer/index.html?id=c1b801d50f8040efbf8c9bc9f916cfae</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                8080            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2016-06-30            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                5            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                Redevelopment of former brewery building to provide 5 flats permitted - 14/03693/FUL            </dd>
+            <dd class="govuk-summary-list__value">                0.41            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                8080            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                8080            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2015-04-21            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                5            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                5            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://northumberland.maps.arcgis.com/apps/webappviewer/index.html?id=c1b801d50f8040efbf8c9bc9f916cfae">http://northumberland.maps.arcgis.com/apps/webappviewer/index.html?id=c1b801d50f8040efbf8c9bc9f916cfae</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                Redevelopment of former brewery building to provide 5 flats permitted - 14/03693/FUL            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/NBL" class="govuk-link">Northumberland County Council</a>
+<span title="Organisation identifier: local-authority-eng:NBL" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:NBL)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2016-06-30            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-history
             </dt>
@@ -197,23 +214,9 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                full planning permission            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2015-04-21            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/NBL" class="govuk-link">Northumberland County Council</a>
-<span title="Organisation identifier: local-authority-eng:NBL" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:NBL)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-address
             </dt>
             <dd class="govuk-summary-list__value">                C&amp;V Developments Ltd, Brewery Lane, Berwick-upon-Tweed            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.41            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -259,42 +262,42 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>maximum-net-dwellings</th>
-            <th>site-plan-url</th>
-            <th>planning-permission-type</th>
-            <th>hectares</th>
-            <th>start-date</th>
-            <th>planning-permission-status</th>
-            <th>planning-permission-date</th>
-            <th>name</th>
-            <th>organisation</th>
-            <th>site-address</th>
+            <th>notes</th>
             <th>point</th>
             <th>site</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
             <th>minimum-net-dwellings</th>
+            <th>planning-permission-date</th>
+            <th>maximum-net-dwellings</th>
+            <th>planning-permission-type</th>
+            <th>name</th>
             <th>planning-permission-history</th>
-            <th>notes</th>
+            <th>site-address</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2017-12-17</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/51fd36daf72b8b22fcaff19185e18c31456457ac8116b866c28959be3c69eb1a.csv#L161">51fd36daf72b...</a></td>
             <td>160</td>
-                <td>5</td> 
-                <td>http://northumberland.maps.arcgis.com/apps/webappviewer/index.html?id=c1b801d50f8040efbf8c9bc9f916cfae</td> 
-                <td>full planning permission</td> 
-                <td>0.41</td> 
-                <td>2016-06-30</td> 
-                <td>permissioned</td> 
-                <td>2015-04-21</td> 
-                <td>8080</td> 
-                <td>local-authority-eng:NBL</td> 
-                <td>C&amp;V Developments Ltd, Brewery Lane, Berwick-upon-Tweed</td> 
+                <td>Redevelopment of former brewery building to provide 5 flats permitted - 14/03693/FUL</td> 
                 <td>POINT(-2.010758 55.764206)</td> 
                 <td>8080</td> 
+                <td>permissioned</td> 
+                <td>2016-06-30</td> 
                 <td>5</td> 
+                <td>2015-04-21</td> 
+                <td>5</td> 
+                <td>full planning permission</td> 
+                <td>8080</td> 
                 <td>https://publicaccess.northumberland.gov.uk/online-applications/propertyDetails.do?activeTab=relatedCases&amp;keyVal=L3HG2FQS04N01</td> 
-                <td>Redevelopment of former brewery building to provide 5 flats permitted - 14/03693/FUL</td> 
+                <td>C&amp;V Developments Ltd, Brewery Lane, Berwick-upon-Tweed</td> 
+                <td>0.41</td> 
+                <td>local-authority-eng:NBL</td> 
+                <td>http://northumberland.maps.arcgis.com/apps/webappviewer/index.html?id=c1b801d50f8040efbf8c9bc9f916cfae</td> 
         </tr>    </tbody>
 </table>
 

@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,58 +160,6 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#17/00625/FUL</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
-            </dt>
-            <dd class="govuk-summary-list__value">                full planning permission            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-12-31            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Churchill Plaza Churchill Way Basingstoke            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.825477            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                A prior notification was first approved for the conversion of the building to residential use (16/00504/GPDOFF) in May 2016 for 257 flats. This was increased to 283 flats by a further prior notification in April 2017 (17/00416/GPDOFF) and for an additional 2 (penthouse) flats also in April (17/00625/FUL). The development of all units was completed 2019/20            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-history
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://planning.basingstoke.gov.uk/online-applications/applicationDetails.do?keyVal=OLIJC5CRGQO00&activeTab=summary">https://planning.basingstoke.gov.uk/online-applications/applicationDetails.do?keyVal=OLIJC5CRGQO00&activeTab=summary</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://planning.basingstoke.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OLIJC5CRGQO00">https://planning.basingstoke.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OLIJC5CRGQO00</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                285            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                285            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                17/00625/FUL            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/BAN" class="govuk-link">Basingstoke and Deane Borough Council</a>
@@ -219,9 +170,61 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                17/00625/FUL            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                A prior notification was first approved for the conversion of the building to residential use (16/00504/GPDOFF) in May 2016 for 257 flats. This was increased to 283 flats by a further prior notification in April 2017 (17/00416/GPDOFF) and for an additional 2 (penthouse) flats also in April (17/00625/FUL). The development of all units was completed 2019/20            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-type
+            </dt>
+            <dd class="govuk-summary-list__value">                full planning permission            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.825477            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                285            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://planning.basingstoke.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OLIJC5CRGQO00">https://planning.basingstoke.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=OLIJC5CRGQO00</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Churchill Plaza Churchill Way Basingstoke            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                285            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-history
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://planning.basingstoke.gov.uk/online-applications/applicationDetails.do?keyVal=OLIJC5CRGQO00&activeTab=summary">https://planning.basingstoke.gov.uk/online-applications/applicationDetails.do?keyVal=OLIJC5CRGQO00&activeTab=summary</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-date
             </dt>
             <dd class="govuk-summary-list__value">                2017-04-20            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-12-31            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                17/00625/FUL            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -271,136 +274,136 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>hectares</th>
-            <th>planning-permission-type</th>
-            <th>site-plan-url</th>
-            <th>deliverable</th>
-            <th>start-date</th>
-            <th>site-address</th>
             <th>point</th>
-            <th>planning-permission-status</th>
-            <th>organisation</th>
-            <th>name</th>
+            <th>notes</th>
             <th>end-date</th>
             <th>site</th>
-            <th>planning-permission-date</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
             <th>minimum-net-dwellings</th>
+            <th>planning-permission-type</th>
+            <th>deliverable</th>
+            <th>maximum-net-dwellings</th>
+            <th>ownership-status</th>
+            <th>name</th>
+            <th>site-address</th>
+            <th>planning-permission-date</th>
             <th>planning-permission-history</th>
-            <th>notes</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2019-12-23</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/29c18eda5790b832df55bc4efce8b834e041395929e7cc2431effdf8fcd39ffd.csv#L26">29c18eda5790...</a></td>
             <td>25</td>
-                <td>not owned by a public authority</td> 
-                <td>285</td> 
-                <td>0.825477</td> 
-                <td>full planning permission</td> 
-                <td>https://planning.basingstoke.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=OLIJC5CRGQO00</td> 
-                <td>yes</td> 
-                <td>2017-12-31</td> 
-                <td>Churchill Plaza Churchill Way Basingstoke</td> 
                 <td>POINT(-1.084429 51.266218)</td> 
-                <td>permissioned</td> 
-                <td>local-authority-eng:BAN</td> 
-                <td>17/00625/FUL</td> 
+                <td>A prior notification was first approved for the conversion of the building to residential use (16/00504/GPDOFF) in May 2016 for 257 flats. This was increased to 283 flats by a further prior notification in April 2017 (17/00416/GPDOFF) and for an additional 2 (penthouse) flats also in April (17/00625/FUL). The development of all units was completed 2019/20</td> 
                 <td>2020-12-21</td> 
                 <td>17/00625/FUL</td> 
-                <td>2017-04-20</td> 
+                <td>permissioned</td> 
+                <td>2017-12-31</td> 
                 <td>285</td> 
+                <td>full planning permission</td> 
+                <td>yes</td> 
+                <td>285</td> 
+                <td>not owned by a public authority</td> 
+                <td>17/00625/FUL</td> 
+                <td>Churchill Plaza Churchill Way Basingstoke</td> 
+                <td>2017-04-20</td> 
             <td></td>
-                <td>A prior notification was first approved for the conversion of the building to residential use (16/00504/GPDOFF) in May 2016 for 257 flats. This was increased to 283 flats by a further prior notification in April 2017 (17/00416/GPDOFF) and for an additional 2 (penthouse) flats also in April (17/00625/FUL). The development of all units was completed 2019/20</td> 
+                <td>0.825477</td> 
+                <td>local-authority-eng:BAN</td> 
+                <td>https://planning.basingstoke.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=OLIJC5CRGQO00</td> 
         </tr>        <tr>
             <td>2019-12-23</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/07b5853ca41b79766229b16ad8d43b59b7dcf0f6bdde3578c3ba8325bf165d37.csv#L26">07b5853ca41b...</a></td>
             <td>25</td>
-                <td>not owned by a public authority</td> 
-                <td>285</td> 
-                <td>0.825477</td> 
-                <td>full planning permission</td> 
-            <td></td>
-                <td>yes</td> 
-                <td>2017-12-31</td> 
-                <td>Churchill Plaza Churchill Way Basingstoke</td> 
                 <td>POINT(-1.084429 51.266218)</td> 
-                <td>permissioned</td> 
-                <td>local-authority-eng:BAN</td> 
-                <td>17/00625/FUL</td> 
+                <td>A prior notification was first approved for the conversion of the building to residential use (16/00504/GPDOFF) in May 2016 for 257 flats. This was increased to 283 flats by a further prior notification in April 2017 (17/00416/GPDOFF) and for an additional 2 (penthouse) flats also in April (17/00625/FUL). The investor and developer (Seven Capital) has confirmed, through the site monitoring consultation, that all 285 units will be delivered in 2019, although a slightly more cautious approach has been used for land supply purposes. Construction is currently ongoing. The site is deliverable within five years.</td> 
             <td></td>
                 <td>17/00625/FUL</td> 
-                <td>2017-04-20</td> 
+                <td>permissioned</td> 
+                <td>2017-12-31</td> 
                 <td>285</td> 
+                <td>full planning permission</td> 
+                <td>yes</td> 
+                <td>285</td> 
+                <td>not owned by a public authority</td> 
+                <td>17/00625/FUL</td> 
+                <td>Churchill Plaza Churchill Way Basingstoke</td> 
+                <td>2017-04-20</td> 
                 <td>https://planning.basingstoke.gov.uk/online-applications/applicationDetails.do?keyVal=OLIJC5CRGQO00&amp;activeTab=summary</td> 
-                <td>A prior notification was first approved for the conversion of the building to residential use (16/00504/GPDOFF) in May 2016 for 257 flats. This was increased to 283 flats by a further prior notification in April 2017 (17/00416/GPDOFF) and for an additional 2 (penthouse) flats also in April (17/00625/FUL). The investor and developer (Seven Capital) has confirmed, through the site monitoring consultation, that all 285 units will be delivered in 2019, although a slightly more cautious approach has been used for land supply purposes. Construction is currently ongoing. The site is deliverable within five years.</td> 
+                <td>0.825477</td> 
+                <td>local-authority-eng:BAN</td> 
+            <td></td>
         </tr>        <tr>
             <td>2018-12-31</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/8652da2117d959f3e0b90b743ae39b4f6a1c53079ff3660b6a5b5790bc8c9cd5.csv#L26">8652da2117d9...</a></td>
             <td>25</td>
-                <td>not owned by a public authority</td> 
-                <td>285</td> 
-                <td>0.82</td> 
-                <td>full planning permission</td> 
-                <td>https://planning.basingstoke.gov.uk/online-applications/applicationDetails.do?activeTab=map&amp;keyVal=OLIJC5CRGQO00</td> 
-                <td>yes</td> 
-                <td>2017-12-31</td> 
-                <td>Churchill Plaza Churchill Way Basingstoke</td> 
                 <td>POINT(-1.084436 51.266225)</td> 
-                <td>permissioned</td> 
-                <td>local-authority-eng:BAN</td> 
-                <td>17/00625/FUL</td> 
+                <td>A prior notification was first approved for the conversion of the building to residential use (16/00504/GPDOFF) in May 2016 for 257 flats. This was increased to 283 flats by a further prior notification in April 2017 (17/00416/GPDOFF) and for an additional 2 (penthouse) flats also in April (17/00625/FUL). The investor and developer (Seven Capital) has confirmed, through the site monitoring consultation, that all 285 units will be delivered in 2019, although a slightly more cautious approach has been used for land supply purposes. Construction is currently ongoing. The site is deliverable within five years.. Change of use of class B1a office to class C3 consisting of 285 flats</td> 
             <td></td>
                 <td>17/00625/FUL</td> 
-                <td>2017-04-20</td> 
+                <td>permissioned</td> 
+                <td>2017-12-31</td> 
                 <td>285</td> 
+                <td>full planning permission</td> 
+                <td>yes</td> 
+                <td>285</td> 
+                <td>not owned by a public authority</td> 
+                <td>17/00625/FUL</td> 
+                <td>Churchill Plaza Churchill Way Basingstoke</td> 
+                <td>2017-04-20</td> 
                 <td>https://planning.basingstoke.gov.uk/online-applications/applicationDetails.do?activeTab=relatedCases&amp;keyVal=OLIJC5CRGQO00</td> 
-                <td>A prior notification was first approved for the conversion of the building to residential use (16/00504/GPDOFF) in May 2016 for 257 flats. This was increased to 283 flats by a further prior notification in April 2017 (17/00416/GPDOFF) and for an additional 2 (penthouse) flats also in April (17/00625/FUL). The investor and developer (Seven Capital) has confirmed, through the site monitoring consultation, that all 285 units will be delivered in 2019, although a slightly more cautious approach has been used for land supply purposes. Construction is currently ongoing. The site is deliverable within five years.. Change of use of class B1a office to class C3 consisting of 285 flats</td> 
+                <td>0.82</td> 
+                <td>local-authority-eng:BAN</td> 
+                <td>https://planning.basingstoke.gov.uk/online-applications/applicationDetails.do?activeTab=map&amp;keyVal=OLIJC5CRGQO00</td> 
         </tr>        <tr>
             <td>2018-12-31</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/79cdc3e1c43097bd770fcf43fbd54109178ef6c6e8ed0aa7903914919bb3094e.csv#L28">79cdc3e1c430...</a></td>
             <td>27</td>
-                <td>not owned by a public authority</td> 
-                <td>285</td> 
-                <td>0.82</td> 
-                <td>full planning permission</td> 
-                <td>https://planning.basingstoke.gov.uk/online-applications/applicationDetails.do?activeTab=map&amp;keyVal=OLIJC5CRGQO00</td> 
-                <td>yes</td> 
-                <td>2017-12-31</td> 
-                <td>Churchill Plaza Churchill Way Basingstoke</td> 
                 <td>POINT(-1.084436 51.266225)</td> 
-                <td>permissioned</td> 
-                <td>local-authority-eng:BAN</td> 
-                <td>17/00625/FUL</td> 
+                <td>A prior notification was first approved for the conversion of the building to residential use (16/00504/GPDOFF) in May 2016 for 257 flats. This was increased to 283 flats by a further prior notification in April 2017 (17/00416/GPDOFF) and for an additional 2 (penthouse) flats also in April (17/00625/FUL). The investor and developer (Seven Capital) has confirmed, through the site monitoring consultation, that all 285 units will be delivered by early 2019, although a slightly more cautious approach has been used for land supply purposes. Construction is currently ongoing. The site is deliverable within five years.. Change of use of class B1a office to class C3 consisting of 285 flats</td> 
             <td></td>
                 <td>17/00625/FUL</td> 
-                <td>2017-04-20</td> 
+                <td>permissioned</td> 
+                <td>2017-12-31</td> 
                 <td>285</td> 
+                <td>full planning permission</td> 
+                <td>yes</td> 
+                <td>285</td> 
+                <td>not owned by a public authority</td> 
+                <td>17/00625/FUL</td> 
+                <td>Churchill Plaza Churchill Way Basingstoke</td> 
+                <td>2017-04-20</td> 
                 <td>https://planning.basingstoke.gov.uk/online-applications/applicationDetails.do?activeTab=relatedCases&amp;keyVal=OLIJC5CRGQO00</td> 
-                <td>A prior notification was first approved for the conversion of the building to residential use (16/00504/GPDOFF) in May 2016 for 257 flats. This was increased to 283 flats by a further prior notification in April 2017 (17/00416/GPDOFF) and for an additional 2 (penthouse) flats also in April (17/00625/FUL). The investor and developer (Seven Capital) has confirmed, through the site monitoring consultation, that all 285 units will be delivered by early 2019, although a slightly more cautious approach has been used for land supply purposes. Construction is currently ongoing. The site is deliverable within five years.. Change of use of class B1a office to class C3 consisting of 285 flats</td> 
+                <td>0.82</td> 
+                <td>local-authority-eng:BAN</td> 
+                <td>https://planning.basingstoke.gov.uk/online-applications/applicationDetails.do?activeTab=map&amp;keyVal=OLIJC5CRGQO00</td> 
         </tr>        <tr>
             <td>2017-12-31</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/5b49dcaf1be010a126e9ef9a03723aa9e2aca5df2e1ef5a527c6d2655b967fe3.csv#L37">5b49dcaf1be0...</a></td>
             <td>36</td>
-                <td>not owned by a public authority</td> 
-                <td>285</td> 
-                <td>0.82</td> 
-                <td>full planning permission</td> 
-                <td>https://planning.basingstoke.gov.uk/online-applications/applicationDetails.do?activeTab=map&amp;keyVal=OLIJC5CRGQO00</td> 
-                <td>yes</td> 
-                <td>2017-12-31</td> 
-                <td>Churchill Plaza Churchill Way Basingstoke</td> 
                 <td>POINT(-1.084436 51.266225)</td> 
-                <td>permissioned</td> 
-                <td>local-authority-eng:BAN</td> 
-                <td>17/00625/FUL</td> 
+                <td>A prior notification was first approved for the conversion of the building to residential use (16/00504/GPDOFF) in May 2016 for 257 flats. This was increased to 283 flats by a further prior notification in April 2017 (17/00416/GPDOFF) and for an additional 2 (penthouse) flats also in April (17/00625/FUL). The investor and developer (Seven Capital) has confirmed, through the site monitoring consultation, that all 285 units will be delivered by the end of 2018, although a slightly more cautious approach has been used for land supply purposes. Construction is currently ongoing.. Change of use of class B1a office to class C3 consisting of 285 flats</td> 
             <td></td>
                 <td>17/00625/FUL</td> 
-                <td>2017-04-20</td> 
+                <td>permissioned</td> 
+                <td>2017-12-31</td> 
                 <td>285</td> 
+                <td>full planning permission</td> 
+                <td>yes</td> 
+                <td>285</td> 
+                <td>not owned by a public authority</td> 
+                <td>17/00625/FUL</td> 
+                <td>Churchill Plaza Churchill Way Basingstoke</td> 
+                <td>2017-04-20</td> 
                 <td>https://planning.basingstoke.gov.uk/online-applications/applicationDetails.do?activeTab=relatedCases&amp;keyVal=OLIJC5CRGQO00</td> 
-                <td>A prior notification was first approved for the conversion of the building to residential use (16/00504/GPDOFF) in May 2016 for 257 flats. This was increased to 283 flats by a further prior notification in April 2017 (17/00416/GPDOFF) and for an additional 2 (penthouse) flats also in April (17/00625/FUL). The investor and developer (Seven Capital) has confirmed, through the site monitoring consultation, that all 285 units will be delivered by the end of 2018, although a slightly more cautious approach has been used for land supply purposes. Construction is currently ongoing.. Change of use of class B1a office to class C3 consisting of 285 flats</td> 
+                <td>0.82</td> 
+                <td>local-authority-eng:BAN</td> 
+                <td>https://planning.basingstoke.gov.uk/online-applications/applicationDetails.do?activeTab=map&amp;keyVal=OLIJC5CRGQO00</td> 
         </tr>    </tbody>
 </table>
 

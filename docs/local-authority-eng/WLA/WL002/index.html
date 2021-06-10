@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,37 +160,13 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#WL002</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                1.8            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                WL002            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Former Hope High School, Tanhouse Road, Skelmersdale            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                Not permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2016-08-03            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                27            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
+            <dd class="govuk-summary-list__value">                WL002            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
@@ -199,13 +178,37 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:WLA" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WLA)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Former Hope High School, Tanhouse Road, Skelmersdale            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2016-08-03            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                WL002            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">notes
             </dt>
             <dd class="govuk-summary-list__value">                 Site promoted through the SHELAA, it is partly covered by a policy EN3 (green / open recreational space) designation. However, the remainder of the site can be developed for residential development. Yield of 27 reflects the net developable area.            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">hectares
             </dt>
-            <dd class="govuk-summary-list__value">                WL002            </dd>
+            <dd class="govuk-summary-list__value">                1.8            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                Not permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -251,55 +254,55 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>hectares</th>
-            <th>deliverable</th>
-            <th>site-address</th>
+            <th>point</th>
+            <th>notes</th>
+            <th>site</th>
             <th>planning-permission-status</th>
             <th>start-date</th>
-            <th>point</th>
-            <th>organisation</th>
-            <th>name</th>
-            <th>site</th>
             <th>minimum-net-dwellings</th>
-            <th>notes</th>
+            <th>maximum-net-dwellings</th>
+            <th>deliverable</th>
+            <th>ownership-status</th>
+            <th>name</th>
+            <th>site-address</th>
+            <th>hectares</th>
+            <th>organisation</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2017-10-26</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/fea579a9805f6b23a047035ac8bfa7857f3d30a98fff45205e49bfb2bea1877f.csv#L2">fea579a9805f...</a></td>
             <td>1</td>
-                <td>owned by a public authority</td> 
-                <td>27</td> 
-                <td>1.8</td> 
-                <td>yes</td> 
-                <td>Former Hope High School, Tanhouse Road, Skelmersdale</td> 
+                <td>POINT(-2.751925 53.544701)</td> 
+                <td> Site promoted through the SHELAA, it is partly covered by a policy EN3 (green / open recreational space) designation. However, the remainder of the site can be developed for residential development. Yield of 27 reflects the net developable area.</td> 
+                <td>WL002</td> 
                 <td>Not permissioned</td> 
                 <td>2016-08-03</td> 
-                <td>POINT(-2.751925 53.544701)</td> 
-                <td>local-authority-eng:WLA</td> 
-                <td>WL002</td> 
-                <td>WL002</td> 
                 <td>27</td> 
-                <td> Site promoted through the SHELAA, it is partly covered by a policy EN3 (green / open recreational space) designation. However, the remainder of the site can be developed for residential development. Yield of 27 reflects the net developable area.</td> 
+                <td>27</td> 
+                <td>yes</td> 
+                <td>owned by a public authority</td> 
+                <td>WL002</td> 
+                <td>Former Hope High School, Tanhouse Road, Skelmersdale</td> 
+                <td>1.8</td> 
+                <td>local-authority-eng:WLA</td> 
         </tr>        <tr>
             <td>2017-10-26</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/b8b3ddd50ffcdf945d8ebff7400d467ecc5dbf505c8ded1c08c55aa411b892f0.csv#L2">b8b3ddd50ffc...</a></td>
             <td>1</td>
-                <td>owned by a public authority</td> 
-                <td>27</td> 
-                <td>1.8</td> 
-                <td>yes</td> 
-                <td>Former Hope High School, Tanhouse Road, Skelmersdale</td> 
+                <td>POINT(-2.751925 53.544701)</td> 
+                <td> Site promoted through the SHELAA, it is partly covered by EN3 designation however, part of the remaining site can be developed for residential development therefore a yield of 27.</td> 
+                <td>WL002</td> 
                 <td>not permissioned</td> 
                 <td>2016-08-03</td> 
-                <td>POINT(-2.751925 53.544701)</td> 
-                <td>local-authority-eng:WLA</td> 
-                <td>WL002</td> 
-                <td>WL002</td> 
                 <td>27</td> 
-                <td> Site promoted through the SHELAA, it is partly covered by EN3 designation however, part of the remaining site can be developed for residential development therefore a yield of 27.</td> 
+                <td>27</td> 
+                <td>yes</td> 
+                <td>owned by a public authority</td> 
+                <td>WL002</td> 
+                <td>Former Hope High School, Tanhouse Road, Skelmersdale</td> 
+                <td>1.8</td> 
+                <td>local-authority-eng:WLA</td> 
         </tr>    </tbody>
 </table>
 

@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,23 +160,13 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#R26</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.coventry.gov.uk/downloads/file/19663/lp53_shlaa_2016_report_and_appendices">http://www.coventry.gov.uk/downloads/file/19663/lp53_shlaa_2016_report_and_appendices</a>            </dd>
+            <dd class="govuk-summary-list__value">                92            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
+            <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                R26            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/COV" class="govuk-link">Coventry City Council</a>
-<span title="Organisation identifier: local-authority-eng:COV" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:COV)</span>
-            </dd>
+            <dd class="govuk-summary-list__value">                not permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
@@ -183,25 +176,35 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                2.55            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
+            <dt class="govuk-summary-list__key">site-plan-url
             </dt>
-            <dd class="govuk-summary-list__value">                B2 industrial facility. Development will need to mitgate the noise and air quality concerns from nearby land-uses, and ensure suitable access.            </dd>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.coventry.gov.uk/downloads/file/19663/lp53_shlaa_2016_report_and_appendices">http://www.coventry.gov.uk/downloads/file/19663/lp53_shlaa_2016_report_and_appendices</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
+            <dt class="govuk-summary-list__key">organisation
             </dt>
-            <dd class="govuk-summary-list__value">                not permissioned            </dd>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/COV" class="govuk-link">Coventry City Council</a>
+<span title="Organisation identifier: local-authority-eng:COV" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:COV)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            <dt class="govuk-summary-list__key">deliverable
             </dt>
-            <dd class="govuk-summary-list__value">                92            </dd>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                R26            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-address
             </dt>
             <dd class="govuk-summary-list__value">                Kings automotive            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                92            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                B2 industrial facility. Development will need to mitgate the noise and air quality concerns from nearby land-uses, and ensure suitable access.            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -247,52 +250,52 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>point</th>
+            <th>notes</th>
+            <th>site</th>
+            <th>planning-permission-status</th>
+            <th>minimum-net-dwellings</th>
             <th>maximum-net-dwellings</th>
             <th>deliverable</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
-            <th>site-address</th>
-            <th>point</th>
-            <th>planning-permission-status</th>
             <th>name</th>
+            <th>site-address</th>
+            <th>hectares</th>
             <th>organisation</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
-            <th>notes</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2019-11-30</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/ec1ff31625d546423b174d6e6eafca40efa4f10525199b0cbc6990ceb7d748a9.csv#L51">ec1ff31625d5...</a></td>
             <td>50</td>
+                <td>POINT(-1.510752 52.426342)</td> 
+                <td>B2 industrial facility. Development will need to mitgate the noise and air quality concerns from nearby land-uses, and ensure suitable access.</td> 
+                <td>R26</td> 
+                <td>not permissioned</td> 
+                <td>92</td> 
                 <td>92</td> 
                 <td>yes</td> 
-                <td>http://www.coventry.gov.uk/downloads/file/19663/lp53_shlaa_2016_report_and_appendices</td> 
-                <td>2.55</td> 
+                <td>R26</td> 
                 <td>Kings automotive</td> 
-                <td>POINT(-1.510752 52.426342)</td> 
-                <td>not permissioned</td> 
-                <td>R26</td> 
+                <td>2.55</td> 
                 <td>local-authority-eng:COV</td> 
-                <td>R26</td> 
-                <td>92</td> 
-                <td>B2 industrial facility. Development will need to mitgate the noise and air quality concerns from nearby land-uses, and ensure suitable access.</td> 
+                <td>http://www.coventry.gov.uk/downloads/file/19663/lp53_shlaa_2016_report_and_appendices</td> 
         </tr>        <tr>
             <td>2018-07-05</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/6b695acc305f9bd94556d33a85cd9239e09e648863845198aa1c60f66dad3285.csv#L51">6b695acc305f...</a></td>
             <td>50</td>
+                <td>POINT(-3.806935 53.782973)</td> 
+                <td>B2 industrial facility. Development will need to mitgate the noise and air quality concerns from nearby land-uses, and ensure suitable access.</td> 
+                <td>R26</td> 
+                <td>not permissioned</td> 
+                <td>92</td> 
                 <td>92</td> 
                 <td>yes</td> 
-                <td>http://www.coventry.gov.uk/downloads/file/19663/lp53_shlaa_2016_report_and_appendices</td> 
-                <td>2.55</td> 
+                <td>R26</td> 
                 <td>Kings automotive</td> 
-                <td>POINT(-3.806935 53.782973)</td> 
-                <td>not permissioned</td> 
-                <td>R26</td> 
+                <td>2.55</td> 
                 <td>local-authority-eng:COV</td> 
-                <td>R26</td> 
-                <td>92</td> 
-                <td>B2 industrial facility. Development will need to mitgate the noise and air quality concerns from nearby land-uses, and ensure suitable access.</td> 
+                <td>http://www.coventry.gov.uk/downloads/file/19663/lp53_shlaa_2016_report_and_appendices</td> 
         </tr>    </tbody>
 </table>
 

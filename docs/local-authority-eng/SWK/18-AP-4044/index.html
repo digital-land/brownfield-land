@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,47 +160,47 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#18-AP-4044</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                9,Sydenham Hill,,SE26 6SH            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SWK" class="govuk-link">London Borough of Southwark</a>
 <span title="Organisation identifier: local-authority-eng:SWK" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SWK)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                18-AP-4044            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                9            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                Demolition of existing dwelling and construction of three storey plus lower ground floor residential building comprising 8 x 2 bed and 1 x 3 bed flats (total: 9 residential units) with communal roof terrace at fourth floor level, balconies on front elevation at ground, first, second and third floors and associated landscaping, parking, cycling and refuse storage facilities            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site
             </dt>
             <dd class="govuk-summary-list__value">                18-AP-4044            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.05            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                9            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2020-03-24            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                9,Sydenham Hill,,SE26 6SH            </dd>
+            <dd class="govuk-summary-list__value">                9            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                18-AP-4044            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-date
             </dt>
             <dd class="govuk-summary-list__value">                2019-03-22            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                Demolition of existing dwelling and construction of three storey plus lower ground floor residential building comprising 8 x 2 bed and 1 x 3 bed flats (total: 9 residential units) with communal roof terrace at fourth floor level, balconies on front elevation at ground, first, second and third floors and associated landscaping, parking, cycling and refuse storage facilities            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.05            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -243,34 +246,34 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>maximum-net-dwellings</th>
-            <th>hectares</th>
-            <th>start-date</th>
             <th>point</th>
+            <th>notes</th>
+            <th>site</th>
+            <th>start-date</th>
+            <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>planning-permission-date</th>
             <th>site-address</th>
             <th>name</th>
+            <th>hectares</th>
             <th>organisation</th>
-            <th>planning-permission-date</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
-            <th>notes</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-03-24</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/69584001774ee43f8bc3e6df5517c2b8eb3109bcb6db5e1e5103e9ff594f2c22.csv#L765">69584001774e...</a></td>
             <td>764</td>
-                <td>9</td> 
-                <td>0.05</td> 
-                <td>2020-03-24</td> 
                 <td>POINT(-0.07464 51.427295)</td> 
+                <td>Demolition of existing dwelling and construction of three storey plus lower ground floor residential building comprising 8 x 2 bed and 1 x 3 bed flats (total: 9 residential units) with communal roof terrace at fourth floor level, balconies on front elevation at ground, first, second and third floors and associated landscaping, parking, cycling and refuse storage facilities</td> 
+                <td>18-AP-4044</td> 
+                <td>2020-03-24</td> 
+                <td>9</td> 
+                <td>9</td> 
+                <td>2019-03-22</td> 
                 <td>9,Sydenham Hill,,SE26 6SH</td> 
                 <td>18-AP-4044</td> 
+                <td>0.05</td> 
                 <td>local-authority-eng:SWK</td> 
-                <td>2019-03-22</td> 
-                <td>18-AP-4044</td> 
-                <td>9</td> 
-                <td>Demolition of existing dwelling and construction of three storey plus lower ground floor residential building comprising 8 x 2 bed and 1 x 3 bed flats (total: 9 residential units) with communal roof terrace at fourth floor level, balconies on front elevation at ground, first, second and third floors and associated landscaping, parking, cycling and refuse storage facilities</td> 
         </tr>    </tbody>
 </table>
 

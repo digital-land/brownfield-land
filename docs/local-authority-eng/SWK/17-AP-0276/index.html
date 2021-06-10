@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,25 +160,17 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#17-AP-0276</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.01            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                13 Stories Mews, 153 Rear Of Grove Lane SE5 8JJ            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                0            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
-            <dd class="govuk-summary-list__value">                2017-12-20            </dd>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-type
+            </dt>
+            <dd class="govuk-summary-list__value">                full planning permission            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-date
             </dt>
@@ -185,13 +180,17 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                17-AP-0276            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
+            <dt class="govuk-summary-list__key">start-date
             </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
+            <dd class="govuk-summary-list__value">                2017-12-20            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                full planning permission            </dd>
+            <dd class="govuk-summary-list__value">                0            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.01            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -203,9 +202,13 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                17-AP-0276            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            <dt class="govuk-summary-list__key">deliverable
             </dt>
-            <dd class="govuk-summary-list__value">                0            </dd>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                13 Stories Mews, 153 Rear Of Grove Lane SE5 8JJ            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -255,58 +258,58 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>maximum-net-dwellings</th>
-            <th>hectares</th>
-            <th>deliverable</th>
-            <th>planning-permission-type</th>
-            <th>site-address</th>
-            <th>start-date</th>
-            <th>planning-permission-date</th>
-            <th>planning-permission-status</th>
-            <th>organisation</th>
             <th>point</th>
-            <th>name</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
             <th>notes</th>
+            <th>site</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
+            <th>minimum-net-dwellings</th>
+            <th>planning-permission-type</th>
+            <th>planning-permission-date</th>
+            <th>maximum-net-dwellings</th>
+            <th>deliverable</th>
+            <th>name</th>
+            <th>site-address</th>
+            <th>hectares</th>
+            <th>organisation</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2017-12-20</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/86dee119f806d0c7f62295e6aae502851827e848202c4e43e833126ed62773db.csv#L15">86dee119f806...</a></td>
             <td>14</td>
-                <td>0</td> 
-                <td>0.01</td> 
-                <td>yes</td> 
-                <td>full planning permission</td> 
-                <td>13 Stories Mews, 153 Rear Of Grove Lane SE5 8JJ</td> 
-                <td>2017-12-20</td> 
-                <td>2017-07-21</td> 
-                <td>permissioned</td> 
-                <td>local-authority-eng:SWK</td> 
                 <td>POINT(-0.085203 51.467323)</td> 
-                <td>17-AP-0276</td> 
-                <td>17-AP-0276</td> 
-                <td>0</td> 
                 <td>Construction of a two-storey, 2 Bedroom dwelling to replace an existing garage/coach-house at 13 Stories mews (to the rear of 153 Grove Lane).</td> 
+                <td>17-AP-0276</td> 
+                <td>permissioned</td> 
+                <td>2017-12-20</td> 
+                <td>0</td> 
+                <td>full planning permission</td> 
+                <td>2017-07-21</td> 
+                <td>0</td> 
+                <td>yes</td> 
+                <td>17-AP-0276</td> 
+                <td>13 Stories Mews, 153 Rear Of Grove Lane SE5 8JJ</td> 
+                <td>0.01</td> 
+                <td>local-authority-eng:SWK</td> 
         </tr>        <tr>
             <td>2017-12-20</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/9ee698608d8c7dcad9d872d2e109b28a00e577e100a53fc7f2e46a81c8a126e3.csv#L61">9ee698608d8c...</a></td>
             <td>60</td>
-                <td>0</td> 
-                <td>0.01</td> 
-                <td>yes</td> 
-                <td>full planning permission</td> 
-                <td>13 Stories Mews, 153 Rear Of Grove Lane SE5 8JJ</td> 
-                <td>2017-12-20</td> 
-                <td>2017-07-21</td> 
-                <td>permissioned</td> 
-                <td>local-authority-eng:SWK</td> 
                 <td>POINT(-0.085203 51.467323)</td> 
-                <td>17-AP-0276</td> 
-                <td>17-AP-0276</td> 
-                <td>0</td> 
             <td></td>
+                <td>17-AP-0276</td> 
+                <td>permissioned</td> 
+                <td>2017-12-20</td> 
+                <td>0</td> 
+                <td>full planning permission</td> 
+                <td>2017-07-21</td> 
+                <td>0</td> 
+                <td>yes</td> 
+                <td>17-AP-0276</td> 
+                <td>13 Stories Mews, 153 Rear Of Grove Lane SE5 8JJ</td> 
+                <td>0.01</td> 
+                <td>local-authority-eng:SWK</td> 
         </tr>    </tbody>
 </table>
 

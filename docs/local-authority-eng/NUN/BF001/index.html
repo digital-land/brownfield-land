@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -161,13 +164,9 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2019">https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2019</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
+            <dt class="govuk-summary-list__key">deliverable
             </dt>
-            <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                The site comprises of former allotment land adjoining the canal Allocated as a Non-strategic site in NBBC Borough Plan 2011-2031, (NUN015)            </dd>
+            <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -175,41 +174,45 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:NUN" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:NUN)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                not permissioned            </dd>
+            <dd class="govuk-summary-list__value">                28            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-address
             </dt>
             <dd class="govuk-summary-list__value">                Land at Donnithorne Avenue, Nuneaton            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            <dt class="govuk-summary-list__key">hectares
             </dt>
-            <dd class="govuk-summary-list__value">                28            </dd>
+            <dd class="govuk-summary-list__value">                0.48            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                BF001            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
+            <dt class="govuk-summary-list__key">notes
             </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
+            <dd class="govuk-summary-list__value">                The site comprises of former allotment land adjoining the canal Allocated as a Non-strategic site in NBBC Borough Plan 2011-2031, (NUN015)            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site
             </dt>
             <dd class="govuk-summary-list__value">                BF001            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                0.48            </dd>
+            <dd class="govuk-summary-list__value">                28            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2017-12-31            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            <dt class="govuk-summary-list__key">ownership-status
             </dt>
-            <dd class="govuk-summary-list__value">                28            </dd>
+            <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -255,58 +258,58 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
+            <th>notes</th>
+            <th>point</th>
+            <th>site</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
+            <th>minimum-net-dwellings</th>
             <th>maximum-net-dwellings</th>
             <th>deliverable</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
+            <th>ownership-status</th>
             <th>site-address</th>
-            <th>planning-permission-status</th>
-            <th>point</th>
             <th>name</th>
+            <th>hectares</th>
             <th>organisation</th>
-            <th>start-date</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
-            <th>notes</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-03-10</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/f71f167a5a41162561300694c257c15fa064ccf9378e8cc99da98179960cef1d.csv#L2">f71f167a5a41...</a></td>
             <td>1</td>
-                <td>owned by a public authority</td> 
-                <td>28</td> 
-                <td>yes</td> 
-                <td>https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2019</td> 
-                <td>0.48</td> 
-                <td>Land at Donnithorne Avenue, Nuneaton</td> 
-                <td>not permissioned</td> 
+                <td>The site comprises of former allotment land adjoining the canal Allocated as a Non-strategic site in NBBC Borough Plan 2011-2031, (NUN015)</td> 
                 <td>POINT(-1.46404 52.508506)</td> 
                 <td>BF001</td> 
-                <td>local-authority-eng:NUN</td> 
-            <td></td>
-                <td>BF001</td> 
-                <td>28</td> 
-                <td>The site comprises of former allotment land adjoining the canal Allocated as a Non-strategic site in NBBC Borough Plan 2011-2031, (NUN015)</td> 
-        </tr>        <tr>
-            <td>2018-12-31</td>
-            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/b0f607a7d81584dcaab128c8e891d7ecc224be19d3297785ccb1abc8a30b98cf.csv#L2">b0f607a7d815...</a></td>
-            <td>1</td>
-                <td>owned by a public authority</td> 
-                <td>28</td> 
-                <td>yes</td> 
-                <td>https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2017</td> 
-                <td>0.48</td> 
-                <td>Land at Donnithorne Avenue, Nuneaton</td> 
                 <td>not permissioned</td> 
             <td></td>
-                <td>BF001</td> 
-                <td>local-authority-eng:NUN</td> 
-                <td>2017-12-31</td> 
-                <td>BF001</td> 
                 <td>28</td> 
+                <td>28</td> 
+                <td>yes</td> 
+                <td>owned by a public authority</td> 
+                <td>Land at Donnithorne Avenue, Nuneaton</td> 
+                <td>BF001</td> 
+                <td>0.48</td> 
+                <td>local-authority-eng:NUN</td> 
+                <td>https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2019</td> 
+        </tr>        <tr>
+            <td>2018-12-31</td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/6bc4962317340f4866b2c1d66e0ed940a0af54e57975cc5ca7ea3bbaf9516fd8.csv#L2">6bc496231734...</a></td>
+            <td>1</td>
                 <td>The site comprises of former allotment land adjoining the canal. Site assessed as being deliverable in the SHLAA 2016. Allocated as a proposed Non-strategic site in the Borough Plan 2011-2031 Publication (2017)</td> 
+            <td></td>
+                <td>BF001</td> 
+                <td>not permissioned</td> 
+                <td>2017-12-31</td> 
+                <td>28</td> 
+                <td>28</td> 
+                <td>yes</td> 
+                <td>owned by a public authority</td> 
+                <td>Land at Donnithorne Avenue, Nuneaton</td> 
+                <td>BF001</td> 
+                <td>0.48</td> 
+                <td>local-authority-eng:NUN</td> 
+                <td>https://www.nuneatonandbedworth.gov.uk/downloads/file/2200/brownfield_register_-_individual_site_maps_2017</td> 
         </tr>    </tbody>
 </table>
 

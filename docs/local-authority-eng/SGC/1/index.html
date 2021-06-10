@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,35 +160,13 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#1</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                2016-06-30            </dd>
+            <dd class="govuk-summary-list__value">                207            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
+            <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SGC" class="govuk-link">South Gloucestershire Council</a>
-<span title="Organisation identifier: local-authority-eng:SGC" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SGC)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                Major mixed-use development across 81.25 hectares of land including 2,200 new dwellings Figure shows remaining homes (Net) to be completed            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://developments.southglos.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=ZZZTQSOKXT810">https://developments.southglos.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=ZZZTQSOKXT810</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                81.22            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2008-03-15            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                1            </dd>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-history
             </dt>
@@ -195,29 +176,51 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                outline planning permission            </dd>
+            <dd class="govuk-summary-list__value">                1            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                Major mixed-use development across 81.25 hectares of land including 2,200 new dwellings Figure shows remaining homes (Net) to be completed            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site
             </dt>
             <dd class="govuk-summary-list__value">                1            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
+            <dt class="govuk-summary-list__key">hectares
             </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
+            <dd class="govuk-summary-list__value">                81.22            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            <dt class="govuk-summary-list__key">planning-permission-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2008-03-15            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SGC" class="govuk-link">South Gloucestershire Council</a>
+<span title="Organisation identifier: local-authority-eng:SGC" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SGC)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                207            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2016-06-30            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://developments.southglos.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=ZZZTQSOKXT810">https://developments.southglos.gov.uk/online-applications/applicationDetails.do?activeTab=map&keyVal=ZZZTQSOKXT810</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">deliverable
             </dt>
             <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            <dt class="govuk-summary-list__key">planning-permission-type
             </dt>
-            <dd class="govuk-summary-list__value">                207            </dd>
+            <dd class="govuk-summary-list__value">                outline planning permission            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-address
             </dt>
@@ -267,67 +270,67 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>hectares</th>
-            <th>planning-permission-type</th>
-            <th>deliverable</th>
-            <th>site-plan-url</th>
-            <th>start-date</th>
-            <th>planning-permission-date</th>
-            <th>point</th>
-            <th>name</th>
-            <th>organisation</th>
-            <th>planning-permission-status</th>
-            <th>site-address</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
-            <th>planning-permission-history</th>
             <th>notes</th>
+            <th>point</th>
+            <th>site</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
+            <th>minimum-net-dwellings</th>
+            <th>planning-permission-date</th>
+            <th>maximum-net-dwellings</th>
+            <th>deliverable</th>
+            <th>ownership-status</th>
+            <th>name</th>
+            <th>planning-permission-history</th>
+            <th>planning-permission-type</th>
+            <th>site-address</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2018-12-31</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/447b5bde61e45607272c92a29d3b033d282a8c5bc778e2c87153baacefb125f1.csv#L2">447b5bde61e4...</a></td>
             <td>1</td>
-                <td>not owned by a public authority</td> 
-                <td>207</td> 
-                <td>81.22</td> 
-                <td>outline planning permission</td> 
-                <td>yes</td> 
-                <td>https://developments.southglos.gov.uk/online-applications/applicationDetails.do?activeTab=map&amp;keyVal=ZZZTQSOKXT810</td> 
-                <td>2016-06-30</td> 
-                <td>2008-03-15</td> 
+                <td>Major mixed-use development across 81.25 hectares of land including 2,200 new dwellings Figure shows remaining homes (Net) to be completed</td> 
                 <td>POINT(-2.580663 51.525853)</td> 
                 <td>1</td> 
-                <td>local-authority-eng:SGC</td> 
                 <td>permissioned</td> 
-                <td>Charlton Hayes Northfield Filton Airfield Patchway</td> 
-                <td>1</td> 
+                <td>2016-06-30</td> 
                 <td>207</td> 
+                <td>2008-03-15</td> 
+                <td>207</td> 
+                <td>yes</td> 
+                <td>not owned by a public authority</td> 
+                <td>1</td> 
                 <td>https://developments.southglos.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=ZZZTQSOKXT810</td> 
-                <td>Major mixed-use development across 81.25 hectares of land including 2,200 new dwellings Figure shows remaining homes (Net) to be completed</td> 
+                <td>outline planning permission</td> 
+                <td>Charlton Hayes Northfield Filton Airfield Patchway</td> 
+                <td>81.22</td> 
+                <td>local-authority-eng:SGC</td> 
+                <td>https://developments.southglos.gov.uk/online-applications/applicationDetails.do?activeTab=map&amp;keyVal=ZZZTQSOKXT810</td> 
         </tr>        <tr>
             <td>2017-12-31</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/d07e2c1bc437439fb00ca65b10544793b42cebc346d57373964fd91a631fafe9.csv#L2">d07e2c1bc437...</a></td>
             <td>1</td>
-                <td>not owned by a public authority</td> 
-                <td>207</td> 
-                <td>81.22</td> 
-                <td>outline planning permission</td> 
-                <td>yes</td> 
-                <td>http://developments.southglos.gov.uk/online-applications/applicationDetails.do?activeTab=map&amp;keyVal=ZZZTQSOKXT810</td> 
-                <td>2016-06-30</td> 
-                <td>2008-03-15</td> 
+                <td>Major mixed-use development across 81.25 hectares of land including 2,200 new dwellings Figure shows remaining homes (Net) to be completed</td> 
                 <td>POINT(-2.580663 51.525853)</td> 
                 <td>1</td> 
-                <td>local-authority-eng:SGC</td> 
                 <td>permissioned</td> 
-                <td>Charlton Hayes Northfield Filton Airfield Patchway</td> 
-                <td>1</td> 
+                <td>2016-06-30</td> 
                 <td>207</td> 
+                <td>2008-03-15</td> 
+                <td>207</td> 
+                <td>yes</td> 
+                <td>not owned by a public authority</td> 
+                <td>1</td> 
                 <td>http://developments.southglos.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=ZZZTQSOKXT810</td> 
-                <td>Major mixed-use development across 81.25 hectares of land including 2,200 new dwellings Figure shows remaining homes (Net) to be completed</td> 
+                <td>outline planning permission</td> 
+                <td>Charlton Hayes Northfield Filton Airfield Patchway</td> 
+                <td>81.22</td> 
+                <td>local-authority-eng:SGC</td> 
+                <td>http://developments.southglos.gov.uk/online-applications/applicationDetails.do?activeTab=map&amp;keyVal=ZZZTQSOKXT810</td> 
         </tr>    </tbody>
 </table>
 

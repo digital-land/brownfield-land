@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -161,9 +164,17 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                not permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
+            <dt class="govuk-summary-list__key">site
             </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.slough.gov.uk/connect/analyst/mobile/#/main?mapcfg=public_brownfield_register">http://www.slough.gov.uk/connect/analyst/mobile/#/main?mapcfg=public_brownfield_register</a>            </dd>
+            <dd class="govuk-summary-list__value">                br69            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                0            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2018-12-13            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -171,13 +182,13 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:SLG" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SLG)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
+            <dt class="govuk-summary-list__key">site-plan-url
             </dt>
-            <dd class="govuk-summary-list__value">                cfs70. 14 flats with commercial fronting Windsor Road.            </dd>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.slough.gov.uk/connect/analyst/mobile/#/main?mapcfg=public_brownfield_register">http://www.slough.gov.uk/connect/analyst/mobile/#/main?mapcfg=public_brownfield_register</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">hectares
             </dt>
-            <dd class="govuk-summary-list__value">                2018-12-13            </dd>
+            <dd class="govuk-summary-list__value">                0.05            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-address
             </dt>
@@ -187,21 +198,13 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                br69            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
+            <dt class="govuk-summary-list__key">notes
             </dt>
-            <dd class="govuk-summary-list__value">                br69            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                0            </dd>
+            <dd class="govuk-summary-list__value">                cfs70. 14 flats with commercial fronting Windsor Road.            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                0            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.05            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -251,55 +254,55 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
-            <th>site-address</th>
-            <th>planning-permission-status</th>
-            <th>point</th>
-            <th>start-date</th>
-            <th>organisation</th>
-            <th>name</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
             <th>notes</th>
+            <th>point</th>
+            <th>site</th>
+            <th>start-date</th>
+            <th>planning-permission-status</th>
+            <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>ownership-status</th>
+            <th>site-address</th>
+            <th>name</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2019-12-06</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/c6f2cc6c5d79f806ebdee3d81d0d4509a9219f34ec10c465c80d59b858815c1a.csv#L62">c6f2cc6c5d79...</a></td>
             <td>61</td>
-                <td>not owned by a public authority</td> 
-                <td>0</td> 
-                <td>http://www.slough.gov.uk/connect/analyst/mobile/#/main?mapcfg=public_brownfield_register</td> 
-                <td>0.05</td> 
-                <td>22-26 Windsor Road, Slough, SL1 2EJ</td> 
-                <td>not permissioned</td> 
-                <td>POINT(-0.59628 51.508699)</td> 
-                <td>2018-12-13</td> 
-                <td>local-authority-eng:SLG</td> 
-                <td>br69</td> 
-                <td>br69</td> 
-                <td>0</td> 
                 <td>cfs70. 14 flats with commercial fronting Windsor Road.</td> 
+                <td>POINT(-0.59628 51.508699)</td> 
+                <td>br69</td> 
+                <td>2018-12-13</td> 
+                <td>not permissioned</td> 
+                <td>0</td> 
+                <td>0</td> 
+                <td>not owned by a public authority</td> 
+                <td>22-26 Windsor Road, Slough, SL1 2EJ</td> 
+                <td>br69</td> 
+                <td>0.05</td> 
+                <td>local-authority-eng:SLG</td> 
+                <td>http://www.slough.gov.uk/connect/analyst/mobile/#/main?mapcfg=public_brownfield_register</td> 
         </tr>        <tr>
             <td>2018-12-13</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/ea0c72de28fa2181f7a4bb172b542a89631bd6aa439f40c1a699d2a71dc659d6.csv#L14">ea0c72de28fa...</a></td>
             <td>13</td>
-            <td></td>
-                <td>14</td> 
-                <td>http://www.slough.gov.uk/downloads/slough_brownfield_land_register_site_br69.pdf</td> 
-                <td>0.05</td> 
-                <td>22-26 Windsor Road, Slough, SL1 2EJ</td> 
-                <td>not permissioned</td> 
-                <td>POINT(-0.59628 51.508699)</td> 
-                <td>2018-12-13</td> 
-                <td>local-authority-eng:SLG</td> 
-                <td>br69</td> 
-                <td>br69</td> 
-                <td>14</td> 
                 <td>cfs70. Circa 14 private flats with commercial fronting Windsor Road.</td> 
+                <td>POINT(-0.59628 51.508699)</td> 
+                <td>br69</td> 
+                <td>2018-12-13</td> 
+                <td>not permissioned</td> 
+                <td>14</td> 
+                <td>14</td> 
+            <td></td>
+                <td>22-26 Windsor Road, Slough, SL1 2EJ</td> 
+                <td>br69</td> 
+                <td>0.05</td> 
+                <td>local-authority-eng:SLG</td> 
+                <td>http://www.slough.gov.uk/downloads/slough_brownfield_land_register_site_br69.pdf</td> 
         </tr>    </tbody>
 </table>
 

@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -161,43 +164,29 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                17/00822/REM            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                Outline Planning Permission (15/00490/OUT) and Reserved Matters Permission (17/00822/REM) granted for 22 dwellings. | The site is approximately 45% brownfield and 55% greenfield. | The majority of the proposed dwellings (around 20 of the 22) are located on the brownfield element of the site. | The total site site is some 1.64ha. | The site is considered deliverable. | The map shows the full extent of the site and not only the brownfield area.            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-09-11            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2020-03-20            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SHR" class="govuk-link">Shropshire Council</a>
-<span title="Organisation identifier: local-authority-eng:SHR" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SHR)</span>
-            </dd>
+            <dd class="govuk-summary-list__value">                20            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                20            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            <dt class="govuk-summary-list__key">hectares
             </dt>
-            <dd class="govuk-summary-list__value">                20            </dd>
+            <dd class="govuk-summary-list__value">                0.74            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2020-03-20            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                Outline Planning Permission (15/00490/OUT) and Reserved Matters Permission (17/00822/REM) granted for 22 dwellings. | The site is approximately 45% brownfield and 55% greenfield. | The majority of the proposed dwellings (around 20 of the 22) are located on the brownfield element of the site. | The total site site is some 1.64ha. | The site is considered deliverable. | The map shows the full extent of the site and not only the brownfield area.            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-address
             </dt>
@@ -207,10 +196,6 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                17/00822/REM            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.74            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-plan-url
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://shropshire.maps.arcgis.com/apps/webappviewer/index.html?id=25b8fd6ba2fb4c878775a1aaea210576">https://shropshire.maps.arcgis.com/apps/webappviewer/index.html?id=25b8fd6ba2fb4c878775a1aaea210576</a>            </dd>
@@ -218,6 +203,24 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">planning-permission-type
             </dt>
             <dd class="govuk-summary-list__value">                reserved matters approval            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-09-11            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SHR" class="govuk-link">Shropshire Council</a>
+<span title="Organisation identifier: local-authority-eng:SHR" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SHR)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -263,44 +266,44 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
+            <th>notes</th>
+            <th>point</th>
+            <th>site</th>
+            <th>start-date</th>
+            <th>planning-permission-status</th>
+            <th>minimum-net-dwellings</th>
             <th>maximum-net-dwellings</th>
-            <th>deliverable</th>
-            <th>hectares</th>
-            <th>site-plan-url</th>
             <th>planning-permission-type</th>
             <th>planning-permission-date</th>
-            <th>point</th>
-            <th>start-date</th>
+            <th>ownership-status</th>
             <th>name</th>
-            <th>planning-permission-status</th>
-            <th>organisation</th>
             <th>site-address</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
-            <th>notes</th>
+            <th>deliverable</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-03-20</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/2091dd8344d35c5108e4eebbc6865b14d3a1fefbddfe7f356d18c25996d8aa2c.csv#L57">2091dd8344d3...</a></td>
             <td>56</td>
-                <td>owned by a public authority</td> 
+                <td>Outline Planning Permission (15/00490/OUT) and Reserved Matters Permission (17/00822/REM) granted for 22 dwellings. | The site is approximately 45% brownfield and 55% greenfield. | The majority of the proposed dwellings (around 20 of the 22) are located on the brownfield element of the site. | The total site site is some 1.64ha. | The site is considered deliverable. | The map shows the full extent of the site and not only the brownfield area.</td> 
+                <td>POINT(-2.777757 52.70063)</td> 
+                <td>17/00822/REM</td> 
+                <td>2020-03-20</td> 
+                <td>permissioned</td> 
                 <td>20</td> 
-                <td>yes</td> 
-                <td>0.74</td> 
-                <td>https://shropshire.maps.arcgis.com/apps/webappviewer/index.html?id=25b8fd6ba2fb4c878775a1aaea210576</td> 
+                <td>20</td> 
                 <td>reserved matters approval</td> 
                 <td>2017-09-11</td> 
-                <td>POINT(-2.777757 52.70063)</td> 
-                <td>2020-03-20</td> 
+                <td>owned by a public authority</td> 
                 <td>17/00822/REM</td> 
-                <td>permissioned</td> 
-                <td>local-authority-eng:SHR</td> 
                 <td>Radbrook Campus, College Gardens, Shrewsbury, Shropshire</td> 
-                <td>17/00822/REM</td> 
-                <td>20</td> 
-                <td>Outline Planning Permission (15/00490/OUT) and Reserved Matters Permission (17/00822/REM) granted for 22 dwellings. | The site is approximately 45% brownfield and 55% greenfield. | The majority of the proposed dwellings (around 20 of the 22) are located on the brownfield element of the site. | The total site site is some 1.64ha. | The site is considered deliverable. | The map shows the full extent of the site and not only the brownfield area.</td> 
+                <td>yes</td> 
+                <td>0.74</td> 
+                <td>local-authority-eng:SHR</td> 
+                <td>https://shropshire.maps.arcgis.com/apps/webappviewer/index.html?id=25b8fd6ba2fb4c878775a1aaea210576</td> 
         </tr>    </tbody>
 </table>
 

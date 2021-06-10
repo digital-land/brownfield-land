@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -163,41 +166,9 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:DOV" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:DOV)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                BR89-16            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-plan-url
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://dover.gov.uk/Planning/Planning-Policy/Brownfield-Land-Register/Site-Plans/BR89-16.pdf">http://dover.gov.uk/Planning/Planning-Policy/Brownfield-Land-Register/Site-Plans/BR89-16.pdf</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                5            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                Not Permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                BR89-16            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                5            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2016-06-20            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-address
             </dt>
@@ -206,6 +177,38 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">hectares
             </dt>
             <dd class="govuk-summary-list__value">                0.16            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2016-06-20            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                BR89-16            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                5            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                Not Permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                BR89-16            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                5            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -251,55 +254,55 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>deliverable</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
+            <th>point</th>
+            <th>site</th>
             <th>start-date</th>
             <th>planning-permission-status</th>
-            <th>point</th>
-            <th>name</th>
-            <th>organisation</th>
-            <th>site-address</th>
-            <th>site</th>
             <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>deliverable</th>
+            <th>ownership-status</th>
+            <th>name</th>
+            <th>site-address</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2016-06-20</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/a0ce90d3d64d781a7f9695a659422436c5a44d4d365bcfed2b9fcea9762ea347.csv#L13">a0ce90d3d64d...</a></td>
             <td>12</td>
-                <td>owned by a public authority</td> 
-                <td>5</td> 
-                <td>yes</td> 
-                <td>http://dover.gov.uk/Planning/Planning-Policy/Brownfield-Land-Register/Site-Plans/BR89-16.pdf</td> 
-                <td>0.16</td> 
-                <td>2016-06-20</td> 
-                <td>Not Permissioned</td> 
                 <td>POINT(1.277028 51.282659)</td> 
                 <td>BR89-16</td> 
-                <td>local-authority-eng:DOV</td> 
-                <td>Former council yard, Molland Lea, Ash, Former council yard, Molland Lea</td> 
-                <td>BR89-16</td> 
+                <td>2016-06-20</td> 
+                <td>Not Permissioned</td> 
                 <td>5</td> 
+                <td>5</td> 
+                <td>yes</td> 
+                <td>owned by a public authority</td> 
+                <td>BR89-16</td> 
+                <td>Former council yard, Molland Lea, Ash, Former council yard, Molland Lea</td> 
+                <td>0.16</td> 
+                <td>local-authority-eng:DOV</td> 
+                <td>http://dover.gov.uk/Planning/Planning-Policy/Brownfield-Land-Register/Site-Plans/BR89-16.pdf</td> 
         </tr>        <tr>
             <td>2016-06-20</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/28ec39d52251a648503a8a2c07d565896d543bbfa02131cd045edcae821bbb61.csv#L52">28ec39d52251...</a></td>
             <td>51</td>
-                <td>owned by a public authority</td> 
-                <td>5</td> 
-                <td>yes</td> 
-                <td>https://maps.dover.gov.uk/webapps/Brownfield_Schema/?center=628624.0,158825.0,27700&amp;scale=1000</td> 
-                <td>0.16</td> 
-                <td>2016-06-20</td> 
-                <td>Not Permissioned</td> 
                 <td>POINT(1.277028 51.282659)</td> 
                 <td>BR89-16</td> 
-                <td>local-authority-eng:DOV</td> 
-                <td>Former council Yard, Molland Lea, Ash</td> 
-                <td>BR89-16</td> 
+                <td>2016-06-20</td> 
+                <td>Not Permissioned</td> 
                 <td>5</td> 
+                <td>5</td> 
+                <td>yes</td> 
+                <td>owned by a public authority</td> 
+                <td>BR89-16</td> 
+                <td>Former council Yard, Molland Lea, Ash</td> 
+                <td>0.16</td> 
+                <td>local-authority-eng:DOV</td> 
+                <td>https://maps.dover.gov.uk/webapps/Brownfield_Schema/?center=628624.0,158825.0,27700&amp;scale=1000</td> 
         </tr>    </tbody>
 </table>
 

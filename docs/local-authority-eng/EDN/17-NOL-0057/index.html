@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -161,29 +164,9 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                2017-12-01            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                17/NOL/0057            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Biggins, Main Street, Newbiggin-on-Lune, Kirkby Stephen, CA17 4NT            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-history
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://eforms.eden.gov.uk/fastweb/detail.asp?AltRef=15/0733&ApplicationNumber=15%2F0733&AddressPrefix=&Postcode=&Submit=Search">http://eforms.eden.gov.uk/fastweb/detail.asp?AltRef=15/0733&ApplicationNumber=15%2F0733&AddressPrefix=&Postcode=&Submit=Search</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">ownership-status
             </dt>
             <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://my.eden.gov.uk/myeden.aspx?MapSource=EDC/MyMapsEden&SearchLayer=Brownfield_Sites&SearchField=alt_site_reference&SearchValue=17/NOL/0057">http://my.eden.gov.uk/myeden.aspx?MapSource=EDC/MyMapsEden&SearchLayer=Brownfield_Sites&SearchField=alt_site_reference&SearchValue=17/NOL/0057</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -191,15 +174,35 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:EDN" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:EDN)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Biggins, Main Street, Newbiggin-on-Lune, Kirkby Stephen, CA17 4NT            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                17/NOL/0057            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                3            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hectares
             </dt>
             <dd class="govuk-summary-list__value">                0.03            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            <dt class="govuk-summary-list__key">planning-permission-history
             </dt>
-            <dd class="govuk-summary-list__value">                3            </dd>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://eforms.eden.gov.uk/fastweb/detail.asp?AltRef=15/0733&ApplicationNumber=15%2F0733&AddressPrefix=&Postcode=&Submit=Search">http://eforms.eden.gov.uk/fastweb/detail.asp?AltRef=15/0733&ApplicationNumber=15%2F0733&AddressPrefix=&Postcode=&Submit=Search</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://my.eden.gov.uk/myeden.aspx?MapSource=EDC/MyMapsEden&SearchLayer=Brownfield_Sites&SearchField=alt_site_reference&SearchValue=17/NOL/0057">http://my.eden.gov.uk/myeden.aspx?MapSource=EDC/MyMapsEden&SearchLayer=Brownfield_Sites&SearchField=alt_site_reference&SearchValue=17/NOL/0057</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                3            </dd>
         </div>        <div class="govuk-summary-list__row">
@@ -251,38 +254,38 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
+            <th>point</th>
+            <th>site</th>
+            <th>start-date</th>
+            <th>minimum-net-dwellings</th>
             <th>maximum-net-dwellings</th>
             <th>deliverable</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
-            <th>start-date</th>
+            <th>ownership-status</th>
             <th>site-address</th>
-            <th>point</th>
             <th>name</th>
-            <th>organisation</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
             <th>planning-permission-history</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2017-12-01</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/9d9a0457ea5f34e841b7f25a3da5c99ddb2176075946f7a3049a015849763c91.csv#L56">9d9a0457ea5f...</a></td>
             <td>55</td>
-                <td>not owned by a public authority</td> 
-                <td>3</td> 
-                <td>yes</td> 
-                <td>http://my.eden.gov.uk/myeden.aspx?MapSource=EDC/MyMapsEden&amp;SearchLayer=Brownfield_Sites&amp;SearchField=alt_site_reference&amp;SearchValue=17/NOL/0057</td> 
-                <td>0.03</td> 
-                <td>2017-12-01</td> 
-                <td>Biggins, Main Street, Newbiggin-on-Lune, Kirkby Stephen, CA17 4NT</td> 
                 <td>POINT(-2.457167 54.441611)</td> 
                 <td>17/NOL/0057</td> 
-                <td>local-authority-eng:EDN</td> 
-                <td>17/NOL/0057</td> 
+                <td>2017-12-01</td> 
                 <td>3</td> 
+                <td>3</td> 
+                <td>yes</td> 
+                <td>not owned by a public authority</td> 
+                <td>Biggins, Main Street, Newbiggin-on-Lune, Kirkby Stephen, CA17 4NT</td> 
+                <td>17/NOL/0057</td> 
                 <td>http://eforms.eden.gov.uk/fastweb/detail.asp?AltRef=15/0733&amp;ApplicationNumber=15%2F0733&amp;AddressPrefix=&amp;Postcode=&amp;Submit=Search</td> 
+                <td>0.03</td> 
+                <td>local-authority-eng:EDN</td> 
+                <td>http://my.eden.gov.uk/myeden.aspx?MapSource=EDC/MyMapsEden&amp;SearchLayer=Brownfield_Sites&amp;SearchField=alt_site_reference&amp;SearchValue=17/NOL/0057</td> 
         </tr>    </tbody>
 </table>
 

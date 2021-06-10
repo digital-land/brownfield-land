@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,29 +160,51 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#PA/2015/0832</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
+            <dt class="govuk-summary-list__key">deliverable
             </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://maps.northlincs.gov.uk/iSharewebin.Web/myNorthlincs.aspx?mapsource=Northlincs_webin/nlc_AllMaps&StartEasting=489226.848636183&StartNorthing=410830.615293943&StartZoom=1000&Layers=brownfield">http://maps.northlincs.gov.uk/iSharewebin.Web/myNorthlincs.aspx?mapsource=Northlincs_webin/nlc_AllMaps&StartEasting=489226.848636183&StartNorthing=410830.615293943&StartZoom=1000&Layers=brownfield</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-history
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://apps.northlincs.gov.uk/application/pa-2015-0832">https://apps.northlincs.gov.uk/application/pa-2015-0832</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.09            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                106-108 Oswald Road, Scunthorpe            </dd>
+            <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-date
             </dt>
             <dd class="govuk-summary-list__value">                2015-08-10            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-12-19            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                PA/2015/0832            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/NLN" class="govuk-link">North Lincolnshire Council</a>
+<span title="Organisation identifier: local-authority-eng:NLN" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:NLN)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                PA/2015/0832            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://maps.northlincs.gov.uk/iSharewebin.Web/myNorthlincs.aspx?mapsource=Northlincs_webin/nlc_AllMaps&StartEasting=489226.848636183&StartNorthing=410830.615293943&StartZoom=1000&Layers=brownfield">http://maps.northlincs.gov.uk/iSharewebin.Web/myNorthlincs.aspx?mapsource=Northlincs_webin/nlc_AllMaps&StartEasting=489226.848636183&StartNorthing=410830.615293943&StartZoom=1000&Layers=brownfield</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-type
+            </dt>
+            <dd class="govuk-summary-list__value">                other            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                The site is located within the development limit of Scunthorpe.. Application for prior approval of a proposed change of use of ground and first-floor offices (Use Class B1) to 10 self-contained flats (Use Class C3)            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                106-108 Oswald Road, Scunthorpe            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
@@ -189,39 +214,17 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                10            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
+            <dt class="govuk-summary-list__key">hectares
             </dt>
-            <dd class="govuk-summary-list__value">                The site is located within the development limit of Scunthorpe.. Application for prior approval of a proposed change of use of ground and first-floor offices (Use Class B1) to 10 self-contained flats (Use Class C3)            </dd>
+            <dd class="govuk-summary-list__value">                0.09            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
+            <dt class="govuk-summary-list__key">planning-permission-history
             </dt>
-            <dd class="govuk-summary-list__value">                PA/2015/0832            </dd>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://apps.northlincs.gov.uk/application/pa-2015-0832">https://apps.northlincs.gov.uk/application/pa-2015-0832</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">ownership-status
             </dt>
-            <dd class="govuk-summary-list__value">                2017-12-19            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/NLN" class="govuk-link">North Lincolnshire Council</a>
-<span title="Organisation identifier: local-authority-eng:NLN" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:NLN)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
-            </dt>
-            <dd class="govuk-summary-list__value">                other            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                PA/2015/0832            </dd>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -267,67 +270,67 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>hectares</th>
-            <th>site-plan-url</th>
+            <th>point</th>
+            <th>notes</th>
+            <th>site</th>
+            <th>start-date</th>
+            <th>planning-permission-status</th>
+            <th>minimum-net-dwellings</th>
+            <th>planning-permission-date</th>
             <th>deliverable</th>
             <th>planning-permission-type</th>
-            <th>site-address</th>
-            <th>planning-permission-date</th>
-            <th>start-date</th>
-            <th>point</th>
-            <th>planning-permission-status</th>
-            <th>organisation</th>
+            <th>maximum-net-dwellings</th>
             <th>name</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
+            <th>site-address</th>
+            <th>ownership-status</th>
             <th>planning-permission-history</th>
-            <th>notes</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2018-12-18</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/b0bcc17c0af4975a5f47dbb6d3a6c9802d17caec592de1ddd92fd4ff65d460c8.csv#L29">b0bcc17c0af4...</a></td>
             <td>28</td>
-                <td>not owned by a public authority</td> 
+                <td>POINT(-0.653586 53.586478)</td> 
+                <td>The site is located within the development limit of Scunthorpe.. Application for prior approval of a proposed change of use of ground and first-floor offices (Use Class B1) to 10 self-contained flats (Use Class C3)</td> 
+                <td>PA/2015/0832</td> 
+                <td>2017-12-19</td> 
+                <td>permissioned</td> 
                 <td>10</td> 
-                <td>0.09</td> 
-                <td>http://maps.northlincs.gov.uk/iSharewebin.Web/myNorthlincs.aspx?mapsource=Northlincs_webin/nlc_AllMaps&amp;StartEasting=489226.848636183&amp;StartNorthing=410830.615293943&amp;StartZoom=1000&amp;Layers=brownfield</td> 
+                <td>2015-08-10</td> 
                 <td>yes</td> 
                 <td>other</td> 
-                <td>106-108 Oswald Road, Scunthorpe</td> 
-                <td>2015-08-10</td> 
-                <td>2017-12-19</td> 
-                <td>POINT(-0.653586 53.586478)</td> 
-                <td>permissioned</td> 
-                <td>local-authority-eng:NLN</td> 
-                <td>PA/2015/0832</td> 
-                <td>PA/2015/0832</td> 
                 <td>10</td> 
+                <td>PA/2015/0832</td> 
+                <td>106-108 Oswald Road, Scunthorpe</td> 
+                <td>not owned by a public authority</td> 
                 <td>https://apps.northlincs.gov.uk/application/pa-2015-0832</td> 
-                <td>The site is located within the development limit of Scunthorpe.. Application for prior approval of a proposed change of use of ground and first-floor offices (Use Class B1) to 10 self-contained flats (Use Class C3)</td> 
+                <td>0.09</td> 
+                <td>local-authority-eng:NLN</td> 
+                <td>http://maps.northlincs.gov.uk/iSharewebin.Web/myNorthlincs.aspx?mapsource=Northlincs_webin/nlc_AllMaps&amp;StartEasting=489226.848636183&amp;StartNorthing=410830.615293943&amp;StartZoom=1000&amp;Layers=brownfield</td> 
         </tr>        <tr>
             <td>2017-12-19</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/70270f751e23d471d03fec300d3bc0b335d8d77ed81a00a5be832e95c066947b.csv#L33">70270f751e23...</a></td>
             <td>32</td>
-                <td>not owned by a public authority</td> 
+                <td>POINT(-0.653586 53.586478)</td> 
+                <td>The site is located within the development limit of Scunthorpe.. Application for prior approval of a proposed change of use of ground and first-floor offices (Use Class B1) to 10 self-contained flats (Use Class C3)</td> 
+                <td>PA/2015/0832</td> 
+                <td>2017-12-19</td> 
+                <td>permissioned</td> 
                 <td>10</td> 
-                <td>0.09</td> 
-                <td>http://maps.northlincs.gov.uk/iSharewebin.Web/myNorthlincs.aspx?mapsource=Northlincs_webin/nlc_AllMaps&amp;StartEasting=489226.848636183&amp;StartNorthing=410830.615293943&amp;StartZoom=1000&amp;Layers=brownfield</td> 
+                <td>2015-08-10</td> 
                 <td>yes</td> 
                 <td>other</td> 
-                <td>106-108 Oswald Road, Scunthorpe</td> 
-                <td>2015-08-10</td> 
-                <td>2017-12-19</td> 
-                <td>POINT(-0.653586 53.586478)</td> 
-                <td>permissioned</td> 
-                <td>local-authority-eng:NLN</td> 
-                <td>PA/2015/0832</td> 
-                <td>PA/2015/0832</td> 
                 <td>10</td> 
+                <td>PA/2015/0832</td> 
+                <td>106-108 Oswald Road, Scunthorpe</td> 
+                <td>not owned by a public authority</td> 
                 <td>http://www.planning.northlincs.gov.uk/api/Cached/PlanningWeb?ReqType=F&amp;Refno=PA/2015/0832</td> 
-                <td>The site is located within the development limit of Scunthorpe.. Application for prior approval of a proposed change of use of ground and first-floor offices (Use Class B1) to 10 self-contained flats (Use Class C3)</td> 
+                <td>0.09</td> 
+                <td>local-authority-eng:NLN</td> 
+                <td>http://maps.northlincs.gov.uk/iSharewebin.Web/myNorthlincs.aspx?mapsource=Northlincs_webin/nlc_AllMaps&amp;StartEasting=489226.848636183&amp;StartNorthing=410830.615293943&amp;StartZoom=1000&amp;Layers=brownfield</td> 
         </tr>    </tbody>
 </table>
 

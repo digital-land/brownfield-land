@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,22 +160,6 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#162480</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2020-06-09            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
-            </dt>
-            <dd class="govuk-summary-list__value">                full planning permission            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                Conversion of former Grammar school building into five residential dwellings. Demolition works include the removal of part of an extension to the west elevation.            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.herefordshire.gov.uk/info/200142/planning_services/planning_application_search/details?id=162480&search-term=162480">https://www.herefordshire.gov.uk/info/200142/planning_services/planning_application_search/details?id=162480&search-term=162480</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site
             </dt>
             <dd class="govuk-summary-list__value">                162480            </dd>
@@ -180,10 +167,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">planning-permission-date
             </dt>
             <dd class="govuk-summary-list__value">                2016-12-21            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Dev 1 Site At Old Grammar School Convert Of School Building To 5 Residential Dwellings, Church Street, Bromyard, Herefordshire            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -195,6 +178,30 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.herefordshire.gov.uk/info/200142/planning_services/planning_application_search/details?id=162480&search-term=162480">https://www.herefordshire.gov.uk/info/200142/planning_services/planning_application_search/details?id=162480&search-term=162480</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2020-06-09            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.09            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Dev 1 Site At Old Grammar School Convert Of School Building To 5 Residential Dwellings, Church Street, Bromyard, Herefordshire            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                Conversion of former Grammar school building into five residential dwellings. Demolition works include the removal of part of an extension to the west elevation.            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                162480            </dd>
@@ -203,13 +210,9 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
+            <dt class="govuk-summary-list__key">planning-permission-type
             </dt>
-            <dd class="govuk-summary-list__value">                0.09            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
+            <dd class="govuk-summary-list__value">                full planning permission            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -263,104 +266,104 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>site-plan-url</th>
-            <th>deliverable</th>
-            <th>planning-permission-type</th>
-            <th>hectares</th>
-            <th>site-address</th>
-            <th>planning-permission-date</th>
-            <th>start-date</th>
-            <th>name</th>
-            <th>organisation</th>
-            <th>planning-permission-status</th>
+            <th>notes</th>
             <th>point</th>
             <th>site</th>
+            <th>start-date</th>
+            <th>planning-permission-status</th>
             <th>minimum-net-dwellings</th>
-            <th>notes</th>
+            <th>planning-permission-date</th>
+            <th>maximum-net-dwellings</th>
+            <th>deliverable</th>
+            <th>ownership-status</th>
+            <th>site-address</th>
+            <th>name</th>
+            <th>planning-permission-type</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-06-09</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/117af813c96e18a29269c9b3ef0cf801901e5c8c229668b3a25fec2991d69ba9.csv#L12">117af813c96e...</a></td>
             <td>11</td>
-                <td>not owned by a public authority</td> 
-                <td>5</td> 
-                <td>https://www.herefordshire.gov.uk/info/200142/planning_services/planning_application_search/details?id=162480&amp;search-term=162480</td> 
-                <td>yes</td> 
-            <td></td>
-            <td></td>
-                <td>Dev 1 Site At Old Grammar School Convert Of School Building To 5 Residential Dwellings, Church Street, Bromyard, Herefordshire</td> 
-                <td>2016-12-21</td> 
-                <td>2020-06-09</td> 
-                <td>162480</td> 
-                <td>local-authority-eng:HEF</td> 
-                <td>permissioned</td> 
-            <td></td>
-                <td>162480</td> 
-                <td>5</td> 
                 <td>Conversion of former Grammar school building into five residential dwellings. Demolition works include the removal of part of an extension to the west elevation.</td> 
+            <td></td>
+                <td>162480</td> 
+                <td>2020-06-09</td> 
+                <td>permissioned</td> 
+                <td>5</td> 
+                <td>2016-12-21</td> 
+                <td>5</td> 
+                <td>yes</td> 
+                <td>not owned by a public authority</td> 
+                <td>Dev 1 Site At Old Grammar School Convert Of School Building To 5 Residential Dwellings, Church Street, Bromyard, Herefordshire</td> 
+                <td>162480</td> 
+            <td></td>
+            <td></td>
+                <td>local-authority-eng:HEF</td> 
+                <td>https://www.herefordshire.gov.uk/info/200142/planning_services/planning_application_search/details?id=162480&amp;search-term=162480</td> 
         </tr>        <tr>
             <td>2020-01-07</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/2c802529bffeee7f422427fdb8e4b3ad82455bbee3321346ce67da9379ea45ff.csv#L14">2c802529bffe...</a></td>
             <td>13</td>
-            <td></td>
-            <td></td>
-                <td>https://www.herefordshire.gov.uk/info/200142/planning_services/planning_application_search/details?id=162480</td> 
-            <td></td>
-                <td>full planning permission</td> 
-                <td>0.09</td> 
-                <td>Site at Old Grammar School, Church Street, Bromyard, Herefordshire, HR7 4DP</td> 
-                <td>2016-12-21</td> 
-            <td></td>
-                <td>162480</td> 
-                <td>local-authority-eng:HEF</td> 
-                <td>permissioned</td> 
+                <td>Conversion of former Grammar school building into five residential~dwellings. Demolition works include the removal of part of an~extension to the west elevation (For DOC 5 see 193830).</td> 
                 <td>POINT(-2.504648 52.190621)</td> 
                 <td>162480</td> 
             <td></td>
-                <td>Conversion of former Grammar school building into five residential~dwellings. Demolition works include the removal of part of an~extension to the west elevation (For DOC 5 see 193830).</td> 
+                <td>permissioned</td> 
+            <td></td>
+                <td>2016-12-21</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+                <td>Site at Old Grammar School, Church Street, Bromyard, Herefordshire, HR7 4DP</td> 
+                <td>162480</td> 
+                <td>full planning permission</td> 
+                <td>0.09</td> 
+                <td>local-authority-eng:HEF</td> 
+                <td>https://www.herefordshire.gov.uk/info/200142/planning_services/planning_application_search/details?id=162480</td> 
         </tr>        <tr>
             <td>2019-10-20</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/8fe71d2f1a2dbd53539a948cf7f1d49523fb08d1126a06c76a64216bc6e42d95.csv#L5">8fe71d2f1a2d...</a></td>
             <td>4</td>
-            <td></td>
-            <td></td>
-                <td>https://www.herefordshire.gov.uk/info/200142/planning_services/planning_application_search/details?id=162480</td> 
-            <td></td>
-                <td>full planning permission</td> 
-                <td>0.09</td> 
-                <td>Site at Old Grammar School, Church Street, Bromyard, Herefordshire, HR7 4DP</td> 
-                <td>2016-12-21</td> 
-            <td></td>
-                <td>162480</td> 
-                <td>local-authority-eng:HEF</td> 
-                <td>permissioned</td> 
+                <td>Conversion of former Grammar school building into five residential~dwellings. Demolition works include the removal of part of an~extension to the west elevation.</td> 
                 <td>POINT(-2.504648 52.190621)</td> 
                 <td>162480</td> 
             <td></td>
-                <td>Conversion of former Grammar school building into five residential~dwellings. Demolition works include the removal of part of an~extension to the west elevation.</td> 
+                <td>permissioned</td> 
+            <td></td>
+                <td>2016-12-21</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+                <td>Site at Old Grammar School, Church Street, Bromyard, Herefordshire, HR7 4DP</td> 
+                <td>162480</td> 
+                <td>full planning permission</td> 
+                <td>0.09</td> 
+                <td>local-authority-eng:HEF</td> 
+                <td>https://www.herefordshire.gov.uk/info/200142/planning_services/planning_application_search/details?id=162480</td> 
         </tr>        <tr>
             <td>2017-12-07</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/5a68fbb4a8f0451e5d2f0a04923f5d60634a6df031c7610819ea0b3294905d57.csv#L2">5a68fbb4a8f0...</a></td>
             <td>1</td>
-                <td>not owned by a public authority</td> 
+                <td>Conversion of former Grammar school building into five residential~dwellings. Demolition works include the removal of part of an~extension to the west elevation.</td> 
             <td></td>
-                <td>https://www.herefordshire.gov.uk/info/200142/planning_services/planning_application_search/details?id=162480</td> 
-                <td>yes</td> 
-                <td>full planning permission</td> 
-                <td>0.09</td> 
-                <td>Site at Old Grammar School, Church Street, Bromyard, Herefordshire, HR7 4DP</td> 
-                <td>2016-12-21</td> 
-                <td>2017-12-07</td> 
                 <td>162480</td> 
-                <td>local-authority-eng:HEF</td> 
+                <td>2017-12-07</td> 
                 <td>permissioned</td> 
             <td></td>
-                <td>162480</td> 
+                <td>2016-12-21</td> 
             <td></td>
-                <td>Conversion of former Grammar school building into five residential~dwellings. Demolition works include the removal of part of an~extension to the west elevation.</td> 
+                <td>yes</td> 
+                <td>not owned by a public authority</td> 
+                <td>Site at Old Grammar School, Church Street, Bromyard, Herefordshire, HR7 4DP</td> 
+                <td>162480</td> 
+                <td>full planning permission</td> 
+                <td>0.09</td> 
+                <td>local-authority-eng:HEF</td> 
+                <td>https://www.herefordshire.gov.uk/info/200142/planning_services/planning_application_search/details?id=162480</td> 
         </tr>    </tbody>
 </table>
 

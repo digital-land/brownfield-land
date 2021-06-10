@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,9 +160,21 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#COL/12</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-history
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.planning.colchester.gov.uk/WAM/findCaseFile.do?appNumber=O/COL/01/1560&appType&=Planning">http://www.planning.colchester.gov.uk/WAM/findCaseFile.do?appNumber=O/COL/01/1560&appType&=Planning</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                50            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hectares
             </dt>
             <dd class="govuk-summary-list__value">                0.475            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                COL/12            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -167,41 +182,29 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:COL" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:COL)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                COL/12            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
             <dd class="govuk-summary-list__value">                not permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                50            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-history
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.planning.colchester.gov.uk/WAM/findCaseFile.do?appNumber=O/COL/01/1560&appType&=Planning">http://www.planning.colchester.gov.uk/WAM/findCaseFile.do?appNumber=O/COL/01/1560&appType&=Planning</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-address
             </dt>
             <dd class="govuk-summary-list__value">                DOVERCOURT BP PETROL FILLING STATION AND GARAGE INCLUDING NUMBER 79 MAGDALEN STREET            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2016-07-01            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">notes
             </dt>
             <dd class="govuk-summary-list__value">                East Colchester Special Policy Growth Area Regeneration Area https://www.historicengland.org.uk/listing/the-list/list-entry/1123551. Likely contamination - garage uses - risk assessment required (http://www.colchester.gov.uk/article/13066/Contaminated-Land-and-planning).            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                COL/12            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                COL/12            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                50            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2016-07-01            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -247,36 +250,36 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>maximum-net-dwellings</th>
-            <th>hectares</th>
-            <th>site-address</th>
+            <th>point</th>
+            <th>notes</th>
+            <th>site</th>
             <th>planning-permission-status</th>
             <th>start-date</th>
-            <th>point</th>
-            <th>organisation</th>
-            <th>name</th>
-            <th>site</th>
             <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>name</th>
             <th>planning-permission-history</th>
-            <th>notes</th>
+            <th>site-address</th>
+            <th>hectares</th>
+            <th>organisation</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2017-12-19</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/24cc6bdbfc6e9efde4626416f208874519bf6a924b9b162fc137a8d44e7b27ba.csv#L13">24cc6bdbfc6e...</a></td>
             <td>12</td>
-                <td>50</td> 
-                <td>0.475</td> 
-                <td>DOVERCOURT BP PETROL FILLING STATION AND GARAGE INCLUDING NUMBER 79 MAGDALEN STREET</td> 
+                <td>POINT(0.91014 51.88504)</td> 
+                <td>East Colchester Special Policy Growth Area Regeneration Area https://www.historicengland.org.uk/listing/the-list/list-entry/1123551. Likely contamination - garage uses - risk assessment required (http://www.colchester.gov.uk/article/13066/Contaminated-Land-and-planning).</td> 
+                <td>COL/12</td> 
                 <td>not permissioned</td> 
                 <td>2016-07-01</td> 
-                <td>POINT(0.91014 51.88504)</td> 
-                <td>local-authority-eng:COL</td> 
-                <td>COL/12</td> 
-                <td>COL/12</td> 
                 <td>50</td> 
+                <td>50</td> 
+                <td>COL/12</td> 
                 <td>http://www.planning.colchester.gov.uk/WAM/findCaseFile.do?appNumber=O/COL/01/1560&amp;appType&amp;=Planning</td> 
-                <td>East Colchester Special Policy Growth Area Regeneration Area https://www.historicengland.org.uk/listing/the-list/list-entry/1123551. Likely contamination - garage uses - risk assessment required (http://www.colchester.gov.uk/article/13066/Contaminated-Land-and-planning).</td> 
+                <td>DOVERCOURT BP PETROL FILLING STATION AND GARAGE INCLUDING NUMBER 79 MAGDALEN STREET</td> 
+                <td>0.475</td> 
+                <td>local-authority-eng:COL</td> 
         </tr>    </tbody>
 </table>
 

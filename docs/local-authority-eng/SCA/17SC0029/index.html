@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,25 +160,29 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#17SC0029</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0029">https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0029</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                17SC0029            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-history
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://plan.scambs.gov.uk/swiftlg/apas/run/WPHAPPDETAIL.DisplayUrl?theApnID=S/2972/16/FL">http://plan.scambs.gov.uk/swiftlg/apas/run/WPHAPPDETAIL.DisplayUrl?theApnID=S/2972/16/FL</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-address
             </dt>
             <dd class="govuk-summary-list__value">                Westfield Orchard,Ashwell Street, Melbourn, Cambridgeshire, SG8 0RS            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                Important Note: this site includes both greenfield and brownfield land; the information presented in the &#39;SiteplanURL&#39;, &#39;Hectares&#39;, &#39;PlanningHistory&#39;, &#39;MinNetDwellings&#39;, &#39;Development Description&#39;, &#39;Non-HousingDevelopment&#39; columns is for whole site and not just the brownfield land | Approved 27/12/2016 | Lapse date 26/12/2020. Removal of existing stables, storage and mobile home and erection of dwelling and detached garaging with associated drive hardstanding and security gate            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hectares
             </dt>
             <dd class="govuk-summary-list__value">                1.26            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0029">https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&queryTable=/NamedTables/SCDC_Brownfieldregister&queryColumn=Site_Reference&queryValues=17SC0029</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                0            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
@@ -185,39 +192,35 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                full planning permission            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2016-12-27            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-history
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://plan.scambs.gov.uk/swiftlg/apas/run/WPHAPPDETAIL.DisplayUrl?theApnID=S/2972/16/FL">http://plan.scambs.gov.uk/swiftlg/apas/run/WPHAPPDETAIL.DisplayUrl?theApnID=S/2972/16/FL</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-12-31            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                17SC0029            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                0            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SCA" class="govuk-link">South Cambridgeshire District Council</a>
 <span title="Organisation identifier: local-authority-eng:SCA" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SCA)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-12-31            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                Important Note: this site includes both greenfield and brownfield land; the information presented in the &#39;SiteplanURL&#39;, &#39;Hectares&#39;, &#39;PlanningHistory&#39;, &#39;MinNetDwellings&#39;, &#39;Development Description&#39;, &#39;Non-HousingDevelopment&#39; columns is for whole site and not just the brownfield land | Approved 27/12/2016 | Lapse date 26/12/2020. Removal of existing stables, storage and mobile home and erection of dwelling and detached garaging with associated drive hardstanding and security gate            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                0            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">deliverable
             </dt>
             <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                0            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2016-12-27            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -263,64 +266,64 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>maximum-net-dwellings</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
+            <th>point</th>
+            <th>notes</th>
+            <th>site</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
+            <th>minimum-net-dwellings</th>
             <th>planning-permission-type</th>
+            <th>planning-permission-date</th>
+            <th>maximum-net-dwellings</th>
             <th>deliverable</th>
             <th>site-address</th>
-            <th>point</th>
-            <th>start-date</th>
             <th>name</th>
-            <th>organisation</th>
-            <th>planning-permission-status</th>
-            <th>planning-permission-date</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
             <th>planning-permission-history</th>
-            <th>notes</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2017-12-31</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/d18a5d7db65828f8a84cc7b61f7ddc427e44944cb1ee9e258f80f1f961faebe9.csv#L33">d18a5d7db658...</a></td>
             <td>32</td>
+                <td>POINT(-0.015692 52.072142)</td> 
+                <td>Important Note: this site includes both greenfield and brownfield land; the information presented in the &#39;SiteplanURL&#39;, &#39;Hectares&#39;, &#39;PlanningHistory&#39;, &#39;MinNetDwellings&#39;, &#39;Development Description&#39;, &#39;Non-HousingDevelopment&#39; columns is for whole site and not just the brownfield land | Approved 27/12/2016 | Lapse date 26/12/2020. Removal of existing stables, storage and mobile home and erection of dwelling and detached garaging with associated drive hardstanding and security gate</td> 
+                <td>17SC0029</td> 
+                <td>permissioned</td> 
+                <td>2017-12-31</td> 
                 <td>0</td> 
-                <td>https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&amp;queryTable=/NamedTables/SCDC_Brownfieldregister&amp;queryColumn=Site_Reference&amp;queryValues=17SC0029</td> 
-                <td>1.26</td> 
                 <td>full planning permission</td> 
+                <td>2016-12-27</td> 
+                <td>0</td> 
                 <td>yes</td> 
                 <td>Westfield Orchard,Ashwell Street, Melbourn, Cambridgeshire, SG8 0RS</td> 
-                <td>POINT(-0.015692 52.072142)</td> 
-                <td>2017-12-31</td> 
                 <td>17SC0029</td> 
-                <td>local-authority-eng:SCA</td> 
-                <td>permissioned</td> 
-                <td>2016-12-27</td> 
-                <td>17SC0029</td> 
-                <td>0</td> 
                 <td>http://plan.scambs.gov.uk/swiftlg/apas/run/WPHAPPDETAIL.DisplayUrl?theApnID=S/2972/16/FL</td> 
-                <td>Important Note: this site includes both greenfield and brownfield land; the information presented in the &#39;SiteplanURL&#39;, &#39;Hectares&#39;, &#39;PlanningHistory&#39;, &#39;MinNetDwellings&#39;, &#39;Development Description&#39;, &#39;Non-HousingDevelopment&#39; columns is for whole site and not just the brownfield land | Approved 27/12/2016 | Lapse date 26/12/2020. Removal of existing stables, storage and mobile home and erection of dwelling and detached garaging with associated drive hardstanding and security gate</td> 
+                <td>1.26</td> 
+                <td>local-authority-eng:SCA</td> 
+                <td>https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&amp;queryTable=/NamedTables/SCDC_Brownfieldregister&amp;queryColumn=Site_Reference&amp;queryValues=17SC0029</td> 
         </tr>        <tr>
             <td>2017-12-31</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/4f28c52f4c6a67348c1f2dcf8fa2666da4a3a7471153da6078f514b4cdc475cb.csv#L18">4f28c52f4c6a...</a></td>
             <td>17</td>
+                <td>POINT(-0.015692 52.072142)</td> 
+                <td>Approved 27/12/2016 | Lapse Date 26/12/2019 | Part of site which is both Greenfield and Brownfield, only Brownfield element recorded.. Removal of existing stables, storage and mobile home and erection of dwelling and detached garaging with associated drive hardstanding and security gate</td> 
+                <td>17SC0029</td> 
+                <td>permissioned</td> 
+                <td>2017-12-31</td> 
                 <td>0</td> 
-                <td>https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&amp;queryTable=/NamedTables/SCDC_Brownfieldregister&amp;queryColumn=Site_Reference&amp;queryValues=17SC0029</td> 
-                <td>1.26</td> 
                 <td>full planning permission</td> 
+                <td>2016-12-27</td> 
+                <td>0</td> 
                 <td>yes</td> 
                 <td>Westfield Orchard,Ashwell Street, Melbourn, Cambridgeshire, SG8 0RS</td> 
-                <td>POINT(-0.015692 52.072142)</td> 
-                <td>2017-12-31</td> 
                 <td>17SC0029</td> 
-                <td>local-authority-eng:SCA</td> 
-                <td>permissioned</td> 
-                <td>2016-12-27</td> 
-                <td>17SC0029</td> 
-                <td>0</td> 
                 <td>http://plan.scambs.gov.uk/swiftlg/apas/run/WPHAPPDETAIL.DisplayUrl?theApnID=S/2972/16/FL</td> 
-                <td>Approved 27/12/2016 | Lapse Date 26/12/2019 | Part of site which is both Greenfield and Brownfield, only Brownfield element recorded.. Removal of existing stables, storage and mobile home and erection of dwelling and detached garaging with associated drive hardstanding and security gate</td> 
+                <td>1.26</td> 
+                <td>local-authority-eng:SCA</td> 
+                <td>https://gismaps.scambs.gov.uk/connect/analyst/mobile/#/main?mapcfg=BrownFieldRegister_New&amp;queryTable=/NamedTables/SCDC_Brownfieldregister&amp;queryColumn=Site_Reference&amp;queryValues=17SC0029</td> 
         </tr>    </tbody>
 </table>
 

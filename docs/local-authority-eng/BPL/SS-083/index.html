@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,25 +160,29 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#SS/083</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-history
+            <dt class="govuk-summary-list__key">site-plan-url
             </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://idoxpa.blackpool.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=_BLCKP_DCAPR_61323">http://idoxpa.blackpool.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=_BLCKP_DCAPR_61323</a>            </dd>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://maps.blackpool.gov.uk/#zoom=3&lat=434255.06959&lon=333928.83324&layers=0BTFTFFFFFFFFFFFFFFFFFFFFFFFF">http://maps.blackpool.gov.uk/#zoom=3&lat=434255.06959&lon=333928.83324&layers=0BTFTFFFFFFFFFFFFFFFFFFFFFFFF</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                88            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-address
             </dt>
             <dd class="govuk-summary-list__value">                585 - 593 Promenade &amp; 1 Wimbourne Place, FY4 1NQ            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://maps.blackpool.gov.uk/#zoom=3&lat=434255.06959&lon=333928.83324&layers=0BTFTFFFFFFFFFFFFFFFFFFFFFFFF">http://maps.blackpool.gov.uk/#zoom=3&lat=434255.06959&lon=333928.83324&layers=0BTFTFFFFFFFFFFFFFFFFFFFFFFFF</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                88            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hectares
             </dt>
             <dd class="govuk-summary-list__value">                0.369572            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site
             </dt>
@@ -185,9 +192,21 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                Erection of part 3 / part 4 / part 5 / part 6 storey block of 88 self contained permanent flats with car parking for 88 vehicles, access and associated works, following demolition of existing hotels.            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
+            <dt class="govuk-summary-list__key">planning-permission-history
             </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://idoxpa.blackpool.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=_BLCKP_DCAPR_61323">http://idoxpa.blackpool.gov.uk/online-applications/applicationDetails.do?activeTab=summary&keyVal=_BLCKP_DCAPR_61323</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                SS/083            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                88            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-05-10            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-type
             </dt>
@@ -196,22 +215,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
             <dd class="govuk-summary-list__value">                permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                SS/083            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-05-10            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                88            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -267,46 +270,46 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
-            <th>deliverable</th>
-            <th>planning-permission-type</th>
-            <th>site-address</th>
-            <th>planning-permission-status</th>
-            <th>planning-permission-date</th>
-            <th>name</th>
-            <th>point</th>
-            <th>organisation</th>
-            <th>start-date</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
-            <th>planning-permission-history</th>
             <th>notes</th>
+            <th>point</th>
+            <th>site</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
+            <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>deliverable</th>
+            <th>planning-permission-date</th>
+            <th>ownership-status</th>
+            <th>site-address</th>
+            <th>planning-permission-history</th>
+            <th>name</th>
+            <th>planning-permission-type</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2017-12-15</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/b2dd227bcfa1b85cd3e029fa91f222b5026bed2485e818974090931efa28f934.csv#L28">b2dd227bcfa1...</a></td>
             <td>27</td>
-                <td>not owned by a public authority</td> 
-                <td>88</td> 
-                <td>http://maps.blackpool.gov.uk/#zoom=3&amp;lat=434255.06959&amp;lon=333928.83324&amp;layers=0BTFTFFFFFFFFFFFFFFFFFFFFFFFF</td> 
-                <td>0.369572</td> 
-                <td>yes</td> 
-                <td>outline planning permission</td> 
-                <td>585 - 593 Promenade &amp; 1 Wimbourne Place, FY4 1NQ</td> 
-                <td>permissioned</td> 
-                <td>2017-05-10</td> 
-                <td>SS/083</td> 
-                <td>POINT(-3.057238 53.785967)</td> 
-                <td>local-authority-eng:BPL</td> 
-                <td>2017-12-15</td> 
-                <td>SS/083</td> 
-                <td>88</td> 
-                <td>http://idoxpa.blackpool.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=_BLCKP_DCAPR_61323</td> 
                 <td>Erection of part 3 / part 4 / part 5 / part 6 storey block of 88 self contained permanent flats with car parking for 88 vehicles, access and associated works, following demolition of existing hotels.</td> 
+                <td>POINT(-3.057238 53.785967)</td> 
+                <td>SS/083</td> 
+                <td>permissioned</td> 
+                <td>2017-12-15</td> 
+                <td>88</td> 
+                <td>88</td> 
+                <td>yes</td> 
+                <td>2017-05-10</td> 
+                <td>not owned by a public authority</td> 
+                <td>585 - 593 Promenade &amp; 1 Wimbourne Place, FY4 1NQ</td> 
+                <td>http://idoxpa.blackpool.gov.uk/online-applications/applicationDetails.do?activeTab=summary&amp;keyVal=_BLCKP_DCAPR_61323</td> 
+                <td>SS/083</td> 
+                <td>outline planning permission</td> 
+                <td>0.369572</td> 
+                <td>local-authority-eng:BPL</td> 
+                <td>http://maps.blackpool.gov.uk/#zoom=3&amp;lat=434255.06959&amp;lon=333928.83324&amp;layers=0BTFTFFFFFFFFFFFFFFFFFFFFFFFF</td> 
         </tr>    </tbody>
 </table>
 

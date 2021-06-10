@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -161,13 +164,25 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                5            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-history
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://publicaccess.eastsuffolk.gov.uk/online-applications/applicationDetails.do?keyVal=ON66YEQXL8M00&activeTab=summary">https://publicaccess.eastsuffolk.gov.uk/online-applications/applicationDetails.do?keyVal=ON66YEQXL8M00&activeTab=summary</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-type
             </dt>
             <dd class="govuk-summary-list__value">                full planning permission            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-06-29            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.11            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2019-12-30            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-address
             </dt>
@@ -177,17 +192,9 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                ES050            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">planning-permission-history
             </dt>
-            <dd class="govuk-summary-list__value">                2019-12-30            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://eastsuffolk.maps.arcgis.com/apps/MapJournal/index.html?appid=6eb61ef7c03744668814fba6f1587f4e">http://eastsuffolk.maps.arcgis.com/apps/MapJournal/index.html?appid=6eb61ef7c03744668814fba6f1587f4e</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-06-29            </dd>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://publicaccess.eastsuffolk.gov.uk/online-applications/applicationDetails.do?keyVal=ON66YEQXL8M00&activeTab=summary">https://publicaccess.eastsuffolk.gov.uk/online-applications/applicationDetails.do?keyVal=ON66YEQXL8M00&activeTab=summary</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -195,25 +202,21 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:ESK" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:ESK)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+            <dd class="govuk-summary-list__value">                5            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                ES050            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
+            <dt class="govuk-summary-list__key">site-plan-url
             </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://eastsuffolk.maps.arcgis.com/apps/MapJournal/index.html?appid=6eb61ef7c03744668814fba6f1587f4e">http://eastsuffolk.maps.arcgis.com/apps/MapJournal/index.html?appid=6eb61ef7c03744668814fba6f1587f4e</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            <dt class="govuk-summary-list__key">ownership-status
             </dt>
-            <dd class="govuk-summary-list__value">                5            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.11            </dd>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -263,64 +266,64 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>planning-permission-type</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
-            <th>site-address</th>
+            <th>notes</th>
             <th>point</th>
+            <th>site</th>
             <th>planning-permission-status</th>
             <th>start-date</th>
-            <th>planning-permission-date</th>
-            <th>organisation</th>
-            <th>name</th>
-            <th>site</th>
             <th>minimum-net-dwellings</th>
+            <th>planning-permission-date</th>
+            <th>planning-permission-type</th>
+            <th>maximum-net-dwellings</th>
+            <th>ownership-status</th>
+            <th>site-address</th>
             <th>planning-permission-history</th>
-            <th>notes</th>
+            <th>name</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-12-01</td>
-            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/33a3b02928911097aa2a68916e2ec92be2d163f6a6b4bbe042bb4f4d0440ec75.csv#L51">33a3b0292891...</a></td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/82bdbacabb3bea3c35a68915132e1d2b26a33881df2d855acbeee3f694a038c8.csv#L51">82bdbacabb3b...</a></td>
             <td>50</td>
-                <td>not owned by a public authority</td> 
-                <td>5</td> 
-                <td>full planning permission</td> 
-                <td>http://eastsuffolk.maps.arcgis.com/apps/MapJournal/index.html?appid=6eb61ef7c03744668814fba6f1587f4e</td> 
-                <td>0.11</td> 
-                <td>64-66 New Street, Woodbridge</td> 
+                <td>Works have commenced</td> 
                 <td>POINT(1.317257 52.09387)</td> 
+                <td>ES050</td> 
                 <td>permissioned</td> 
                 <td>2019-12-30</td> 
-                <td>2017-06-29</td> 
-                <td>local-authority-eng:ESK</td> 
-                <td>ES050</td> 
-                <td>ES050</td> 
                 <td>5</td> 
+                <td>2017-06-29</td> 
+                <td>full planning permission</td> 
+                <td>5</td> 
+                <td>not owned by a public authority</td> 
+                <td>64-66 New Street, Woodbridge</td> 
                 <td>https://publicaccess.eastsuffolk.gov.uk/online-applications/applicationDetails.do?keyVal=ON66YEQXL8M00&amp;activeTab=summary</td> 
-                <td>Works have commenced</td> 
+                <td>ES050</td> 
+                <td>0.11</td> 
+                <td>local-authority-eng:ESK</td> 
+                <td>http://eastsuffolk.maps.arcgis.com/apps/MapJournal/index.html?appid=6eb61ef7c03744668814fba6f1587f4e</td> 
         </tr>        <tr>
             <td>2019-12-30</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/e44dc995f2adc24c75114c5350d8359526b4f89462525bbb2c475d5d50b1f7ff.csv#L51">e44dc995f2ad...</a></td>
             <td>50</td>
-                <td>not owned by a public authority</td> 
-                <td>5</td> 
-                <td>full planning permission</td> 
-                <td>http://eastsuffolk.maps.arcgis.com/apps/MapJournal/index.html?appid=6eb61ef7c03744668814fba6f1587f4e</td> 
-                <td>0.11</td> 
-                <td>64-66 New Street, Woodbridge</td> 
+            <td></td>
                 <td>POINT(1.317257 52.09387)</td> 
+                <td>ES050</td> 
                 <td>permissioned</td> 
                 <td>2019-12-30</td> 
-                <td>2017-06-29</td> 
-                <td>local-authority-eng:ESK</td> 
-                <td>ES050</td> 
-                <td>ES050</td> 
                 <td>5</td> 
+                <td>2017-06-29</td> 
+                <td>full planning permission</td> 
+                <td>5</td> 
+                <td>not owned by a public authority</td> 
+                <td>64-66 New Street, Woodbridge</td> 
                 <td>https://publicaccess.eastsuffolk.gov.uk/online-applications/applicationDetails.do?keyVal=ON66YEQXL8M00&amp;activeTab=summary</td> 
-            <td></td>
+                <td>ES050</td> 
+                <td>0.11</td> 
+                <td>local-authority-eng:ESK</td> 
+                <td>http://eastsuffolk.maps.arcgis.com/apps/MapJournal/index.html?appid=6eb61ef7c03744668814fba6f1587f4e</td> 
         </tr>    </tbody>
 </table>
 

@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,11 +160,23 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#CC/068E</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.05            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/BRD" class="govuk-link">City of Bradford Metropolitan District Council</a>
 <span title="Organisation identifier: local-authority-eng:BRD" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BRD)</span>
             </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                CC/068E            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=416619.6028,433464.5479,416647.0634,433491.1809,27700">http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=416619.6028,433464.5479,416647.0634,433491.1809,27700</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
@@ -171,41 +186,29 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                not permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                5            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-history
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9106150COU&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=I26OAYDHK7000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=I2DX5QDHV6000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=NH1A5CDHLT000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=HWZ5SIDH86000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=7604171COU&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=O1CSJJDH0IL00&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=O6WZ4DDHL0Z00&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=HWZ5IFDH86000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=NGZOR9DHLT000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=0200305ADV&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=NZEDU9DH0DK00&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=O675BQDHKM000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=0201281ADV&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=0101268COU&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=NHR6W9DHLT000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=PN5YHQDHMU600&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=O1CT5KDH0IL00&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=O3TULADH00F00&activeTab=summary">https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9106150COU&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=I26OAYDHK7000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=I2DX5QDHV6000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=NH1A5CDHLT000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=HWZ5SIDH86000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=7604171COU&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=O1CSJJDH0IL00&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=O6WZ4DDHL0Z00&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=HWZ5IFDH86000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=NGZOR9DHLT000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=0200305ADV&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=NZEDU9DH0DK00&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=O675BQDHKM000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=0201281ADV&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=0101268COU&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=NHR6W9DHLT000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=PN5YHQDHMU600&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=O1CT5KDH0IL00&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=O3TULADH00F00&activeTab=summary</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                Unused building in an area where there is significant change of use to residential            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                24-26 Canal Rd            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                CC/068E            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                12            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
+            <dt class="govuk-summary-list__key">notes
             </dt>
-            <dd class="govuk-summary-list__value">                0.05            </dd>
+            <dd class="govuk-summary-list__value">                Unused building in an area where there is significant change of use to residential            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                CC/068E            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=416619.6028,433464.5479,416647.0634,433491.1809,27700">http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=416619.6028,433464.5479,416647.0634,433491.1809,27700</a>            </dd>
+            <dd class="govuk-summary-list__value">                5            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                24-26 Canal Rd            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -251,38 +254,38 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>maximum-net-dwellings</th>
-            <th>hectares</th>
-            <th>site-plan-url</th>
+            <th>point</th>
+            <th>notes</th>
+            <th>site</th>
             <th>start-date</th>
             <th>planning-permission-status</th>
-            <th>point</th>
-            <th>site-address</th>
-            <th>organisation</th>
-            <th>name</th>
-            <th>site</th>
             <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>name</th>
             <th>planning-permission-history</th>
-            <th>notes</th>
+            <th>site-address</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2019-12-01</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/69b3bbfdb70d87462f8c041c4ddf61c73db66b2cde9ad3a6a8531576344b666a.csv#L30">69b3bbfdb70d...</a></td>
             <td>29</td>
-                <td>12</td> 
-                <td>0.05</td> 
-                <td>http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&amp;extent=416619.6028,433464.5479,416647.0634,433491.1809,27700</td> 
+                <td>POINT(-1.748958 53.797343)</td> 
+                <td>Unused building in an area where there is significant change of use to residential</td> 
+                <td>CC/068E</td> 
                 <td>2019-12-01</td> 
                 <td>not permissioned</td> 
-                <td>POINT(-1.748958 53.797343)</td> 
-                <td>24-26 Canal Rd</td> 
-                <td>local-authority-eng:BRD</td> 
-                <td>CC/068E</td> 
-                <td>CC/068E</td> 
                 <td>5</td> 
+                <td>12</td> 
+                <td>CC/068E</td> 
                 <td>https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9106150COU&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=I26OAYDHK7000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=I2DX5QDHV6000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=NH1A5CDHLT000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=HWZ5SIDH86000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=7604171COU&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=O1CSJJDH0IL00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=O6WZ4DDHL0Z00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=HWZ5IFDH86000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=NGZOR9DHLT000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=0200305ADV&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=NZEDU9DH0DK00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=O675BQDHKM000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=0201281ADV&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=0101268COU&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=NHR6W9DHLT000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=PN5YHQDHMU600&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=O1CT5KDH0IL00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=O3TULADH00F00&amp;activeTab=summary</td> 
-                <td>Unused building in an area where there is significant change of use to residential</td> 
+                <td>24-26 Canal Rd</td> 
+                <td>0.05</td> 
+                <td>local-authority-eng:BRD</td> 
+                <td>http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&amp;extent=416619.6028,433464.5479,416647.0634,433491.1809,27700</td> 
         </tr>    </tbody>
 </table>
 

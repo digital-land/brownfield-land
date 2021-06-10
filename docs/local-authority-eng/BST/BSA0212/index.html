@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,9 +160,23 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#BSA0212</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">planning-permission-history
             </dt>
-            <dd class="govuk-summary-list__value">                2017-12-19            </dd>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.bristol.gov.uk/documents/20182/34540/Site%20Allocations%20Annex%20Adopted%20July%202014%20Indexed.pdf#page=28">https://www.bristol.gov.uk/documents/20182/34540/Site%20Allocations%20Annex%20Adopted%20July%202014%20Indexed.pdf#page=28</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                15 Dwellings            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                15            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/BST" class="govuk-link">Bristol City Council</a>
+<span title="Organisation identifier: local-authority-eng:BST" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BST)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site
             </dt>
@@ -169,43 +186,29 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                15            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
+            <dt class="govuk-summary-list__key">start-date
             </dt>
-            <dd class="govuk-summary-list__value">                15 Dwellings            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                19-21 Pen Park Road, Southmead            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                BSA0212            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/BST" class="govuk-link">Bristol City Council</a>
-<span title="Organisation identifier: local-authority-eng:BST" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BST)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                15            </dd>
+            <dd class="govuk-summary-list__value">                2017-12-19            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hectares
             </dt>
             <dd class="govuk-summary-list__value">                0.19            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                19-21 Pen Park Road, Southmead            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-plan-url
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://maps.bristol.gov.uk/policies/">http://maps.bristol.gov.uk/policies/</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-history
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.bristol.gov.uk/documents/20182/34540/Site%20Allocations%20Annex%20Adopted%20July%202014%20Indexed.pdf#page=28">https://www.bristol.gov.uk/documents/20182/34540/Site%20Allocations%20Annex%20Adopted%20July%202014%20Indexed.pdf#page=28</a>            </dd>
+            <dd class="govuk-summary-list__value">                BSA0212            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -251,55 +254,55 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>maximum-net-dwellings</th>
-            <th>hectares</th>
-            <th>site-plan-url</th>
-            <th>site-address</th>
-            <th>start-date</th>
             <th>point</th>
-            <th>name</th>
-            <th>organisation</th>
-            <th>planning-permission-status</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
-            <th>planning-permission-history</th>
             <th>notes</th>
+            <th>site</th>
+            <th>start-date</th>
+            <th>planning-permission-status</th>
+            <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>site-address</th>
+            <th>planning-permission-history</th>
+            <th>name</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-12-18</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/27d67f0288c6a07d38c0d2ce05b31d76f492a57fc7e378428ac2cbbe9f628ce6.csv#L180">27d67f0288c6...</a></td>
             <td>179</td>
-                <td>15</td> 
-                <td>0.19</td> 
-                <td>http://maps.bristol.gov.uk/policies/</td> 
-                <td>19-21 Pen Park Road, Southmead</td> 
-                <td>2017-12-19</td> 
                 <td>POINT(-2.592602 51.501802)</td> 
-                <td>BSA0212</td> 
-                <td>local-authority-eng:BST</td> 
-                <td>not permissioned</td> 
-                <td>BSA0212</td> 
-                <td>15</td> 
-                <td>https://www.bristol.gov.uk/documents/20182/34540/Site%20Allocations%20Annex%20Adopted%20July%202014%20Indexed.pdf#page=28</td> 
             <td></td>
+                <td>BSA0212</td> 
+                <td>2017-12-19</td> 
+                <td>not permissioned</td> 
+                <td>15</td> 
+                <td>15</td> 
+                <td>19-21 Pen Park Road, Southmead</td> 
+                <td>https://www.bristol.gov.uk/documents/20182/34540/Site%20Allocations%20Annex%20Adopted%20July%202014%20Indexed.pdf#page=28</td> 
+                <td>BSA0212</td> 
+                <td>0.19</td> 
+                <td>local-authority-eng:BST</td> 
+                <td>http://maps.bristol.gov.uk/policies/</td> 
         </tr>        <tr>
             <td>2017-12-19</td>
-            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/b1272eab32c771263b63ea25e900f20406a8c77854f228d07766054cd8c3d801.csv#L194">b1272eab32c7...</a></td>
-            <td>193</td>
-                <td>15</td> 
-                <td>0.19</td> 
-                <td>http://maps.bristol.gov.uk/policies/</td> 
-                <td>19-21 Pen Park Road, Southmead</td> 
-                <td>2017-12-19</td> 
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/7ccc2a39bffa39656ac6eb9369644a7b22f5f79968b139e64ae97074ff962d06.csv#L191">7ccc2a39bffa...</a></td>
+            <td>190</td>
                 <td>POINT(-2.592602 51.501802)</td> 
-                <td>BSA0212</td> 
-                <td>local-authority-eng:BST</td> 
-                <td>not permissioned</td> 
-                <td>BSA0212</td> 
-                <td>15</td> 
-                <td>https://www.bristol.gov.uk/documents/20182/34540/Site%20Allocations%20Annex%20Adopted%20July%202014%20Indexed.pdf#page=28</td> 
                 <td>15 Dwellings</td> 
+                <td>BSA0212</td> 
+                <td>2017-12-19</td> 
+                <td>not permissioned</td> 
+                <td>15</td> 
+                <td>15</td> 
+                <td>19-21 Pen Park Road, Southmead</td> 
+                <td>https://www.bristol.gov.uk/documents/20182/34540/Site%20Allocations%20Annex%20Adopted%20July%202014%20Indexed.pdf#page=28</td> 
+                <td>BSA0212</td> 
+                <td>0.19</td> 
+                <td>local-authority-eng:BST</td> 
+                <td>http://maps.bristol.gov.uk/policies/</td> 
         </tr>    </tbody>
 </table>
 

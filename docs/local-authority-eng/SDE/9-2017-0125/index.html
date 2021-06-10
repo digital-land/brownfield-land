@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -161,18 +164,6 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                2018-12-13            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                9/2017/0125            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                15            </dd>
@@ -181,39 +172,51 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                9/2017/0125            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2018-01-17            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-address
             </dt>
             <dd class="govuk-summary-list__value">                FORMER DILKES GARAGE SITE HILL STREET SWADLINCOTE            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
+            <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
-            <dd class="govuk-summary-list__value">                THE ERECTION OF 15 AFFORDABLE DWELLINGS INCLUDING ASSOCIATED ACCESS AND PARKING REQUIREMENTS. https://www.planning.south-derbys.gov.uk/ApplicationDetail.aspx?Ref=9/2017/0125            </dd>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-plan-url
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=430287.48914275&StartNorthing=319464.8945464&StartZoom=500&o=1&Layers=Brownfield_Land_Register">http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&StartEasting=430287.48914275&StartNorthing=319464.8945464&StartZoom=500&o=1&Layers=Brownfield_Land_Register</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.2            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
-            </dt>
-            <dd class="govuk-summary-list__value">                full planning permission            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2018-01-17            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SDE" class="govuk-link">South Derbyshire District Council</a>
 <span title="Organisation identifier: local-authority-eng:SDE" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SDE)</span>
             </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                9/2017/0125            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.2            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-type
+            </dt>
+            <dd class="govuk-summary-list__value">                full planning permission            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                THE ERECTION OF 15 AFFORDABLE DWELLINGS INCLUDING ASSOCIATED ACCESS AND PARKING REQUIREMENTS. https://www.planning.south-derbys.gov.uk/ApplicationDetail.aspx?Ref=9/2017/0125            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
@@ -263,44 +266,44 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
-            <th>deliverable</th>
-            <th>planning-permission-type</th>
-            <th>start-date</th>
-            <th>planning-permission-status</th>
-            <th>site-address</th>
-            <th>name</th>
-            <th>planning-permission-date</th>
-            <th>organisation</th>
+            <th>notes</th>
             <th>point</th>
             <th>site</th>
+            <th>start-date</th>
+            <th>planning-permission-status</th>
             <th>minimum-net-dwellings</th>
-            <th>notes</th>
+            <th>maximum-net-dwellings</th>
+            <th>planning-permission-date</th>
+            <th>deliverable</th>
+            <th>planning-permission-type</th>
+            <th>site-address</th>
+            <th>name</th>
+            <th>ownership-status</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2018-12-13</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/b7eaf905d9a2ccaa9ec53bb8f15f2a9c52c06f679ea72a68f53fd552f6035248.csv#L19">b7eaf905d9a2...</a></td>
             <td>18</td>
-                <td>not owned by a public authority</td> 
-                <td>15</td> 
-                <td>http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&amp;StartEasting=430287.48914275&amp;StartNorthing=319464.8945464&amp;StartZoom=500&amp;o=1&amp;Layers=Brownfield_Land_Register</td> 
-                <td>0.2</td> 
-                <td>yes</td> 
-                <td>full planning permission</td> 
-                <td>2018-12-13</td> 
-                <td>permissioned</td> 
-                <td>FORMER DILKES GARAGE SITE HILL STREET SWADLINCOTE</td> 
-                <td>9/2017/0125</td> 
-                <td>2018-01-17</td> 
-                <td>local-authority-eng:SDE</td> 
+                <td>THE ERECTION OF 15 AFFORDABLE DWELLINGS INCLUDING ASSOCIATED ACCESS AND PARKING REQUIREMENTS. https://www.planning.south-derbys.gov.uk/ApplicationDetail.aspx?Ref=9/2017/0125</td> 
                 <td>POINT(-1.552513 52.771924)</td> 
                 <td>9/2017/0125</td> 
+                <td>2018-12-13</td> 
+                <td>permissioned</td> 
                 <td>15</td> 
-                <td>THE ERECTION OF 15 AFFORDABLE DWELLINGS INCLUDING ASSOCIATED ACCESS AND PARKING REQUIREMENTS. https://www.planning.south-derbys.gov.uk/ApplicationDetail.aspx?Ref=9/2017/0125</td> 
+                <td>15</td> 
+                <td>2018-01-17</td> 
+                <td>yes</td> 
+                <td>full planning permission</td> 
+                <td>FORMER DILKES GARAGE SITE HILL STREET SWADLINCOTE</td> 
+                <td>9/2017/0125</td> 
+                <td>not owned by a public authority</td> 
+                <td>0.2</td> 
+                <td>local-authority-eng:SDE</td> 
+                <td>http://maps.south-derbys.gov.uk/ishareLIVE.Web/atmyresponsivecouncil.aspx?MapSource=mapsources/AllMaps&amp;StartEasting=430287.48914275&amp;StartNorthing=319464.8945464&amp;StartZoom=500&amp;o=1&amp;Layers=Brownfield_Land_Register</td> 
         </tr>    </tbody>
 </table>
 

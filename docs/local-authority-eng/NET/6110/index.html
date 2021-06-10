@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,9 +160,37 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#6110</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.newcastle.gov.uk/sites/default/files/planning/policy/Brownfield%20Register%20Map%202019.pdf">https://www.newcastle.gov.uk/sites/default/files/planning/policy/Brownfield%20Register%20Map%202019.pdf</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                6110            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site
             </dt>
             <dd class="govuk-summary-list__value">                6110            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                8            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Land at Aln Crescent south of Kingston Park Road            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.22            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                8            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -170,34 +201,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">ownership-status
             </dt>
             <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                6110            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Land at Aln Crescent south of Kingston Park Road            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                8            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                8            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.newcastle.gov.uk/sites/default/files/planning/policy/Brownfield%20Register%20Map%202019.pdf">https://www.newcastle.gov.uk/sites/default/files/planning/policy/Brownfield%20Register%20Map%202019.pdf</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.22            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -247,52 +250,52 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
-            <th>site-address</th>
-            <th>start-date</th>
             <th>point</th>
-            <th>name</th>
-            <th>organisation</th>
-            <th>planning-permission-status</th>
             <th>site</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
             <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>ownership-status</th>
+            <th>name</th>
+            <th>site-address</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-12-23</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/9014202f7bbe64489d191df55e1068d8ff70dcdabe7aa6c07a3408d4e49c9f5b.csv#L113">9014202f7bbe...</a></td>
             <td>112</td>
-                <td>owned by a public authority</td> 
-                <td>8</td> 
-                <td>https://www.newcastle.gov.uk/sites/default/files/planning/policy/Brownfield%20Register%20Map%202019.pdf</td> 
-                <td>0.22</td> 
-                <td>Land at Aln Crescent south of Kingston Park Road</td> 
-                <td>2019-12-23</td> 
                 <td>POINT(-1.54557 54.97739)</td> 
                 <td>6110</td> 
-                <td>local-authority-eng:NET</td> 
                 <td>permissioned</td> 
-                <td>6110</td> 
+                <td>2019-12-23</td> 
                 <td>8</td> 
+                <td>8</td> 
+                <td>owned by a public authority</td> 
+                <td>6110</td> 
+                <td>Land at Aln Crescent south of Kingston Park Road</td> 
+                <td>0.22</td> 
+                <td>local-authority-eng:NET</td> 
+                <td>https://www.newcastle.gov.uk/sites/default/files/planning/policy/Brownfield%20Register%20Map%202019.pdf</td> 
         </tr>        <tr>
             <td>2019-12-23</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/5942368bc0ebda4372d6cc52186a78c6886ee26489c2724f78ae389477639832.csv#L113">5942368bc0eb...</a></td>
             <td>112</td>
-                <td>owned by a public authority</td> 
-                <td>7</td> 
-                <td>https://www.newcastle.gov.uk/sites/default/files/planning/policy/Brownfield%20Register%20Map%202019.pdf</td> 
-                <td>0.22</td> 
-                <td>Land at Aln Crescent south of Kingston Park Road</td> 
-            <td></td>
                 <td>POINT(-1.54557 54.97739)</td> 
                 <td>6110</td> 
-                <td>local-authority-eng:NET</td> 
                 <td>Not Permissioned</td> 
-                <td>6110</td> 
+            <td></td>
                 <td>7</td> 
+                <td>7</td> 
+                <td>owned by a public authority</td> 
+                <td>6110</td> 
+                <td>Land at Aln Crescent south of Kingston Park Road</td> 
+                <td>0.22</td> 
+                <td>local-authority-eng:NET</td> 
+                <td>https://www.newcastle.gov.uk/sites/default/files/planning/policy/Brownfield%20Register%20Map%202019.pdf</td> 
         </tr>    </tbody>
 </table>
 

@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,6 +160,16 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#BR8/03/0223</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/BPC" class="govuk-link">Bournemouth, Christchurch and Poole Council</a>
+<span title="Organisation identifier: local-authority-eng:BPC" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BPC)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                7            </dd>
@@ -165,9 +178,25 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                The Hinton Oak Lymington Road            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf">https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                Retain pub use but redevelop whole site for pub and 8 flats at 2.5 storey, residential and pub parking, garden. Avoid TPOs.            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hectares
             </dt>
             <dd class="govuk-summary-list__value">                0.243179            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                BR8/03/0223            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
@@ -180,32 +209,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                BR8/03/0223            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                BR8/03/0223            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/BPC" class="govuk-link">Bournemouth, Christchurch and Poole Council</a>
-<span title="Organisation identifier: local-authority-eng:BPC" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BPC)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                Retain pub use but redevelop whole site for pub and 8 flats at 2.5 storey, residential and pub parking, garden. Avoid TPOs.            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf">https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -251,38 +254,38 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>hectares</th>
-            <th>site-plan-url</th>
-            <th>site-address</th>
-            <th>start-date</th>
-            <th>planning-permission-status</th>
-            <th>name</th>
-            <th>organisation</th>
+            <th>notes</th>
             <th>point</th>
             <th>site</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
             <th>minimum-net-dwellings</th>
-            <th>notes</th>
+            <th>maximum-net-dwellings</th>
+            <th>ownership-status</th>
+            <th>site-address</th>
+            <th>name</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2017-06-12</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/a630588f31fd860446d76f04b2197657f7176db697d08e32bfc7206ca766a713.csv#L128">a630588f31fd...</a></td>
             <td>127</td>
-                <td>not owned by a public authority</td> 
-                <td>7</td> 
-                <td>0.243179</td> 
-                <td>https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf</td> 
-                <td>The Hinton Oak Lymington Road</td> 
-                <td>2017-06-12</td> 
-                <td>not permissioned</td> 
-                <td>BR8/03/0223</td> 
-                <td>local-authority-eng:BPC</td> 
+                <td>Retain pub use but redevelop whole site for pub and 8 flats at 2.5 storey, residential and pub parking, garden. Avoid TPOs.</td> 
                 <td>POINT(-1.708371 50.739898)</td> 
                 <td>BR8/03/0223</td> 
+                <td>not permissioned</td> 
+                <td>2017-06-12</td> 
                 <td>7</td> 
-                <td>Retain pub use but redevelop whole site for pub and 8 flats at 2.5 storey, residential and pub parking, garden. Avoid TPOs.</td> 
+                <td>7</td> 
+                <td>not owned by a public authority</td> 
+                <td>The Hinton Oak Lymington Road</td> 
+                <td>BR8/03/0223</td> 
+                <td>0.243179</td> 
+                <td>local-authority-eng:BPC</td> 
+                <td>https://www.bournemouth.gov.uk/planningbuilding/PlanningPolicy/PlanningPolicyFiles/brownfieldlandregister/blr-2019-site-plans-reduced.pdf</td> 
         </tr>    </tbody>
 </table>
 

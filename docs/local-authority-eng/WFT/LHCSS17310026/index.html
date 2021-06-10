@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,17 +160,27 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#LHCSS17310026</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
+            <dt class="govuk-summary-list__key">site
             </dt>
-            <dd class="govuk-summary-list__value">                0.26            </dd>
+            <dd class="govuk-summary-list__value">                LHCSS17310026            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
+            <dd class="govuk-summary-list__value">                LHCSS17310026            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2017-12-06            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/WFT" class="govuk-link">London Borough of Waltham Forest</a>
+<span title="Organisation identifier: local-authority-eng:WFT" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WFT)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Car Wash Site BHL02 North            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
@@ -177,35 +190,25 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                0            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
+            <dt class="govuk-summary-list__key">hectares
             </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/WFT" class="govuk-link">London Borough of Waltham Forest</a>
-<span title="Organisation identifier: local-authority-eng:WFT" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WFT)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                Not permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://maps.london.gov.uk/brownfield-site-register">https://maps.london.gov.uk/brownfield-site-register</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                LHCSS17310026            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Car Wash Site BHL02 North            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                LHCSS17310026            </dd>
+            <dd class="govuk-summary-list__value">                0.26            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">ownership-status
             </dt>
             <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://data.london.gov.uk/dataset/brownfield-land-register">https://data.london.gov.uk/dataset/brownfield-land-register</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -251,89 +254,89 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>deliverable</th>
-            <th>hectares</th>
-            <th>site-plan-url</th>
+            <th>point</th>
+            <th>site</th>
             <th>start-date</th>
             <th>planning-permission-status</th>
-            <th>point</th>
-            <th>name</th>
-            <th>organisation</th>
-            <th>site-address</th>
-            <th>site</th>
             <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>deliverable</th>
+            <th>ownership-status</th>
+            <th>name</th>
+            <th>site-address</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2017-12-06</td>
-            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/86dee119f806d0c7f62295e6aae502851827e848202c4e43e833126ed62773db.csv#L1107">86dee119f806...</a></td>
-            <td>1106</td>
-                <td>not owned by a public authority</td> 
-                <td>0</td> 
-                <td>yes</td> 
-                <td>0.26</td> 
-                <td>https://maps.london.gov.uk/brownfield-site-register</td> 
-                <td>2017-12-06</td> 
-                <td>Not permissioned</td> 
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/de3918b3af88df0eebce7fbb3f8bc36f571f59fda90470f9b1e8bee3145f8ca0.csv#L495">de3918b3af88...</a></td>
+            <td>494</td>
                 <td>POINT(-0.042628 51.586798)</td> 
                 <td>LHCSS17310026</td> 
-                <td>local-authority-eng:WFT</td> 
-                <td>Car Wash Site BHL02 North</td> 
-                <td>LHCSS17310026</td> 
+                <td>2017-12-06</td> 
+                <td>not permissioned</td> 
                 <td>0</td> 
+                <td>0</td> 
+                <td>yes</td> 
+                <td>not owned by a public authority</td> 
+                <td>LHCSS17310026</td> 
+                <td>Car Wash Site BHL02 North</td> 
+                <td>0.26</td> 
+                <td>local-authority-eng:WFT</td> 
+                <td>https://data.london.gov.uk/dataset/brownfield-land-register</td> 
+        </tr>        <tr>
+            <td>2017-12-06</td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/53ff7410d03797e7747d4df128ca450bbe808f4eacc79d0e2d18623ab4a99554.csv#L1107">53ff7410d037...</a></td>
+            <td>1106</td>
+                <td>POINT(-0.042628 51.586798)</td> 
+                <td>LHCSS17310026</td> 
+                <td>2017-12-06</td> 
+                <td>Not permissioned</td> 
+                <td>0</td> 
+                <td>0</td> 
+                <td>yes</td> 
+                <td>not owned by a public authority</td> 
+                <td>LHCSS17310026</td> 
+                <td>Car Wash Site BHL02 North</td> 
+                <td>0.26</td> 
+                <td>local-authority-eng:WFT</td> 
+                <td>https://maps.london.gov.uk/brownfield-site-register</td> 
         </tr>        <tr>
             <td>2017-12-06</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/f548f09d34f67ebcc13a9ac49a767efb5a2b42ad260eee5c39b0cd30a2121b40.csv#L28">f548f09d34f6...</a></td>
             <td>27</td>
-                <td>not owned by a public authority</td> 
-                <td>0</td> 
-                <td>yes</td> 
-                <td>0.26</td> 
-                <td>https://maps.london.gov.uk/brownfield-site-register</td> 
-                <td>2017-12-06</td> 
-                <td>not permissioned</td> 
                 <td>POINT(-0.042628 51.586798)</td> 
                 <td>LHCSS17310026</td> 
-                <td>local-authority-eng:WFT</td> 
-                <td>Car Wash Site BHL02 North</td> 
-                <td>LHCSS17310026</td> 
+                <td>2017-12-06</td> 
+                <td>not permissioned</td> 
                 <td>0</td> 
+                <td>0</td> 
+                <td>yes</td> 
+                <td>not owned by a public authority</td> 
+                <td>LHCSS17310026</td> 
+                <td>Car Wash Site BHL02 North</td> 
+                <td>0.26</td> 
+                <td>local-authority-eng:WFT</td> 
+                <td>https://maps.london.gov.uk/brownfield-site-register</td> 
         </tr>        <tr>
             <td>2017-12-06</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/9ee698608d8c7dcad9d872d2e109b28a00e577e100a53fc7f2e46a81c8a126e3.csv#L1494">9ee698608d8c...</a></td>
             <td>1493</td>
-                <td>not owned by a public authority</td> 
-                <td>0</td> 
-                <td>yes</td> 
-                <td>0.26</td> 
-                <td>https://maps.london.gov.uk/brownfield-site-register</td> 
+                <td>POINT(-0.042628 51.586798)</td> 
+                <td>LHCSS17310026</td> 
                 <td>2017-12-06</td> 
                 <td>Not permissioned</td> 
-                <td>POINT(-0.042628 51.586798)</td> 
-                <td>LHCSS17310026</td> 
-                <td>local-authority-eng:WFT</td> 
-                <td>Car Wash Site BHL02 North</td> 
-                <td>LHCSS17310026</td> 
                 <td>0</td> 
-        </tr>        <tr>
-            <td>2017-12-06</td>
-            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/de3918b3af88df0eebce7fbb3f8bc36f571f59fda90470f9b1e8bee3145f8ca0.csv#L495">de3918b3af88...</a></td>
-            <td>494</td>
-                <td>not owned by a public authority</td> 
                 <td>0</td> 
                 <td>yes</td> 
-                <td>0.26</td> 
-                <td>https://data.london.gov.uk/dataset/brownfield-land-register</td> 
-                <td>2017-12-06</td> 
-                <td>not permissioned</td> 
-                <td>POINT(-0.042628 51.586798)</td> 
+                <td>not owned by a public authority</td> 
                 <td>LHCSS17310026</td> 
-                <td>local-authority-eng:WFT</td> 
                 <td>Car Wash Site BHL02 North</td> 
-                <td>LHCSS17310026</td> 
-                <td>0</td> 
+                <td>0.26</td> 
+                <td>local-authority-eng:WFT</td> 
+                <td>https://maps.london.gov.uk/brownfield-site-register</td> 
         </tr>    </tbody>
 </table>
 

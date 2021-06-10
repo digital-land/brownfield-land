@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,45 +160,9 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#BFR088</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
-            <dd class="govuk-summary-list__value">                2017-12-22            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
-            </dt>
-            <dd class="govuk-summary-list__value">                outline planning permission            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                Resolution to grant subject to signing of S106. P/00941/16. Various including 53 residential units, retail, hotel, caf´┐Ż, bar, parking and public realm            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                53            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                53            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Land to west of Castle Street &amp; Maresfield, incorporating Columbine, part of Venture Quays, Barracks Building at the Esplanade and Albany Road, East Cowes, PO32            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.iwight.com/brownfieldlandregister">https://www.iwight.com/brownfieldlandregister</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                BFR088            </dd>
+            <dd class="govuk-summary-list__value">                pending decision            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -203,17 +170,53 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:IOW" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:IOW)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
+            <dt class="govuk-summary-list__key">planning-permission-type
             </dt>
-            <dd class="govuk-summary-list__value">                2.31            </dd>
+            <dd class="govuk-summary-list__value">                outline planning permission            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                53            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                53            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.iwight.com/brownfieldlandregister">https://www.iwight.com/brownfieldlandregister</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site
             </dt>
             <dd class="govuk-summary-list__value">                BFR088            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
+            <dt class="govuk-summary-list__key">site-address
             </dt>
-            <dd class="govuk-summary-list__value">                pending decision            </dd>
+            <dd class="govuk-summary-list__value">                Land to west of Castle Street &amp; Maresfield, incorporating Columbine, part of Venture Quays, Barracks Building at the Esplanade and Albany Road, East Cowes, PO32            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-12-22            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                2.31            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                Resolution to grant subject to signing of S106. P/00941/16. Various including 53 residential units, retail, hotel, café, bar, parking and public realm            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                BFR088            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -259,61 +262,80 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
+            <th>point</th>
+            <th>notes</th>
+            <th>site</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
+            <th>minimum-net-dwellings</th>
+            <th>planning-permission-type</th>
             <th>maximum-net-dwellings</th>
             <th>deliverable</th>
-            <th>planning-permission-type</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
-            <th>start-date</th>
+            <th>ownership-status</th>
             <th>site-address</th>
-            <th>point</th>
             <th>name</th>
+            <th>hectares</th>
             <th>organisation</th>
-            <th>planning-permission-status</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
-            <th>notes</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2017-12-22</td>
-            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/78a918b2ddeded372d6ec6414a17ef35c99c5b0323ee6e84024d14ecc2a26d43.csv#L18">78a918b2dded...</a></td>
-            <td>17</td>
-                <td>not owned by a public authority</td> 
-                <td>53</td> 
-                <td>yes</td> 
-                <td>outline planning permission</td> 
-                <td>https://www.iwight.com/brownfieldlandregister</td> 
-                <td>2.31</td> 
-                <td>2017-12-22</td> 
-                <td>Land to west of Castle Street &amp; Maresfield, incorporating Columbine, part of Venture Quays, Barracks Building at the Esplanade and Albany Road, East Cowes, PO32</td> 
-                <td>POINT(-1.288905 50.760741)</td> 
-                <td>BFR088</td> 
-                <td>local-authority-eng:IOW</td> 
-                <td>pending decision</td> 
-                <td>BFR088</td> 
-                <td>53</td> 
-                <td>Resolution to grant subject to signing of S106. P/00941/16. Various including 53 residential units, retail, hotel, caf´┐Ż, bar, parking and public realm</td> 
-        </tr>        <tr>
-            <td>2017-12-22</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/0aa04f5b5c737b7d3acdcd30232ead73de7ea766c42af5886c9afa9d8323a5fe.csv#L18">0aa04f5b5c73...</a></td>
             <td>17</td>
-                <td>not owned by a public authority</td> 
+                <td>POINT(-1.288905 50.760741)</td> 
+                <td>Resolution to grant subject to signing of S106. P/00941/16. Various including 53 residential units, retail, hotel, café, bar, parking and public realm</td> 
+                <td>BFR088</td> 
+                <td>pending decision</td> 
+                <td>2017-12-22</td> 
+                <td>53</td> 
+                <td>outline planning permission</td> 
                 <td>53</td> 
                 <td>yes</td> 
-                <td>outline planning permission</td> 
-                <td>https://www.iwight.com/brownfieldlandregister</td> 
-                <td>2.31</td> 
-                <td>2017-12-22</td> 
+                <td>not owned by a public authority</td> 
                 <td>Land to west of Castle Street &amp; Maresfield, incorporating Columbine, part of Venture Quays, Barracks Building at the Esplanade and Albany Road, East Cowes, PO32</td> 
-                <td>POINT(-1.288905 50.760741)</td> 
                 <td>BFR088</td> 
+                <td>2.31</td> 
                 <td>local-authority-eng:IOW</td> 
-                <td>pending decision</td> 
+                <td>https://www.iwight.com/brownfieldlandregister</td> 
+        </tr>        <tr>
+            <td>2017-12-22</td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/78a918b2ddeded372d6ec6414a17ef35c99c5b0323ee6e84024d14ecc2a26d43.csv#L18">78a918b2dded...</a></td>
+            <td>17</td>
+                <td>POINT(-1.288905 50.760741)</td> 
+                <td>Resolution to grant subject to signing of S106. P/00941/16. Various including 53 residential units, retail, hotel, caf´┐Ż, bar, parking and public realm</td> 
                 <td>BFR088</td> 
+                <td>pending decision</td> 
+                <td>2017-12-22</td> 
                 <td>53</td> 
+                <td>outline planning permission</td> 
+                <td>53</td> 
+                <td>yes</td> 
+                <td>not owned by a public authority</td> 
+                <td>Land to west of Castle Street &amp; Maresfield, incorporating Columbine, part of Venture Quays, Barracks Building at the Esplanade and Albany Road, East Cowes, PO32</td> 
+                <td>BFR088</td> 
+                <td>2.31</td> 
+                <td>local-authority-eng:IOW</td> 
+                <td>https://www.iwight.com/brownfieldlandregister</td> 
+        </tr>        <tr>
+            <td>2017-12-22</td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/5c6f6b7edce1592cda94845130f30623c155fdcea9c676add368916eaf4108fe.csv#L18">5c6f6b7edce1...</a></td>
+            <td>17</td>
+                <td>POINT(-1.288905 50.760741)</td> 
                 <td>Resolution to grant subject to signing of S106. P/00941/16. Various including 53 residential units, retail, hotel, café, bar, parking and public realm</td> 
+                <td>BFR088</td> 
+                <td>pending decision</td> 
+                <td>2017-12-22</td> 
+                <td>53</td> 
+                <td>outline planning permission</td> 
+                <td>53</td> 
+                <td>yes</td> 
+                <td>not owned by a public authority</td> 
+                <td>Land to west of Castle Street &amp; Maresfield, incorporating Columbine, part of Venture Quays, Barracks Building at the Esplanade and Albany Road, East Cowes, PO32</td> 
+                <td>BFR088</td> 
+                <td>2.31</td> 
+                <td>local-authority-eng:IOW</td> 
+                <td>https://www.iwight.com/brownfieldlandregister</td> 
         </tr>    </tbody>
 </table>
 

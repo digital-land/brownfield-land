@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,53 +160,57 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#NW/116</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                NW/116            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                NW/116            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                0            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                Site with prior notification approval for change of use            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=415859.5204,433978.9,415947.6,434026.8,27700">http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=415859.5204,433978.9,415947.6,434026.8,27700</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                0            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.19            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2018-11-01            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.19            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-address
             </dt>
             <dd class="govuk-summary-list__value">                Rutland House, Manningham Lane            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=415859.5204,433978.9,415947.6,434026.8,27700">http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=415859.5204,433978.9,415947.6,434026.8,27700</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                Site with prior notification approval for change of use            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-type
+            </dt>
+            <dd class="govuk-summary-list__value">                other            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                NW/116            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                0            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-history
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=8500506FUL&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9901198FUL&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=8507825FUL&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=JBYT5FDH8O000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=L0M5BNDHFH000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OVFVNMDH02F00&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=KWAE8LDHFH000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=LOW941DH0DX00&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=P2YGWCDH0A600&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=8400630COU&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=L9YRC1DH0B200&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OO8LCODH0A600&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=P30CBWDHJEW00&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=J8H1TTDH8O000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9303794FUL&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=LHWFB9DH0DX00&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OSKHOWDH0A600&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=7600146COU&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9703399FUL&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=MMFIB5DH0DX00&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OO8KKBDH0A600&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OSKAHJDH0A600&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=PJ9T98DH0LY00&activeTab=summary">https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=8500506FUL&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9901198FUL&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=8507825FUL&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=JBYT5FDH8O000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=L0M5BNDHFH000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OVFVNMDH02F00&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=KWAE8LDHFH000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=LOW941DH0DX00&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=P2YGWCDH0A600&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=8400630COU&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=L9YRC1DH0B200&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OO8LCODH0A600&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=P30CBWDHJEW00&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=J8H1TTDH8O000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9303794FUL&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=LHWFB9DH0DX00&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OSKHOWDH0A600&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=7600146COU&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9703399FUL&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=MMFIB5DH0DX00&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OO8KKBDH0A600&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OSKAHJDH0A600&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=PJ9T98DH0LY00&activeTab=summary</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -211,13 +218,9 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:BRD" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BRD)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                other            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-history
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=8500506FUL&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9901198FUL&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=8507825FUL&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=JBYT5FDH8O000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=L0M5BNDHFH000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OVFVNMDH02F00&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=KWAE8LDHFH000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=LOW941DH0DX00&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=P2YGWCDH0A600&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=8400630COU&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=L9YRC1DH0B200&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OO8LCODH0A600&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=P30CBWDHJEW00&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=J8H1TTDH8O000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9303794FUL&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=LHWFB9DH0DX00&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OSKHOWDH0A600&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=7600146COU&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9703399FUL&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=MMFIB5DH0DX00&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OO8KKBDH0A600&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OSKAHJDH0A600&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=PJ9T98DH0LY00&activeTab=summary">https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=8500506FUL&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9901198FUL&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=8507825FUL&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=JBYT5FDH8O000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=L0M5BNDHFH000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OVFVNMDH02F00&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=KWAE8LDHFH000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=LOW941DH0DX00&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=P2YGWCDH0A600&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=8400630COU&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=L9YRC1DH0B200&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OO8LCODH0A600&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=P30CBWDHJEW00&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=J8H1TTDH8O000&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9303794FUL&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=LHWFB9DH0DX00&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OSKHOWDH0A600&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=7600146COU&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9703399FUL&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=MMFIB5DH0DX00&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OO8KKBDH0A600&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OSKAHJDH0A600&activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=PJ9T98DH0LY00&activeTab=summary</a>            </dd>
+            <dd class="govuk-summary-list__value">                NW/116            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -263,64 +266,64 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>site-plan-url</th>
-            <th>deliverable</th>
-            <th>hectares</th>
-            <th>planning-permission-type</th>
-            <th>start-date</th>
             <th>point</th>
-            <th>planning-permission-status</th>
-            <th>name</th>
-            <th>site-address</th>
-            <th>organisation</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
-            <th>planning-permission-history</th>
             <th>notes</th>
+            <th>site</th>
+            <th>start-date</th>
+            <th>planning-permission-status</th>
+            <th>minimum-net-dwellings</th>
+            <th>planning-permission-type</th>
+            <th>maximum-net-dwellings</th>
+            <th>deliverable</th>
+            <th>ownership-status</th>
+            <th>site-address</th>
+            <th>planning-permission-history</th>
+            <th>name</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2019-12-01</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/69b3bbfdb70d87462f8c041c4ddf61c73db66b2cde9ad3a6a8531576344b666a.csv#L138">69b3bbfdb70d...</a></td>
             <td>137</td>
-                <td>not owned by a public authority</td> 
-                <td>0</td> 
-                <td>http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&amp;extent=415859.5204,433978.9,415947.6,434026.8,27700</td> 
-                <td>yes</td> 
-                <td>0.19</td> 
-                <td>other</td> 
-                <td>2018-11-01</td> 
                 <td>POINT(-1.760051 53.802088)</td> 
-                <td>permissioned</td> 
-                <td>NW/116</td> 
-                <td>Rutland House, Manningham Lane</td> 
-                <td>local-authority-eng:BRD</td> 
-                <td>NW/116</td> 
-                <td>0</td> 
-                <td>https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=8500506FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9901198FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=8507825FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=JBYT5FDH8O000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=L0M5BNDHFH000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OVFVNMDH02F00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=KWAE8LDHFH000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=LOW941DH0DX00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=P2YGWCDH0A600&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=8400630COU&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=L9YRC1DH0B200&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OO8LCODH0A600&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=P30CBWDHJEW00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=J8H1TTDH8O000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9303794FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=LHWFB9DH0DX00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OSKHOWDH0A600&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=7600146COU&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9703399FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=MMFIB5DH0DX00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OO8KKBDH0A600&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OSKAHJDH0A600&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=PJ9T98DH0LY00&amp;activeTab=summary</td> 
             <td></td>
+                <td>NW/116</td> 
+                <td>2018-11-01</td> 
+                <td>permissioned</td> 
+                <td>0</td> 
+                <td>other</td> 
+                <td>0</td> 
+                <td>yes</td> 
+                <td>not owned by a public authority</td> 
+                <td>Rutland House, Manningham Lane</td> 
+                <td>https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=8500506FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9901198FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=8507825FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=JBYT5FDH8O000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=L0M5BNDHFH000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OVFVNMDH02F00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=KWAE8LDHFH000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=LOW941DH0DX00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=P2YGWCDH0A600&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=8400630COU&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=L9YRC1DH0B200&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OO8LCODH0A600&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=P30CBWDHJEW00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=J8H1TTDH8O000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9303794FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=LHWFB9DH0DX00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OSKHOWDH0A600&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=7600146COU&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9703399FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=MMFIB5DH0DX00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OO8KKBDH0A600&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=OSKAHJDH0A600&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=PJ9T98DH0LY00&amp;activeTab=summary</td> 
+                <td>NW/116</td> 
+                <td>0.19</td> 
+                <td>local-authority-eng:BRD</td> 
+                <td>http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&amp;extent=415859.5204,433978.9,415947.6,434026.8,27700</td> 
         </tr>        <tr>
             <td>2018-11-01</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/45943bab01aef31a1c8c60cb8eb9a9385275b491a3dc6d4f2d0572902c54d0e9.csv#L144">45943bab01ae...</a></td>
             <td>143</td>
-                <td>not owned by a public authority</td> 
-                <td>0</td> 
-                <td>http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&amp;extent=415859.5204,433978.9,415947.6,434026.8,27700</td> 
-                <td>yes</td> 
-                <td>0.19</td> 
-                <td>other</td> 
-                <td>2018-11-01</td> 
                 <td>POINT(-1.760051 53.802088)</td> 
-                <td>permissioned</td> 
-                <td>NW/116</td> 
-                <td>Rutland House, Manningham Lane</td> 
-                <td>local-authority-eng:BRD</td> 
-                <td>NW/116</td> 
-                <td>0</td> 
-                <td>https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=8500506FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9901198FUL&amp;activeTab=summary|https://planning.bradford.gov.uk</td> 
                 <td>Site with prior notification approval for change of use</td> 
+                <td>NW/116</td> 
+                <td>2018-11-01</td> 
+                <td>permissioned</td> 
+                <td>0</td> 
+                <td>other</td> 
+                <td>0</td> 
+                <td>yes</td> 
+                <td>not owned by a public authority</td> 
+                <td>Rutland House, Manningham Lane</td> 
+                <td>https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=8500506FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9901198FUL&amp;activeTab=summary|https://planning.bradford.gov.uk</td> 
+                <td>NW/116</td> 
+                <td>0.19</td> 
+                <td>local-authority-eng:BRD</td> 
+                <td>http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&amp;extent=415859.5204,433978.9,415947.6,434026.8,27700</td> 
         </tr>    </tbody>
 </table>
 

@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,6 +160,30 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#WLDW01</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                WLDW01            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                Still in use. 07/2016/0784/REM - approved 3/2/17.. Reserved Matters application for erection of 3no detached dwellings (Appearance, Landscaping, layout and scale applied for) following demolition of existing garage            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                5            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                WLDW01            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.2            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2016-06-03            </dd>
@@ -167,53 +194,29 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:SRI" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SRI)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                Still in use. 07/2016/0784/REM - approved 3/2/17.. Reserved Matters application for erection of 3no detached dwellings (Appearance, Landscaping, layout and scale applied for) following demolition of existing garage            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.2            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                5            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                5            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                WLDW01            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
             <dd class="govuk-summary-list__value">                permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                WLDW01            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
             <dd class="govuk-summary-list__value">                2017-09-20            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
+            <dt class="govuk-summary-list__key">planning-permission-history
             </dt>
-            <dd class="govuk-summary-list__value">                Sherwood Garage, Todd Lane North            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
-            </dt>
-            <dd class="govuk-summary-list__value">                reserved matters approval            </dd>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://publicaccess.southribble.gov.uk/online-applications/">http://publicaccess.southribble.gov.uk/online-applications/</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-plan-url
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.southribble.gov.uk/content/housing-land-availability">https://www.southribble.gov.uk/content/housing-land-availability</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Sherwood Garage, Todd Lane North            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">deliverable
             </dt>
@@ -223,9 +226,9 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                2015-02-19            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-history
+            <dt class="govuk-summary-list__key">planning-permission-type
             </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://publicaccess.southribble.gov.uk/online-applications/">http://publicaccess.southribble.gov.uk/online-applications/</a>            </dd>
+            <dd class="govuk-summary-list__value">                reserved matters approval            </dd>
         </div>    
     </dl></article>
 </div>
@@ -267,88 +270,88 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>site-plan-url</th>
-            <th>planning-permission-type</th>
-            <th>hectares</th>
-            <th>deliverable</th>
-            <th>start-date</th>
-            <th>point</th>
-            <th>site-address</th>
-            <th>planning-permission-status</th>
-            <th>organisation</th>
-            <th>planning-permission-date</th>
-            <th>name</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
-            <th>planning-permission-history</th>
             <th>notes</th>
+            <th>point</th>
+            <th>site</th>
+            <th>start-date</th>
+            <th>planning-permission-status</th>
+            <th>minimum-net-dwellings</th>
+            <th>planning-permission-date</th>
+            <th>deliverable</th>
+            <th>planning-permission-type</th>
+            <th>ownership-status</th>
+            <th>site-address</th>
+            <th>planning-permission-history</th>
+            <th>name</th>
+            <th>maximum-net-dwellings</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2017-09-20</td>
-            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/ced87b836ddeb4f2a6450d482a1a1a55377bd5a0121a9a24832bb519159ce838.csv#L12">ced87b836dde...</a></td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/1d2361911244f405c35a9899cda65e39f18dc41ec90d45170b30d79705dd6f17.csv#L12">1d2361911244...</a></td>
             <td>11</td>
-                <td>not owned by a public authority</td> 
-                <td>5</td> 
-                <td>https://www.southribble.gov.uk/content/housing-land-availability</td> 
-                <td>reserved matters approval</td> 
-                <td>0.2</td> 
-                <td>yes</td> 
-                <td>2016-06-03</td> 
-                <td>POINT(-2.681393 53.737526)</td> 
-                <td>Sherwood Garage, Todd Lane North</td> 
-                <td>permissioned</td> 
-                <td>local-authority-eng:SRI</td> 
-                <td>2015-02-19</td> 
-                <td>WLDW01</td> 
-                <td>WLDW01</td> 
-                <td>5</td> 
-                <td>http://publicaccess.southribble.gov.uk/online-applications/</td> 
                 <td>Still in use. 07/2016/0784/REM - approved 3/2/17.. Reserved Matters application for erection of 3no detached dwellings (Appearance, Landscaping, layout and scale applied for) following demolition of existing garage</td> 
+                <td>POINT(-2.681393 53.737526)</td> 
+                <td>WLDW01</td> 
+                <td>2016-06-03</td> 
+                <td>permissioned</td> 
+                <td>5</td> 
+                <td>2015-02-19</td> 
+                <td>yes</td> 
+                <td>reserved matters approval</td> 
+                <td>not owned by a public authority</td> 
+                <td>Sherwood Garage, Todd Lane North</td> 
+                <td>http://publicaccess.southribble.gov.uk/online-applications/</td> 
+                <td>WLDW01</td> 
+                <td>5</td> 
+                <td>0.2</td> 
+                <td>local-authority-eng:SRI</td> 
+                <td>https://www.southribble.gov.uk/content/housing-land-availability</td> 
         </tr>        <tr>
             <td>2017-09-20</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/19d4766e774d42c5686f838e0c4e77beb4d464ac26837d51d8907e756c9bc20c.csv#L12">19d4766e774d...</a></td>
             <td>11</td>
-                <td>not owned by a public authority</td> 
-                <td>5</td> 
-                <td>https://www.southribble.gov.uk/content/housing-land-availability</td> 
-                <td>reserved matters approval</td> 
-                <td>0.2</td> 
-                <td>yes</td> 
-                <td>2016-06-03</td> 
-            <td></td>
-                <td>Sherwood Garage, Todd Lane North</td> 
-                <td>permissioned</td> 
-                <td>local-authority-eng:SRI</td> 
-                <td>2015-02-19</td> 
-                <td>WLDW01</td> 
-                <td>WLDW01</td> 
-                <td>5</td> 
-                <td>http://publicaccess.southribble.gov.uk/online-applications/</td> 
                 <td>Still in use. 07/2016/0784/REM - approved 3/2/17.. Reserved Matters application for erection of 3no detached dwellings (Appearance, Landscaping, layout and scale applied for) following demolition of existing garage</td> 
+            <td></td>
+                <td>WLDW01</td> 
+                <td>2016-06-03</td> 
+                <td>permissioned</td> 
+                <td>5</td> 
+                <td>2015-02-19</td> 
+                <td>yes</td> 
+                <td>reserved matters approval</td> 
+                <td>not owned by a public authority</td> 
+                <td>Sherwood Garage, Todd Lane North</td> 
+                <td>http://publicaccess.southribble.gov.uk/online-applications/</td> 
+                <td>WLDW01</td> 
+                <td>5</td> 
+                <td>0.2</td> 
+                <td>local-authority-eng:SRI</td> 
+                <td>https://www.southribble.gov.uk/content/housing-land-availability</td> 
         </tr>        <tr>
             <td>2016-06-03</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/a01c35d0eba2ea1bc2bbb17bfdc602ab6f25573696e2f994b45cdd6f0e4289cf.csv#L12">a01c35d0eba2...</a></td>
             <td>11</td>
-                <td>not owned by a public authority</td> 
+                <td>Still in use.</td> 
+            <td></td>
+                <td>WLDW01</td> 
+                <td>2016-06-03</td> 
+                <td>permissioned</td> 
                 <td>5</td> 
             <td></td>
             <td></td>
+            <td></td>
+                <td>not owned by a public authority</td> 
+            <td></td>
+            <td></td>
+                <td>WLDW01</td> 
+                <td>5</td> 
                 <td>0.2</td> 
-            <td></td>
-                <td>2016-06-03</td> 
-            <td></td>
-            <td></td>
-                <td>permissioned</td> 
                 <td>local-authority-eng:SRI</td> 
             <td></td>
-                <td>WLDW01</td> 
-                <td>WLDW01</td> 
-                <td>5</td> 
-            <td></td>
-                <td>Still in use.</td> 
         </tr>    </tbody>
 </table>
 

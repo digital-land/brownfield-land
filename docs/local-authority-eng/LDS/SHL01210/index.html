@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,25 +160,39 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#SHL01210</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-date
+            <dt class="govuk-summary-list__key">organisation
             </dt>
-            <dd class="govuk-summary-list__value">                2015-08-01            </dd>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/LDS" class="govuk-link">Leeds City Council</a>
+<span title="Organisation identifier: local-authority-eng:LDS" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:LDS)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            <dt class="govuk-summary-list__key">ownership-status
             </dt>
-            <dd class="govuk-summary-list__value">                89            </dd>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                SHL01210            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                Horsforth Mill, Low Lane. Horsforth, LS18 4er            </dd>
+            <dd class="govuk-summary-list__value">                89            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-type
             </dt>
             <dd class="govuk-summary-list__value">                full planning permission            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2015-08-01            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.7            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">notes
             </dt>
@@ -185,19 +202,13 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                89            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
+            <dt class="govuk-summary-list__key">site-address
             </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+            <dd class="govuk-summary-list__value">                Horsforth Mill, Low Lane. Horsforth, LS18 4er            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
+            <dt class="govuk-summary-list__key">site
             </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/LDS" class="govuk-link">Leeds City Council</a>
-<span title="Organisation identifier: local-authority-eng:LDS" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:LDS)</span>
-            </dd>
+            <dd class="govuk-summary-list__value">                SHL01210            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-plan-url
             </dt>
@@ -207,17 +218,9 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.7            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2016-11-07            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                SHL01210            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -263,64 +266,64 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>planning-permission-type</th>
-            <th>deliverable</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
-            <th>site-address</th>
-            <th>planning-permission-date</th>
             <th>point</th>
-            <th>name</th>
-            <th>start-date</th>
-            <th>organisation</th>
-            <th>planning-permission-status</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
             <th>notes</th>
+            <th>site</th>
+            <th>start-date</th>
+            <th>planning-permission-status</th>
+            <th>minimum-net-dwellings</th>
+            <th>planning-permission-type</th>
+            <th>planning-permission-date</th>
+            <th>deliverable</th>
+            <th>ownership-status</th>
+            <th>name</th>
+            <th>maximum-net-dwellings</th>
+            <th>site-address</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2016-11-07</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/a3efc12b4374fc4d186f7998987cd390c269ce1c99ff3e43995a864ffa0cd03e.csv#L217">a3efc12b4374...</a></td>
             <td>216</td>
-                <td>not owned by a public authority</td> 
-                <td>89</td> 
-                <td>full planning permission</td> 
-                <td>yes</td> 
-                <td>https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&amp;find=SHL01210</td> 
-                <td>0.7</td> 
-                <td>Horsforth Mill, Low Lane. Horsforth, LS18 4er</td> 
-                <td>2015-08-01</td> 
                 <td>POINT(-1.617505 53.834791)</td> 
+                <td>Alterations and five storey extension to mill to form 84 flats with undercroft parking, one detached 3 and 2 storey block to form 5 flats, demolition of existing buildings, associated access, car parking and landscaping</td> 
                 <td>SHL01210</td> 
                 <td>2016-11-07</td> 
-                <td>local-authority-eng:LDS</td> 
                 <td>permissioned</td> 
+                <td>89</td> 
+                <td>full planning permission</td> 
+                <td>2015-08-01</td> 
+                <td>yes</td> 
+                <td>not owned by a public authority</td> 
                 <td>SHL01210</td> 
                 <td>89</td> 
-                <td>Alterations and five storey extension to mill to form 84 flats with undercroft parking, one detached 3 and 2 storey block to form 5 flats, demolition of existing buildings, associated access, car parking and landscaping</td> 
+                <td>Horsforth Mill, Low Lane. Horsforth, LS18 4er</td> 
+                <td>0.7</td> 
+                <td>local-authority-eng:LDS</td> 
+                <td>https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&amp;find=SHL01210</td> 
         </tr>        <tr>
             <td>2016-07-11</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/0718b0fcb6c27713952a624965815f05a214a9c1861a8271367502f60ac44e82.csv#L121">0718b0fcb6c2...</a></td>
             <td>120</td>
-                <td>not owned by a public authority</td> 
-                <td>89</td> 
-                <td>full planning permission</td> 
-                <td>yes</td> 
-                <td>https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&amp;find=SHL01210</td> 
-                <td>0.7</td> 
-                <td>Horsforth Mill, Low Lane. Horsforth, LS18 4er</td> 
-                <td>2015-01-08</td> 
             <td></td>
+                <td>Alterations and five storey extension to mill to form 84 flats with undercroft parking, one detached 3 and 2 storey block to form 5 flats, demolition of existing buildings, associated access, car parking and landscaping</td> 
                 <td>SHL01210</td> 
                 <td>2016-07-11</td> 
-                <td>local-authority-eng:LDS</td> 
                 <td>permissioned</td> 
+                <td>89</td> 
+                <td>full planning permission</td> 
+                <td>2015-01-08</td> 
+                <td>yes</td> 
+                <td>not owned by a public authority</td> 
                 <td>SHL01210</td> 
                 <td>89</td> 
-                <td>Alterations and five storey extension to mill to form 84 flats with undercroft parking, one detached 3 and 2 storey block to form 5 flats, demolition of existing buildings, associated access, car parking and landscaping</td> 
+                <td>Horsforth Mill, Low Lane. Horsforth, LS18 4er</td> 
+                <td>0.7</td> 
+                <td>local-authority-eng:LDS</td> 
+                <td>https://leedscc.maps.arcgis.com/apps/webappviewer/index.html?id=612532561dc547fa93e683a5fca73079&amp;find=SHL01210</td> 
         </tr>    </tbody>
 </table>
 

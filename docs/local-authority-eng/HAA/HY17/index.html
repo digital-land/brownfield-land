@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -161,26 +164,6 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                1.92            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                BEACHLANDS HAYLING ISLAND            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                125            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                125            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.havant.gov.uk/evidence-base-studies/strategic-housing-land-availability-assessment">http://www.havant.gov.uk/evidence-base-studies/strategic-housing-land-availability-assessment</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-history
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://planningpublicaccess.havant.gov.uk/online-applications/propertyDetails.do?activeTab=relatedCases&keyVal=PROPLPI_1478_1">https://planningpublicaccess.havant.gov.uk/online-applications/propertyDetails.do?activeTab=relatedCases&keyVal=PROPLPI_1478_1</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site
             </dt>
             <dd class="govuk-summary-list__value">                HY17            </dd>
@@ -189,23 +172,43 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                not permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-12-08            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                mixed ownership            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/HAA" class="govuk-link">Havant Borough Council</a>
 <span title="Organisation identifier: local-authority-eng:HAA" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:HAA)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-12-08            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                BEACHLANDS HAYLING ISLAND            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                HY17            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-history
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://planningpublicaccess.havant.gov.uk/online-applications/propertyDetails.do?activeTab=relatedCases&keyVal=PROPLPI_1478_1">https://planningpublicaccess.havant.gov.uk/online-applications/propertyDetails.do?activeTab=relatedCases&keyVal=PROPLPI_1478_1</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.havant.gov.uk/evidence-base-studies/strategic-housing-land-availability-assessment">http://www.havant.gov.uk/evidence-base-studies/strategic-housing-land-availability-assessment</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                125            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                125            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                mixed ownership            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -251,38 +254,38 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
-            <th>site-address</th>
             <th>point</th>
-            <th>planning-permission-status</th>
-            <th>start-date</th>
-            <th>organisation</th>
-            <th>name</th>
             <th>site</th>
+            <th>start-date</th>
+            <th>planning-permission-status</th>
             <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>ownership-status</th>
+            <th>site-address</th>
+            <th>name</th>
             <th>planning-permission-history</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2017-12-08</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/e4d69bd1d994b47219ee1ce35cd8319022a311841df410823db81e955a69ad96.csv#L12">e4d69bd1d994...</a></td>
             <td>11</td>
-                <td>mixed ownership</td> 
-                <td>125</td> 
-                <td>http://www.havant.gov.uk/evidence-base-studies/strategic-housing-land-availability-assessment</td> 
-                <td>1.92</td> 
-                <td>BEACHLANDS HAYLING ISLAND</td> 
                 <td>POINT(-0.988232 50.784762)</td> 
-                <td>not permissioned</td> 
+                <td>HY17</td> 
                 <td>2017-12-08</td> 
-                <td>local-authority-eng:HAA</td> 
-                <td>HY17</td> 
-                <td>HY17</td> 
+                <td>not permissioned</td> 
                 <td>125</td> 
+                <td>125</td> 
+                <td>mixed ownership</td> 
+                <td>BEACHLANDS HAYLING ISLAND</td> 
+                <td>HY17</td> 
                 <td>https://planningpublicaccess.havant.gov.uk/online-applications/propertyDetails.do?activeTab=relatedCases&amp;keyVal=PROPLPI_1478_1</td> 
+                <td>1.92</td> 
+                <td>local-authority-eng:HAA</td> 
+                <td>http://www.havant.gov.uk/evidence-base-studies/strategic-housing-land-availability-assessment</td> 
         </tr>    </tbody>
 </table>
 

@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,18 +160,6 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#SH 2112</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.16            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                8            </dd>
@@ -177,13 +168,23 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                8            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/RCH" class="govuk-link">Rochdale Metropolitan Borough Council</a>
+<span title="Organisation identifier: local-authority-eng:RCH" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:RCH)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site-address
             </dt>
             <dd class="govuk-summary-list__value">                Milton Street Family And Children Centre,Milton Street,Middleton            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">hectares
             </dt>
-            <dd class="govuk-summary-list__value">                2017-11-28            </dd>
+            <dd class="govuk-summary-list__value">                0.16            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
@@ -197,11 +198,13 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                SH 2112            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
+            <dt class="govuk-summary-list__key">deliverable
             </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/RCH" class="govuk-link">Rochdale Metropolitan Borough Council</a>
-<span title="Organisation identifier: local-authority-eng:RCH" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:RCH)</span>
-            </dd>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-11-28            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -251,55 +254,55 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>deliverable</th>
-            <th>hectares</th>
-            <th>site-plan-url</th>
-            <th>start-date</th>
-            <th>planning-permission-status</th>
-            <th>site-address</th>
-            <th>name</th>
-            <th>organisation</th>
             <th>point</th>
             <th>site</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
             <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>deliverable</th>
+            <th>ownership-status</th>
+            <th>name</th>
+            <th>site-address</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2018-12-05</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/34e3c37538889673a7227716ccb0faca6e1b1ffa6a0b8bc7807294d8d144577a.csv#L33">34e3c3753888...</a></td>
             <td>32</td>
-                <td>not owned by a public authority</td> 
-                <td>8</td> 
-                <td>yes</td> 
-                <td>0.16</td> 
-                <td>https://mappinggm.org.uk/gmodin/?lyrs=brownfield_2018_gm#os_maps_light/19/53.552082/-2.1998618</td> 
-                <td>2017-11-28</td> 
-                <td>permissioned</td> 
-                <td>Milton Street Family And Children Centre,Milton Street,Middleton</td> 
-                <td>SH 2112</td> 
-                <td>local-authority-eng:RCH</td> 
             <td></td>
                 <td>SH 2112</td> 
+                <td>permissioned</td> 
+                <td>2017-11-28</td> 
                 <td>8</td> 
+                <td>8</td> 
+                <td>yes</td> 
+                <td>not owned by a public authority</td> 
+                <td>SH 2112</td> 
+                <td>Milton Street Family And Children Centre,Milton Street,Middleton</td> 
+                <td>0.16</td> 
+                <td>local-authority-eng:RCH</td> 
+                <td>https://mappinggm.org.uk/gmodin/?lyrs=brownfield_2018_gm#os_maps_light/19/53.552082/-2.1998618</td> 
         </tr>        <tr>
             <td>2017-11-28</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/5ed5da3ec0f3a94a214b1d119b5904625058f5834ca2c5afedaf66df2c19f4bb.csv#L92">5ed5da3ec0f3...</a></td>
             <td>91</td>
-                <td>not owned by a public authority</td> 
-                <td>8</td> 
-                <td>yes</td> 
-                <td>0.16</td> 
-            <td></td>
-                <td>2017-11-28</td> 
-                <td>permissioned</td> 
-                <td>Milton St Family And Children Centre, Milton Street, Middleton</td> 
-                <td>SH 2112</td> 
-                <td>local-authority-eng:RCH</td> 
                 <td>POINT(-2.199862 53.552082)</td> 
                 <td>SH 2112</td> 
+                <td>permissioned</td> 
+                <td>2017-11-28</td> 
                 <td>8</td> 
+                <td>8</td> 
+                <td>yes</td> 
+                <td>not owned by a public authority</td> 
+                <td>SH 2112</td> 
+                <td>Milton St Family And Children Centre, Milton Street, Middleton</td> 
+                <td>0.16</td> 
+                <td>local-authority-eng:RCH</td> 
+            <td></td>
         </tr>    </tbody>
 </table>
 

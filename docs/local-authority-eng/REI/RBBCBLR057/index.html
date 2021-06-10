@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -161,44 +164,6 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-history
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://planning.reigate-banstead.gov.uk/online-applications/simpleSearchResults.do?action=firstPage">http://planning.reigate-banstead.gov.uk/online-applications/simpleSearchResults.do?action=firstPage</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/REI" class="govuk-link">Reigate and Banstead Borough Council</a>
-<span title="Organisation identifier: local-authority-eng:REI" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:REI)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                RBBCBLR057            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.reigate-banstead.gov.uk/downloads/file/3874/rbbcblr057">http://www.reigate-banstead.gov.uk/downloads/file/3874/rbbcblr057</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.15            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                20            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                The site has been allocated in the Development Management Plan for approx. 20 homes (site allocation policy HOR3).            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                RBBCBLR057            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2017-12-31            </dd>
@@ -207,6 +172,14 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                Horley Police Station, Massetts Road, Horley            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                RBBCBLR057            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
             <dd class="govuk-summary-list__value">                Not permissioned            </dd>
@@ -214,6 +187,36 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                20            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                RBBCBLR057            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.reigate-banstead.gov.uk/downloads/file/3874/rbbcblr057">http://www.reigate-banstead.gov.uk/downloads/file/3874/rbbcblr057</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-history
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://planning.reigate-banstead.gov.uk/online-applications/simpleSearchResults.do?action=firstPage">http://planning.reigate-banstead.gov.uk/online-applications/simpleSearchResults.do?action=firstPage</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                The site has been allocated in the Development Management Plan for approx. 20 homes (site allocation policy HOR3).            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/REI" class="govuk-link">Reigate and Banstead Borough Council</a>
+<span title="Organisation identifier: local-authority-eng:REI" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:REI)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                20            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.15            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -259,80 +262,80 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
+            <th>point</th>
+            <th>notes</th>
+            <th>site</th>
+            <th>start-date</th>
+            <th>planning-permission-status</th>
+            <th>minimum-net-dwellings</th>
             <th>maximum-net-dwellings</th>
             <th>deliverable</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
-            <th>start-date</th>
-            <th>point</th>
+            <th>ownership-status</th>
             <th>site-address</th>
             <th>name</th>
-            <th>organisation</th>
-            <th>planning-permission-status</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
             <th>planning-permission-history</th>
-            <th>notes</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-12-31</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/ee5a4c155c948d9ce8c5053aca0f433d2aa19fdfc0c9e7a3a66c7f25dcb672aa.csv#L26">ee5a4c155c94...</a></td>
             <td>25</td>
-                <td>owned by a public authority</td> 
+                <td>POINT(-0.164208 51.171116)</td> 
+                <td>The site has been allocated in the Development Management Plan for approx. 20 homes (site allocation policy HOR3).</td> 
+                <td>RBBCBLR057</td> 
+                <td>2017-12-31</td> 
+                <td>Not permissioned</td> 
+                <td>20</td> 
                 <td>20</td> 
                 <td>yes</td> 
-                <td>http://www.reigate-banstead.gov.uk/downloads/file/3874/rbbcblr057</td> 
-                <td>0.15</td> 
-                <td>2017-12-31</td> 
-                <td>POINT(-0.164208 51.171116)</td> 
+                <td>owned by a public authority</td> 
                 <td>Horley Police Station, Massetts Road, Horley</td> 
                 <td>RBBCBLR057</td> 
-                <td>local-authority-eng:REI</td> 
-                <td>Not permissioned</td> 
-                <td>RBBCBLR057</td> 
-                <td>20</td> 
             <td></td>
-                <td>The site has been allocated in the Development Management Plan for approx. 20 homes (site allocation policy HOR3).</td> 
+                <td>0.15</td> 
+                <td>local-authority-eng:REI</td> 
+                <td>http://www.reigate-banstead.gov.uk/downloads/file/3874/rbbcblr057</td> 
         </tr>        <tr>
             <td>2019-12-31</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/8b7de81eef4d65a2129fc0e549b2f7987a16c9604192cafb92294ee26dcd75b2.csv#L32">8b7de81eef4d...</a></td>
             <td>31</td>
-                <td>owned by a public authority</td> 
+                <td>POINT(-0.164208 51.171116)</td> 
+                <td>The site is owned by the Police Crime Commissioner for Surrey. The landowner has indicated that the site is no longer required for operational purposes. The site has been allocated in the DMP for housing development (DMP site allocation policy HOR3).</td> 
+                <td>RBBCBLR057</td> 
+                <td>2017-12-31</td> 
+                <td>Not permissioned</td> 
+                <td>20</td> 
                 <td>20</td> 
                 <td>yes</td> 
-                <td>http://www.reigate-banstead.gov.uk/downloads/file/3874/rbbcblr057</td> 
-                <td>0.15</td> 
-                <td>2017-12-31</td> 
-                <td>POINT(-0.164208 51.171116)</td> 
+                <td>owned by a public authority</td> 
                 <td>Horley Police Station, Massetts Road, Horley</td> 
                 <td>RBBCBLR057</td> 
-                <td>local-authority-eng:REI</td> 
-                <td>Not permissioned</td> 
-                <td>RBBCBLR057</td> 
-                <td>20</td> 
             <td></td>
-                <td>The site is owned by the Police Crime Commissioner for Surrey. The landowner has indicated that the site is no longer required for operational purposes. The site has been allocated in the DMP for housing development (DMP site allocation policy HOR3).</td> 
+                <td>0.15</td> 
+                <td>local-authority-eng:REI</td> 
+                <td>http://www.reigate-banstead.gov.uk/downloads/file/3874/rbbcblr057</td> 
         </tr>        <tr>
             <td>2017-12-31</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/debc0d5bf94db70a816f0eaea1001e8bdc462db5ded561606e0ad606857e9a60.csv#L58">debc0d5bf94d...</a></td>
             <td>57</td>
-                <td>owned by a public authority</td> 
+                <td>POINT(-0.164208 51.171116)</td> 
+                <td>Borough Local Plan (2005) policy Cf1 resists the loss of community buildings or uses unless there is no longer a need for them, or adequate alternative provision is to be made elsewhere in the locality and no other community facility or service can make use of the premises or site. The site is owned by the Police Crime Commissioner for Surrey. The landowner has indicated that the site is no longer required for operational purposes. The site has been identified in the Regulation 19 Development Management Plan for housing development.</td> 
+                <td>RBBCBLR057</td> 
+                <td>2017-12-31</td> 
+                <td>Not permissioned</td> 
+                <td>20</td> 
                 <td>20</td> 
                 <td>yes</td> 
-                <td>http://www.reigate-banstead.gov.uk/downloads/file/3874/rbbcblr057</td> 
-                <td>0.15</td> 
-                <td>2017-12-31</td> 
-                <td>POINT(-0.164208 51.171116)</td> 
+                <td>owned by a public authority</td> 
                 <td>Horley Police Station, Massetts Road, Horley</td> 
                 <td>RBBCBLR057</td> 
-                <td>local-authority-eng:REI</td> 
-                <td>Not permissioned</td> 
-                <td>RBBCBLR057</td> 
-                <td>20</td> 
                 <td>http://planning.reigate-banstead.gov.uk/online-applications/simpleSearchResults.do?action=firstPage</td> 
-                <td>Borough Local Plan (2005) policy Cf1 resists the loss of community buildings or uses unless there is no longer a need for them, or adequate alternative provision is to be made elsewhere in the locality and no other community facility or service can make use of the premises or site. The site is owned by the Police Crime Commissioner for Surrey. The landowner has indicated that the site is no longer required for operational purposes. The site has been identified in the Regulation 19 Development Management Plan for housing development.</td> 
+                <td>0.15</td> 
+                <td>local-authority-eng:REI</td> 
+                <td>http://www.reigate-banstead.gov.uk/downloads/file/3874/rbbcblr057</td> 
         </tr>    </tbody>
 </table>
 

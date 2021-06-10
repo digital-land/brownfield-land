@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -161,6 +164,18 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                2019-11-21            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                Conversion of detached former grain store into dwelling with associated curtilage. http://www.cartogold.co.uk/tandridgelocalplan/            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                1            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Little Woodbury, Bones Lane, Newchapel, Lingfield RH7 6HR            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">ownership-status
             </dt>
             <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
@@ -169,27 +184,9 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register">https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
+            <dt class="govuk-summary-list__key">planning-permission-date
             </dt>
-            <dd class="govuk-summary-list__value">                Conversion of detached former grain store into dwelling with associated curtilage. http://www.cartogold.co.uk/tandridgelocalplan/            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Little Woodbury, Bones Lane, Newchapel, Lingfield RH7 6HR            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                2019/321            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/TAN" class="govuk-link">Tandridge District Council</a>
-<span title="Organisation identifier: local-authority-eng:TAN" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:TAN)</span>
-            </dd>
+            <dd class="govuk-summary-list__value">                2019-05-09            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hectares
             </dt>
@@ -199,25 +196,31 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                full planning permission            </dd>
+            <dd class="govuk-summary-list__value">                2019/321            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site
             </dt>
             <dd class="govuk-summary-list__value">                2019/321            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                1            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                1            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-date
+            <dt class="govuk-summary-list__key">organisation
             </dt>
-            <dd class="govuk-summary-list__value">                2019-05-09            </dd>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/TAN" class="govuk-link">Tandridge District Council</a>
+<span title="Organisation identifier: local-authority-eng:TAN" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:TAN)</span>
+            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-type
+            </dt>
+            <dd class="govuk-summary-list__value">                full planning permission            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -263,44 +266,44 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
-            <th>deliverable</th>
-            <th>planning-permission-type</th>
+            <th>notes</th>
+            <th>point</th>
+            <th>site</th>
             <th>start-date</th>
             <th>planning-permission-status</th>
+            <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>planning-permission-date</th>
+            <th>deliverable</th>
+            <th>ownership-status</th>
             <th>site-address</th>
             <th>name</th>
+            <th>planning-permission-type</th>
+            <th>hectares</th>
             <th>organisation</th>
-            <th>point</th>
-            <th>planning-permission-date</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
-            <th>notes</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2019-11-21</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/68ec0d6931690d0b12c31b0354298ffa6a33b83ae886a8a10a89fbb69ceb8125.csv#L59">68ec0d693169...</a></td>
             <td>58</td>
-                <td>not owned by a public authority</td> 
-                <td>1</td> 
-                <td>https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register</td> 
-                <td>0.69</td> 
-                <td>yes</td> 
-                <td>full planning permission</td> 
+                <td>Conversion of detached former grain store into dwelling with associated curtilage. http://www.cartogold.co.uk/tandridgelocalplan/</td> 
+                <td>POINT(-0.06585 51.166914)</td> 
+                <td>2019/321</td> 
                 <td>2019-11-21</td> 
                 <td>permissioned</td> 
+                <td>1</td> 
+                <td>1</td> 
+                <td>2019-05-09</td> 
+                <td>yes</td> 
+                <td>not owned by a public authority</td> 
                 <td>Little Woodbury, Bones Lane, Newchapel, Lingfield RH7 6HR</td> 
                 <td>2019/321</td> 
+                <td>full planning permission</td> 
+                <td>0.69</td> 
                 <td>local-authority-eng:TAN</td> 
-                <td>POINT(-0.06585 51.166914)</td> 
-                <td>2019-05-09</td> 
-                <td>2019/321</td> 
-                <td>1</td> 
-                <td>Conversion of detached former grain store into dwelling with associated curtilage. http://www.cartogold.co.uk/tandridgelocalplan/</td> 
+                <td>https://www.tandridge.gov.uk/Planning-and-building/Planning-strategies-and-policies/Local-Plan-2033-emerging-planning-policies/Local-Plan-2033/Housing-and-Economic-Land-Availability-Assessment-HELAA-and-Brownfield-Register</td> 
         </tr>    </tbody>
 </table>
 

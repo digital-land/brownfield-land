@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,59 +160,59 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#BR/03/001</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                BR/03/001            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                Former Bere Regis primary school, Rye Hill, Bere Regis            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.dorsetforyou.gov.uk/planning-buildings-land/planning-policy/purbeck/brownfield-register-purbeck/brownfield-register-purbeck.aspx">https://www.dorsetforyou.gov.uk/planning-buildings-land/planning-policy/purbeck/brownfield-register-purbeck/brownfield-register-purbeck.aspx</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                9            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                BR/03/001            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                Only part of site brownfield - school building SHLAA 6/03/1336            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/PUR" class="govuk-link">Purbeck District Council</a>
 <span title="Organisation identifier: local-authority-eng:PUR" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:PUR)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                Former Bere Regis primary school, Rye Hill, Bere Regis            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                Only part of site brownfield - school building SHLAA 6/03/1336            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.dorsetforyou.gov.uk/planning-buildings-land/planning-policy/purbeck/brownfield-register-purbeck/brownfield-register-purbeck.aspx">https://www.dorsetforyou.gov.uk/planning-buildings-land/planning-policy/purbeck/brownfield-register-purbeck/brownfield-register-purbeck.aspx</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                9            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                BR/03/001            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
             <dd class="govuk-summary-list__value">                not permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            <dt class="govuk-summary-list__key">start-date
             </dt>
-            <dd class="govuk-summary-list__value">                9            </dd>
+            <dd class="govuk-summary-list__value">                2017-12-31            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                BR/03/001            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hectares
             </dt>
             <dd class="govuk-summary-list__value">                0.3            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                2017-12-31            </dd>
+            <dd class="govuk-summary-list__value">                9            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -255,58 +258,58 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
+            <th>notes</th>
+            <th>point</th>
+            <th>site</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
+            <th>minimum-net-dwellings</th>
             <th>maximum-net-dwellings</th>
             <th>deliverable</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
+            <th>ownership-status</th>
             <th>site-address</th>
-            <th>point</th>
-            <th>planning-permission-status</th>
             <th>name</th>
+            <th>hectares</th>
             <th>organisation</th>
-            <th>start-date</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
-            <th>notes</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2018-12-31</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/7274fab94929c985f8d0249f0d841c8a5f211243f9ac0106a1d6606e1a493fb1.csv#L2">7274fab94929...</a></td>
             <td>1</td>
-                <td>owned by a public authority</td> 
+                <td>Only part of site brownfield - school building SHLAA 6/03/1336</td> 
+                <td>POINT(-2.218153 50.747808)</td> 
+                <td>BR/03/001</td> 
+                <td>not permissioned</td> 
+                <td>2017-12-31</td> 
+                <td>9</td> 
                 <td>9</td> 
                 <td>yes</td> 
-                <td>https://www.dorsetforyou.gov.uk/planning-buildings-land/planning-policy/purbeck/brownfield-register-purbeck/brownfield-register-purbeck.aspx</td> 
-                <td>0.3</td> 
+                <td>owned by a public authority</td> 
                 <td>Former Bere Regis primary school, Rye Hill, Bere Regis</td> 
-                <td>POINT(-2.218153 50.747808)</td> 
-                <td>not permissioned</td> 
                 <td>BR/03/001</td> 
+                <td>0.3</td> 
                 <td>local-authority-eng:PUR</td> 
-                <td>2017-12-31</td> 
-                <td>BR/03/001</td> 
-                <td>9</td> 
-                <td>Only part of site brownfield - school building SHLAA 6/03/1336</td> 
+                <td>https://www.dorsetforyou.gov.uk/planning-buildings-land/planning-policy/purbeck/brownfield-register-purbeck/brownfield-register-purbeck.aspx</td> 
         </tr>        <tr>
             <td>2017-12-31</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/000b261f1757b69b9435ec20bae8f2b141677d17c054f01b187c8952e117db33.csv#L2">000b261f1757...</a></td>
             <td>1</td>
-                <td>owned by a public authority</td> 
+                <td>Only part of site brownfield - school building SHLAA 6/03/1336</td> 
+                <td>POINT(-2.218153 50.747808)</td> 
+                <td>BR/03/001</td> 
+                <td>not permissioned</td> 
+                <td>2017-12-31</td> 
+                <td>9</td> 
                 <td>9</td> 
                 <td>yes</td> 
-                <td>https://www.dorsetforyou.gov.uk/article/408863/Current-plans-and-strategies-in-Purbeck</td> 
-                <td>0.3</td> 
+                <td>owned by a public authority</td> 
                 <td>Former Bere Regis primary school, Rye Hill, Bere Regis</td> 
-                <td>POINT(-2.218153 50.747808)</td> 
-                <td>not permissioned</td> 
                 <td>BR/03/001</td> 
+                <td>0.3</td> 
                 <td>local-authority-eng:PUR</td> 
-                <td>2017-12-31</td> 
-                <td>BR/03/001</td> 
-                <td>9</td> 
-                <td>Only part of site brownfield - school building SHLAA 6/03/1336</td> 
+                <td>https://www.dorsetforyou.gov.uk/article/408863/Current-plans-and-strategies-in-Purbeck</td> 
         </tr>    </tbody>
 </table>
 

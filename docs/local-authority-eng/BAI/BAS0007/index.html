@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,29 +160,21 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#BAS0007</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                82            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">ownership-status
             </dt>
             <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                2.45            </dd>
+            <dd class="govuk-summary-list__value">                BAS0007            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
+            <dt class="govuk-summary-list__key">start-date
             </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.basildon.gov.uk/media/8541/BLR/pdf/BLR.pdf">https://www.basildon.gov.uk/media/8541/BLR/pdf/BLR.pdf</a>            </dd>
+            <dd class="govuk-summary-list__value">                2017-07-19            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                Former Fryerns School and Social Services Offices, Broadmayne, Craylands, Basildon            </dd>
+            <dd class="govuk-summary-list__value">                82            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -191,25 +186,33 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.basildon.gov.uk/media/8541/BLR/pdf/BLR.pdf">https://www.basildon.gov.uk/media/8541/BLR/pdf/BLR.pdf</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">site
             </dt>
             <dd class="govuk-summary-list__value">                BAS0007            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">site-address
             </dt>
-            <dd class="govuk-summary-list__value">                2017-07-19            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                BAS0007            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                52            </dd>
+            <dd class="govuk-summary-list__value">                Former Fryerns School and Social Services Offices, Broadmayne, Craylands, Basildon            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">notes
             </dt>
             <dd class="govuk-summary-list__value">                Site area from HELAA reduced to Brownfield land only. Deliverable within 5 years. 20/07/17. 24/08/18. 06/08/19.            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                2.45            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                52            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -255,76 +258,76 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
-            <th>deliverable</th>
-            <th>start-date</th>
-            <th>planning-permission-status</th>
-            <th>site-address</th>
             <th>point</th>
-            <th>organisation</th>
-            <th>name</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
             <th>notes</th>
+            <th>site</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
+            <th>minimum-net-dwellings</th>
+            <th>maximum-net-dwellings</th>
+            <th>deliverable</th>
+            <th>ownership-status</th>
+            <th>name</th>
+            <th>site-address</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2019-08-06</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/ca07622792737e34d0e8065a71ff36cb9113731547532e850841db5c7bc3f925.csv#L8">ca0762279273...</a></td>
             <td>7</td>
-                <td>owned by a public authority</td> 
-                <td>82</td> 
-                <td>https://www.basildon.gov.uk/media/8541/BLR/pdf/BLR.pdf</td> 
-                <td>2.45</td> 
-                <td>yes</td> 
-                <td>2017-07-19</td> 
-                <td>not permissioned</td> 
-                <td>Former Fryerns School and Social Services Offices, Broadmayne, Craylands, Basildon</td> 
                 <td>POINT(0.486092 51.576211)</td> 
-                <td>local-authority-eng:BAI</td> 
-                <td>BAS0007</td> 
-                <td>BAS0007</td> 
-                <td>52</td> 
                 <td>Site area from HELAA reduced to Brownfield land only. Deliverable within 5 years. 20/07/17. 24/08/18. 06/08/19.</td> 
+                <td>BAS0007</td> 
+                <td>not permissioned</td> 
+                <td>2017-07-19</td> 
+                <td>52</td> 
+                <td>82</td> 
+                <td>yes</td> 
+                <td>owned by a public authority</td> 
+                <td>BAS0007</td> 
+                <td>Former Fryerns School and Social Services Offices, Broadmayne, Craylands, Basildon</td> 
+                <td>2.45</td> 
+                <td>local-authority-eng:BAI</td> 
+                <td>https://www.basildon.gov.uk/media/8541/BLR/pdf/BLR.pdf</td> 
         </tr>        <tr>
             <td>2018-08-24</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/68a69753b93b4d9e3a20e0a444ed570fb6c7d1dacf0a3670b5f159dbb78c0bef.csv#L8">68a69753b93b...</a></td>
             <td>7</td>
-                <td>owned by a public authority</td> 
-                <td>82</td> 
-                <td>http://www.basildon.gov.uk/CHttpHandler.ashx?id=8541&amp;p=0</td> 
-                <td>2.45</td> 
-                <td>yes</td> 
-                <td>2017-07-19</td> 
-                <td>not permissioned</td> 
-                <td>Former Fryerns School and Social Services Offices, Broadmayne, Craylands, Basildon</td> 
                 <td>POINT(0.486092 51.576211)</td> 
-                <td>local-authority-eng:BAI</td> 
-                <td>BAS0007</td> 
-                <td>BAS0007</td> 
-                <td>52</td> 
                 <td>Site area from HELAA reduced to Brownfield land only. Deliverable within 5 years. 20/07/17. 24/08/18.</td> 
+                <td>BAS0007</td> 
+                <td>not permissioned</td> 
+                <td>2017-07-19</td> 
+                <td>52</td> 
+                <td>82</td> 
+                <td>yes</td> 
+                <td>owned by a public authority</td> 
+                <td>BAS0007</td> 
+                <td>Former Fryerns School and Social Services Offices, Broadmayne, Craylands, Basildon</td> 
+                <td>2.45</td> 
+                <td>local-authority-eng:BAI</td> 
+                <td>http://www.basildon.gov.uk/CHttpHandler.ashx?id=8541&amp;p=0</td> 
         </tr>        <tr>
             <td>2017-07-20</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/8337e6c353594d27078cdbacabb323cae315c68407042dcf0405f5483d8a7dd7.csv#L8">8337e6c35359...</a></td>
             <td>7</td>
-                <td>owned by a public authority</td> 
-                <td>83</td> 
-                <td>http://www.basildon.gov.uk/CHttpHandler.ashx?id=7736&amp;p=0</td> 
-                <td>2.45</td> 
-                <td>yes</td> 
-                <td>2017-07-20</td> 
-                <td>not permissioned</td> 
-                <td>Former Fryerns School and Social Services Offices, Broadmayne, Craylands, Basildon</td> 
                 <td>POINT(0.486092 51.576211)</td> 
-                <td>local-authority-eng:BAI</td> 
-                <td>BAS0007</td> 
-                <td>BAS0007</td> 
-                <td>52</td> 
                 <td>Site area from HELAA reduced to Brownfield land only. Deliverable within 6 years. 20/07/17.</td> 
+                <td>BAS0007</td> 
+                <td>not permissioned</td> 
+                <td>2017-07-20</td> 
+                <td>52</td> 
+                <td>83</td> 
+                <td>yes</td> 
+                <td>owned by a public authority</td> 
+                <td>BAS0007</td> 
+                <td>Former Fryerns School and Social Services Offices, Broadmayne, Craylands, Basildon</td> 
+                <td>2.45</td> 
+                <td>local-authority-eng:BAI</td> 
+                <td>http://www.basildon.gov.uk/CHttpHandler.ashx?id=7736&amp;p=0</td> 
         </tr>    </tbody>
 </table>
 

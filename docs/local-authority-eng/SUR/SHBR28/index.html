@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,9 +160,9 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#SHBR28</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                5            </dd>
+            <dd class="govuk-summary-list__value">                SHBR28            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -167,49 +170,49 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:SUR" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SUR)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">site-address
             </dt>
-            <dd class="govuk-summary-list__value">                2017-12-18            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                SHBR28            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.surreyheath.gov.uk/sites/default/files/documents/residents/planning/planning-policy/SLAA2017/8SLAA2017Ap2CamberleySiteAssmts.pdf">http://www.surreyheath.gov.uk/sites/default/files/documents/residents/planning/planning-policy/SLAA2017/8SLAA2017Ap2CamberleySiteAssmts.pdf</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                7            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                The erection of 3 two storey two bedroom dwellings and 1 two storey building with accommodation in the roofspace to provide 4 one bedroom and 1 two bedroom flats following the demolition of existing restaurant and first floor flat. http://www.surreyheath.gov.uk/sites/default/files/documents/residents/planning/planning-policy/SLAA2017/8SLAA2017Ap2CamberleySiteAssmts.pdf            </dd>
+            <dd class="govuk-summary-list__value">                The Dolphin, 299 London Road, Camberley            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">hectares
             </dt>
             <dd class="govuk-summary-list__value">                0.1            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-date
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                2014-03-13            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                The Dolphin, 299 London Road, Camberley            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
+            <dd class="govuk-summary-list__value">                5            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-status
             </dt>
             <dd class="govuk-summary-list__value">                permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">planning-permission-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2014-03-13            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-12-18            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                7            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.surreyheath.gov.uk/sites/default/files/documents/residents/planning/planning-policy/SLAA2017/8SLAA2017Ap2CamberleySiteAssmts.pdf">http://www.surreyheath.gov.uk/sites/default/files/documents/residents/planning/planning-policy/SLAA2017/8SLAA2017Ap2CamberleySiteAssmts.pdf</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
             </dt>
             <dd class="govuk-summary-list__value">                SHBR28            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                The erection of 3 two storey two bedroom dwellings and 1 two storey building with accommodation in the roofspace to provide 4 one bedroom and 1 two bedroom flats following the demolition of existing restaurant and first floor flat. http://www.surreyheath.gov.uk/sites/default/files/documents/residents/planning/planning-policy/SLAA2017/8SLAA2017Ap2CamberleySiteAssmts.pdf            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -255,40 +258,40 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>maximum-net-dwellings</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
-            <th>deliverable</th>
-            <th>start-date</th>
             <th>point</th>
-            <th>planning-permission-date</th>
-            <th>site-address</th>
-            <th>organisation</th>
-            <th>planning-permission-status</th>
-            <th>name</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
             <th>notes</th>
+            <th>site</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
+            <th>minimum-net-dwellings</th>
+            <th>planning-permission-date</th>
+            <th>deliverable</th>
+            <th>maximum-net-dwellings</th>
+            <th>name</th>
+            <th>site-address</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2017-12-18</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/705244ed58e47eb7fff854b8baf7328be78e0ac976e03fe790631221489c575d.csv#L18">705244ed58e4...</a></td>
             <td>17</td>
-                <td>7</td> 
-                <td>http://www.surreyheath.gov.uk/sites/default/files/documents/residents/planning/planning-policy/SLAA2017/8SLAA2017Ap2CamberleySiteAssmts.pdf</td> 
-                <td>0.1</td> 
-                <td>yes</td> 
-                <td>2017-12-18</td> 
                 <td>POINT(-0.7564 51.3368)</td> 
-                <td>2014-03-13</td> 
-                <td>The Dolphin, 299 London Road, Camberley</td> 
-                <td>local-authority-eng:SUR</td> 
-                <td>permissioned</td> 
-                <td>SHBR28</td> 
-                <td>SHBR28</td> 
-                <td>5</td> 
                 <td>The erection of 3 two storey two bedroom dwellings and 1 two storey building with accommodation in the roofspace to provide 4 one bedroom and 1 two bedroom flats following the demolition of existing restaurant and first floor flat. http://www.surreyheath.gov.uk/sites/default/files/documents/residents/planning/planning-policy/SLAA2017/8SLAA2017Ap2CamberleySiteAssmts.pdf</td> 
+                <td>SHBR28</td> 
+                <td>permissioned</td> 
+                <td>2017-12-18</td> 
+                <td>5</td> 
+                <td>2014-03-13</td> 
+                <td>yes</td> 
+                <td>7</td> 
+                <td>SHBR28</td> 
+                <td>The Dolphin, 299 London Road, Camberley</td> 
+                <td>0.1</td> 
+                <td>local-authority-eng:SUR</td> 
+                <td>http://www.surreyheath.gov.uk/sites/default/files/documents/residents/planning/planning-policy/SLAA2017/8SLAA2017Ap2CamberleySiteAssmts.pdf</td> 
         </tr>    </tbody>
 </table>
 

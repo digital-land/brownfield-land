@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -157,9 +160,29 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#117470/FO/2017</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                2018-12-31            </dd>
+            <dd class="govuk-summary-list__value">                14            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-plan-url
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://mappinggm.org.uk/gmodin/">https://mappinggm.org.uk/gmodin/</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
+            </dt>
+            <dd class="govuk-summary-list__value">                117470/FO/2017            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-type
+            </dt>
+            <dd class="govuk-summary-list__value">                full planning permission            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -171,53 +194,33 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://pa.manchester.gov.uk/online-applications/">http://pa.manchester.gov.uk/online-applications/</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                39 Mason Street, Ancoats            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-plan-url
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://mappinggm.org.uk/gmodin/">https://mappinggm.org.uk/gmodin/</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                117470/FO/2017            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">maximum-net-dwellings
             </dt>
             <dd class="govuk-summary-list__value">                14            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">deliverable
+            <dt class="govuk-summary-list__key">start-date
             </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.04            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">notes
-            </dt>
-            <dd class="govuk-summary-list__value">                Erection of 6 storey building comprising restaurant (Class A3) and retail unit (Class A1) at ground floor level and fourteen apartments above            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                14            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-type
-            </dt>
-            <dd class="govuk-summary-list__value">                full planning permission            </dd>
+            <dd class="govuk-summary-list__value">                2018-12-31            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">planning-permission-date
             </dt>
             <dd class="govuk-summary-list__value">                2018-10-19            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.04            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                117470/FO/2017            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">notes
+            </dt>
+            <dd class="govuk-summary-list__value">                Erection of 6 storey building comprising restaurant (Class A3) and retail unit (Class A1) at ground floor level and fourteen apartments above            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                39 Mason Street, Ancoats            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -263,64 +266,64 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>maximum-net-dwellings</th>
-            <th>hectares</th>
-            <th>deliverable</th>
-            <th>site-plan-url</th>
-            <th>planning-permission-type</th>
-            <th>site-address</th>
-            <th>start-date</th>
-            <th>planning-permission-status</th>
             <th>point</th>
-            <th>organisation</th>
+            <th>notes</th>
+            <th>site</th>
+            <th>planning-permission-status</th>
+            <th>start-date</th>
+            <th>minimum-net-dwellings</th>
+            <th>planning-permission-type</th>
+            <th>deliverable</th>
+            <th>maximum-net-dwellings</th>
             <th>planning-permission-date</th>
             <th>name</th>
-            <th>site</th>
-            <th>minimum-net-dwellings</th>
             <th>planning-permission-history</th>
-            <th>notes</th>
+            <th>site-address</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-12-31</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/88981f6adef16e8395069f589dc8b602625e1c4e6f0b6d0ff2d909c23857d68a.csv#L49">88981f6adef1...</a></td>
             <td>48</td>
-                <td>14</td> 
-                <td>0.04</td> 
-                <td>yes</td> 
-                <td>https://mappinggm.org.uk/gmodin/</td> 
-                <td>full planning permission</td> 
-                <td>39 Mason Street, Ancoats</td> 
-                <td>2018-12-31</td> 
-                <td>permissioned</td> 
                 <td>POINT(-2.233746 53.486601)</td> 
-                <td>local-authority-eng:MAN</td> 
+            <td></td>
+                <td>117470/FO/2017</td> 
+                <td>permissioned</td> 
+                <td>2018-12-31</td> 
+                <td>14</td> 
+                <td>full planning permission</td> 
+                <td>yes</td> 
+                <td>14</td> 
                 <td>2018-10-19</td> 
                 <td>117470/FO/2017</td> 
-                <td>117470/FO/2017</td> 
-                <td>14</td> 
                 <td>http://pa.manchester.gov.uk/online-applications/</td> 
-            <td></td>
+                <td>39 Mason Street, Ancoats</td> 
+                <td>0.04</td> 
+                <td>local-authority-eng:MAN</td> 
+                <td>https://mappinggm.org.uk/gmodin/</td> 
         </tr>        <tr>
             <td>2019-12-31</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/b28889d5aebc18ccbd31a11b6acbe1e49392f27d6207cceda85946c3d577970a.csv#L73">b28889d5aebc...</a></td>
             <td>72</td>
-                <td>14</td> 
-                <td>0.035657</td> 
-                <td>yes</td> 
-                <td>https://mappinggm.org.uk/gmodin/?lyrs=brownfield_2019_gm#os_maps_light/18/53.486601/-2.233746</td> 
-                <td>full planning permission</td> 
-                <td>39 Mason Street, Ancoats</td> 
-                <td>2018-12-31</td> 
-                <td>permissioned</td> 
                 <td>POINT(-2.233746 53.486601)</td> 
-                <td>local-authority-eng:MAN</td> 
+                <td>Erection of 6 storey building comprising restaurant (Class A3) and retail unit (Class A1) at ground floor level and fourteen apartments above</td> 
+                <td>117470/FO/2017</td> 
+                <td>permissioned</td> 
+                <td>2018-12-31</td> 
+                <td>14</td> 
+                <td>full planning permission</td> 
+                <td>yes</td> 
+                <td>14</td> 
                 <td>2018-10-19</td> 
                 <td>117470/FO/2017</td> 
-                <td>117470/FO/2017</td> 
-                <td>14</td> 
                 <td>http://pa.manchester.gov.uk/online-applications/</td> 
-                <td>Erection of 6 storey building comprising restaurant (Class A3) and retail unit (Class A1) at ground floor level and fourteen apartments above</td> 
+                <td>39 Mason Street, Ancoats</td> 
+                <td>0.035657</td> 
+                <td>local-authority-eng:MAN</td> 
+                <td>https://mappinggm.org.uk/gmodin/?lyrs=brownfield_2019_gm#os_maps_light/18/53.486601/-2.233746</td> 
         </tr>    </tbody>
 </table>
 
