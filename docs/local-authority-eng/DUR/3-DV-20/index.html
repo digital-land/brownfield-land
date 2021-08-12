@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<link rel="manifest" href="/site.webmanifest">
 <link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
@@ -143,8 +142,7 @@ crossorigin="" />
                 <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
                 Record
                 </a>
-            </li>
-            <li class="dlf-subnav__list-item">
+            </li>            <li class="dlf-subnav__list-item">
                 <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
                 History
                 </a>
@@ -160,7 +158,11 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#3/DV/20</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">planning-permission-status
+            </dt>
+            <dd class="govuk-summary-list__value">                not permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site
             </dt>
             <dd class="govuk-summary-list__value">                3/DV/20            </dd>
         </div>        <div class="govuk-summary-list__row">
@@ -168,37 +170,9 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=423297.241135&y=528383.568793&scale=17">https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&x=423297.241135&y=528383.568793&scale=17</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.54            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site
-            </dt>
-            <dd class="govuk-summary-list__value">                3/DV/20            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">site-address
-            </dt>
-            <dd class="govuk-summary-list__value">                South Church Dene Valley School Site            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">planning-permission-status
-            </dt>
-            <dd class="govuk-summary-list__value">                not permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">deliverable
             </dt>
             <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">ownership-status
-            </dt>
-            <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">maximum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                15            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">minimum-net-dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                15            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">organisation
             </dt>
@@ -209,6 +183,30 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2018-12-04            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.54            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">site-address
+            </dt>
+            <dd class="govuk-summary-list__value">                South Church Dene Valley School Site            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">minimum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                15            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">ownership-status
+            </dt>
+            <dd class="govuk-summary-list__value">                owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">maximum-net-dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                15            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                3/DV/20            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -242,9 +240,7 @@ crossorigin="" />
 <ul class="govuk-list govuk-list--bullet">
     <li><a href="https://digital-land.github.io/specification/schema/brownfield-land/">View the brownfield-land schema</a></li></ul>
 
-</div>
-
-<div id="history"><h2 class="govuk-heading-m dlf-subnav__heading">History</h2>
+</div><div id="history"><h2 class="govuk-heading-m dlf-subnav__heading">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
     <div class="data-table-left-shadow with-transition"></div>
     <div class="wide-table">
@@ -254,38 +250,38 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>start-date</th>
-            <th>minimum-net-dwellings</th>
-            <th>site</th>
-            <th>deliverable</th>
-            <th>ownership-status</th>
-            <th>hectares</th>
-            <th>name</th>
-            <th>point</th>
-            <th>organisation</th>
-            <th>site-plan-url</th>
             <th>site-address</th>
+            <th>site-plan-url</th>
+            <th>deliverable</th>
+            <th>start-date</th>
             <th>planning-permission-status</th>
+            <th>point</th>
+            <th>name</th>
+            <th>minimum-net-dwellings</th>
+            <th>ownership-status</th>
+            <th>site</th>
+            <th>organisation</th>
             <th>maximum-net-dwellings</th>
+            <th>hectares</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2018-12-04</td>
-            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/f6319e61890141afc80397b0ae6d3b4191ee34a5c1c949e83e58146127c04ec8.csv#L16">f6319e618901...</a></td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/a9f9a6df12966463c6fe34eff2bf3a09d0e0f64cbaa88f9a9cc5471168750de5.csv#L16">a9f9a6df1296...</a></td>
             <td>15</td>
-                <td>2018-12-04</td> 
-                <td>15</td> 
-                <td>3/DV/20</td> 
-                <td>yes</td> 
-                <td>owned by a public authority</td> 
-                <td>0.54</td> 
-                <td>3/DV/20</td> 
-                <td>POINT(-1.640475 54.650031)</td> 
-                <td>local-authority-eng:DUR</td> 
-                <td>https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&amp;x=423297.241135&amp;y=528383.568793&amp;scale=17</td> 
                 <td>South Church Dene Valley School Site</td> 
+                <td>https://maps.durham.gov.uk/OLBasic2/Index.aspx?appid=65&amp;x=423297.241135&amp;y=528383.568793&amp;scale=17</td> 
+                <td>yes</td> 
+                <td>2018-12-04</td> 
                 <td>not permissioned</td> 
+                <td>POINT(-1.640475 54.650031)</td> 
+                <td>3/DV/20</td> 
                 <td>15</td> 
+                <td>owned by a public authority</td> 
+                <td>3/DV/20</td> 
+                <td>local-authority-eng:DUR</td> 
+                <td>15</td> 
+                <td>0.54</td> 
         </tr>    </tbody>
 </table>
 
