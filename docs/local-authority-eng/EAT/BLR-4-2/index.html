@@ -162,21 +162,7 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                1.9            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Site
-            </dt>
-            <dd class="govuk-summary-list__value">                BLR-4-2            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Organisation
-            </dt>
-            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/EAT" class="govuk-link">Eastleigh Borough Council</a>
-<span title="Organisation identifier: local-authority-eng:EAT" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:EAT)</span>
-            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Planning permission status
-            </dt>
-            <dd class="govuk-summary-list__value">                Not Permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Maximum net dwellings
+            <dt class="govuk-summary-list__key">Minimum net dwellings
             </dt>
             <dd class="govuk-summary-list__value">                64            </dd>
         </div>        <div class="govuk-summary-list__row">
@@ -192,13 +178,27 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                Land at Toynbee Road, Eastleigh            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Minimum net dwellings
+            <dt class="govuk-summary-list__key">Planning permission status
             </dt>
-            <dd class="govuk-summary-list__value">                64            </dd>
+            <dd class="govuk-summary-list__value">                Not Permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Site
+            </dt>
+            <dd class="govuk-summary-list__value">                BLR-4-2            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Organisation
+            </dt>
+            <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/EAT" class="govuk-link">Eastleigh Borough Council</a>
+<span title="Organisation identifier: local-authority-eng:EAT" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:EAT)</span>
+            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Name
             </dt>
             <dd class="govuk-summary-list__value">                BLR-4-2            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Maximum net dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                64            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entry date
             </dt>
@@ -211,20 +211,18 @@ crossorigin="" />
 
     <h2 class="govuk-heading-m">Geographical area</h2>
 
-    <div class="dl-map__wrapper"><div 
-    class="dl-map govuk-!-margin-top-4"
-    id="dlMap"
-    data-module="boundary-map"
-    style="height: 460px;"   
->
-    <noscript>To view this map, you need to enable JavaScript.</noscript>
-</div>
-<div class="dl-map__note-panel">
-            <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
-        </div>
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
     </div>
 
-    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
     </div>
 <h3 class="govuk-heading-m">Associated information</h3>
@@ -243,16 +241,16 @@ crossorigin="" />
             <th>resource</th>
             <th>line</th>
             <th>organisation</th>
-            <th>planning-permission-status</th>
-            <th>maximum-net-dwellings</th>
             <th>site</th>
-            <th>start-date</th>
-            <th>name</th>
-            <th>hectares</th>
+            <th>minimum-net-dwellings</th>
+            <th>site-plan-url</th>
             <th>point</th>
             <th>site-address</th>
-            <th>site-plan-url</th>
-            <th>minimum-net-dwellings</th>
+            <th>planning-permission-status</th>
+            <th>name</th>
+            <th>maximum-net-dwellings</th>
+            <th>hectares</th>
+            <th>start-date</th>
         </tr>
     </thead>
     <tbody>        <tr>
@@ -260,16 +258,16 @@ crossorigin="" />
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/7414c00a2966fea867d2709704dae5787d9c8e7690663623ed19c62cf5b02a7a.csv#L11">7414c00a2966...</a></td>
             <td>10</td>
                 <td>local-authority-eng:EAT</td> 
-                <td>Not Permissioned</td> 
+                <td>BLR-4-2</td> 
                 <td>64</td> 
-                <td>BLR-4-2</td> 
-                <td>2017-09-01</td> 
-                <td>BLR-4-2</td> 
-                <td>1.9</td> 
+                <td>https://emaps.eastleigh.gov.uk/webmaplayers8/Map.aspx?MapName=BrownfieldRegister</td> 
                 <td>POINT(-1.358542 50.973549)</td> 
                 <td>Land at Toynbee Road, Eastleigh</td> 
-                <td>https://emaps.eastleigh.gov.uk/webmaplayers8/Map.aspx?MapName=BrownfieldRegister</td> 
+                <td>Not Permissioned</td> 
+                <td>BLR-4-2</td> 
                 <td>64</td> 
+                <td>1.9</td> 
+                <td>2017-09-01</td> 
         </tr>    </tbody>
 </table>
 

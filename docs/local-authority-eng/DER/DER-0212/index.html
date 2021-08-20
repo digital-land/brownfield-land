@@ -158,25 +158,17 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#DER/0212</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Minimum net dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                21            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Planning permission status
-            </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Start date
             </dt>
             <dd class="govuk-summary-list__value">                2018-11-27            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                0.1            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Site
             </dt>
             <dd class="govuk-summary-list__value">                DER/0212            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Maximum net dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                21            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Name
             </dt>
@@ -185,6 +177,10 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">Site address
             </dt>
             <dd class="govuk-summary-list__value">                Hallmark Inn Car Park, Wellington Street, Derby            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.1            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Organisation
             </dt>
@@ -196,9 +192,13 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://maps.derby.gov.uk/webmap/Map.aspx?x=436032&y=335529&resolution=2&epsg=27700&mapname=publicmaps&baseLayer=Colour&datalayers=Brownfield%20Sites%2CselectFeaturesControl_container">https://maps.derby.gov.uk/webmap/Map.aspx?x=436032&y=335529&resolution=2&epsg=27700&mapname=publicmaps&baseLayer=Colour&datalayers=Brownfield%20Sites%2CselectFeaturesControl_container</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Maximum net dwellings
+            <dt class="govuk-summary-list__key">Minimum net dwellings
             </dt>
             <dd class="govuk-summary-list__value">                21            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Planning permission status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entry date
             </dt>
@@ -211,20 +211,18 @@ crossorigin="" />
 
     <h2 class="govuk-heading-m">Geographical area</h2>
 
-    <div class="dl-map__wrapper"><div 
-    class="dl-map govuk-!-margin-top-4"
-    id="dlMap"
-    data-module="boundary-map"
-    style="height: 460px;"   
->
-    <noscript>To view this map, you need to enable JavaScript.</noscript>
-</div>
-<div class="dl-map__note-panel">
-            <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
-        </div>
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
     </div>
 
-    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
     </div>
 <h3 class="govuk-heading-m">Associated information</h3>
@@ -242,49 +240,49 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>planning-permission-status</th>
             <th>organisation</th>
-            <th>maximum-net-dwellings</th>
-            <th>start-date</th>
             <th>site</th>
-            <th>name</th>
-            <th>hectares</th>
             <th>point</th>
             <th>site-address</th>
             <th>site-plan-url</th>
             <th>minimum-net-dwellings</th>
+            <th>planning-permission-status</th>
+            <th>name</th>
+            <th>maximum-net-dwellings</th>
+            <th>hectares</th>
+            <th>start-date</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2019-10-30</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/777b5e1e380b516359eb70605aee15b4f502a52005b239f5857dbdef6949ce45.csv#L21">777b5e1e380b...</a></td>
             <td>20</td>
-                <td>permissioned</td> 
                 <td>local-authority-eng:DER</td> 
-                <td>21</td> 
-                <td>2018-11-27</td> 
                 <td>DER/0212</td> 
-                <td>DER/0212</td> 
-                <td>0.1</td> 
                 <td>POINT(-1.465592 52.915981)</td> 
                 <td>Hallmark Inn Car Park, Wellington Street, Derby</td> 
                 <td>https://maps.derby.gov.uk/webmap/Map.aspx?x=436032&amp;y=335529&amp;resolution=2&amp;epsg=27700&amp;mapname=publicmaps&amp;baseLayer=Colour&amp;datalayers=Brownfield%20Sites%2CselectFeaturesControl_container</td> 
                 <td>21</td> 
+                <td>permissioned</td> 
+                <td>DER/0212</td> 
+                <td>21</td> 
+                <td>0.1</td> 
+                <td>2018-11-27</td> 
         </tr>        <tr>
             <td>2018-11-27</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/d55e80499ef90bbddc4915f2371548b4e85fc31fba1118a4f019cbb745c7c57a.csv#L23">d55e80499ef9...</a></td>
             <td>22</td>
-                <td>permissioned</td> 
                 <td>local-authority-eng:DER</td> 
-                <td>21</td> 
-                <td>2018-11-27</td> 
                 <td>DER/0212</td> 
-                <td>DER/0212</td> 
-                <td>0.1</td> 
                 <td>POINT(-1.465592 52.915981)</td> 
                 <td>Hallmark Inn Car Park, Wellington Street, Derby</td> 
                 <td>http://maps.derby.gov.uk/?x=436032&amp;y=335529&amp;resolution=2&amp;epsg=27700&amp;mapname=publicmaps&amp;baseLayer=Colour&amp;datalayers=Brownfield%20Sites%2CselectFeaturesControl_container</td> 
                 <td>21</td> 
+                <td>permissioned</td> 
+                <td>DER/0212</td> 
+                <td>21</td> 
+                <td>0.1</td> 
+                <td>2018-11-27</td> 
         </tr>    </tbody>
 </table>
 

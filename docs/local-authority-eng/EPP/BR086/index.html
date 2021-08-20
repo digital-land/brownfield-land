@@ -158,9 +158,21 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#BR086</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Site
+            <dt class="govuk-summary-list__key">Ownership status
             </dt>
-            <dd class="govuk-summary-list__value">                BR086            </dd>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Planning permission status
+            </dt>
+            <dd class="govuk-summary-list__value">                permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Site plan URL
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://efdc.maps.arcgis.com/apps/webappviewer/index.html?id=355f4a1a16db436a96e3b78f8d2e14cf">http://efdc.maps.arcgis.com/apps/webappviewer/index.html?id=355f4a1a16db436a96e3b78f8d2e14cf</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Site address
+            </dt>
+            <dd class="govuk-summary-list__value">                The Retreat_x000D_ Market Place_x000D_ Abridge_x000D_ Essex_x000D_ RM4 1AU            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Name
             </dt>
@@ -172,21 +184,9 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:EPP" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:EPP)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Site plan URL
+            <dt class="govuk-summary-list__key">Site
             </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://efdc.maps.arcgis.com/apps/webappviewer/index.html?id=355f4a1a16db436a96e3b78f8d2e14cf">http://efdc.maps.arcgis.com/apps/webappviewer/index.html?id=355f4a1a16db436a96e3b78f8d2e14cf</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Site address
-            </dt>
-            <dd class="govuk-summary-list__value">                The Retreat_x000D_ Market Place_x000D_ Abridge_x000D_ Essex_x000D_ RM4 1AU            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Planning permission status
-            </dt>
-            <dd class="govuk-summary-list__value">                permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Ownership status
-            </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+            <dd class="govuk-summary-list__value">                BR086            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Hectares
             </dt>
@@ -203,20 +203,18 @@ crossorigin="" />
 
     <h2 class="govuk-heading-m">Geographical area</h2>
 
-    <div class="dl-map__wrapper"><div 
-    class="dl-map govuk-!-margin-top-4"
-    id="dlMap"
-    data-module="boundary-map"
-    style="height: 460px;"   
->
-    <noscript>To view this map, you need to enable JavaScript.</noscript>
-</div>
-<div class="dl-map__note-panel">
-            <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
-        </div>
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
     </div>
 
-    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
     </div>
 <h3 class="govuk-heading-m">Associated information</h3>
@@ -235,14 +233,14 @@ crossorigin="" />
             <th>resource</th>
             <th>line</th>
             <th>organisation</th>
-            <th>planning-permission-status</th>
             <th>site</th>
+            <th>point</th>
+            <th>site-plan-url</th>
+            <th>site-address</th>
+            <th>planning-permission-status</th>
+            <th>ownership-status</th>
             <th>name</th>
             <th>hectares</th>
-            <th>ownership-status</th>
-            <th>point</th>
-            <th>site-address</th>
-            <th>site-plan-url</th>
         </tr>
     </thead>
     <tbody>        <tr>
@@ -250,14 +248,14 @@ crossorigin="" />
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/43f6e6ef6bf2388f14b48e733911dfb69c7993678689847411c2a780b9e3d751.csv#L87">43f6e6ef6bf2...</a></td>
             <td>86</td>
                 <td>local-authority-eng:EPP</td> 
-                <td>permissioned</td> 
                 <td>BR086</td> 
+                <td>POINT(0.118106 51.650849)</td> 
+                <td>http://efdc.maps.arcgis.com/apps/webappviewer/index.html?id=355f4a1a16db436a96e3b78f8d2e14cf</td> 
+                <td>The Retreat_x000D_ Market Place_x000D_ Abridge_x000D_ Essex_x000D_ RM4 1AU</td> 
+                <td>permissioned</td> 
+                <td>not owned by a public authority</td> 
                 <td>BR086</td> 
                 <td>0.04</td> 
-                <td>not owned by a public authority</td> 
-                <td>POINT(0.118106 51.650849)</td> 
-                <td>The Retreat_x000D_ Market Place_x000D_ Abridge_x000D_ Essex_x000D_ RM4 1AU</td> 
-                <td>http://efdc.maps.arcgis.com/apps/webappviewer/index.html?id=355f4a1a16db436a96e3b78f8d2e14cf</td> 
         </tr>    </tbody>
 </table>
 

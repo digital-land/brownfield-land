@@ -158,13 +158,17 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#TC1</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Ownership status
+            <dt class="govuk-summary-list__key">Site
             </dt>
-            <dd class="govuk-summary-list__value">                mixed ownership            </dd>
+            <dd class="govuk-summary-list__value">                TC1            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Site address
+            <dt class="govuk-summary-list__key">Planning permission status
             </dt>
-            <dd class="govuk-summary-list__value">                HAVANT TOWN CENTRE HAVANT            </dd>
+            <dd class="govuk-summary-list__value">                not permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                40.66            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Organisation
             </dt>
@@ -172,37 +176,33 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:HAA" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:HAA)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Start date
+            <dt class="govuk-summary-list__key">Minimum net dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                2017-12-08            </dd>
+            <dd class="govuk-summary-list__value">                750            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Site plan URL
             </dt>
             <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.havant.gov.uk/evidence-base-studies/strategic-housing-land-availability-assessment">http://www.havant.gov.uk/evidence-base-studies/strategic-housing-land-availability-assessment</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Hectares
+            <dt class="govuk-summary-list__key">Start date
             </dt>
-            <dd class="govuk-summary-list__value">                40.66            </dd>
+            <dd class="govuk-summary-list__value">                2017-12-08            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Maximum net dwellings
             </dt>
             <dd class="govuk-summary-list__value">                750            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Site
+            <dt class="govuk-summary-list__key">Site address
             </dt>
-            <dd class="govuk-summary-list__value">                TC1            </dd>
+            <dd class="govuk-summary-list__value">                HAVANT TOWN CENTRE HAVANT            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Name
             </dt>
             <dd class="govuk-summary-list__value">                TC1            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Minimum net dwellings
+            <dt class="govuk-summary-list__key">Ownership status
             </dt>
-            <dd class="govuk-summary-list__value">                750            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Planning permission status
-            </dt>
-            <dd class="govuk-summary-list__value">                not permissioned            </dd>
+            <dd class="govuk-summary-list__value">                mixed ownership            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entry date
             </dt>
@@ -215,20 +215,18 @@ crossorigin="" />
 
     <h2 class="govuk-heading-m">Geographical area</h2>
 
-    <div class="dl-map__wrapper"><div 
-    class="dl-map govuk-!-margin-top-4"
-    id="dlMap"
-    data-module="boundary-map"
-    style="height: 460px;"   
->
-    <noscript>To view this map, you need to enable JavaScript.</noscript>
-</div>
-<div class="dl-map__note-panel">
-            <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
-        </div>
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
     </div>
 
-    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
     </div>
 <h3 class="govuk-heading-m">Associated information</h3>
@@ -247,35 +245,35 @@ crossorigin="" />
             <th>resource</th>
             <th>line</th>
             <th>organisation</th>
-            <th>maximum-net-dwellings</th>
-            <th>planning-permission-status</th>
-            <th>start-date</th>
             <th>site</th>
-            <th>name</th>
-            <th>hectares</th>
+            <th>minimum-net-dwellings</th>
             <th>site-plan-url</th>
             <th>point</th>
             <th>site-address</th>
+            <th>planning-permission-status</th>
             <th>ownership-status</th>
-            <th>minimum-net-dwellings</th>
+            <th>name</th>
+            <th>maximum-net-dwellings</th>
+            <th>hectares</th>
+            <th>start-date</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2017-12-08</td>
-            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/e4d69bd1d994b47219ee1ce35cd8319022a311841df410823db81e955a69ad96.csv#L4">e4d69bd1d994...</a></td>
-            <td>3</td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/5d1686ae287694d708da97129a28b1aab0271b74df56d05202dd785d78adc661.csv#L21">5d1686ae2876...</a></td>
+            <td>20</td>
                 <td>local-authority-eng:HAA</td> 
+                <td>TC1</td> 
                 <td>750</td> 
-                <td>not permissioned</td> 
-                <td>2017-12-08</td> 
-                <td>TC1</td> 
-                <td>TC1</td> 
-                <td>40.66</td> 
                 <td>http://www.havant.gov.uk/evidence-base-studies/strategic-housing-land-availability-assessment</td> 
                 <td>POINT(-0.982463 50.854451)</td> 
                 <td>HAVANT TOWN CENTRE HAVANT</td> 
+                <td>not permissioned</td> 
                 <td>mixed ownership</td> 
+                <td>TC1</td> 
                 <td>750</td> 
+                <td>40.66</td> 
+                <td>2017-12-08</td> 
         </tr>    </tbody>
 </table>
 

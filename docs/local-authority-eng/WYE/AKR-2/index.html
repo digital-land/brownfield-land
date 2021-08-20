@@ -164,17 +164,37 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:WYE" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:WYE)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                2.21            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Ownership status
             </dt>
             <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Deliverable
+            <dt class="govuk-summary-list__key">Name
             </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
+            <dd class="govuk-summary-list__value">                AKR/2            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Planning permission status
+            </dt>
+            <dd class="govuk-summary-list__value">                not permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Site
+            </dt>
+            <dd class="govuk-summary-list__value">                AKR/2            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Start date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-12-31            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Minimum net dwellings
             </dt>
             <dd class="govuk-summary-list__value">                72            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Deliverable
+            </dt>
+            <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Notes
             </dt>
@@ -183,26 +203,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">Site address
             </dt>
             <dd class="govuk-summary-list__value">                Cheapside Business Park Severn Road            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Planning permission status
-            </dt>
-            <dd class="govuk-summary-list__value">                not permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Hectares
-            </dt>
-            <dd class="govuk-summary-list__value">                2.21            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Name
-            </dt>
-            <dd class="govuk-summary-list__value">                AKR/2            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Start date
-            </dt>
-            <dd class="govuk-summary-list__value">                2017-12-31            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Site
-            </dt>
-            <dd class="govuk-summary-list__value">                AKR/2            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Maximum net dwellings
             </dt>
@@ -223,20 +223,18 @@ crossorigin="" />
 
     <h2 class="govuk-heading-m">Geographical area</h2>
 
-    <div class="dl-map__wrapper"><div 
-    class="dl-map govuk-!-margin-top-4"
-    id="dlMap"
-    data-module="boundary-map"
-    style="height: 460px;"   
->
-    <noscript>To view this map, you need to enable JavaScript.</noscript>
-</div>
-<div class="dl-map__note-panel">
-            <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
-        </div>
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
     </div>
 
-    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
     </div>
 <h3 class="govuk-heading-m">Associated information</h3>
@@ -255,19 +253,19 @@ crossorigin="" />
             <th>resource</th>
             <th>line</th>
             <th>organisation</th>
-            <th>planning-permission-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>notes</th>
-            <th>start-date</th>
-            <th>site</th>
-            <th>name</th>
-            <th>hectares</th>
-            <th>ownership-status</th>
-            <th>point</th>
             <th>deliverable</th>
-            <th>site-plan-url</th>
-            <th>site-address</th>
+            <th>site</th>
             <th>minimum-net-dwellings</th>
+            <th>site-plan-url</th>
+            <th>notes</th>
+            <th>site-address</th>
+            <th>point</th>
+            <th>planning-permission-status</th>
+            <th>ownership-status</th>
+            <th>name</th>
+            <th>maximum-net-dwellings</th>
+            <th>hectares</th>
+            <th>start-date</th>
         </tr>
     </thead>
     <tbody>        <tr>
@@ -275,37 +273,37 @@ crossorigin="" />
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/5f964c7120fcfc160f46d61ec00d6ceb96476773224ab45a85a6340b1b55b1ff.csv#L32">5f964c7120fc...</a></td>
             <td>31</td>
                 <td>local-authority-eng:WYE</td> 
-                <td>not permissioned</td> 
-                <td>72</td> 
-                <td>Allocated under SAL.EA2</td> 
-                <td>2017-12-31</td> 
-                <td>AKR/2</td> 
-                <td>AKR/2</td> 
-                <td>2.21</td> 
-                <td>not owned by a public authority</td> 
-            <td></td>
                 <td>yes</td> 
-                <td>http://www.wyreforestdc.gov.uk/media/3411896/AKR20-2-Carpets-of-Worth-Cheapside.png</td> 
-                <td>Cheapside Business Park Severn Road</td> 
+                <td>AKR/2</td> 
                 <td>72</td> 
+                <td>http://www.wyreforestdc.gov.uk/media/3411896/AKR20-2-Carpets-of-Worth-Cheapside.png</td> 
+                <td>Allocated under SAL.EA2</td> 
+                <td>Cheapside Business Park Severn Road</td> 
+            <td></td>
+                <td>not permissioned</td> 
+                <td>not owned by a public authority</td> 
+                <td>AKR/2</td> 
+                <td>72</td> 
+                <td>2.21</td> 
+                <td>2017-12-31</td> 
         </tr>        <tr>
             <td>2017-12-31</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/9745c8ea5cb4e2fb4b4a4f766509318bbd0b95bde236e04f0ad42bd232b5ba10.csv#L31">9745c8ea5cb4...</a></td>
             <td>30</td>
                 <td>local-authority-eng:WYE</td> 
-                <td>not permissioned</td> 
-                <td>72</td> 
-                <td>Allocated under SAL.EA2</td> 
-                <td>2017-12-31</td> 
-                <td>AKR/2</td> 
-                <td>AKR/2</td> 
-                <td>2.21</td> 
-                <td>not owned by a public authority</td> 
-                <td>POINT(-2.276951 52.335917)</td> 
                 <td>yes</td> 
-            <td></td>
-                <td>Cheapside Business Park Severn Road</td> 
+                <td>AKR/2</td> 
                 <td>72</td> 
+            <td></td>
+                <td>Allocated under SAL.EA2</td> 
+                <td>Cheapside Business Park Severn Road</td> 
+                <td>POINT(-2.276951 52.335917)</td> 
+                <td>not permissioned</td> 
+                <td>not owned by a public authority</td> 
+                <td>AKR/2</td> 
+                <td>72</td> 
+                <td>2.21</td> 
+                <td>2017-12-31</td> 
         </tr>    </tbody>
 </table>
 

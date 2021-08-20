@@ -158,35 +158,27 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#Barlby-1</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Planning permission status
-            </dt>
-            <dd class="govuk-summary-list__value">                Not Permissioned            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Maximum net dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                186            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Ownership status
-            </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Organisation
             </dt>
             <dd class="govuk-summary-list__value"><a href="https://digital-land.github.io/organisation/local-authority-eng/SEL" class="govuk-link">Selby District Council</a>
 <span title="Organisation identifier: local-authority-eng:SEL" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SEL)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Ownership status
+            </dt>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Notes
             </dt>
             <dd class="govuk-summary-list__value">                Entire site lies within flood zone 2 and 3 and is an area benefiting from flood defences. Possible ground contamination from existing factory.            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Start date
-            </dt>
-            <dd class="govuk-summary-list__value">                2016-06-22            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Hectares
             </dt>
             <dd class="govuk-summary-list__value">                15.85            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Maximum net dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                186            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Name
             </dt>
@@ -196,9 +188,17 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                186            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Planning permission status
+            </dt>
+            <dd class="govuk-summary-list__value">                Not Permissioned            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Site
             </dt>
             <dd class="govuk-summary-list__value">                Barlby-1            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Start date
+            </dt>
+            <dd class="govuk-summary-list__value">                2016-06-22            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entry date
             </dt>
@@ -211,20 +211,18 @@ crossorigin="" />
 
     <h2 class="govuk-heading-m">Geographical area</h2>
 
-    <div class="dl-map__wrapper"><div 
-    class="dl-map govuk-!-margin-top-4"
-    id="dlMap"
-    data-module="boundary-map"
-    style="height: 460px;"   
->
-    <noscript>To view this map, you need to enable JavaScript.</noscript>
-</div>
-<div class="dl-map__note-panel">
-            <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
-        </div>
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
     </div>
 
-    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
     </div>
 <h3 class="govuk-heading-m">Associated information</h3>
@@ -243,16 +241,16 @@ crossorigin="" />
             <th>resource</th>
             <th>line</th>
             <th>organisation</th>
-            <th>planning-permission-status</th>
-            <th>maximum-net-dwellings</th>
-            <th>notes</th>
-            <th>start-date</th>
             <th>site</th>
-            <th>name</th>
-            <th>hectares</th>
             <th>point</th>
-            <th>ownership-status</th>
+            <th>notes</th>
             <th>minimum-net-dwellings</th>
+            <th>planning-permission-status</th>
+            <th>ownership-status</th>
+            <th>name</th>
+            <th>maximum-net-dwellings</th>
+            <th>hectares</th>
+            <th>start-date</th>
         </tr>
     </thead>
     <tbody>        <tr>
@@ -260,16 +258,16 @@ crossorigin="" />
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/e151de92bb42a72ed4620b55ede559687f34c98752bd9446ad2390bddcd82834.csv#L2">e151de92bb42...</a></td>
             <td>1</td>
                 <td>local-authority-eng:SEL</td> 
-                <td>Not Permissioned</td> 
-                <td>186</td> 
-                <td>Entire site lies within flood zone 2 and 3 and is an area benefiting from flood defences. Possible ground contamination from existing factory.</td> 
-                <td>2016-06-22</td> 
                 <td>Barlby-1</td> 
-                <td>Barlby-1</td> 
-                <td>15.85</td> 
                 <td>POINT(-1.040907 53.793074)</td> 
-                <td>not owned by a public authority</td> 
+                <td>Entire site lies within flood zone 2 and 3 and is an area benefiting from flood defences. Possible ground contamination from existing factory.</td> 
                 <td>186</td> 
+                <td>Not Permissioned</td> 
+                <td>not owned by a public authority</td> 
+                <td>Barlby-1</td> 
+                <td>186</td> 
+                <td>15.85</td> 
+                <td>2016-06-22</td> 
         </tr>    </tbody>
 </table>
 
