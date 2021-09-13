@@ -10,7 +10,27 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />    <meta property="og:image" content="/images/govuk-opengraph-image.png">
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+crossorigin="" />
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+	integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+	crossorigin=""></script>
+
+<!-- assets needed for fullscreen maps -->
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+
+<!-- script needed for recentring map -->
+<script src="https://digital-land.github.io/javascripts/Leaflet.recentre.js"></script>
+
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />    <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
   <body class="govuk-template__body ">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
@@ -138,9 +158,13 @@
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#BFL/SMO/097</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Start date
+            <dt class="govuk-summary-list__key">Ownership status
             </dt>
-            <dd class="govuk-summary-list__value">                2020-12-08            </dd>
+            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Site plan URL
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.northdevon.gov.uk/media/380423/bfl-smo-097-land-off-southley-road-south-molton-1-1250.pdf">https://www.northdevon.gov.uk/media/380423/bfl-smo-097-land-off-southley-road-south-molton-1-1250.pdf</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Organisation
             </dt>
@@ -148,45 +172,45 @@
 <span title="Organisation identifier: local-authority-eng:NDE" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:NDE)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Ownership status
-            </dt>
-            <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Site address
-            </dt>
-            <dd class="govuk-summary-list__value">                Land off, Southley Road South Molton EX36 4Bl            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Name
+            <dt class="govuk-summary-list__key">Site
             </dt>
             <dd class="govuk-summary-list__value">                BFL/SMO/097            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Notes
-            </dt>
-            <dd class="govuk-summary-list__value">                70467: Outline application for the erection of 26 dwellings and associated car parking with some matters reserved (appearance and landscaping) Approved subject to s106.. Erection of 26 dwellings            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Minimum net dwellings
             </dt>
             <dd class="govuk-summary-list__value">                26            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Site plan URL
+            <dt class="govuk-summary-list__key">Start date
             </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.northdevon.gov.uk/media/380423/bfl-smo-097-land-off-southley-road-south-molton-1-1250.pdf">https://www.northdevon.gov.uk/media/380423/bfl-smo-097-land-off-southley-road-south-molton-1-1250.pdf</a>            </dd>
+            <dd class="govuk-summary-list__value">                2020-12-08            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Site
+            <dt class="govuk-summary-list__key">Site address
             </dt>
-            <dd class="govuk-summary-list__value">                BFL/SMO/097            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Maximum net dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                26            </dd>
+            <dd class="govuk-summary-list__value">                Land off, Southley Road South Molton EX36 4Bl            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Deliverable
             </dt>
             <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Maximum net dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                26            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Notes
+            </dt>
+            <dd class="govuk-summary-list__value">                70467: Outline application for the erection of 26 dwellings and associated car parking with some matters reserved (appearance and landscaping) Approved subject to s106.. Erection of 26 dwellings            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Name
+            </dt>
+            <dd class="govuk-summary-list__value">                BFL/SMO/097            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Planning permission status
             </dt>
             <dd class="govuk-summary-list__value">                pending decision            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">entity
+            </dt>
+            <dd class="govuk-summary-list__value">                488320            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entry date
             </dt>
@@ -197,7 +221,22 @@
             
 </div>
 
+    <h2 class="govuk-heading-m">Geographical area</h2>
 
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
+    </div>
+
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
+    </div>
 <h3 class="govuk-heading-m">Associated information</h3>
 
 <ul class="govuk-list govuk-list--bullet">
@@ -213,36 +252,38 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>site-address</th>
-            <th>minimum-net-dwellings</th>
-            <th>organisation</th>
-            <th>notes</th>
-            <th>site</th>
-            <th>name</th>
-            <th>planning-permission-status</th>
-            <th>start-date</th>
+            <th>maximum-net-dwellings</th>
+            <th>point</th>
             <th>ownership-status</th>
             <th>site-plan-url</th>
-            <th>maximum-net-dwellings</th>
+            <th>planning-permission-status</th>
+            <th>minimum-net-dwellings</th>
+            <th>notes</th>
             <th>deliverable</th>
+            <th>start-date</th>
+            <th>name</th>
+            <th>organisation</th>
+            <th>site</th>
+            <th>site-address</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-12-09</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/8b27ce7d53c769da23555beb01ffce9799862bbe10bd79999f77ca09cec46922.csv#L32">8b27ce7d53c7...</a></td>
             <td>31</td>
-                <td>Land off, Southley Road South Molton EX36 4Bl</td> 
                 <td>26</td> 
-                <td>local-authority-eng:NDE</td> 
-                <td>70467: Outline application for the erection of 26 dwellings and associated car parking with some matters reserved (appearance and landscaping) Approved subject to s106.. Erection of 26 dwellings</td> 
-                <td>BFL/SMO/097</td> 
-                <td>BFL/SMO/097</td> 
-                <td>pending decision</td> 
-                <td>2020-12-08</td> 
+                <td>POINT(-3.834162 51.015828)</td> 
                 <td>not owned by a public authority</td> 
                 <td>https://www.northdevon.gov.uk/media/380423/bfl-smo-097-land-off-southley-road-south-molton-1-1250.pdf</td> 
+                <td>pending decision</td> 
                 <td>26</td> 
+                <td>70467: Outline application for the erection of 26 dwellings and associated car parking with some matters reserved (appearance and landscaping) Approved subject to s106.. Erection of 26 dwellings</td> 
                 <td>yes</td> 
+                <td>2020-12-08</td> 
+                <td>BFL/SMO/097</td> 
+                <td>local-authority-eng:NDE</td> 
+                <td>BFL/SMO/097</td> 
+                <td>Land off, Southley Road South Molton EX36 4Bl</td> 
         </tr>    </tbody>
 </table>
 

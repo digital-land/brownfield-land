@@ -10,7 +10,27 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />    <meta property="og:image" content="/images/govuk-opengraph-image.png">
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+crossorigin="" />
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+	integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+	crossorigin=""></script>
+
+<!-- assets needed for fullscreen maps -->
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+
+<!-- script needed for recentring map -->
+<script src="https://digital-land.github.io/javascripts/Leaflet.recentre.js"></script>
+
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />    <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
   <body class="govuk-template__body ">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
@@ -138,49 +158,37 @@
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#BR0117a</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Notes
+            <dt class="govuk-summary-list__key">Site address
             </dt>
-            <dd class="govuk-summary-list__value">                _Where there is a planning application, the figure in &#39;MinNetDwellings&#39; is the number of dwellings specified in the planning permission subject to: 1. If dwellings have been started or completed on site, then the &#39;MinNetDwellings&#39; figure is reduced to show the remainder as at the last housing survey, and; 2. If the planning permission includes land that is greenfield then the &#39;MinNetDwellings&#39; figure only refers to dwellings in the planning permission on Brownfield Land. Where there is no planning permission &#39;MinNetDwellings&#39; is (at 2018-12-22) an estimate based on a density calculation undertaken by the authority informed by site analysis and expressed in the Plymouth and South West Devon Joint Local Plan Submission document, (as amended by major modifications), in accordance with the DCLG document &#39;Brownfield Land Registers Data Standard: Preparing and publishing a register&#39; by showing &#39;The minimum net number of dwellings that the local authority estimates the site should support&#39;. Where there is no planning permission and &#39;NetDwellingsRangeFrom&#39; is used the figure in &#39;NetDwellingsRangeFrom&#39; equals the figure in &#39;MinNetDwellings&#39;. Where there is no planning permission and &#39;NetDwellingsRangeTo&#39; is used, the figure in &#39;NetDwellingsRangeTo&#39; is estimated at 10% higher (rounding up) than &#39;MinNetDwellings&#39;.. ...construction of building containing 10 apartments             </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Minimum net dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                10            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Site plan URL
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.google.com/maps/d/u/0/viewer?mid=1A_apl7xd1T_OKbW5kGjRxUKpbj-aeDfj&ll=50.3774%2C-4.13009&z=18">https://www.google.com/maps/d/u/0/viewer?mid=1A_apl7xd1T_OKbW5kGjRxUKpbj-aeDfj&ll=50.3774%2C-4.13009&z=18</a>            </dd>
+            <dd class="govuk-summary-list__value">                1 Woodland Terrace, Greenbank Road            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Start date
             </dt>
             <dd class="govuk-summary-list__value">                2020-12-13            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Planning permission history
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://planning.plymouth.gov.uk/online-applications/applicationDetails.do?activeTab=relatedCases&keyVal=PPC73IMMMJN00">https://planning.plymouth.gov.uk/online-applications/applicationDetails.do?activeTab=relatedCases&keyVal=PPC73IMMMJN00</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Site
             </dt>
             <dd class="govuk-summary-list__value">                BR0117a            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Name
-            </dt>
-            <dd class="govuk-summary-list__value">                BR0117a            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Planning permission type
-            </dt>
-            <dd class="govuk-summary-list__value">                full planning permission            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Planning permission status
             </dt>
             <dd class="govuk-summary-list__value">                permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Planning permission history
+            <dt class="govuk-summary-list__key">Maximum net dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://planning.plymouth.gov.uk/online-applications/applicationDetails.do?activeTab=relatedCases&keyVal=PPC73IMMMJN00">https://planning.plymouth.gov.uk/online-applications/applicationDetails.do?activeTab=relatedCases&keyVal=PPC73IMMMJN00</a>            </dd>
+            <dd class="govuk-summary-list__value">                10            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Site address
+            <dt class="govuk-summary-list__key">Hectares
             </dt>
-            <dd class="govuk-summary-list__value">                1 Woodland Terrace, Greenbank Road            </dd>
+            <dd class="govuk-summary-list__value">                0.05            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Notes
+            </dt>
+            <dd class="govuk-summary-list__value">                _Where there is a planning application, the figure in &#39;MinNetDwellings&#39; is the number of dwellings specified in the planning permission subject to: 1. If dwellings have been started or completed on site, then the &#39;MinNetDwellings&#39; figure is reduced to show the remainder as at the last housing survey, and; 2. If the planning permission includes land that is greenfield then the &#39;MinNetDwellings&#39; figure only refers to dwellings in the planning permission on Brownfield Land. Where there is no planning permission &#39;MinNetDwellings&#39; is (at 2018-12-22) an estimate based on a density calculation undertaken by the authority informed by site analysis and expressed in the Plymouth and South West Devon Joint Local Plan Submission document, (as amended by major modifications), in accordance with the DCLG document &#39;Brownfield Land Registers Data Standard: Preparing and publishing a register&#39; by showing &#39;The minimum net number of dwellings that the local authority estimates the site should support&#39;. Where there is no planning permission and &#39;NetDwellingsRangeFrom&#39; is used the figure in &#39;NetDwellingsRangeFrom&#39; equals the figure in &#39;MinNetDwellings&#39;. Where there is no planning permission and &#39;NetDwellingsRangeTo&#39; is used, the figure in &#39;NetDwellingsRangeTo&#39; is estimated at 10% higher (rounding up) than &#39;MinNetDwellings&#39;.. ...construction of building containing 10 apartments             </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Organisation
             </dt>
@@ -192,7 +200,19 @@
             </dt>
             <dd class="govuk-summary-list__value">                2019-07-19            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Maximum net dwellings
+            <dt class="govuk-summary-list__key">Planning permission type
+            </dt>
+            <dd class="govuk-summary-list__value">                full planning permission            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Site plan URL
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://www.google.com/maps/d/u/0/viewer?mid=1A_apl7xd1T_OKbW5kGjRxUKpbj-aeDfj&ll=50.3774%2C-4.13009&z=18">https://www.google.com/maps/d/u/0/viewer?mid=1A_apl7xd1T_OKbW5kGjRxUKpbj-aeDfj&ll=50.3774%2C-4.13009&z=18</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Name
+            </dt>
+            <dd class="govuk-summary-list__value">                BR0117a            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Minimum net dwellings
             </dt>
             <dd class="govuk-summary-list__value">                10            </dd>
         </div>        <div class="govuk-summary-list__row">
@@ -200,9 +220,13 @@
             </dt>
             <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Hectares
+            <dt class="govuk-summary-list__key">Deliverable
             </dt>
-            <dd class="govuk-summary-list__value">                0.05            </dd>
+            <dd class="govuk-summary-list__value">                yes            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">entity
+            </dt>
+            <dd class="govuk-summary-list__value">                490374            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entry date
             </dt>
@@ -213,7 +237,22 @@
             
 </div>
 
+    <h2 class="govuk-heading-m">Geographical area</h2>
 
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
+    </div>
+
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
+    </div>
 <h3 class="govuk-heading-m">Associated information</h3>
 
 <ul class="govuk-list govuk-list--bullet">
@@ -229,44 +268,46 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>site-address</th>
-            <th>minimum-net-dwellings</th>
-            <th>ownership-status</th>
-            <th>planning-permission-type</th>
-            <th>notes</th>
-            <th>organisation</th>
-            <th>site</th>
-            <th>planning-permission-date</th>
-            <th>name</th>
-            <th>planning-permission-history</th>
-            <th>planning-permission-status</th>
-            <th>hectares</th>
-            <th>start-date</th>
-            <th>site-plan-url</th>
             <th>maximum-net-dwellings</th>
+            <th>planning-permission-date</th>
+            <th>ownership-status</th>
+            <th>site-plan-url</th>
+            <th>planning-permission-status</th>
+            <th>minimum-net-dwellings</th>
+            <th>planning-permission-history</th>
+            <th>notes</th>
             <th>deliverable</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>start-date</th>
+            <th>name</th>
+            <th>point</th>
+            <th>planning-permission-type</th>
+            <th>site</th>
+            <th>site-address</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2020-12-11</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/257eb89c9afe716ee9ba32cdbd95e01cdf11fc6d679d677eff2ef3ef04ca47f4.csv#L68">257eb89c9afe...</a></td>
             <td>67</td>
-                <td>1 Woodland Terrace, Greenbank Road</td> 
                 <td>10</td> 
-                <td>not owned by a public authority</td> 
-                <td>full planning permission</td> 
-                <td>_Where there is a planning application, the figure in &#39;MinNetDwellings&#39; is the number of dwellings specified in the planning permission subject to: 1. If dwellings have been started or completed on site, then the &#39;MinNetDwellings&#39; figure is reduced to show the remainder as at the last housing survey, and; 2. If the planning permission includes land that is greenfield then the &#39;MinNetDwellings&#39; figure only refers to dwellings in the planning permission on Brownfield Land. Where there is no planning permission &#39;MinNetDwellings&#39; is (at 2018-12-22) an estimate based on a density calculation undertaken by the authority informed by site analysis and expressed in the Plymouth and South West Devon Joint Local Plan Submission document, (as amended by major modifications), in accordance with the DCLG document &#39;Brownfield Land Registers Data Standard: Preparing and publishing a register&#39; by showing &#39;The minimum net number of dwellings that the local authority estimates the site should support&#39;. Where there is no planning permission and &#39;NetDwellingsRangeFrom&#39; is used the figure in &#39;NetDwellingsRangeFrom&#39; equals the figure in &#39;MinNetDwellings&#39;. Where there is no planning permission and &#39;NetDwellingsRangeTo&#39; is used, the figure in &#39;NetDwellingsRangeTo&#39; is estimated at 10% higher (rounding up) than &#39;MinNetDwellings&#39;.. ...construction of building containing 10 apartments </td> 
-                <td>local-authority-eng:PLY</td> 
-                <td>BR0117a</td> 
                 <td>2019-07-19</td> 
-                <td>BR0117a</td> 
-                <td>https://planning.plymouth.gov.uk/online-applications/applicationDetails.do?activeTab=relatedCases&amp;keyVal=PPC73IMMMJN00</td> 
-                <td>permissioned</td> 
-                <td>0.05</td> 
-                <td>2020-12-13</td> 
+                <td>not owned by a public authority</td> 
                 <td>https://www.google.com/maps/d/u/0/viewer?mid=1A_apl7xd1T_OKbW5kGjRxUKpbj-aeDfj&amp;ll=50.3774%2C-4.13009&amp;z=18</td> 
+                <td>permissioned</td> 
                 <td>10</td> 
+                <td>https://planning.plymouth.gov.uk/online-applications/applicationDetails.do?activeTab=relatedCases&amp;keyVal=PPC73IMMMJN00</td> 
+                <td>_Where there is a planning application, the figure in &#39;MinNetDwellings&#39; is the number of dwellings specified in the planning permission subject to: 1. If dwellings have been started or completed on site, then the &#39;MinNetDwellings&#39; figure is reduced to show the remainder as at the last housing survey, and; 2. If the planning permission includes land that is greenfield then the &#39;MinNetDwellings&#39; figure only refers to dwellings in the planning permission on Brownfield Land. Where there is no planning permission &#39;MinNetDwellings&#39; is (at 2018-12-22) an estimate based on a density calculation undertaken by the authority informed by site analysis and expressed in the Plymouth and South West Devon Joint Local Plan Submission document, (as amended by major modifications), in accordance with the DCLG document &#39;Brownfield Land Registers Data Standard: Preparing and publishing a register&#39; by showing &#39;The minimum net number of dwellings that the local authority estimates the site should support&#39;. Where there is no planning permission and &#39;NetDwellingsRangeFrom&#39; is used the figure in &#39;NetDwellingsRangeFrom&#39; equals the figure in &#39;MinNetDwellings&#39;. Where there is no planning permission and &#39;NetDwellingsRangeTo&#39; is used, the figure in &#39;NetDwellingsRangeTo&#39; is estimated at 10% higher (rounding up) than &#39;MinNetDwellings&#39;.. ...construction of building containing 10 apartments </td> 
                 <td>yes</td> 
+                <td>0.05</td> 
+                <td>local-authority-eng:PLY</td> 
+                <td>2020-12-13</td> 
+                <td>BR0117a</td> 
+                <td>POINT(-4.13009 50.3774)</td> 
+                <td>full planning permission</td> 
+                <td>BR0117a</td> 
+                <td>1 Woodland Terrace, Greenbank Road</td> 
         </tr>    </tbody>
 </table>
 
