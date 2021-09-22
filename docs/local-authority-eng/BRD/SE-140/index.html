@@ -155,24 +155,45 @@ crossorigin="" />
     </nav>
 
 <div id="record">
-<div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
+<div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds">
+        <!-- this section can probably be removed. Entities no longer have a resource field<article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#SE/140</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Start date
+            </dt>
+            <dd class="govuk-summary-list__value">                2017-11-01            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Site address
+            </dt>
+            <dd class="govuk-summary-list__value">                Coop Place, West Bowling            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Maximum net dwellings
             </dt>
             <dd class="govuk-summary-list__value">                12            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Site plan URL
+            </dt>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=417298.6138,430214.2,417382.4253,430285.58,27700">http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=417298.6138,430214.2,417382.4253,430285.58,27700</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Planning permission status
+            </dt>
+            <dd class="govuk-summary-list__value">                not permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Notes
             </dt>
             <dd class="govuk-summary-list__value">                Site which had outline planning permission which has since expired. The owners intentions are not currently known.            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Start date
+            <dt class="govuk-summary-list__key">Name
             </dt>
-            <dd class="govuk-summary-list__value">                2017-11-01            </dd>
+            <dd class="govuk-summary-list__value">                SE/140            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Site plan URL
+            <dt class="govuk-summary-list__key">Site
             </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=417298.6138,430214.2,417382.4253,430285.58,27700">http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&extent=417298.6138,430214.2,417382.4253,430285.58,27700</a>            </dd>
+            <dd class="govuk-summary-list__value">                SE/140            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Minimum net dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                9            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Planning permission history
             </dt>
@@ -184,29 +205,9 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:BRD" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:BRD)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Site address
-            </dt>
-            <dd class="govuk-summary-list__value">                Coop Place, West Bowling            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Site
-            </dt>
-            <dd class="govuk-summary-list__value">                SE/140            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Name
-            </dt>
-            <dd class="govuk-summary-list__value">                SE/140            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Hectares
             </dt>
             <dd class="govuk-summary-list__value">                0.31            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Minimum net dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                9            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Planning permission status
-            </dt>
-            <dd class="govuk-summary-list__value">                not permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entity
             </dt>
@@ -252,72 +253,72 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>planning-permission-history</th>
-            <th>planning-permission-status</th>
-            <th>notes</th>
-            <th>maximum-net-dwellings</th>
-            <th>organisation</th>
             <th>hectares</th>
-            <th>minimum-net-dwellings</th>
-            <th>site-address</th>
-            <th>site-plan-url</th>
             <th>site</th>
+            <th>site-address</th>
+            <th>planning-permission-history</th>
             <th>start-date</th>
+            <th>notes</th>
             <th>name</th>
+            <th>organisation</th>
+            <th>site-plan-url</th>
+            <th>maximum-net-dwellings</th>
             <th>point</th>
+            <th>minimum-net-dwellings</th>
+            <th>planning-permission-status</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2018-11-01</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/45943bab01aef31a1c8c60cb8eb9a9385275b491a3dc6d4f2d0572902c54d0e9.csv#L165">45943bab01ae...</a></td>
             <td>164</td>
+                <td>0.31</td> 
+                <td>SE/140</td> 
+                <td>Coop Place, West Bowling</td> 
                 <td>https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=J58CASDH6A000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=7607135OUT&amp;activeTab=summary|https://planning.bradford.gov</td> 
-                <td>not permissioned</td> 
+                <td>2017-11-01</td> 
                 <td>Site which had outline planning permission which has since expired. The owners intentions are not currently known.</td> 
-                <td>12</td> 
+                <td>SE/140</td> 
                 <td>local-authority-eng:BRD</td> 
-                <td>0.31</td> 
-                <td>9</td> 
-                <td>Coop Place, West Bowling</td> 
                 <td>http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&amp;extent=417298.6138,430214.2,417382.4253,430285.58,27700</td> 
-                <td>SE/140</td> 
-                <td>2017-11-01</td> 
-                <td>SE/140</td> 
-                <td>POINT(-1.738424 53.768314)</td> 
-        </tr>        <tr>
-            <td>2017-11-01</td>
-            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/392f3e0ee0fa2c8b209c8197d34069a06e7c7dbdeadcdaecd4eb2a0d3625f63a.csv#L168">392f3e0ee0fa...</a></td>
-            <td>167</td>
-                <td>https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=J4R3K6DH4A000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=NGZAZ1DH0D900&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=NACIN8DH09300&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=NWOC0DDH02C00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=J2YC0SDHH1000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=8407115COU&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=KELFLUDHFH000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=MJLMQMDH0B200&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=N5M6ENDH0IV00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=O3DCTVDH02F00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=O68K9GDH0B300&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=8082835FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9800314COU&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=IJ7CRWDHM9000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9600591COU&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=KV3W6UDHC1000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=NSPKV3DH02C00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=JXIM9HDHFH000&amp;activeTab=summary</td> 
-                <td>not permissioned</td> 
-                <td>Site which had outline planning permission which has since expired. The owners intentions are not currently known.</td> 
                 <td>12</td> 
-                <td>local-authority-eng:BRD</td> 
-                <td>0.31</td> 
+                <td>POINT(-1.738424 53.768314)</td> 
                 <td>9</td> 
-                <td>Coop Place, West Bowling</td> 
-                <td>http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&amp;extent=415783.6,430250.9,415846.1,430328.95,27700</td> 
-                <td>SE/140</td> 
-                <td>2017-11-01</td> 
-                <td>SE/140</td> 
-                <td>POINT(-1.761448 53.768687)</td> 
+                <td>not permissioned</td> 
         </tr>        <tr>
             <td>2017-11-01</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/d1cbdbdcf1535ff2514f1eca606873e4672de07cd46f08e9bbc8401ad29b1b93.csv#L168">d1cbdbdcf153...</a></td>
             <td>167</td>
-                <td>https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=J58CASDH6A000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=7607135OUT&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=LHU9WODH0GF00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=NVYAO4DHLT000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=HKJHFMDHD3000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=J65CH5DH8C000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=0002458FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=KMVG1GDH02T00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=J59LFZDH86000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=0002732ADV&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=0002461FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=0104023FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=JL4CKMDH06Q00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=ID2Z37DHL7000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=K8EY2GDH06V00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=L9RK11DH0GF00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=MUB0J4DHLT000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9900897FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=KMVGTWDH02T00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=LW6VMCDH0GF00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=0002460OUT&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=0002347FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=LW6WBADH0GF00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=N1ASCKDHLT000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=8606068COU&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9902573FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=JPR65MDH06Q00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=KMVE4FDH02T00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=L3UF03DH0GF00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=0301659FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=0101327FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=KUDX6CDH0GF00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=NL5HPSDHLT000&amp;activeTab=summary</td> 
-                <td>not permissioned</td> 
-                <td>Site which had outline planning permission which has since expired. The owners intentions are not currently known.</td> 
-                <td>12</td> 
-                <td>local-authority-eng:BRD</td> 
                 <td>0.31</td> 
-                <td>9</td> 
+                <td>SE/140</td> 
                 <td>Coop Place, West Bowling</td> 
-                <td>http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&amp;extent=417298.6138,430214.2,417382.4253,430285.58,27700</td> 
-                <td>SE/140</td> 
+                <td>https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=J58CASDH6A000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=7607135OUT&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=LHU9WODH0GF00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=NVYAO4DHLT000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=HKJHFMDHD3000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=J65CH5DH8C000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=0002458FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=KMVG1GDH02T00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=J59LFZDH86000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=0002732ADV&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=0002461FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=0104023FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=JL4CKMDH06Q00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=ID2Z37DHL7000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=K8EY2GDH06V00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=L9RK11DH0GF00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=MUB0J4DHLT000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9900897FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=KMVGTWDH02T00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=LW6VMCDH0GF00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=0002460OUT&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=0002347FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=LW6WBADH0GF00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=N1ASCKDHLT000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=8606068COU&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9902573FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=JPR65MDH06Q00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=KMVE4FDH02T00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=L3UF03DH0GF00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=0301659FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=0101327FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=KUDX6CDH0GF00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=NL5HPSDHLT000&amp;activeTab=summary</td> 
                 <td>2017-11-01</td> 
+                <td>Site which had outline planning permission which has since expired. The owners intentions are not currently known.</td> 
                 <td>SE/140</td> 
+                <td>local-authority-eng:BRD</td> 
+                <td>http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&amp;extent=417298.6138,430214.2,417382.4253,430285.58,27700</td> 
+                <td>12</td> 
                 <td>POINT(-1.738424 53.768314)</td> 
+                <td>9</td> 
+                <td>not permissioned</td> 
+        </tr>        <tr>
+            <td>2017-11-01</td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/392f3e0ee0fa2c8b209c8197d34069a06e7c7dbdeadcdaecd4eb2a0d3625f63a.csv#L168">392f3e0ee0fa...</a></td>
+            <td>167</td>
+                <td>0.31</td> 
+                <td>SE/140</td> 
+                <td>Coop Place, West Bowling</td> 
+                <td>https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=J4R3K6DH4A000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=NGZAZ1DH0D900&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=NACIN8DH09300&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=NWOC0DDH02C00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=J2YC0SDHH1000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=8407115COU&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=KELFLUDHFH000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=MJLMQMDH0B200&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=N5M6ENDH0IV00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=O3DCTVDH02F00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=O68K9GDH0B300&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=8082835FUL&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9800314COU&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=IJ7CRWDHM9000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=9600591COU&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=KV3W6UDHC1000&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=NSPKV3DH02C00&amp;activeTab=summary|https://planning.bradford.gov.uk/online-applications/applicationDetails.do?keyVal=JXIM9HDHFH000&amp;activeTab=summary</td> 
+                <td>2017-11-01</td> 
+                <td>Site which had outline planning permission which has since expired. The owners intentions are not currently known.</td> 
+                <td>SE/140</td> 
+                <td>local-authority-eng:BRD</td> 
+                <td>http://cbmdc.maps.arcgis.com/apps/webappviewer/index.html?id=2134938ccf5843649ef0e555c0926dae&amp;extent=415783.6,430250.9,415846.1,430328.95,27700</td> 
+                <td>12</td> 
+                <td>POINT(-1.761448 53.768687)</td> 
+                <td>9</td> 
+                <td>not permissioned</td> 
         </tr>    </tbody>
 </table>
 
