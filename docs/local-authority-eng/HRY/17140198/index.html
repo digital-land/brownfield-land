@@ -10,7 +10,27 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />    <meta property="og:image" content="/images/govuk-opengraph-image.png">
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+crossorigin="" />
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+	integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+	crossorigin=""></script>
+
+<!-- assets needed for fullscreen maps -->
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+
+<!-- script needed for recentring map -->
+<script src="https://digital-land.github.io/javascripts/Leaflet.recentre.js"></script>
+
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />    <meta property="og:image" content="/images/govuk-opengraph-image.png">
   </head>
   <body class="govuk-template__body ">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
@@ -139,17 +159,21 @@
         <!-- this section can probably be removed. Entities no longer have a resource field --><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#17140198</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Site plan URL
+            <dt class="govuk-summary-list__key">Deliverable
             </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf">http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</a>            </dd>
+            <dd class="govuk-summary-list__value">                yes            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Ownership status
             </dt>
             <dd class="govuk-summary-list__value">                mixed ownership            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Hectares
+            <dt class="govuk-summary-list__key">Site plan URL
             </dt>
-            <dd class="govuk-summary-list__value">                2.35            </dd>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf">http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Site
+            </dt>
+            <dd class="govuk-summary-list__value">                17140198            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Organisation
             </dt>
@@ -157,25 +181,21 @@
 <span title="Organisation identifier: local-authority-eng:HRY" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:HRY)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Minimum net dwellings
+            </dt>
+            <dd class="govuk-summary-list__value">                444            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Maximum net dwellings
             </dt>
             <dd class="govuk-summary-list__value">                444            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Notes
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf">http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</a>            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Deliverable
-            </dt>
-            <dd class="govuk-summary-list__value">                yes            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Site
-            </dt>
-            <dd class="govuk-summary-list__value">                17140198            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Start date
             </dt>
             <dd class="govuk-summary-list__value">                2017-12-31            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                2.35            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Site address
             </dt>
@@ -185,9 +205,9 @@
             </dt>
             <dd class="govuk-summary-list__value">                17140198            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Minimum net dwellings
+            <dt class="govuk-summary-list__key">Notes
             </dt>
-            <dd class="govuk-summary-list__value">                444            </dd>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf">http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</a>            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entity
             </dt>
@@ -202,7 +222,22 @@
             
 </div>
 
+    <h2 class="govuk-heading-m">Geographical area</h2>
 
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
+    </div>
+
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
+    </div>
 <h3 class="govuk-heading-m">Associated information</h3>
 
 <ul class="govuk-list govuk-list--bullet">
@@ -218,36 +253,106 @@
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>minimum-net-dwellings</th>
-            <th>site-address</th>
-            <th>name</th>
-            <th>deliverable</th>
-            <th>site-plan-url</th>
-            <th>hectares</th>
             <th>site</th>
-            <th>start-date</th>
-            <th>ownership-status</th>
             <th>maximum-net-dwellings</th>
-            <th>organisation</th>
             <th>notes</th>
+            <th>site-plan-url</th>
+            <th>point</th>
+            <th>ownership-status</th>
+            <th>deliverable</th>
+            <th>name</th>
+            <th>start-date</th>
+            <th>site-address</th>
+            <th>hectares</th>
+            <th>organisation</th>
+            <th>minimum-net-dwellings</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-02-02</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/4c41c7a3739ba8b21a66228d3c0b024db386b32359af97c8b8a15462d9cbba9a.csv#L139">4c41c7a3739b...</a></td>
             <td>138</td>
-                <td>444</td> 
-                <td>Ashley Road South</td> 
                 <td>17140198</td> 
-                <td>yes</td> 
+                <td>444</td> 
                 <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
-                <td>2.35</td> 
+                <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
+            <td></td>
+                <td>mixed ownership</td> 
+                <td>yes</td> 
                 <td>17140198</td> 
                 <td>2017-12-31</td> 
-                <td>mixed ownership</td> 
-                <td>444</td> 
+                <td>Ashley Road South</td> 
+                <td>2.35</td> 
                 <td>local-authority-eng:HRY</td> 
+                <td>444</td> 
+        </tr>        <tr>
+            <td>2020-12-22</td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/9ee698608d8c7dcad9d872d2e109b28a00e577e100a53fc7f2e46a81c8a126e3.csv#L2350">9ee698608d8c...</a></td>
+            <td>2349</td>
+                <td>17140198</td> 
+                <td>444</td> 
+            <td></td>
                 <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
+                <td>POINT(-0.06128 51.590374)</td> 
+                <td>mixed ownership</td> 
+                <td>yes</td> 
+                <td>17140198</td> 
+            <td></td>
+                <td>Ashley Road South</td> 
+                <td>2.35</td> 
+                <td>local-authority-eng:HRY</td> 
+                <td>444</td> 
+        </tr>        <tr>
+            <td>2019-12-31</td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/caa60d5ffae6d94a73fa94be2f5c02a5ab40172f4cc37d01fe8f4c4bed94b7c5.csv#L139">caa60d5ffae6...</a></td>
+            <td>138</td>
+                <td>17140198</td> 
+                <td>444</td> 
+                <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
+                <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
+            <td></td>
+                <td>mixed ownership</td> 
+                <td>yes</td> 
+                <td>17140198</td> 
+                <td>2017-12-31</td> 
+                <td>Ashley Road South</td> 
+                <td>2.35</td> 
+                <td>local-authority-eng:HRY</td> 
+                <td>444</td> 
+        </tr>        <tr>
+            <td>2019-10-24</td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/53ff7410d03797e7747d4df128ca450bbe808f4eacc79d0e2d18623ab4a99554.csv#L1738">53ff7410d037...</a></td>
+            <td>1737</td>
+                <td>17140198</td> 
+                <td>444</td> 
+            <td></td>
+                <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
+                <td>POINT(-0.06128 51.590374)</td> 
+                <td>mixed ownership</td> 
+                <td>yes</td> 
+                <td>17140198</td> 
+            <td></td>
+                <td>Ashley Road South</td> 
+                <td>2.35</td> 
+                <td>local-authority-eng:HRY</td> 
+                <td>444</td> 
+        </tr>        <tr>
+            <td>2017-12-31</td>
+            <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/32545a25faa6d113e9db91f4a77eb740b2d19a05e03928c75d8d2dd9b9a1b737.csv#L167">32545a25faa6...</a></td>
+            <td>166</td>
+                <td>17140198</td> 
+                <td>444</td> 
+                <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
+                <td>http://www.haringey.gov.uk/sites/haringeygovuk/files/final_haringey_tottenham_aap_dtp_online.pdf</td> 
+            <td></td>
+                <td>mixed ownership</td> 
+                <td>yes</td> 
+                <td>17140198</td> 
+                <td>2017-12-31</td> 
+                <td>Ashley Road South</td> 
+                <td>2.35</td> 
+                <td>local-authority-eng:HRY</td> 
+                <td>444</td> 
         </tr>    </tbody>
 </table>
 
