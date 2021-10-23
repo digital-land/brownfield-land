@@ -159,13 +159,25 @@ crossorigin="" />
         <!-- this section can probably be removed. Entities no longer have a resource field --><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#MDR002</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Planning permission status
+            <dt class="govuk-summary-list__key">Site plan URL
             </dt>
-            <dd class="govuk-summary-list__value">                Not permissioned            </dd>
+            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://shropshire.maps.arcgis.com/apps/webappviewer/index.html?id=25b8fd6ba2fb4c878775a1aaea210576">https://shropshire.maps.arcgis.com/apps/webappviewer/index.html?id=25b8fd6ba2fb4c878775a1aaea210576</a>            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Site
+            </dt>
+            <dd class="govuk-summary-list__value">                MDR002            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Name
+            </dt>
+            <dd class="govuk-summary-list__value">                MDR002            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Ownership status
             </dt>
             <dd class="govuk-summary-list__value">                not owned by a public authority            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Hectares
+            </dt>
+            <dd class="govuk-summary-list__value">                0.14            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Organisation
             </dt>
@@ -173,41 +185,29 @@ crossorigin="" />
 <span title="Organisation identifier: local-authority-eng:SHR" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>local-authority-eng:SHR)</span>
             </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Site address
+            <dt class="govuk-summary-list__key">Planning permission status
             </dt>
-            <dd class="govuk-summary-list__value">                Car Sales Area, Salisbury Road, Market Drayton            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Maximum net dwellings
-            </dt>
-            <dd class="govuk-summary-list__value">                5            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Site
-            </dt>
-            <dd class="govuk-summary-list__value">                MDR002            </dd>
+            <dd class="govuk-summary-list__value">                Not permissioned            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Notes
             </dt>
             <dd class="govuk-summary-list__value">                The site is considered within the Strategic Land Availability Assessment (SLAA). | Site is considered suitable, likely to become available, achievable and viable.            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Name
+            <dt class="govuk-summary-list__key">Minimum net dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                MDR002            </dd>
+            <dd class="govuk-summary-list__value">                5            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Hectares
+            <dt class="govuk-summary-list__key">Maximum net dwellings
             </dt>
-            <dd class="govuk-summary-list__value">                0.14            </dd>
+            <dd class="govuk-summary-list__value">                5            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Start date
             </dt>
             <dd class="govuk-summary-list__value">                2017-12-22            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Minimum net dwellings
+            <dt class="govuk-summary-list__key">Site address
             </dt>
-            <dd class="govuk-summary-list__value">                5            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Site plan URL
-            </dt>
-            <dd class="govuk-summary-list__value">                <a class="govuk-link" href="https://shropshire.maps.arcgis.com/apps/webappviewer/index.html?id=25b8fd6ba2fb4c878775a1aaea210576">https://shropshire.maps.arcgis.com/apps/webappviewer/index.html?id=25b8fd6ba2fb4c878775a1aaea210576</a>            </dd>
+            <dd class="govuk-summary-list__value">                Car Sales Area, Salisbury Road, Market Drayton            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entity
             </dt>
@@ -253,18 +253,18 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>site</th>
+            <th>maximum-net-dwellings</th>
+            <th>hectares</th>
+            <th>name</th>
+            <th>minimum-net-dwellings</th>
+            <th>site-address</th>
+            <th>notes</th>
+            <th>point</th>
+            <th>planning-permission-status</th>
             <th>site-plan-url</th>
             <th>start-date</th>
-            <th>site-address</th>
-            <th>name</th>
-            <th>notes</th>
-            <th>planning-permission-status</th>
-            <th>minimum-net-dwellings</th>
-            <th>site</th>
-            <th>hectares</th>
-            <th>point</th>
             <th>ownership-status</th>
-            <th>maximum-net-dwellings</th>
             <th>organisation</th>
         </tr>
     </thead>
@@ -272,35 +272,35 @@ crossorigin="" />
             <td>2020-03-20</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/2091dd8344d35c5108e4eebbc6865b14d3a1fefbddfe7f356d18c25996d8aa2c.csv#L89">2091dd8344d3...</a></td>
             <td>88</td>
+                <td>MDR002</td> 
+                <td>5</td> 
+                <td>0.14</td> 
+                <td>MDR002</td> 
+                <td>5</td> 
+                <td>Car Sales Area, Salisbury Road, Market Drayton</td> 
+                <td>The site is considered within the Strategic Land Availability Assessment (SLAA). | Site is considered suitable, likely to become available, achievable and viable.</td> 
+                <td>POINT(-2.501266 52.899205)</td> 
+                <td>Not permissioned</td> 
                 <td>https://shropshire.maps.arcgis.com/apps/webappviewer/index.html?id=25b8fd6ba2fb4c878775a1aaea210576</td> 
                 <td>2017-12-22</td> 
-                <td>Car Sales Area, Salisbury Road, Market Drayton</td> 
-                <td>MDR002</td> 
-                <td>The site is considered within the Strategic Land Availability Assessment (SLAA). | Site is considered suitable, likely to become available, achievable and viable.</td> 
-                <td>Not permissioned</td> 
-                <td>5</td> 
-                <td>MDR002</td> 
-                <td>0.14</td> 
-                <td>POINT(-2.501266 52.899205)</td> 
                 <td>not owned by a public authority</td> 
-                <td>5</td> 
                 <td>local-authority-eng:SHR</td> 
         </tr>        <tr>
             <td>2017-12-22</td>
             <td><a href="https://github.com/digital-land/brownfield-land-collection/tree/main/transformed/brownfield-land/d5049b03ac10ee85dc62fcb7126676754df97918c593f49b21b2aba2a9ffcb32.csv#L60">d5049b03ac10...</a></td>
             <td>59</td>
+                <td>MDR002</td> 
+                <td>5</td> 
+                <td>0.14</td> 
+                <td>MDR002</td> 
+                <td>5</td> 
+                <td>Car Sales Area, Salisbury Road, Market Drayton</td> 
+                <td>The site is being considered within the Strategic Land Availability Assessment (SLAA). | Site is considered suitable, likely to become available, achievable and viable.. Redevelopment of the site for around 5 dwellings.</td> 
+            <td></td>
+                <td>Not permissioned</td> 
                 <td>https://shropshire.maps.arcgis.com/apps/webappviewer/index.html?id=25b8fd6ba2fb4c878775a1aaea210576</td> 
                 <td>2017-12-22</td> 
-                <td>Car Sales Area, Salisbury Road, Market Drayton</td> 
-                <td>MDR002</td> 
-                <td>The site is being considered within the Strategic Land Availability Assessment (SLAA). | Site is considered suitable, likely to become available, achievable and viable.. Redevelopment of the site for around 5 dwellings.</td> 
-                <td>Not permissioned</td> 
-                <td>5</td> 
-                <td>MDR002</td> 
-                <td>0.14</td> 
-            <td></td>
                 <td>not owned by a public authority</td> 
-                <td>5</td> 
                 <td>local-authority-eng:SHR</td> 
         </tr>    </tbody>
 </table>
