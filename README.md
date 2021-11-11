@@ -1,1 +1,1 @@
-Redirected
+Redirected pages
